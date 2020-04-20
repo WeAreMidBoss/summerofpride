@@ -122,6 +122,7 @@ hr {
   background: #fff;
   padding: 0!important;
   margin-bottom: 0;
+  margin-top: -70px;
   border-bottom: solid 2px #fff;
 }
 .jumbotron img {
