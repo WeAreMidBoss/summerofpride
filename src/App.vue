@@ -32,13 +32,12 @@
 
               <h3 class="text-center">GAMES</h3>
 
-              <div class="row streamers">
-                <div class="col-md-2 col-4 col-md-offset-1"><img class="alignnone size-full img-fluid  aligncenter" src="imgs/Game2.jpg"/></div>
-                <div class="col-md-2 col-4"><img class="alignnone size-full img-fluid aligncenter" src="imgs/Game13.jpg"/></div>
-                <div class="col-md-2 col-4"><img class="alignnone size-full img-fluid aligncenter" src="imgs/Game4.jpg"/></div>
-                <div class="col-md-2 col-4"><img class="alignnone size-full img-fluid aligncenter" src="imgs/Game14.jpg"/></div>
-                <div class="col-md-2 col-4"><img class="alignnone size-full img-fluid aligncenter" src="imgs/Game8.jpg"/></div>
-                <div class="col-md-2 col-4"><img class="alignnone size-full img-fluid aligncenter" src="imgs/Game7.jpg"/></div>
+              <div class="games">
+                  <swiper class="swiper" ref="mySwiper" :options="swiperOptions">
+                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click-slide="showModal(streamer.id)" :key="streamer.id" >
+                      <img :src="streamer.img" />
+                    </swiper-slide>
+                </swiper>
                 </div>
 
               <p>...and many more!</p>
