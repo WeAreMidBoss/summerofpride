@@ -7,25 +7,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse nav justify-content-center" id="mainNav">
-          <ul class="navbar-nav ml-auto" id="navbar-list">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./works.html">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://wearemidboss.tumblr.com/" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+
       </div>
   </nav>
 </template>

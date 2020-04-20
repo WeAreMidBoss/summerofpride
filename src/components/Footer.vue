@@ -9,10 +9,10 @@
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="social-links justify-content-end">
-            <a href="https://twitter.com/MidBoss" target="_blank"><img src="imgs/Twitter.svg" alt="Twitter" /></a>
-            <a href="https://www.facebook.com/WeAreMidBoss" target="_blank"><img src="imgs/Facebook.svg" alt="Facebook" /></a>
-            <a href="http://midboss.com/press" target="_blank"><img src="imgs/PressKit.svg" alt="Press Kit" /></a>
-            <a href="privacy.html" target="_blank"><img src="imgs/PrivacyPolicy.svg" alt="Privacy Policy" /></a>
+            <a href="https://twitter.com/MidBoss" target="_blank"><img src="../assets/img/Twitter.svg" alt="Twitter" /></a>
+            <a href="https://www.facebook.com/WeAreMidBoss" target="_blank"><img src="../assets/img/Facebook.svg" alt="Facebook" /></a>
+            <a href="http://twitch.tv/wearemidboss" target="_blank"><img src="../assets/img/Twitch.svg" alt="Twitch" /></a>
+            <a href="http://midboss.com/press" target="_blank"><img src="../assets/img/PressKit.svg" alt="Press Kit" /></a>
           </div>
         </div>
       </div>
