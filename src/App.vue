@@ -36,8 +36,8 @@
               
               <div class="streamers">
                 <div class="swiper-wrapper">
-                <swiper class="swiper" ref="mySwiper" :options="swiperOptions">
-                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click-slide="showModal(streamer.id)" :key="streamer.id" >
+                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" @clickSlide="showModal">
+                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
                 </swiper>
@@ -106,7 +106,7 @@ export default {
         },
         slidesPerView: 6,
         spaceBetween: 30,
-        loop: true
+        //loop: true
       },
       swiperOptionsGames: {
         autoplay: {
@@ -114,7 +114,7 @@ export default {
         },
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true
+        //loop: true
       }
     };
   },
@@ -128,9 +128,10 @@ export default {
     /*this.swiper.slideTo(1, 1000, false)*/
   },
   methods: {
-    showModal(id) {
+    showModal() {
+      console.log(this.$refs.mySwiper.$swiper.clickedIndex);
       this.isModalVisible = true;
-      this.profile = this.profiles[id];
+      this.profile = this.profiles[this.$refs.mySwiper.$swiper.clickedIndex];
     },
     closeModal() {
       this.isModalVisible = false;
