@@ -27,7 +27,7 @@
               <div class="modal-description col-md-6 col-sm-12">
                 <span class="modal-name">{{ profile.name }}</span>
                 <span class="modal-description-text">{{ profile.bio }}</span>
-                <span class="modal-description-social"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
+                <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
                 <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
                 <a :href="profile.personal" target="_blank" v-if="profile.personal"><img class="modal-social" src="../assets/img/Website.svg" /></a></span>
               </div>
@@ -192,6 +192,6 @@
   .modal-description-social img{
     width:55px;
     height:auto;
-    margin-left: 30px;
+    margin-right: 30px;
   }
 </style>

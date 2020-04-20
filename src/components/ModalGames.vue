@@ -27,7 +27,7 @@
               <div class="modal-description col-sm-12">
                 <span class="modal-name">{{ game.name }}</span>
                 <span class="modal-description-text">{{ game.desc }}</span>
-                <span class="modal-description-social text-center"><a :href="game.social" target="_blank"><img class="modal-social" src="../assets/img/twitter.png" /></a></span>
+                <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-social" src="../assets/img/twitter.png" /></a></span>
               </div>
             </div>
           </slot>
@@ -184,7 +184,7 @@
     display: block;
     font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 40px;
   }
   .modal-description-social {
     display: block;
