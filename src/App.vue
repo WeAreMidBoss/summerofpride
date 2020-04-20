@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <Nav />
-    <header>
-    </header>
     <main role="main">
 
       <div class="jumbotron">
         <img class="d-none d-sm-block" src="./assets/img/SummerOfPride2020_Banner.jpg" alt="Summer of Pride" />
+        <img class="d-sm-none" src="./assets/img/SummerOfPride2020_Mobile.png" alt="Summer of Pride" />
       </div>
 
       <div id="main-content">
@@ -112,19 +111,43 @@ export default {
         autoplay: {
           delay: 2500,
         },
-        slidesPerView: 6,
-        spaceBetween: 30,
-        //loop: true
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+          //loop: true
+        }
       },
       swiperOptionsGames: {
         autoplay: {
           delay: 2500,
         },
-        slidesPerView: 3,
-        spaceBetween: 30,
-        //loop: true
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          //loop: true
+        }
       }
-    };
+    }
   },
   computed: {
     swiper() {
