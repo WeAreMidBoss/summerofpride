@@ -24,7 +24,6 @@
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click-slide="showModal(streamer.id)" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
-                  <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
                 </div>
               </div>
@@ -108,11 +107,7 @@ export default {
         },
         slidesPerView: 6,
         spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
+        loop: true
       }
     };
   },
