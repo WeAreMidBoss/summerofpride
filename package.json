@@ -1,6 +1,6 @@
 {
-  "name": "summerofpride",
-  "version": "0.1.0",
+  "name": "Summer of Pride • MidBoss",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
