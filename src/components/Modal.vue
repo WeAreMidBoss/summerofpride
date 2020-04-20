@@ -83,7 +83,7 @@
   .modal-streamers {
     max-width: 700px;
     padding: 0 10px 20px;
-    background: #EC5A5A;
+    background: #a72164;
     box-shadow: 2px 2px 20px 1px;
     /*overflow-x: auto;*/
     display: flex;
@@ -183,7 +183,9 @@
   .modal-description-text {
     display: block;
     font-family: 'Open Sans', sans-serif;
+    font-size:16px;
     margin-top: 20px;
+    padding-right:20px;
   }
   .modal-description-social {
     display: block;
@@ -194,4 +196,5 @@
     height:auto;
     margin-right: 30px;
   }
+
 </style>

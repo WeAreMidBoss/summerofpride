@@ -26,4 +26,8 @@
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: #f8c2c8
 }
+
+.navbar {
+  position:relative;
+}
 </style>

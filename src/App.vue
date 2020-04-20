@@ -1,7 +1,7 @@
 <template>
   <div id="app">
+    <Nav />
     <header>
-      <Nav />
     </header>
     <main role="main">
 

@@ -26,7 +26,7 @@
               </div>
               <div class="modal-description col-md-12 col-sm-12">
                 <span class="modal-name">{{ game.name }}</span>
-                <span class="modal-description-text">{{ game.desc }}</span>
+                <span class="modal-description-text-games">{{ game.desc }}</span>
                 <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-url" src="../assets/img/Website.svg" /></a></span>
               </div>
             </div>
@@ -179,9 +179,10 @@
     font-size: 28px;
     text-align: center;
   }
-  .modal-description-text {
+  .modal-description-text-games {
     display: block;
     font-family: 'Open Sans', sans-serif;
+    font-size:16px;
     margin-top: 20px;
     padding-left:40px;
     padding-right:40px;
@@ -194,4 +195,5 @@
     width:55px;
     height:auto;
   }
+
 </style>
