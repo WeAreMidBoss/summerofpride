@@ -283,6 +283,9 @@ footer .social-links a:last-child img {
 }
 
 @media (max-width: 575px) {
+  #main-content {
+    padding-top: 0;
+  }
   .jumbotron{
     margin-top: -70px;
   }
