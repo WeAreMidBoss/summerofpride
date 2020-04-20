@@ -3,9 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <p>&copy; Copyright <span id="year"></span><br>
-           MidBoss, LLC.<br>
-          </p>
+          &copy; Copyright <span id="year"></span><br />
+           MidBoss, LLC.
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="social-links justify-content-end">
