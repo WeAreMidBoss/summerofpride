@@ -16,7 +16,23 @@
               <h2 class="text-center">Get Ready for the Summer of Pride!</h2>
               <p>The Summer of Pride is an upcoming series of LGBTQIA+ (queer) streamers playing queer games, all throughout the month of June. These fun gaymers will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
-              <h3 class="text-center">STREAMERS</h3>
+              <!-- Begin MailChimp Signup Form -->
+              <div class="col-sm-12 mail-list-container">
+                <div id="mc_embed_signup">
+                <form action="https://midboss.us5.list-manage.com/subscribe/post?u=56b65e1f2b3ba5e696ffa9e29&amp;id=748c34fc41" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                  <label for="mce-EMAIL"><h3>Stay Up-to-Date On the Event!</h3></label>
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_56b65e1f2b3ba5e696ffa9e29_748c34fc41" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+              </div>
+              <!--End mc_embed_signup-->
+
+              <h2 class="text-center">STREAMERS</h2>
               
               <div class="streamers">
                 <div class="swiper-wrapper">
@@ -28,35 +44,16 @@
                 </div>
               </div>
 
-              <p>...and many more!</p>
-
-              <h3 class="text-center">GAMES</h3>
+              <h2 class="text-center">GAMES</h2>
 
               <div class="games">
-                  <swiper class="swiper" ref="mySwiper" :options="swiperOptions">
-                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click-slide="showModal(streamer.id)" :key="streamer.id" >
-                      <img :src="streamer.img" />
+                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames">
+                    <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
+                      <img :src="g.img" />
                     </swiper-slide>
                 </swiper>
                 </div>
 
-              <p>...and many more!</p>
-
-              <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                <form action="https://midboss.us5.list-manage.com/subscribe/post?u=56b65e1f2b3ba5e696ffa9e29&amp;id=748c34fc41" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                  <label for="mce-EMAIL"><h2>Stay Up-to-Date On the Event!</h2></label>
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_56b65e1f2b3ba5e696ffa9e29_748c34fc41" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-                </div>
-                <!--End mc_embed_signup-->
-              
-          
             </div>
           </div>
         </div>
@@ -73,6 +70,7 @@
 
 <script>
 import streamers from './assets/streamers.js'
+import gameList from './assets/games.js'
 import './assets/css/summerofpride.css'
 
 import Modal from './components/Modal.vue'
@@ -100,11 +98,21 @@ export default {
       isModalVisible: false,
       profile: [],
       profiles: streamers,
+      game: [],
+      games: gameList,
       swiperOptions: {
         autoplay: {
           delay: 2500,
         },
         slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true
+      },
+      swiperOptionsGames: {
+        autoplay: {
+          delay: 2500,
+        },
+        slidesPerView: 3,
         spaceBetween: 30,
         loop: true
       }
