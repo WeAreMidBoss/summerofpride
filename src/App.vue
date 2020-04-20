@@ -47,7 +47,7 @@
               <h2 class="text-center">GAMES</h2>
 
               <div class="games">
-                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames">
+                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showModalGame">
                     <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
                       <img :src="g.img" />
                     </swiper-slide>
@@ -64,6 +64,11 @@
           @close="closeModal"
           :profile="this.profile"
         />
+        <ModalGames
+          v-show="isModalGameVisible"
+          @close="closeModalGame"
+          :game="this.game"
+        />
     </main>
   </div>
 </template>
@@ -74,6 +79,7 @@ import gameList from './assets/games.js'
 import './assets/css/summerofpride.css'
 
 import Modal from './components/Modal.vue'
+import ModalGames from './components/ModalGames.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 
@@ -85,6 +91,7 @@ export default {
   name: 'App',
   components: {
     Modal,
+    ModalGames,
     Nav,
     Footer,
     Swiper,
@@ -96,6 +103,7 @@ export default {
   data() {
     return {
       isModalVisible: false,
+      isModalGameVisible: false,
       profile: [],
       profiles: streamers,
       game: [],
@@ -135,6 +143,14 @@ export default {
     },
     closeModal() {
       this.isModalVisible = false;
+    },
+    showModalGame() {
+      console.log(this.$refs.swiperGames.$swiper.clickedIndex);
+      this.isModalGameVisible = true;
+      this.game = this.games[this.$refs.swiperGames.$swiper.clickedIndex];
+    },
+    closeModalGame() {
+      this.isModalGameVisible = false;
     }
   }
 }
