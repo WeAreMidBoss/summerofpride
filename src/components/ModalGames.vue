@@ -21,13 +21,13 @@
         <section class="modal-games-body">
           <slot name="body">
             <div class="row">
-              <div class="modal-img-container col-sm-12">
+              <div class="modal-img-container col-md-12 col-sm-12">
                 <img class="modal-img" :src="game.img" />
               </div>
-              <div class="modal-description col-sm-12">
+              <div class="modal-description col-md-12 col-sm-12">
                 <span class="modal-name">{{ game.name }}</span>
                 <span class="modal-description-text">{{ game.desc }}</span>
-                <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-social" src="../assets/img/twitter.png" /></a></span>
+                <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-url" src="../assets/img/Website.svg" /></a></span>
               </div>
             </div>
           </slot>
@@ -157,8 +157,7 @@
     transition: opacity .5s ease
   }
   .modal-img-container {
-    display:block;
-    width:100%;
+    display: block;
   }
   .modal-img {
     max-width:90%;
@@ -184,7 +183,8 @@
     display: block;
     font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
-    padding: 0 40px;
+    padding-left:40px;
+    padding-right:40px;
   }
   .modal-description-social {
     display: block;
