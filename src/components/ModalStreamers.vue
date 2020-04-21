@@ -1,5 +1,5 @@
 <template>
-<div id="modal-games" class="modal fade" tabindex="-1" role="dialog">
+  <div id="modal-streamers" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -10,13 +10,15 @@
         <div class="modal-body">
           <slot name="body">
             <div class="row">
-              <div class="modal-img-container col-md-12 col-sm-12">
-                <img class="modal-img" :src="game.img" />
+              <div class="modal-img-container col-md-6 col-sm-12">
+                <img class="modal-img" :src="profile.img" />
               </div>
-              <div class="modal-description col-md-12 col-sm-12">
-                <span class="modal-name">{{ game.name }}</span>
-                <span class="modal-description-text-games">{{ game.desc }}</span>
-                <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-url" src="../assets/img/Website.svg" /></a></span>
+              <div class="modal-description col-md-6 col-sm-12">
+                <span class="modal-name">{{ profile.name }}</span>
+                <span class="modal-description-text">{{ profile.bio }}</span>
+                <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
+                <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
+                <a :href="profile.personal" target="_blank" v-if="profile.personal"><img class="modal-social" src="../assets/img/Website.svg" /></a></span>
               </div>
             </div>
           </slot>
@@ -28,12 +30,12 @@
 
 <script>
   export default {
-    name: 'ModalGames',
+    name: 'ModalStreamers',
     props: {
-      game: {
+      profile: {
         required: true
       }
-    },
+    }, 
     methods: {
       close() {
         this.$emit('close');
@@ -44,7 +46,7 @@
 
 <style scoped>
 .modal-content {
-  background: #EC5A5A;
+  background: #a72164;
   box-shadow: 2px 2px 20px 1px;
   border: none;
   border-radius: 0;
@@ -90,14 +92,6 @@
   width: 45px;
   height: 45px;
 }
-.modal-description-text-games {
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size:16px;
-  margin-top: 20px;
-  padding-left:40px;
-  padding-right:40px;
-}
 .modal-name {
   margin-bottom: 0.5em;
 }
@@ -139,3 +133,4 @@
 }
 
 </style>
+

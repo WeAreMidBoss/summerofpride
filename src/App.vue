@@ -35,7 +35,7 @@
               
               <div class="streamers">
                 <div class="swiper-wrapper">
-                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" @clickSlide="showModal">
+                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" @clickSlide="showStreamerInfo" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
@@ -46,7 +46,7 @@
               <h2 class="text-center">GAMES</h2>
 
               <div class="games">
-                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showModalGame">
+                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showGameInfo" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
                       <img :src="g.img" />
                     </swiper-slide>
@@ -58,16 +58,16 @@
         </div>
       </div>
       <Footer />
-      <Modal
-          v-show="isModalVisible"
-          @close="closeModal"
+      <ModalStreamers
+          v-if="showStreamerModal" 
+          @close="closeStreamerInfo"
           :profile="this.profile"
         />
-        <ModalGames
-          v-show="isModalGameVisible"
-          @close="closeModalGame"
-          :game="this.game"
-        />
+      <ModalGames
+        v-if="isModalGameVisible"
+        @close="closeGameInfo"
+        :game="this.game"
+      />
     </main>
   </div>
 </template>
@@ -77,7 +77,7 @@ import streamers from './assets/streamers.js'
 import gameList from './assets/games.js'
 import './assets/css/summerofpride.css'
 
-import Modal from './components/Modal.vue'
+import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
@@ -85,11 +85,10 @@ import Footer from './components/Footer.vue'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 
-
 export default {
   name: 'App',
   components: {
-    Modal,
+    ModalStreamers,
     ModalGames,
     Nav,
     Footer,
@@ -101,7 +100,7 @@ export default {
   },
   data() {
     return {
-      isModalVisible: false,
+      showStreamerModal: false,
       isModalGameVisible: false,
       profile: [],
       profiles: streamers,
@@ -159,20 +158,20 @@ export default {
     /*this.swiper.slideTo(1, 1000, false)*/
   },
   methods: {
-    showModal() {
+    showStreamerInfo() {
       console.log(this.$refs.mySwiper.$swiper.clickedIndex);
-      this.isModalVisible = true;
+      this.showStreamerModal = true;
       this.profile = this.profiles[this.$refs.mySwiper.$swiper.clickedIndex];
     },
-    closeModal() {
-      this.isModalVisible = false;
+    closeStreamerInfo() {
+      this.showStreamerModal = false;
     },
-    showModalGame() {
+    showGameInfo() {
       console.log(this.$refs.swiperGames.$swiper.clickedIndex);
       this.isModalGameVisible = true;
       this.game = this.games[this.$refs.swiperGames.$swiper.clickedIndex];
     },
-    closeModalGame() {
+    closeGameInfo() {
       this.isModalGameVisible = false;
     }
   }
