@@ -130,6 +130,10 @@
   .modal-description {
     padding: 0 20px;
   }
+  .close span {
+    top:-5px;
+    right:-5px;
+  }
 }
 
 </style>
