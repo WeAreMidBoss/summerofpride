@@ -15,7 +15,7 @@
               </div>
               <div class="modal-description col-md-6 col-sm-12">
                 <span class="modal-name">{{ profile.name }}</span>
-                <span class="modal-description-text">{{ profile.bio }}</span>
+                <span class="modal-description-text-streamers">{{ profile.bio }}</span>
                 <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
                 <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
                 <a :href="profile.personal" target="_blank" v-if="profile.personal"><img class="modal-social" src="../assets/img/Website.svg" /></a></span>
@@ -92,6 +92,15 @@
   width: 45px;
   height: 45px;
 }
+
+.modal-description-text-streamers {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  margin-top: 20px;
+  padding-right:20px;
+}
+
 .modal-name {
   margin-bottom: 0.5em;
 }

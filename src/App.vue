@@ -12,7 +12,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2 class="text-center">Get Ready for the Summer of Pride!</h2>
+              <h1 class="text-center">Get Ready for the Summer of Pride!</h1>
               <p>The Summer of Pride is an upcoming series of LGBTQIA+ (queer) streamers playing queer games, all throughout the month of June. These fun gaymers will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
               <!-- Begin MailChimp Signup Form -->
@@ -120,7 +120,7 @@ export default {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 30,
           },
           //loop: true
