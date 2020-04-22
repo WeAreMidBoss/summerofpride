@@ -75,7 +75,6 @@
 <script>
 import streamers from './assets/streamers.js'
 import gameList from './assets/games.js'
-import './assets/css/summerofpride.css'
 
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
@@ -84,6 +83,8 @@ import Footer from './components/Footer.vue'
 
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+
+import './assets/css/summerofpride.css'
 
 export default {
   name: 'App',
@@ -111,7 +112,7 @@ export default {
           delay: 2500,
         },
         breakpoints: {
-          640: {
+          575: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
@@ -131,7 +132,7 @@ export default {
           delay: 2500,
         },
         breakpoints: {
-          640: {
+          575: {
             slidesPerView: 1,
             spaceBetween: 0,
           },

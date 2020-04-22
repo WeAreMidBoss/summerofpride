@@ -69,20 +69,20 @@ h3 {
 
 h1 {
   margin: 1.5rem 0 1rem 0;
-  font-size: 3.5em;
+  font-size: 3.5em!important;
+}
+
+h2 {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 3em!important;
 }
 
 h3 {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 2.5rem!important;
     color:#ea276d;
     margin-bottom: .5rem;
-}
-
-h2 {
-    margin: 1.5rem 0 1rem 0;
-    font-size: 3em;
 }
 
 a {
@@ -166,8 +166,8 @@ footer {
   color: #fff;
   background: #a72164;
   border-top: solid 2px #fff;
-  padding: 2.5em 0em 0.8em;
-  font-size: 0.7em;
+  padding: 2.5em 0em;
+  font-size: .85em;
   line-height: 1.5;
   text-align: left;
 }
