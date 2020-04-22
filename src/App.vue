@@ -55,8 +55,8 @@
                     </swiper-slide>          
                 </swiper>
                 <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
-                    <div class="games-button-next swiper-button-next" slot="button-next"></div>
-                    <div class="games-pagination swiper-pagination" slot="pagination"></div>
+                  <div class="games-button-next swiper-button-next" slot="button-next"></div>
+                  <div class="games-pagination swiper-pagination" slot="pagination"></div>
                 </div>
             </div>
           </div>
