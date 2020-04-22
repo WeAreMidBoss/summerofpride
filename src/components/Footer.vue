@@ -2,7 +2,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <div class="col-md-8 col-sm-12 footer-copy">
           &copy; Copyright <span id="year"></span><br />
            MidBoss, LLC.
         </div>
