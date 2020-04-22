@@ -313,10 +313,10 @@ footer .social-links a:last-child img {
     max-height: 100px;
   }
   .swiper-button-prev {
-    left: 10px;
+    left: -10px;
   }
   .swiper-button-next {
-    right: 10px;
+    right: -10px;
   }
   footer {
   color: #fff;
