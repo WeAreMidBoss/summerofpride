@@ -39,6 +39,9 @@
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
+                    <div class="swiper-button-prev" slot="button-prev"></div>
+                  <div class="swiper-button-next" slot="button-next"></div>
+                  <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
                 </div>
               </div>
@@ -50,6 +53,9 @@
                     <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
                       <img :src="g.img" />
                     </swiper-slide>
+                    <div class="swiper-button-prev" slot="button-prev"></div>
+                    <div class="swiper-button-next" slot="button-next"></div>
+                    <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
                 </div>
 
@@ -124,7 +130,11 @@ export default {
             slidesPerView: 5,
             spaceBetween: 30,
           },
-          //loop: true
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
         }
       },
       swiperOptionsGames: {
@@ -144,7 +154,11 @@ export default {
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          //loop: true
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true
+          }
         }
       }
     }
