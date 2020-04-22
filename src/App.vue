@@ -39,10 +39,10 @@
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
-                    <div class="swiper-button-prev" slot="button-prev"></div>
-                  <div class="swiper-button-next" slot="button-next"></div>
-                  <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
+                <div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
+                    <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
+                    <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
                 </div>
               </div>
 
@@ -52,13 +52,12 @@
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showGameInfo" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
                       <img :src="g.img" />
-                    </swiper-slide>
-                    <div class="swiper-button-prev" slot="button-prev"></div>
-                    <div class="swiper-button-next" slot="button-next"></div>
-                    <div class="swiper-pagination" slot="pagination"></div>
+                    </swiper-slide>          
                 </swiper>
+                <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
+                    <div class="games-button-next swiper-button-next" slot="button-next"></div>
+                    <div class="games-pagination swiper-pagination" slot="pagination"></div>
                 </div>
-
             </div>
           </div>
         </div>
@@ -117,6 +116,14 @@ export default {
         autoplay: {
           delay: 2500,
         },
+        loop: true,
+        navigation: {
+          nextEl: '.streamers-button-next',
+          prevEl: '.streamers-button-prev'
+        },
+        pagination: {
+          el: '.streamers-pagination'
+        },
         breakpoints: {
           575: {
             slidesPerView: 2,
@@ -129,17 +136,20 @@ export default {
           1024: {
             slidesPerView: 5,
             spaceBetween: 30,
-          },
-          loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
           }
         }
       },
       swiperOptionsGames: {
         autoplay: {
           delay: 2500,
+        },
+        loop: true,
+        navigation: {
+          nextEl: '.games-button-next',
+          prevEl: '.games-button-prev'
+        },
+        pagination: {
+          el: '.games-pagination'
         },
         breakpoints: {
           575: {
@@ -154,11 +164,6 @@ export default {
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true
-          }
         }
       }
     }
