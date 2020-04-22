@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-sm">
       <div class="container">
         <a class="navbar-brand d-none d-sm-block" href="#"><img src="../assets/img/MidBossLogo.svg" alt="Midboss Logo" /></a>
-        <a class="navbar-brand d-sm-none" href="#"><img src="../assets/img/MidBossLogoMobile.svg" alt="Midboss Logo" /></a>
+        <a class="navbar-brand d-sm-none" href="#"><img src="../assets/img/MidBossLogoCastleMobile.svg" alt="Midboss Logo" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
