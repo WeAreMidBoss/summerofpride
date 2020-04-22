@@ -34,16 +34,14 @@
               <h2 class="text-center">STREAMERS</h2>
               
               <div class="streamers">
-                <div class="swiper-wrapper">
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" @clickSlide="showStreamerInfo" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
+                    <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
                 </swiper>
                 <div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
-                    <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
-                    <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
-                </div>
+                <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
               </div>
 
               <h2 class="text-center">GAMES</h2>
@@ -52,11 +50,11 @@
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showGameInfo" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
                       <img :src="g.img" />
-                    </swiper-slide>          
+                    </swiper-slide>        
+                    <div class="games-pagination swiper-pagination" slot="pagination"></div>  
                 </swiper>
                 <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
-                  <div class="games-button-next swiper-button-next" slot="button-next"></div>
-                  <div class="games-pagination swiper-pagination" slot="pagination"></div>
+                <div class="games-button-next swiper-button-next" slot="button-next"></div>
                 </div>
             </div>
           </div>
@@ -122,7 +120,9 @@ export default {
           prevEl: '.streamers-button-prev'
         },
         pagination: {
-          el: '.streamers-pagination'
+          el: '.streamers-pagination',
+          dynamicBullets: true,
+          clickable: true
         },
         breakpoints: {
           575: {
@@ -149,7 +149,9 @@ export default {
           prevEl: '.games-button-prev'
         },
         pagination: {
-          el: '.games-pagination'
+          el: '.games-pagination',
+          dynamicBullets: true,
+          clickable: true
         },
         breakpoints: {
           575: {
