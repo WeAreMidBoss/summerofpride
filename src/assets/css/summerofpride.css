@@ -313,6 +313,9 @@ footer .social-links a:last-child img {
     width: auto;
     max-height: 100px;
   }
+  .swiper-container {
+    width: 80%;
+  }
   .swiper-button-prev {
     left: -10px;
   }
