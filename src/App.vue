@@ -34,8 +34,8 @@
               <h2 class="text-center">STREAMERS</h2>
               
               <div class="streamers">
-                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" @clickSlide="showStreamerInfo" data-toggle="modal" data-target="#modal-streamers">
-                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" :key="streamer.id" >
+                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
+                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click.native="showStreamerInfo(streamer.id)" :key="streamer.id" >
                       <img :src="streamer.img" />
                     </swiper-slide>
                     <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
@@ -47,9 +47,9 @@
               <h2 class="text-center">GAMES</h2>
 
               <div class="games">
-                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" @clickSlide="showGameInfo" data-toggle="modal" data-target="#modal-games">
-                    <swiper-slide v-for="(g, index) in games" class="swiper-slide" :key="index" >
-                      <img :src="g.img" />
+                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
+                    <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                      <img :src="game.img" />
                     </swiper-slide>        
                     <div class="games-pagination swiper-pagination" slot="pagination"></div>  
                 </swiper>
@@ -104,6 +104,7 @@ export default {
   },
   data() {
     return {
+      animated: false,
       showStreamerModal: false,
       isModalGameVisible: false,
       profile: [],
@@ -180,18 +181,16 @@ export default {
     /*this.swiper.slideTo(1, 1000, false)*/
   },
   methods: {
-    showStreamerInfo() {
-      console.log(this.$refs.mySwiper.$swiper.clickedIndex);
+    showStreamerInfo(id) {
       this.showStreamerModal = true;
-      this.profile = this.profiles[this.$refs.mySwiper.$swiper.clickedIndex];
+      this.profile = this.profiles[id-1];
     },
     closeStreamerInfo() {
       this.showStreamerModal = false;
     },
-    showGameInfo() {
-      console.log(this.$refs.swiperGames.$swiper.clickedIndex);
+    showGameInfo(id) {
       this.isModalGameVisible = true;
-      this.game = this.games[this.$refs.swiperGames.$swiper.clickedIndex];
+      this.game = this.games[id];
     },
     closeGameInfo() {
       this.isModalGameVisible = false;
