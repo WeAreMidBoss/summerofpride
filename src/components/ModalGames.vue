@@ -145,7 +145,7 @@
   }
   .modal-description {
     color:#fff;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
   }
   .modal-name {
