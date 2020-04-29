@@ -33,7 +33,7 @@
 
               <h2 class="text-center" data-aos="slide-up">STREAMERS</h2>
               
-              <div class="streamers" data-aos="slide-up">
+              <div class="streamers" data-aos="slide-left">
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click.native="showStreamerInfo(streamer.id)" :key="streamer.id" >
                       <img :src="streamer.img" />
@@ -46,7 +46,7 @@
 
               <h2 class="text-center" data-aos="slide-up">GAMES</h2>
 
-              <div class="games" data-aos="slide-up">
+              <div class="games" data-aos="slide-right">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <img :src="game.img" />
