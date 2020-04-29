@@ -31,11 +31,11 @@
               </div>
               <!--End mc_embed_signup-->
 
-              <h2 class="text-center" data-aos="slide-up">STREAMERS</h2>
+              <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
               
               <div class="streamers" data-aos="slide-left">
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
-                    <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click.native="showStreamerInfo(streamer.id)" :key="streamer.id" >
+                    <swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
                       <img :src="streamer.img" />
                     </swiper-slide>
                     <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
@@ -44,7 +44,7 @@
                 <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
               </div>
 
-              <h2 class="text-center" data-aos="slide-up">GAMES</h2>
+              <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
               <div class="games" data-aos="slide-right">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
@@ -116,7 +116,8 @@ export default {
       games: gameList,
       swiperOptions: {
         autoplay: {
-          delay: 2500,
+          delay: 3000,
+          speed: 2500
         },
         loop: true,
         navigation: {
@@ -145,7 +146,8 @@ export default {
       },
       swiperOptionsGames: {
         autoplay: {
-          delay: 2500,
+          delay: 3000,
+          speed: 2500
         },
         loop: true,
         navigation: {
@@ -183,7 +185,9 @@ export default {
     AOS.init({
       once: true,
       disable: 'mobile'
-    })  
+    }),
+    this.shuffle(this.profiles),
+    this.shuffle(this.games)
   },
   mounted() {
     console.log('Current Swiper instance object', this.swiper);
@@ -191,18 +195,19 @@ export default {
     /*this.swiper.slideTo(1, 1000, false)*/
   },
   watch: {
-    isModalVisible: function() {
+    /*isModalVisible: function() {
       if(this.showStreamerModal || this.isModalGameVisible){
         document.documentElement.style.overflow = 'hidden'
         return
       }
       document.documentElement.style.overflow = 'auto'
-    }
+    }*/
   },
   methods: {
     showStreamerInfo(id) {
       this.showStreamerModal = true;
-      this.profile = this.profiles[id-1];
+      /*let index = this.profiles.findIndex( filterProfile=> filterProfile['id'] === id);*/
+      this.profile = this.profiles[id];
     },
     closeStreamerInfo() {
       this.showStreamerModal = false;
@@ -213,6 +218,24 @@ export default {
     },
     closeGameInfo() {
       this.isModalGameVisible = false;
+    },
+    shuffle(array) {
+       var currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
     }
   }
 }

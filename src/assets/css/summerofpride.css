@@ -241,6 +241,10 @@ footer .social-links a:last-child img {
   padding-bottom: 15px;
 }
 
+.heading-games, .heading-streamers {
+  margin: 0.25em 0;
+}
+
 @media (min-width: 576px) {
   .jumbotron {
     margin-top: -70px;
@@ -332,6 +336,10 @@ footer .social-links a:last-child img {
   }
   #mc_embed_signup input.email { width: 200px;}
   #mc_embed_signup .button {max-width:100px; }
+
+  .heading-games {
+    margin-top: 1em;
+  }
 }
 
 /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
