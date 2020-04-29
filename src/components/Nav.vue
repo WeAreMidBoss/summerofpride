@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-sm" data-aos="zoom-in">
+    <nav class="navbar navbar-expand-sm">
       <div class="container">
         <a class="navbar-brand d-none d-sm-block" href="#"><img src="../assets/img/MidBossLogo.svg" alt="Midboss Logo" /></a>
         <a class="navbar-brand d-sm-none" href="#"><img src="../assets/img/MidBossLogoCastleMobile.svg" alt="Midboss Logo" /></a>
