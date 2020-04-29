@@ -181,12 +181,23 @@ export default {
   },
   created() {
     AOS.init({
-      once: true
+      once: true,
+      disable: 'mobile'
     })  
   },
   mounted() {
-    console.log('Current Swiper instance object', this.swiper)
+    console.log('Current Swiper instance object', this.swiper);
+    //AOS.refresh;
     /*this.swiper.slideTo(1, 1000, false)*/
+  },
+  watch: {
+    isModalVisible: function() {
+      if(this.showStreamerModal || this.isModalGameVisible){
+        document.documentElement.style.overflow = 'hidden'
+        return
+      }
+      document.documentElement.style.overflow = 'auto'
+    }
   },
   methods: {
     showStreamerInfo(id) {

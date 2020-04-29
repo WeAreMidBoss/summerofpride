@@ -13,7 +13,7 @@
 </template>
 <style>
 .navbar {
-  z-index: 9998!important;
+  z-index: 100!important;
 }
 .navbar-nav > li {
   text-transform: uppercase;
