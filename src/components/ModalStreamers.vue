@@ -18,7 +18,7 @@
           </button>
         </slot>
       </header>
-      <section class="modal-streamers-body">
+      <section class="modal-streamers-body" v-scroll-lock="!isClosing">
         <slot name="body">
             <div class="row">
               <div class="modal-img-container col-md-6 col-sm-12">

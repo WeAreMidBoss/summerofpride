@@ -18,7 +18,7 @@
           </button>
         </slot>
       </header>
-      <section class="modal-games-body">
+      <section class="modal-games-body" v-scroll-lock="!isClosing">
         <slot name="body">
           <div class="row">
             <div class="modal-img-container col-sm-12">

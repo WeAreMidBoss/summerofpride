@@ -192,16 +192,19 @@ export default {
   mounted() {
     console.log('Current Swiper instance object', this.swiper);
     //AOS.refresh;
-    /*this.swiper.slideTo(1, 1000, false)*/
   },
   watch: {
-    /*isModalVisible: function() {
-      if(this.showStreamerModal || this.isModalGameVisible){
-        document.documentElement.style.overflow = 'hidden'
+    showStreamerModal: function() {
+      if(this.showStreamerModal){
+        this.disableScrolling,
+        console.log("disabled")
+        return
+      } else {
+        this.enableScrolling,
+        console.log("enabled")
         return
       }
-      document.documentElement.style.overflow = 'auto'
-    }*/
+    }
   },
   methods: {
     showStreamerInfo(id) {
@@ -236,10 +239,23 @@ export default {
       }
 
       return array;
+    },
+    disableScrolling(){
+      var x=window.scrollX;
+      var y=window.scrollY;
+      window.onscroll=function(){window.scrollTo(x, y);};
+    },
+    enableScrolling(){
+      window.onscroll=function(){};
     }
   }
 }
 </script>
 <style>
   @import'~bootstrap/dist/css/bootstrap.css';
+
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
 </style>
