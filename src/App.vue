@@ -180,7 +180,9 @@ export default {
     }
   },
   created() {
-    AOS.init()
+    AOS.init({
+      once: true
+    })  
   },
   mounted() {
     console.log('Current Swiper instance object', this.swiper)
