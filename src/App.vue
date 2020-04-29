@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" data-aos="zoom-in">
     <Nav />
     <main role="main">
 
@@ -12,11 +12,11 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center">Get Ready for the Summer of Pride!</h1>
-              <p>The Summer of Pride is an upcoming series of LGBTQIA+ (queer) streamers playing queer games, all throughout the month of June. These fun gaymers will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+              <h1 class="text-center" data-aos="slide-up">Get Ready for the Summer of Pride!</h1>
+              <p data-aos="slide-up">The Summer of Pride is an upcoming series of LGBTQIA+ (queer) streamers playing queer games, all throughout the month of June. These fun gaymers will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
               <!-- Begin MailChimp Signup Form -->
-              <div class="col-sm-12 mail-list-container">
+              <div class="col-sm-12 mail-list-container" data-aos="zoom-out">
                 <div id="mc_embed_signup">
                 <form action="https://midboss.us5.list-manage.com/subscribe/post?u=56b65e1f2b3ba5e696ffa9e29&amp;id=748c34fc41" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
@@ -31,9 +31,9 @@
               </div>
               <!--End mc_embed_signup-->
 
-              <h2 class="text-center">STREAMERS</h2>
+              <h2 class="text-center" data-aos="slide-up">STREAMERS</h2>
               
-              <div class="streamers">
+              <div class="streamers" data-aos="slide-up">
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="streamer in profiles" class="swiper-slide" @click.native="showStreamerInfo(streamer.id)" :key="streamer.id" >
                       <img :src="streamer.img" />
@@ -44,9 +44,9 @@
                 <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
               </div>
 
-              <h2 class="text-center">GAMES</h2>
+              <h2 class="text-center" data-aos="slide-up">GAMES</h2>
 
-              <div class="games">
+              <div class="games" data-aos="slide-up">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <img :src="game.img" />
@@ -86,6 +86,9 @@ import Footer from './components/Footer.vue'
 
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import './assets/css/summerofpride.css'
 
@@ -175,6 +178,9 @@ export default {
     swiper() {
       return this.$refs.mySwiper.$swiper
     }
+  },
+  created() {
+    AOS.init()
   },
   mounted() {
     console.log('Current Swiper instance object', this.swiper)
