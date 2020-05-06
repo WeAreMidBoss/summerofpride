@@ -153,7 +153,7 @@
   }
   .modal-name {
     display: block;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Knewave', cursive;
     font-size: 28px;
     text-align: center;
   }

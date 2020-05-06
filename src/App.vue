@@ -5,7 +5,7 @@
 
       <div class="jumbotron" data-aos="zoom-in">
         <img class="d-none d-sm-block" src="./assets/img/SummerOfPride2020_Banner.jpg" alt="Summer of Pride" />
-        <img class="d-sm-none" src="./assets/img/SummerOfPride2020_Mobile.png" alt="Summer of Pride" />
+        <img class="d-sm-none" src="./assets/img/SummerOfPride2020_Mobile.jpg" alt="Summer of Pride" />
       </div>
 
       <div id="main-content">

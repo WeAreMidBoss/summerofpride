@@ -619,6 +619,15 @@ const streamers = [
       social: "https://twitter.com/sammy_m_jay",
       bio: "I've been a streamer now for a year and a half, I started streaming to improve my mental health and it's just grown from there, now getting into bodyart and painting. I'm a horror enthusiast who mainly plays Dead by daylight ",
       img:require('./img/streamers/Sammymjay.jpg')
-    }
+    },
+    {
+        id: "70",
+        name: "Captain Valken David",
+        twitch: "https://www.twitch.tv/capnvalkendavid",
+        personal: "https://streamlabs.com/capnvalkendavid",
+        social: "https://twitter.com/CapnValkenDavid",
+        bio: "Heyyo, I'm the Captain! I'm a queer trans drag artist who roleplays as a pirate 90% of the time! I create a safe space for other queer folk and weirdos. We do casual RPGs, Competitive FPS, and speedruns!",
+        img:require('./img/streamers/CaptainValken.jpg')
+      }
   ]
   export default streamers
