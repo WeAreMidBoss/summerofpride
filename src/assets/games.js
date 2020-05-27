@@ -42,7 +42,7 @@ const games =
   },
   {
     id: "5",
-    name: "All Walls Must Fall - A Tech-Noir Tactics Game",
+    name: "All Walls Must Fall",
     desc: "All Walls Must Fall is a Tech-Noir Tactics game set in Berlin 2089, where the Cold War never ended.",
     warning: "",
     url: "https://store.steampowered.com/app/628290/All_Walls_Must_Fall__A_TechNoir_Tactics_Game/",
@@ -262,7 +262,7 @@ const games =
   },
   {
     id: "27",
-    name: "Herald: An Interactive Period Drama - Book I & II",
+    name: "Herald: An Interactive Period Drama",
     desc: "Herald is a choice-driven adventure set on colonial tides. Board the HLV Herald and uncover its dark secrets in an intriguing tale about tyranny and servitude.",
     warning: "",
     url: "https://store.steampowered.com/app/380810/Herald_An_Interactive_Period_Drama__Book_I__II/",

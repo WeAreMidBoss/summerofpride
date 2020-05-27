@@ -37,6 +37,7 @@
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
                       <img :src="streamer.img" />
+                      <span class="streamer-name">{{ streamer.name }}</span>
                     </swiper-slide>
                     <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
                 </swiper>
@@ -50,6 +51,7 @@
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <img :src="game.img" />
+                      <span class="game-name">{{ game.name }}</span>
                     </swiper-slide>        
                     <div class="games-pagination swiper-pagination" slot="pagination"></div>  
                 </swiper>
