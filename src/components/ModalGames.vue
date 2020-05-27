@@ -26,8 +26,13 @@
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>
+              <span class="modal-warning" v-if="game.warning">CONTENT WARNING: <br /> {{ game.warning }}</span>
               <span class="modal-description-text">{{ game.desc }}</span>
-              <span class="modal-description-social text-center"><a :href="game.url" target="_blank"><img class="modal-social" src="../assets/img/Website.svg" /></a></span>
+              <span class="modal-description-social text-center">
+              <a :href="game.url" target="_blank" v-if="game.url"><img class="modal-social" src="../assets/img/Website.svg" /></a>
+              <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Website.svg" /></a>
+              <a :href="game.url3" target="_blank" v-if="game.url3"><img class="modal-social" src="../assets/img/Website.svg" /></a>
+              </span>
             </div>
           </div>
         </slot>
@@ -153,6 +158,17 @@
     font-family: 'Knewave', cursive;
     font-size: 28px;
     text-align: center;
+  }
+   .modal-warning {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:#ea276d;
+    background-color: #fff;
+    font-weight: bold;
+    margin-top:15px;
+    padding: 10px;
   }
   .modal-description-text {
     display: block;
