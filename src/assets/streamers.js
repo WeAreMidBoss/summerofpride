@@ -370,7 +370,7 @@ const streamers = [
     },
     {
       id: "42",
-      name: "Brian Gray (urbanbohemian)",
+      name: "urbanbohemian",
       twitch: "https://www.twitch.tv/urbanbohemian",
       personal: "https://urbanbohemian.com",
       social: "https://www.twitter.com/urbanbohemian",
