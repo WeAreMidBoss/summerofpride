@@ -283,12 +283,19 @@ footer .social-links a:last-child img {
     color:#ea276d;
 }
 
+.schedule-day {
+  font-size:45px;
+  font-family: 'Bebas Neue', cursive;
+  color:#ea276d;
+}
+
 .schedule-table th, td {
   padding: 20px;
 }
 
 .schedule-hours{
   white-space: nowrap;
+  font-weight: normal;
 }
 
 .schedule-games{

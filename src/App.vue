@@ -65,7 +65,7 @@
               <div class="schedule" data-aos="slide-right">
                   <swiper class="swiper">
                     <swiper-slide v-for="(schedule, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
-                      <span class="">Day: {{ schedule.day }}</span>
+                      <span class="schedule-day">Day: {{ schedule.day }}</span>
                       <table class="schedule-table">
                         <tbody>
                           <tr v-for="(block, index) in schedule.blocks" :class="isTime(block.b_start) ? 'active':''" :key="index">
@@ -78,10 +78,10 @@
                         </tbody>
                       </table>
                     </swiper-slide>        
-                    <div class="" slot="pagination"></div>  
+                    <div class="schedule-pagination swiper-pagination" slot="pagination"></div>  
                 </swiper>
-                <div class="" slot="button-prev"></div>
-                <div class="" slot="button-next"></div>
+                <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
+                <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
                 </div>
 
             </div>
@@ -187,6 +187,32 @@ export default {
         },
         pagination: {
           el: '.games-pagination',
+          dynamicBullets: true,
+          clickable: true
+        },
+        breakpoints: {
+          575: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }
+      }
+      swiperOptionsSchedule: {
+        loop: true,
+        navigation: {
+          nextEl: '.schedule-button-next',
+          prevEl: '.schedule-button-prev'
+        },
+        pagination: {
+          el: '.schedule-pagination',
           dynamicBullets: true,
           clickable: true
         },
