@@ -64,7 +64,7 @@ const streamers = [
     },
     {
       id: "8",
-      name: "Gabethegamer2011",
+      name: "readyplayergabe",
       twitch: "https://www.twitch.tv/gabethegamer2011",
       personal: "",
       social: "https://twitter.com/Gabethegamer202 ",

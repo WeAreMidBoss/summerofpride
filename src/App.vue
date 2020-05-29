@@ -62,26 +62,54 @@
 
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
-              <div class="schedule" data-aos="slide-right">
-                  <swiper class="swiper">
-                    <swiper-slide v-for="(schedule, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
-                      <span class="">Day: {{ schedule.day }}</span>
-                      <table class="schedule-table">
+              <div class="schedule" data-aos="slide-up">
+                  <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
+                    <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                      <span class="">Day: {{ block.day }}</span>
+                      <table>
                         <tbody>
-                          <tr v-for="(block, index) in schedule.blocks" :class="isTime(block.b_start) ? 'active':''" :key="index">
-                            <th class="schedule-hours" scope="row">{{ block.b_time }}</th>
-                            <td><img :src="profiles[block.b_name].img" class="schedule-img schedule-profile img-fluid" /></td>
-                            <td><img :src="games[block.b_game1].img" class="schedule-img schedule-games img-fluid" />
-                            <img :src="games[block.b_game2].img" v-if="block.b_game2" class="schedule-img schedule-games img-fluid" /></td>
+                          <tr :class="isTime(block.b1_start) ? 'active':''">
+                            <th class="schedule-hours" scope="row">{{ block.b1_time }}</th>
+                            <td><img :src="profiles[getIdByName(block.b1_name)].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[getGameIdByName(block.b1_game1)].img" class="schedule-img schedule-game img-fluid" />
+                            <span v-if="block.b1_game2 !== ''"><img :src="games[getGameIdByName(block.b1_game2)].img" class="schedule-img schedule-game img-fluid" /></span></td>
+                            <td><div class="">Watch now!</div></td>
+                          </tr>
+                          <tr :class="isTime(block.b2_start) ? 'active':''">
+                            <th class="schedule-hours" scope="row">{{ block.b2_time }}</th>
+                            <td><img :src="profiles[getIdByName(block.b2_name)].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[getGameIdByName(block.b2_game1)].img" class="schedule-img schedule-game img-fluid" />
+                            <span v-if="block.b2_game2 !== ''"><img :src="games[getGameIdByName(block.b2_game2)].img" class="schedule-img schedule-game img-fluid" /></span></td>
+                            <td><div class="">Watch now!</div></td>
+                          </tr>
+                          <tr :class="isTime(block.b3_start) ? 'active':''">
+                            <th class="schedule-hours" scope="row">{{ block.b3_time }}</th>
+                            <td><img :src="profiles[getIdByName(block.b3_name)].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[getGameIdByName(block.b3_game1)].img" class="schedule-img schedule-game img-fluid" />
+                            <span v-if="block.b3_game2 !== ''"><img :src="games[getGameIdByName(block.b3_game2)].img" class="schedule-img schedule-game img-fluid" /></span></td>
+                            <td><div class="">Watch now!</div></td>
+                          </tr>
+                          <tr :class="isTime(block.b4_start) ? 'active':''">
+                            <th class="schedule-hours" scope="row">{{ block.b4_time }}</th>
+                            <td><img :src="profiles[getIdByName(block.b4_name)].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[getGameIdByName(block.b4_game1)].img" class="schedule-img schedule-game img-fluid" />
+                            <span v-if="block.b4_game2 !== ''"><img :src="games[getGameIdByName(block.b4_game2)].img" class="schedule-img schedule-game img-fluid" /></span></td>
+                            <td><div class="">Watch now!</div></td>
+                          </tr>
+                          <tr :class="isTime(block.b5_start) ? 'active':''">
+                            <th class="schedule-hours" scope="row">{{ block.b5_time }}</th>
+                            <td><img :src="profiles[getIdByName(block.b5_name)].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[getGameIdByName(block.b5_game1)].img" class="schedule-img schedule-game img-fluid" />
+                            <span v-if="block.b5_game2 !== ''"><img :src="games[getGameIdByName(block.b5_game2)].img" class="schedule-img schedule-game img-fluid" /></span></td>
                             <td><div class="">Watch now!</div></td>
                           </tr>
                         </tbody>
                       </table>
                     </swiper-slide>        
-                    <div class="" slot="pagination"></div>  
+                    <div class="schedule-pagination swiper-pagination" slot="pagination"></div>  
                 </swiper>
-                <div class="" slot="button-prev"></div>
-                <div class="" slot="button-next"></div>
+                <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
+                <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
                 </div>
 
             </div>
@@ -203,6 +231,18 @@ export default {
             slidesPerView: 3,
             spaceBetween: 30,
           },
+        },
+      },
+      swiperOptionsSchedule: {
+        loop: true,
+        navigation: {
+          nextEl: '.schedule-button-next',
+          prevEl: '.schedule-button-prev'
+        },
+        pagination: {
+          el: '.schedule-pagination',
+          dynamicBullets: true,
+          clickable: true
         }
       }
     }
@@ -289,6 +329,24 @@ export default {
         return false;
       }
     },
+    getIdByName(n) {
+      let obj = this.profiles.findIndex(obj => obj.name == n);
+      console.log("Profile",obj);
+      if (obj !== -1) {
+        return obj;
+      } else {
+        return 0;
+      }
+    },
+    getGameIdByName(n) {
+      let obj = this.games.findIndex(obj => obj.id == n);
+      console.log("Game",obj);
+      if (obj !== -1) {
+        return obj;
+      } else {
+        return 0;
+      }
+    }
   }
 }
 </script>
