@@ -277,6 +277,33 @@ footer .social-links a:last-child img {
   margin-bottom:40px;
 }
 
+.schedule-table {
+    font-family: 'Bebas Neue', cursive;
+    font-size:30px;
+    color:#ea276d;
+}
+
+.schedule-table th, td {
+  padding: 20px;
+}
+
+.schedule-hours{
+  white-space: nowrap;
+}
+
+.schedule-games{
+  width: 80%!important;
+}
+
+.schedule-profile{
+
+}
+.schedule-table tr:not(:last-child) {
+  border-bottom: 5px solid #ea276d;
+}
+
+.schedule-table tr:nth-child(even) {background-color: #feeef0;}
+
 @media (min-width: 576px) {
   .jumbotron {
     margin-top: -70px;
@@ -465,8 +492,6 @@ a.gamelink:visited {text-decoration: none; color: #93165b;}
 a.gamelink:hover {text-decoration: none; color: #a72164;}
 a.gamelink:active {text-decoration: none; color: #a72164;}
 
-td:nth-child(even){background-color: #fcedeb;}
-
 a.showSingle {
   cursor: pointer;
   white-space: nowrap;
@@ -510,7 +535,7 @@ a.showSingle {
     }
 
     #horario tr th:nth-child(even), #horario tr td:nth-child(even) {background: #caa9d0}
-
+   
     #horario .name{
         display:block;
         font-weight:bold;

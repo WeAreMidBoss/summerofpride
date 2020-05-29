@@ -66,13 +66,13 @@
                   <swiper class="swiper">
                     <swiper-slide v-for="(schedule, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <span class="">Day: {{ schedule.day }}</span>
-                      <table class="table">
+                      <table class="schedule-table">
                         <tbody>
                           <tr v-for="(block, index) in schedule.blocks" :class="isTime(block.b_start) ? 'active':''" :key="index">
-                            <th scope="row">{{ block.b_time }}</th>
-                            <td><img :src="profiles[block.b_name].img" class="schedule-img img-fluid" /></td>
-                            <td><img :src="games[block.b_game1].img" class="schedule-img img-fluid" />
-                            <img :src="games[block.b_game2].img" v-if="block.b_game2" class="schedule-img img-fluid" /></td>
+                            <th class="schedule-hours" scope="row">{{ block.b_time }}</th>
+                            <td><img :src="profiles[block.b_name].img" class="schedule-img schedule-profile img-fluid" /></td>
+                            <td><img :src="games[block.b_game1].img" class="schedule-img schedule-games img-fluid" />
+                            <img :src="games[block.b_game2].img" v-if="block.b_game2" class="schedule-img schedule-games img-fluid" /></td>
                             <td><div class="">Watch now!</div></td>
                           </tr>
                         </tbody>
