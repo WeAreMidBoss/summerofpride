@@ -204,7 +204,7 @@ export default {
             spaceBetween: 30,
           },
         }
-      }
+      },
       swiperOptionsSchedule: {
         loop: true,
         navigation: {
@@ -215,22 +215,8 @@ export default {
           el: '.schedule-pagination',
           dynamicBullets: true,
           clickable: true
-        },
-        breakpoints: {
-          575: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
         }
-      }
+         }
     }
   },
   computed: {
