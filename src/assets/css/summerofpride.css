@@ -303,6 +303,11 @@ footer .social-links a:last-child img {
   border-bottom: 5px solid #ea276d;
 }
 
+.schedule-twitch-logo {
+  width: 75px!important;
+  height: auto!important;
+}
+
 .schedule-table tr:nth-child(even) {background-color: #feeef0;}
 
 @media (min-width: 576px) {
@@ -459,6 +464,7 @@ footer .social-links a:last-child img {
   .schedule .swiper-button-prev, .schedule  .swiper-button-next {
     top: 1.7%;
   }
+
 }
 
 /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
