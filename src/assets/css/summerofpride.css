@@ -278,9 +278,10 @@ footer .social-links a:last-child img {
 }
 
 .schedule-table {
-    font-family: 'Bebas Neue', cursive;
-    font-size:30px;
-    color:#ea276d;
+  width: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size:30px;
+  color:#ea276d;
 }
 
 .schedule-day {
@@ -298,12 +299,19 @@ footer .social-links a:last-child img {
   font-weight: normal;
 }
 
-.schedule-games{
-  width: 80%!important;
+.schedule-game-img{
+  display:block;
+  width: auto!important;
+  height: 180px!important;
 }
 
-.schedule-profile{
+.schedule-game-two-img{
+  margin-top:15px;
+}
 
+.schedule-profile-img{
+  width: 120px!important;
+  height: auto!important;
 }
 .schedule-table tr:not(:last-child) {
   border-bottom: 5px solid #ea276d;
@@ -365,6 +373,32 @@ footer .social-links a:last-child img {
   .swiper-button-next {
     right: -25px;
   }
+  .schedule-table tr {
+    width:100%;
+  }
+  .schedule-game-img{
+    display: block;
+    width: auto!important;
+    height: 120px!important;
+  }
+  
+  .schedule-profile-img{
+    margin: 15px 0;
+    width: 90px!important;
+    height: auto!important;
+  }
+  .schedule-table td {
+    /*padding: 0;*/
+  }
+  .schedule-table tr > th:first-child {
+    display:block;
+    display: table-cell;
+  }
+  .schedule-table td div {
+    display: block;
+    height: 100px;
+    display: table-cell;
+  }
 }
 
 @media (max-width: 575px) {
@@ -405,6 +439,33 @@ footer .social-links a:last-child img {
 
   .heading-games {
     margin-top: 1em;
+  }
+  .schedule-table tr {
+    width:100%;
+  }
+  .schedule-game-img{
+    display: block;
+    width: auto!important;
+    height: 120px!important;
+  }
+  
+  .schedule-profile-img{
+    margin: 15px 0;
+    width: 90px!important;
+    height: auto!important;
+  }
+  .schedule-table td {
+    padding: 0;
+    display:inline-block;
+  }
+  .schedule-table tr > th:first-child {
+    display:block;
+  }
+  .schedule-table td div {
+    display: block;
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
