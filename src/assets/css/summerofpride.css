@@ -308,6 +308,15 @@ footer .social-links a:last-child img {
   height: auto!important;
 }
 
+.schedule-streamer-name{
+  display: block;
+  text-align: center;
+  color:#fff;
+  background-color: #ea276d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
 .schedule-table tr:nth-child(even) {background-color: #feeef0;}
 
 @media (min-width: 576px) {

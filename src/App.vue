@@ -70,35 +70,44 @@
                         <tbody>
                           <tr :class="isTime(block.b1_start) ? 'active':''">
                             <th class="schedule-hours" scope="row">{{ block.b1_time }}</th>
-                            <td><img :src="profiles[getIdByName(block.b1_name)].img" class="schedule-profile-img" /></td>
+                            <td><img :src="profiles[getIdByName(block.b1_name)].img" class="schedule-profile-img" />
+                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1_name)].name }}</span></td>
                             <td><img :src="games[getGameIdByName(block.b1_game1)].img" class="schedule-game-img" />
-                            <span v-if="block.b1_game2"><img :src="games[getGameIdByName(block.b1_game2)].img" class="schedule-game-img schedule-game-two-img" /></span></td>
+                             <span class="schedule-streamer-name">{{ games[getIdByName(block.b1_game1)].name }}</span>
+                            <span v-if="block.b1_game2"><img :src="games[getGameIdByName(block.b1_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
+                            <span v-if="block.b1_game2" class="schedule-streamer-name">{{ games[getIdByName(block.b1_game2)].name }}</span></td>
                             <td><div class=""><a :href="profiles[getIdByName(block.b1_name)].twitch">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
                           </tr>
                           <tr :class="isTime(block.b2_start) ? 'active':''">
                             <th class="schedule-hours" scope="row">{{ block.b2_time }}</th>
-                            <td><img :src="profiles[getIdByName(block.b2_name)].img" class="schedule-profile-img" /></td>
+                            <td><img :src="profiles[getIdByName(block.b2_name)].img" class="schedule-profile-img" />
+                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2_name)].name }}</span></td>
                             <td><img :src="games[getGameIdByName(block.b2_game1)].img" class="schedule-game-img" />
-                            <span v-if="block.b2_game2"><img :src="games[getGameIdByName(block.b2_game2)].img" class="schedule-game-img schedule-game-two-img" /></span></td>
+                            <span class="schedule-streamer-name">{{ games[getIdByName(block.b2_game1)].name }}</span>
+                            <span v-if="block.b2_game2"><img :src="games[getGameIdByName(block.b2_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
+                            <span v-if="block.b2_game2" class="schedule-streamer-name">{{ games[getIdByName(block.b2_game2)].name }}</span></td>
                             <td><div class=""><a :href="profiles[getIdByName(block.b2_name)].twitch">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
                           </tr>
                           <tr :class="isTime(block.b3_start) ? 'active':''">
                             <th class="schedule-hours" scope="row">{{ block.b3_time }}</th>
-                            <td><img :src="profiles[getIdByName(block.b3_name)].img" class="schedule-profile-img" /></td>
+                            <td><img :src="profiles[getIdByName(block.b3_name)].img" class="schedule-profile-img" />
+                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3_name)].name }}</span></td>
                             <td><img :src="games[getGameIdByName(block.b3_game1)].img" class="schedule-game-img" />
                             <span v-if="block.b3_game2"><img :src="games[getGameIdByName(block.b3_game2)].img" class="schedule-game-img schedule-game-two-img" /></span></td>
                             <td><div class=""><a :href="profiles[getIdByName(block.b3_name)].twitch">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
                           </tr>
                           <tr :class="isTime(block.b4_start) ? 'active':''">
                             <th class="schedule-hours" scope="row">{{ block.b4_time }}</th>
-                            <td><img :src="profiles[getIdByName(block.b4_name)].img" class="schedule-profile-img" /></td>
+                            <td><img :src="profiles[getIdByName(block.b4_name)].img" class="schedule-profile-img" />
+                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4_name)].name }}</span></td>
                             <td><img :src="games[getGameIdByName(block.b4_game1)].img" class="schedule-game-img" />
                             <span v-if="block.b4_game2"><img :src="games[getGameIdByName(block.b4_game2)].img" class="schedule-game-img schedule-game-two-img" /></span></td>
                             <td><div class=""><a :href="profiles[getIdByName(block.b4_name)].twitch">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
                           </tr>
                           <tr :class="isTime(block.b5_start) ? 'active':''">
                             <th class="schedule-hours" scope="row">{{ block.b5_time }}</th>
-                            <td><img :src="profiles[getIdByName(block.b5_name)].img" class="schedule-profile-img" /></td>
+                            <td><img :src="profiles[getIdByName(block.b5_name)].img" class="schedule-profile-img" />
+                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5_name)].name }}</span></td>
                             <td><img :src="games[getGameIdByName(block.b5_game1)].img" class="schedule-game-img" />
                             <span v-if="block.b5_game2"><img :src="games[getGameIdByName(block.b5_game2)].img" class="schedule-game-img schedule-game-two-img" /></span></td>
                             <td><div class=""><a :href="profiles[getIdByName(block.b5_name)].twitch">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
