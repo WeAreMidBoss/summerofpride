@@ -66,6 +66,17 @@
                   <swiper class="swiper">
                     <swiper-slide v-for="(schedule, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <span class="">Day: {{ schedule.day }}</span>
+                      <table class="table">
+                        <tbody>
+                          <tr v-for="(block, index) in schedule.blocks" :class="isTime(block.b_start) ? 'active':''" :key="index">
+                            <th scope="row">{{ block.b_time }}</th>
+                            <td><img :src="profiles[block.b_name].img" class="schedule-img img-fluid" /></td>
+                            <td><img :src="games[block.b_game1].img" class="schedule-img img-fluid" />
+                            <img :src="games[block.b_game2].img" v-if="block.b_game2" class="schedule-img img-fluid" /></td>
+                            <td><div class="">Watch now!</div></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </swiper-slide>        
                     <div class="" slot="pagination"></div>  
                 </swiper>
@@ -267,7 +278,17 @@ export default {
     },
     enableScrolling(){
       window.onscroll=function(){};
-    }
+    },
+    isTime(date1) {
+      var date2 = new Date();
+      var diference = date2.getTime() - date1.getTime();
+      console.log(diference);
+      if (diference < 3) {
+        return true;
+      } else {
+        return false;
+      }
+    },
   }
 }
 </script>
