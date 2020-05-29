@@ -229,23 +229,9 @@ footer .social-links a:last-child img {
   line-height: 100%;
   color: #fff;
 }
-/*.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  margin-right: 10px !important;
-  display:inline-block;
-  border-radius: 100%;
-  border: solid #e195bf 1px;
-  background: #4b1e57;
-  opacity: 1
+.schedule .swiper-button-prev, .schedule  .swiper-button-next {
+  top: 3.3%;
 }
-.swiper-pagination-bullet:last-child {
-  margin-right: 0;
-}
-.swiper-pagination-bullet-active {
-  background: #e195bf;
-  opacity: 1
-}*/
 
 .img-works {
   margin-top: 30px;
@@ -399,6 +385,9 @@ footer .social-links a:last-child img {
     height: 100px;
     display: table-cell;
   }
+  .schedule .swiper-button-prev, .schedule  .swiper-button-next {
+    top: 3.8%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -466,6 +455,9 @@ footer .social-links a:last-child img {
     height: 100px;
     display: table-cell;
     vertical-align: middle;
+  }
+  .schedule .swiper-button-prev, .schedule  .swiper-button-next {
+    top: 1.7%;
   }
 }
 
@@ -544,7 +536,7 @@ fieldset[disabled] .btn-pink.active {
     width: 100%;
     height: 100%;
 }
-.streamers, .games {
+.streamers, .games, .schedule {
   position:relative;
 }
 .streamers img, .games img{
