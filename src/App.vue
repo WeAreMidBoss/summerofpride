@@ -58,6 +58,21 @@
                 <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="games-button-next swiper-button-next" slot="button-next"></div>
                 </div>
+
+
+              <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
+
+              <div class="schedule" data-aos="slide-right">
+                  <swiper class="swiper">
+                    <swiper-slide v-for="(schedule, index) in schedules" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                      <span class="">Day: {{ schedule.day }}</span>
+                    </swiper-slide>        
+                    <div class="" slot="pagination"></div>  
+                </swiper>
+                <div class="" slot="button-prev"></div>
+                <div class="" slot="button-next"></div>
+                </div>
+
             </div>
           </div>
         </div>
@@ -80,6 +95,7 @@
 <script>
 import streamers from './assets/streamers.js'
 import gameList from './assets/games.js'
+import scheduleTable from './assets/schedule.js'
 
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
@@ -112,6 +128,8 @@ export default {
       animated: false,
       showStreamerModal: false,
       isModalGameVisible: false,
+      schedule: [],
+      schedules: scheduleTable,
       profile: [],
       profiles: streamers,
       game: [],
