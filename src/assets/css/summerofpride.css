@@ -292,9 +292,11 @@ footer .social-links a:last-child img {
   border-color: #ea276d !important;
   border-width: 1px !important;
   border-style: solid !important;
+  margin: 0 auto;
 }
 
 .schedule-game-two-img{
+  margin: 0 auto;
   margin-top:15px;
   border-color: #ea276d !important;
   border-width: 1px !important;
@@ -315,6 +317,11 @@ footer .social-links a:last-child img {
 .schedule-twitch-logo {
   width: 75px!important;
   height: auto!important;
+  margin-bottom: 20px;
+  
+}
+.schedule-watch-now{
+margin-right: 50px;
 }
 
 .schedule-streamer-name,.schedule-game-name{
@@ -327,13 +334,13 @@ footer .social-links a:last-child img {
   margin-top:5px;
 }
 .schedule-game-name{
-  max-width: 78.5%!important;
+  max-width: 83.5%!important;
   margin: 0 auto;
   margin-top: 5px;
 }
 
 .schedule-streamer-name{
-  max-width: 75.5%!important;
+  max-width: 81.5%!important;
   position: relative;
   margin: 0 auto;
   margin-top: 5px;
@@ -495,6 +502,8 @@ footer .social-links a:last-child img {
   .schedule .swiper-button-prev, .schedule  .swiper-button-next {
     top: 1.7%;
   }
+
+
 
 }
 
