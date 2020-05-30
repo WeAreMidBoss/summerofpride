@@ -328,6 +328,8 @@ footer .social-links a:last-child img {
 }
 .schedule-game-name{
   max-width: 78.5%!important;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
 .schedule-streamer-name{
