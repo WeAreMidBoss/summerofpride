@@ -289,15 +289,24 @@ footer .social-links a:last-child img {
   display:block;
   width: auto!important;
   height: 180px!important;
+  border-color: #ea276d !important;
+  border-width: 1px !important;
+  border-style: solid !important;
 }
 
 .schedule-game-two-img{
   margin-top:15px;
+  border-color: #ea276d !important;
+  border-width: 1px !important;
+  border-style: solid !important;
 }
 
 .schedule-profile-img{
   width: 120px!important;
   height: auto!important;
+  border-color: #ea276d !important;
+  border-width: 1px !important;
+  border-style: solid !important;
 }
 .schedule-table tr:not(:last-child) {
   border-bottom: 5px solid #ea276d;
@@ -315,9 +324,17 @@ footer .social-links a:last-child img {
   background-color: #ea276d;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  margin-top:5px;
 }
 .schedule-game-name{
   max-width: 78.5%!important;
+}
+
+.schedule-streamer-name{
+  max-width: 75.5%!important;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
 .schedule-table tr:nth-child(even) {background-color: #feeef0;}
