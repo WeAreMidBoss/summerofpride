@@ -62,6 +62,8 @@
 
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
+              <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
+
               <div class="schedule" data-aos="slide-up">
                   <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
                     <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
