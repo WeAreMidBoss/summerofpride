@@ -26,11 +26,11 @@
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>
-              <span class="modal-warning" v-if="game.warning">CONTENT WARNING: <br /> {{ game.warning }}</span>
               <span class="modal-description-text">{{ game.desc }}</span>
+              <span class="modal-warning" v-if="game.warning">CONTENT DESCRIPTOR: <br /> {{ game.warning }}</span>
               <span class="modal-description-social text-center">
-              <a :href="game.url" target="_blank" v-if="game.url"><img class="modal-social" src="../assets/img/Website.svg" /></a>
-              <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Website.svg" /></a>
+              <a :href="game.url" target="_blank" v-if="game.url"><img class="modal-social" src="../assets/img/Store.svg" /></a>
+              <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Social.svg" /></a>
               <a :href="game.url3" target="_blank" v-if="game.url3"><img class="modal-social" src="../assets/img/Website.svg" /></a>
               </span>
             </div>
@@ -162,7 +162,7 @@
    .modal-warning {
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     color:#ea276d;
     background-color: #fff;
