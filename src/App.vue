@@ -13,8 +13,19 @@
           <div class="row">
             <div class="col-sm-12">
               <h1 class="text-center" data-aos="slide-up">Get Ready for the Summer of Pride!</h1>
-              <p data-aos="slide-up">The Summer of Pride is an upcoming series of LGBTQIA+ (queer) streamers playing queer games, all throughout the month of June. These fun gaymers will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+              <p data-aos="slide-up">The Summer of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of June. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
+              <p data-aos="slide-up">This year, we’re also supporting three wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a>, and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
+              
+              <div class="charities">
+              <a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a> <a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a> <a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a>
+              </div>
+              <hr>
+              <div class="brands">
+              <h3>Supportive Organizations</h3>
+              <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> <a href="#" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> <a href="https://igda.org/" target="_target"><img class="" src="./assets/img/igda.png" alt="IGDA" /></a>
+              </div>
+              <hr>
               <!-- Begin MailChimp Signup Form -->
               <div class="col-sm-12 mail-list-container" data-aos="zoom-out">
                 <div id="mc_embed_signup">
@@ -30,7 +41,7 @@
                 </div>
               </div>
               <!--End mc_embed_signup-->
-
+              <hr>
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
               
               <div class="streamers" data-aos="slide-left">
@@ -44,7 +55,7 @@
                 <div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
               </div>
-
+              
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
               <div class="games" data-aos="slide-right">
@@ -59,7 +70,7 @@
                 <div class="games-button-next swiper-button-next" slot="button-next"></div>
                 </div>
 
-
+              
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>

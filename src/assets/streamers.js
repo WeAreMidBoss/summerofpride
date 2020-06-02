@@ -5,7 +5,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/matty_qu",
     personal: "",
     social: "https://twitter.com/home",
-    bio: "Hi! Name is Matty_qu, I'm a queer streamer here to scream a smile on everyone's faces.  I enjoy a variety of games, but I play mostly asymmetrical horror and sims.  Also, my favorite color is mint. ",
+    bio: "Hi! Name is Matty_qu, I'm a queer streamer here to scream a smile on everyone's faces.  I enjoy a variety of games, but I play mostly asymmetrical horror and sims.  Also, my favorite color is mint.",
     img:require('./img/streamers/Matty_Qu.jpg')
   },
   {
@@ -14,7 +14,7 @@ const streamers = [
     twitch: "https://twitch.tv/quinnntastic",
     personal: "https://tastic.me/",
     social: "https://twitter.com/quinnntastic_",
-    bio: "I am a queer nonbinary disabled/chronically ill Latinx TTRPG creator, writer, and streamer! I advocate for stronger representation of marginalized groups across media, especially in gaming.  ",
+    bio: "I am a queer nonbinary disabled/chronically ill Latinx TTRPG creator, writer, and streamer! I advocate for stronger representation of marginalized groups across media, especially in gaming.",
     img:require('./img/streamers/quinnntastic.jpg')
   },
   {
@@ -23,7 +23,7 @@ const streamers = [
     twitch: "https://twitch.tv/dagonmar",
     personal: "http://www.dagonmar.tv",
     social: "https://twitter.com/dagonmartv",
-    bio: "Dagonmar is a lewd streamer with a focus on story-heavy games. From lewd and outrgeous comedy, to cute puppy dogs, Dagonmar and his community has something for everyone. ",
+    bio: "Dagonmar is a lewd streamer with a focus on story-heavy games. From lewd and outrgeous comedy, to cute puppy dogs, Dagonmar and his community has something for everyone.",
     img:require('./img/streamers/Dagonmar.jpg')
   },
   {
@@ -41,7 +41,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/j0hnj0hnn",
     personal: "",
     social: "https://www.twitter.com/j0hn_j0hnn",
-    bio: "I'm a 29-year-old proud, body positive gay man. I'm the Co-Founder of Rainbow Arcade, an all LGBTQIA+ Stream Team on Twitch. I love to make people laugh with my quick wit and bubbly personality. ",
+    bio: "I'm a 29-year-old proud, body positive gay man. I'm the Co-Founder of Rainbow Arcade, an all LGBTQIA+ Stream Team on Twitch. I love to make people laugh with my quick wit and bubbly personality.",
     img:require('./img/streamers/J0hnJ0hnn.jpg')
   },
   {
@@ -50,7 +50,7 @@ const streamers = [
     twitch: "https://twitch.tv/jeffbrutlag",
     personal: "https://jeffbrutlag.com",
     social: "https://twitter.com/jeffbrutlag",
-    bio: "I'm a gay streamer focused on story-driven games, horror games, and some simulation games! I'm also a team leader for the Plant Army, a team centered around chat interaction, inclusivity, and positivity. ",
+    bio: "I'm a gay streamer focused on story-driven games, horror games, and some simulation games! I'm also a team leader for the Plant Army, a team centered around chat interaction, inclusivity, and positivity.",
     img:require('./img/streamers/JeffBrutlag.jpg')
   },
   {
@@ -59,7 +59,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/veritasunae",
     personal: "",
     social: "https://www.twitter.com/veritasunae",
-    bio: "I'm a pansexual, agender streamer from Australia, who loves both playing and working on visual novels in between my doctoral work at university. I also really enjoy platformers, puzzle games and Nintendo. ",
+    bio: "I'm a pansexual, agender streamer from Australia, who loves both playing and working on visual novels in between my doctoral work at university. I also really enjoy platformers, puzzle games and Nintendo.",
     img:require('./img/streamers/veritasunae.jpg')
   },
   {
@@ -86,7 +86,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/sgak",
     personal: "https://sgak19.wixsite.com/stellan",
     social: "https://twitter.com/sgak",
-    bio: "I'm that weird-looking nerdy gay pinko commie gamer who is also cuddly and nice (Stellan from Sweden). ",
+    bio: "I'm that weird-looking nerdy gay pinko commie gamer who is also cuddly and nice (Stellan from Sweden).",
     img:require('./img/streamers/SGAK.jpg')
   },
   {
@@ -167,17 +167,8 @@ const streamers = [
     twitch: "http://twitch.tv/dragtrashly",
     personal: "https://dragtrashly.com/",
     social: "https://twitter.com/dragtrashly",
-    bio: "I'm a drag queen gamer, streamer, performer, comedian, model, celebrity, or whichever of my many delusions you prefer. I include gaming inspirations in my looks and play a variety of games on stream. ",
+    bio: "I'm a drag queen gamer, streamer, performer, comedian, model, celebrity, or whichever of my many delusions you prefer. I include gaming inspirations in my looks and play a variety of games on stream.",
     img:require('./img/streamers/dragtrashly.jpg')
-  },
-  {
-    id: "20",
-    name: "MeteorMatt",
-    twitch: "https://www.twitch.tv/meteormatt",
-    personal: "",
-    social: "https://www.twitter.com/meteormattgames",
-    bio: "I'm a gay variety streamer living on the west coast, and I'm very lucky to have a very supportive community. I also love fundraising for LGBTQIA+ charities, including The Trevor Project and Trans Lifeline.",
-    img:require('./img/streamers/MeteorMatt.jpg')
   },
   {
     id: "21",
@@ -200,7 +191,7 @@ const streamers = [
   {
     id: "23",
     name: "ProjectRuby",
-    twitch: " https://www.twitch.tv/projectruby",
+    twitch: "https://www.twitch.tv/projectruby",
     personal: "",
     social: "https://www.twitter.com/projectruby",
     bio: "I'm a variety queer streamer from Portugal. I host a weekly talk show, play video games and sing. I strive to build an inclusive community where people can be themselves.",
@@ -221,7 +212,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/QueenNickiMirage",
     personal: "",
     social: "https://www.twitter.com/NickiMirageLIVE",
-    bio: "Nicki Mirage is a Florida-based drag queen, cosplayer, PhD student, and Twitch Affiliate! They're known in their local scene as \"The Five Dollar Fornicator of Drag\" and subscribers know why! ",
+    bio: "Nicki Mirage is a Florida-based drag queen, cosplayer, PhD student, and Twitch Affiliate! They're known in their local scene as \"The Five Dollar Fornicator of Drag\" and subscribers know why!",
     img:require('./img/streamers/QueenNickiMirage.jpg')
   },
   {
@@ -244,7 +235,7 @@ const streamers = [
   },
   {
     id: "28",
-    name: "leamorgana",
+    name: "LeaMorgana",
     twitch: "http://twitch.tv/leamorgana",
     personal: "",
     social: "http://twitter.com/leamorganna",
@@ -257,7 +248,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/donatarte",
     personal: "https://www.donatarte.com",
     social: "https://www.instagram.com/Dona_Tarte",
-    bio: "Hii! My name is Dona! I am a drag queen, twitch streamer and baker. Every week I stream drag makeup, gaming and host my drag baking show, Dona Bakes. ",
+    bio: "Hii! My name is Dona! I am a drag queen, twitch streamer and baker. Every week I stream drag makeup, gaming and host my drag baking show, Dona Bakes.",
     img:require('./img/streamers/DonaTarte.jpg')
   },
   {
@@ -266,7 +257,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/joy_stique",
     personal: "",
     social: "https://www.twitter.com/joystique",
-    bio: "I am Twitch's resident drag monarch because I am both a King and a Queen! I play a wide variety of games and love to have fun/chill!  ",
+    bio: "I am Twitch's resident drag monarch because I am both a King and a Queen! I play a wide variety of games and love to have fun/chill!",
     img:require('./img/streamers/JoyStique.jpg')
   },
   {
@@ -284,14 +275,14 @@ const streamers = [
     twitch: "http://www.twitch.tv/Granny",
     personal: "",
     social: "https://twitter.com/DEARGRANNY",
-    bio: "I stream from a Hobbit Home using my typewriter and camcorder! I enjoy blessing the World Wide Web and making me Grandkids laugh. ",
+    bio: "I stream from a Hobbit Home using my typewriter and camcorder! I enjoy blessing the World Wide Web and making me Grandkids laugh.",
     img:require('./img/streamers/Granny.jpg')
   },
   {
     id: "33",
     name: "Cash Monet",
     twitch: "https://www.twitch.tv/cashmonetdrag",
-    personal: " https://www.instagram.com/cashmonetdrag",
+    personal: "https://www.instagram.com/cashmonetdrag",
     social: "https://www.twitter.com/imcashmonet",
     bio: "San Francisco Drag Performer. Had a nerd monthly show called Pastel Gore. Twitch Streamer and gamer!",
     img:require('./img/streamers/CashMonet.jpg')
@@ -473,7 +464,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/acorntreeinc",
     personal: "",
     social: "https://twitter.com/AcornTwee",
-    bio: "I love to encourage growth and spread love and positivity. I'm an illustrator that plays a variety of games, but lately a lot of builders like Cities: Skylines or The Sims. I also love adventures, puzzles, and FPS. ",
+    bio: "I love to encourage growth and spread love and positivity. I'm an illustrator that plays a variety of games, but lately a lot of builders like Cities: Skylines or The Sims. I also love adventures, puzzles, and FPS.",
     img:require('./img/streamers/acorntreeinc.jpg')
   },
   {
@@ -491,7 +482,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/mermaidqueenjude",
     personal: "https://www.mermaidqueenjude.com",
     social: "https://www.twitter.com/merqueenjude",
-    bio: "I am a content creator and storyteller who prides herself in having a compassionate and empathetic community. I have dedicated my career to changing the landscape of who is allowed to be an entertainer. ",
+    bio: "I am a content creator and storyteller who prides herself in having a compassionate and empathetic community. I have dedicated my career to changing the landscape of who is allowed to be an entertainer.",
     img:require('./img/streamers/JudeValentin.jpg')
   },
   {
@@ -500,7 +491,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/player_michaelous",
     personal: "",
     social: "https://twitter.com/Play_Michaelous",
-    bio: "I stream part-time while working full time in logistics as an import agent. I found the experience to be quite lovely to be able to communicate with chat and meet people throughout this experience. ",
+    bio: "I stream part-time while working full time in logistics as an import agent. I found the experience to be quite lovely to be able to communicate with chat and meet people throughout this experience.",
     img:require('./img/streamers/Player_Michaelous.jpg')
   },
   {
@@ -509,7 +500,7 @@ const streamers = [
     twitch: "https://twitch.tv/minntycream",
     personal: "",
     social: "https://twitter.com/minntycream",
-    bio: "Hey, I'm a bisexual 24yo from Spain. I'm a very nice and calm person that enjoys meeting new people and make new friends. I love playing videogames and I'm a LGBT+ and feminism activist in my country. ",
+    bio: "Hey, I'm a bisexual 24yo from Spain. I'm a very nice and calm person that enjoys meeting new people and make new friends. I love playing videogames and I'm a LGBT+ and feminism activist in my country.",
     img:require('./img/streamers/Minnty.jpg')
   },
   {
@@ -545,7 +536,7 @@ const streamers = [
     twitch: "https://twitch.tv/ripleyviolet",
     personal: "https://www.ripleyviolet.com",
     social: "https://www.twitter.com/RipleyStorm",
-    bio: "I'm a fulltime Variety streamer and Intersex/Transgender Furry artist. I focus on Fundraising, community support, 8- & 16-bit retrogames, and am a voice actor. ",
+    bio: "I'm a fulltime Variety streamer and Intersex/Transgender Furry artist. I focus on Fundraising, community support, 8- & 16-bit retrogames, and am a voice actor.",
     img:require('./img/streamers/ripleyviolet.jpg')
   },
   {
@@ -590,7 +581,7 @@ const streamers = [
     twitch: "https://www.twitch.tv/mischacrossing",
     personal: "",
     social: "https://www.twitter.com/mischacrossing",
-    bio: "Mischa streams story-driven adventure and life sim games, with a focus on cultivating a friendly community with a warm, cozy atmosphere. ",
+    bio: "Mischa streams story-driven adventure and life sim games, with a focus on cultivating a friendly community with a warm, cozy atmosphere.",
     img:require('./img/streamers/Mischa.jpg')
   },
   {
@@ -599,7 +590,7 @@ const streamers = [
     twitch: "https://www.Twitch.tv/MegaPetros",
     personal: "",
     social: "https://www.twitter.com/prasmusson",
-    bio: "36-year-old Swedish gaymer. Love pizza, gym and kanelbullar. Work in quality assurance, software testing. Play most games but prefer a controller better than mouse and keyboard. ",
+    bio: "36-year-old Swedish gaymer. Love pizza, gym and kanelbullar. Work in quality assurance, software testing. Play most games but prefer a controller better than mouse and keyboard.",
     img:require('./img/streamers/MegaPetros.jpg')
   },
   {
@@ -610,15 +601,6 @@ const streamers = [
     social: "http://twitter.com/heyanniemok",
     bio: "Annie Mok is a writer-artist, musician, game dev, & streamer. She focuses on games with character.",
     img:require('./img/streamers/heyAnnieMok.jpg')
-  },
-  {
-    id: "69",
-    name: "Sammymjay",
-    twitch: "https://www.twitch.tv/sammymjay",
-    personal: "",
-    social: "https://twitter.com/sammy_m_jay",
-    bio: "I've been a streamer now for a year and a half, I started streaming to improve my mental health and it's just grown from there, now getting into bodyart and painting. I'm a horror enthusiast who mainly plays Dead by daylight ",
-    img:require('./img/streamers/Sammymjay.jpg')
   },
   {
     id: "70",
@@ -646,6 +628,24 @@ const streamers = [
     social: "https://twitter.com/BiqtchPuddin",
     bio: "I’m Biqtch Puddin’ winner of Boulet Brothers Dragula Season 2 and producer of the DIGITAL DRAG SHØW, the first ever drag show on twitch. I used to play fighting games competitively, love being queer and super stoked to be apart of this!",
     img:require('./img/streamers/BiqtchPuddin.jpg')
+  },
+  {
+    id: "73",
+    name: "ken2pt0",
+    twitch: "http://twitch.tv/ken2pt0",
+    personal: "",
+    social: "http://twitter.com/Ken2pt0",
+    bio: "Ken2pt0 focuses on Final Fantasy, Overwatch, & Pokémon. Viewers always get a healthy dose of KEN, stands for KINDNESS (uplifting fun!), EVOLUTION (new approaches, games,), & NANCY-BOI (lots of LGBTQIA+ content).  Ken is like an Eevee, limitless potential. Hope you’ll tune in.",
+    img:require('./img/streamers/ken2pt0.jpg')
+  },
+  {
+    id: "74",
+    name: "Kynetiq",
+    twitch: "https://www.twitch.tv/Kynetiq",
+    personal: "",
+    social: "https://twitter.com/Kynetiq",
+    bio: "Hi! My name is Kyle and I am a gay RPG streamer on Twitch! I am passionate about creating loving, positive, and inclusive opportunities for all.",
+    img:require('./img/streamers/Kynetiq.jpg')
   }
 ]
   export default streamers

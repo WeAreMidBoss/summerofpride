@@ -38,7 +38,7 @@ const schedule =
     "b2_start": new Date("2020-06-02T12:00:00-07:00"),
     "b2_time": "12pm - 3pm",
     "b2_name": "SGAK",
-    "b2_game1": 56,
+    "b2_game1": 1,
     "b2_game2": null,
     "b3_start": new Date("2020-06-02T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
@@ -271,7 +271,7 @@ const schedule =
     "b3_game2": null,
     "b4_start": new Date("2020-06-10T18:00:00-07:00"),
     "b4_time": "6pm - 9pm",
-    "b4_name": "Sammymjay",
+    "b4_name": "ken2pt0",
     "b4_game1": 39,
     "b4_game2": null,
     "b5_start": new Date("2020-06-10T21:00:00-07:00"),
@@ -360,7 +360,7 @@ const schedule =
     "b4_game2": null,
     "b5_start": new Date("2020-06-13T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
-    "b5_name": "Spofie",
+    "b5_name": "Kynetiq",
     "b5_game1": 35,
     "b5_game2": null
   },
@@ -462,7 +462,7 @@ const schedule =
     "b2_game2": null,
     "b3_start": new Date("2020-06-17T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
-    "b3_name": "Sammymjay",
+    "b3_name": "TalesOfTiny",
     "b3_game1": 35,
     "b3_game2": null,
     "b4_start": new Date("2020-06-17T18:00:00-07:00"),
@@ -530,7 +530,7 @@ const schedule =
     "b5_time": "9pm - 12am",
     "b5_name": "DEERE",
     "b5_game1": 38,
-    "b5_game2": 4
+    "b5_game2": 42
   },
   {
     "day": "Saturday, June 20",
