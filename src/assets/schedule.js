@@ -65,7 +65,7 @@ const schedule =
     "b1_game2": null,
     "b2_start": new Date("2020-06-03T12:00:00-07:00"),
     "b2_time": "12pm - 3pm",
-    "b2_name": "Wii Gay",
+    "b2_name": "RedSonja",
     "b2_game1": 14,
     "b2_game2": null,
     "b3_start": new Date("2020-06-03T15:00:00-07:00"),
@@ -80,7 +80,7 @@ const schedule =
     "b4_game2": null,
     "b5_start": new Date("2020-06-03T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
-    "b5_name": "iambrandon",
+    "b5_name": "DEERE",
     "b5_game1": 22,
     "b5_game2": null
   },
