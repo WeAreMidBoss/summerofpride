@@ -94,7 +94,7 @@ const schedule =
     "b2_start": new Date("2020-06-04T12:00:00-07:00"),
     "b2_time": "12pm - 3pm",
     "b2_name": "nemesisnetwork",
-    "b2_game1": 32,
+    "b2_game1": 8,
     "b2_game2": null,
     "b3_start": new Date("2020-06-04T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
