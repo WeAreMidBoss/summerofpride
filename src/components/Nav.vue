@@ -10,8 +10,9 @@
        
 
           <div class="social-links justify-content-end">
-            <a href="https://twitter.com/MidBoss" target="_blank"><img src="../assets/img/Twitter.svg" alt="Twitter" /></a>
-            <a href="https://www.facebook.com/WeAreMidBoss" target="_blank"><img src="../assets/img/Facebook.svg" alt="Facebook" /></a>
+            <a href="https://twitter.com/MidBoss" target="_blank"><img src="../assets/img/TwitterPurple.svg" alt="Twitter" /></a>
+            <a href="https://www.facebook.com/WeAreMidBoss" target="_blank"><img src="../assets/img/FacebookPurple.svg" alt="Facebook" /></a>
+            <a href="http://midboss.com/press/sop" target="_blank"><img src="../assets/img/PressKitPurple.svg" alt="Press Kit" /></a>
           </div>
 
       </div>  
