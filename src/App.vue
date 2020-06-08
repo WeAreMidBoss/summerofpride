@@ -261,6 +261,7 @@ export default {
         },
       },
       swiperOptionsSchedule: {
+        initialSlide: 7,
         loop: true,
         navigation: {
           nextEl: '.schedule-button-next',

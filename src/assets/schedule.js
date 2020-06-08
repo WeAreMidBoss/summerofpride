@@ -193,7 +193,7 @@ const schedule =
     "b5_start": new Date("2020-06-07T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
     "b5_name": "kilcannon",
-    "b5_game1": 3,
+    "b5_game1": 9,
     "b5_game2": null
   },
   {
@@ -210,7 +210,7 @@ const schedule =
     "b2_game2": null,
     "b3_start": new Date("2020-06-08T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
-    "b3_name": "Player_Michaelous",
+    "b3_name": "Dagonmar",
     "b3_game1": 8,
     "b3_game2": null,
     "b4_start": new Date("2020-06-08T18:00:00-07:00"),
@@ -234,7 +234,7 @@ const schedule =
     "b2_start": new Date("2020-06-09T12:00:00-07:00"),
     "b2_time": "12pm - 3pm",
     "b2_name": "urbanbohemian",
-    "b2_game1": 35,
+    "b2_game1": 60,
     "b2_game2": null,
     "b3_start": new Date("2020-06-09T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
@@ -250,7 +250,7 @@ const schedule =
     "b5_time": "9pm - 12am",
     "b5_name": "HoboHaus",
     "b5_game1": 25,
-    "b5_game2": null
+    "b5_game2": 10
   },
   {
     "day": "Wednesday, June 10",
