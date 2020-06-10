@@ -176,6 +176,9 @@ import 'aos/dist/aos.css'
 
 import './assets/css/summerofpride.css'
 
+const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
+console.log("scheduledate:" + scheduledate);
+
 export default {
   name: 'App',
   components: {
@@ -261,7 +264,7 @@ export default {
         },
       },
       swiperOptionsSchedule: {
-        initialSlide: 7,
+        initialSlide: scheduledate,
         loop: true,
         navigation: {
           nextEl: '.schedule-button-next',

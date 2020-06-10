@@ -646,6 +646,15 @@ const streamers = [
     social: "https://twitter.com/Kynetiq",
     bio: "Hi! My name is Kyle and I am a gay RPG streamer on Twitch! I am passionate about creating loving, positive, and inclusive opportunities for all.",
     img:require('./img/streamers/Kynetiq.jpg')
+  },
+  {
+    id: "75",
+    name: "PotatoKingGaming",
+    twitch: "https://www.twitch.tv/PotatoKingGaming",
+    personal: "",
+    social: "https://twitter.com/potatokinggamin",
+    bio: "Soft + gentle BuzzFeed Producer by day, salty + spry Twitch Partner by night. Join the Spud army.",
+    img:require('./img/streamers/PotatoKingGaming.jpg')
   }
 ]
   export default streamers
