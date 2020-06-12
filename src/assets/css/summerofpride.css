@@ -349,8 +349,12 @@ margin-right: 50px;
 .schedule-table tr:nth-child(even) {background-color: #feeef0;}
 
 .charities img{
-  width: 350px;
-  padding:30px;
+  width: 270px;
+  padding:0 30px 0 30px;
+}
+
+.sale img{
+  width: 100%
 }
 
 .brands img{
