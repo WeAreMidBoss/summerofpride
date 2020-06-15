@@ -379,7 +379,7 @@ const schedule =
     "b3_start": new Date("2020-06-14T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",
     "b3_name": "SGAK",
-    "b3_game1": 15,
+    "b3_game1": 39,
     "b3_game2": null,
     "b4_start": new Date("2020-06-14T18:00:00-07:00"),
     "b4_time": "6pm - 9pm",
@@ -417,7 +417,7 @@ const schedule =
     "b5_start": new Date("2020-06-15T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
     "b5_name": "Player_Michaelous",
-    "b5_game1": 23,
+    "b5_game1": 33,
     "b5_game2": null
   },
   {
@@ -440,7 +440,7 @@ const schedule =
     "b4_start": new Date("2020-06-16T18:00:00-07:00"),
     "b4_time": "6pm - 9pm",
     "b4_name": "dragtrashly",
-    "b4_game1": 61,
+    "b4_game1": 52,
     "b4_game2": null,
     "b5_start": new Date("2020-06-16T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
