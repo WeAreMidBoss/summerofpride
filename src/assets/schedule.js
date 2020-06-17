@@ -440,12 +440,12 @@ const schedule =
     "b4_start": new Date("2020-06-16T18:00:00-07:00"),
     "b4_time": "6pm - 9pm",
     "b4_name": "dragtrashly",
-    "b4_game1": 52,
+    "b4_game1": 63,
     "b4_game2": null,
     "b5_start": new Date("2020-06-16T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
     "b5_name": "heyAnnieMok",
-    "b5_game1": 25,
+    "b5_game1": 15,
     "b5_game2": null
   },
   {
@@ -697,7 +697,7 @@ const schedule =
     "b5_start": new Date("2020-06-25T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
     "b5_name": "heyAnnieMok",
-    "b5_game1": 35,
+    "b5_game1": 64,
     "b5_game2": null
   },
   {
@@ -794,7 +794,7 @@ const schedule =
     "b2_start": new Date("2020-06-29T12:00:00-07:00"),
     "b2_time": "12pm - 3pm",
     "b2_name": "Maesoa",
-    "b2_game1": 52,
+    "b2_game1": 63,
     "b2_game2": null,
     "b3_start": new Date("2020-06-29T15:00:00-07:00"),
     "b3_time": "3pm - 6pm",

@@ -599,6 +599,26 @@ const games =
     url2: "",
     url3: "",
     img:require('./img/games/ShovelKnight.jpg')
+  },
+  {
+    id: "63",
+    name: "Outer Wilds",
+    desc: "Named Game of the Year 2019 by Giant Bomb, Polygon, Eurogamer, and The Guardian, Outer Wilds is a critically-acclaimed and award-winning open world mystery about a solar system trapped in an endless time loop.",
+    warning: "Ages 10+: Fantasy Violence, Alcohol Reference",
+    url: "https://store.steampowered.com/app/753640/Outer_Wilds/",
+    url2: "",
+    url3: "",
+    img:require('./img/games/OuterWilds.png')
+  },
+  {
+    id: "64",
+    name: "Afterparty",
+    desc: "In Afterparty, you are Milo and Lola, recently deceased best buds who suddenly find themselves staring down an eternity in Hell. But there's a loophole: outdrink Satan and he'll grant you re-entry to Earth.",
+    warning: "Age 17+: Blood, Crude Humor, Drug Reference, Sexual Content, Strong Language, Use of Alcohol, Violence",
+    url: "https://store.steampowered.com/app/762220/Afterparty/",
+    url2: "",
+    url3: "",
+    img:require('./img/games/Afterparty.png')
   }
 ]
 export default games
