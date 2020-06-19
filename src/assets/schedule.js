@@ -445,7 +445,7 @@ const schedule =
     "b5_start": new Date("2020-06-16T21:00:00-07:00"),
     "b5_time": "9pm - 12am",
     "b5_name": "heyAnnieMok",
-    "b5_game1": 15,
+    "b5_game1": 64,
     "b5_game2": null
   },
   {
@@ -508,7 +508,7 @@ const schedule =
     "day": "Friday, June 19",
     "b1_start": new Date("2020-06-19T9:00:00-07:00"),
     "b1_time": "9am - 12pm",
-    "b1_name": "CrevLM",
+    "b1_name": "NincompoopEXE",
     "b1_game1": 24,
     "b1_game2": null,
     "b2_start": new Date("2020-06-19T12:00:00-07:00"),
