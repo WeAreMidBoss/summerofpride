@@ -608,7 +608,7 @@ const schedule =
     "b4_start": new Date("2020-06-22T18:00:00-07:00"),
     "b4_time": "6pm - 9pm",
     "b4_name": "QueenNickiMirage",
-    "b4_game1": 7,
+    "b4_game1": 65,
     "b4_game2": null,
     "b5_start": new Date("2020-06-22T21:00:00-07:00"),
     "b5_time": "9pm - 12am",

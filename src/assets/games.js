@@ -619,6 +619,16 @@ const games =
     url2: "",
     url3: "",
     img:require('./img/games/Afterparty.png')
+  },
+  {
+    id: "65",
+    name: "Max Gentlemen Sexy Business!",
+    desc: "The premiere Victorian Business Tycoon & Dating Simulator. Your family business has been stolen from you! Forge sexy partnerships in the sheets while crushing rival companies in the streets to become England’s largest monopoly and reclaim your family honor.",
+    warning: "Ages 18+: Optional Nudity and Sexual Content",
+    url: "https://store.steampowered.com/app/817840/Max_Gentlemen_Sexy_Business/",
+    url2: "",
+    url3: "",
+    img:require('./img/games/SexyBusiness.png')
   }
 ]
 export default games
