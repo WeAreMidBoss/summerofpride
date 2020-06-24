@@ -59,7 +59,7 @@
 
               <div class="games" data-aos="slide-right">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
-                    <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                    <swiper-slide v-for="(game, index) in gamesNoB" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
                       <img :src="game.img" />
                       <span class="game-name">{{ game.name }}</span>
                     </swiper-slide>        
@@ -207,6 +207,7 @@ export default {
       profiles: streamers,
       game: [],
       games: gameList,
+      gamesNoB: gameList.filter(g => g.id != 66),
       swiperOptions: {
         autoplay: {
           delay: 3000,

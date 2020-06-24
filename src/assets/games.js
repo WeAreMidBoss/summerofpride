@@ -629,6 +629,16 @@ const games =
     url2: "",
     url3: "",
     img:require('./img/games/SexyBusiness.png')
+  },
+  {
+    id: "66",
+    name: "#TwitchBlackout",
+    desc: "To stand with the movement, we are taking down all streams today, Wednesday, June 23rd to support the #TwitchBlackout protest to encourage Twitch to make a statement that they will have zero-tolerance policy for its Partners and Affiliates who have proven predatory allegations against them.",
+    warning: "",
+    url: "",
+    url2: "",
+    url3: "",
+    img:require('./img/games/TwitchBlackout.png')
   }
 ]
 export default games
