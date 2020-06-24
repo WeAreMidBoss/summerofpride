@@ -349,12 +349,22 @@ margin-right: 50px;
 .schedule-table tr:nth-child(even) {background-color: #feeef0;}
 
 .charities img{
-  width: 270px;
-  padding:0 30px 0 30px;
+  width: 200px;
+  margin-bottom: 15px;
 }
 
-.charities{
-  
+.donate {
+  padding-top: 3px;
+  width: 100px;
+  height: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  font-size: 1.7rem!important;
+  color:#fff;
+  border-color: #ea276d !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+
 }
 
 .sale img{

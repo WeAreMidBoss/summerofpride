@@ -17,11 +17,11 @@
 
               <p data-aos="slide-up">This year, we’re also supporting four wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a>, <a href="https://bailproject.org/" target="_blank">The Bail Project</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
-              <div class="charities row">
-                <div class="col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-gaymerx" target="_target">DONATE</a></div></div> 
-                <div class="col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-trevor-project" target="_target">DONATE</a></div></div> 
-                <div class="col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-trans-lifeline" target="_target">DONATE</a></div></div> 
-                <div class="col"><div><a href="https://bailproject.org/" target="_target"><img class="" src="./assets/img/bailproject.png" alt="The Bail Project" /></a></div> <div><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-solidarity-with-black-lives-matter" target="_target">DONATE</a></div></div> 
+              <div align="center" class="charities row">
+                <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-gaymerx" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-trevor-project" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-trans-lifeline" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://bailproject.org/" target="_target"><img class="" src="./assets/img/bailproject.png" alt="The Bail Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-solidarity-with-black-lives-matter" target="_target">DONATE</a></div></div> 
               </div>
               <hr>
               <div class="sale">
