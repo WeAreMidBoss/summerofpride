@@ -25,7 +25,7 @@
               </div>
               <hr>
               <div class="sale">
-              <a href="https://store.steampowered.com/curator/34979042/sale/SummerOfPride2020" target="_target"><img class="sale" src="./assets/img/SteamSale.png" alt="Summer of Pride 2020 Steam Sale" /></a>
+              <a href="https://www.nexus.gg/midboss" target="_target"><img class="sale" src="./assets/img/ChronoGG.png" alt="Summer of Pride 2020 Steam Sale" /></a>
               </div>
               <hr>
               <!-- Begin MailChimp Signup Form -->
@@ -62,7 +62,7 @@
 
               <div class="games" data-aos="slide-right">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
-                    <swiper-slide v-for="(game, index) in gamesNoB" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                    <swiper-slide v-for="(game, index) in gamesNoB" class="swiper-slide" @click.native="showGameSliderInfo(index)" :key="index" >
                       <img :src="game.img" />
                       <span class="game-name">{{ game.name }}</span>
                     </swiper-slide>        
@@ -319,6 +319,10 @@ export default {
     },
     closeStreamerInfo() {
       this.showStreamerModal = false;
+    },
+    showGameSliderInfo(id) {
+      this.isModalGameVisible = true;
+      this.game = this.gamesNoB[id];
     },
     showGameInfo(id) {
       this.isModalGameVisible = true;
