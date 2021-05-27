@@ -14,11 +14,8 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-/*module.exports = {
-  //mode: 'production',
-  publicPath:process.env.NODE_ENV === 'production'? '.': '/',
-  baseUrl: process.env.NODE_ENV === 'production' ? '.' : '/',
-  chainWebpack: (config) => {
-    config.resolve.symlinks(false)
-  }
-}*/
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/sop2021/'
+    : '/'
+}
