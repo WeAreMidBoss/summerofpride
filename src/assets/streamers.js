@@ -135,15 +135,6 @@ const streamers = [
     img:require('./img/streamers/FoxQueen.jpg')
   },
   {
-    id: "16",
-    name: "iambrandon",
-    twitch: "https://www.twitch.tv/iambrandon",
-    personal: "",
-    social: "https://twitter.com/iamBrandonTV",
-    bio: "I am a Twitch variety caster who is also a huge nerd who works in the gaming industry, loves D&D and am the ultimate horror fan. I am proud to positively represent being POC and a part of the LGBT community.",
-    img:require('./img/streamers/iambrandon.jpg')
-  },
-  {
     id: "17",
     name: "ArcadeAshelyn",
     twitch: "https://www.twitch.tv/arcadeashelyn",
@@ -151,15 +142,6 @@ const streamers = [
     social: "",
     bio: "I am a pansexual and transfeminine variety streamer that focuses on creating a welcoming community, especially for those of us who are part of the LGBTQIA+ spectrum or others who would like to learn more!",
     img:require('./img/streamers/ArcadeAshelyn.jpg')
-  },
-  {
-    id: "18",
-    name: "SlicedRaven",
-    twitch: "https://twitch.tv/slicedraven",
-    personal: "",
-    social: "https://twitter.com/slicedraven",
-    bio: "She/Her Pronouns. A variety streamer with a love for horror and humor. I run first playthroughs, Early Access and love to showcase indie titles. Self proclaimed lesbian supreme, facing my fears in flannel.",
-    img:require('./img/streamers/SlicedRaven.jpg')
   },
   {
     id: "19",
@@ -295,15 +277,6 @@ const streamers = [
     social: "https://twitter.com/Chel0ra",
     bio: "Hi! I'm Chelora and I'm a variety drag queen streamer and a member of the Team Stream Queens. I create a wide variety of content focused on creating a positive environment and a safe space for everyone.",
     img:require('./img/streamers/Chelora.jpg')
-  },
-  {
-    id: "35",
-    name: "ThatGayGinger",
-    twitch: "https://www.twitch.tv/thatgayginger",
-    personal: "",
-    social: "https://www.Twitter.com/that_gayginger",
-    bio: "I'm a very loud, queer, socially anxious caterpillar who plays a lot of story games. I'm from NYC, but live in CA now! I'm nonbinary!",
-    img:require('./img/streamers/ThatGayGinger.jpg')
   },
   {
     id: "36",
@@ -477,15 +450,6 @@ const streamers = [
     img:require('./img/streamers/Meastoso.jpg')
   },
   {
-    id: "55",
-    name: "Jude Valentin",
-    twitch: "https://www.twitch.tv/mermaidqueenjude",
-    personal: "https://www.mermaidqueenjude.com",
-    social: "https://www.twitter.com/merqueenjude",
-    bio: "I am a content creator and storyteller who prides herself in having a compassionate and empathetic community. I have dedicated my career to changing the landscape of who is allowed to be an entertainer.",
-    img:require('./img/streamers/JudeValentin.jpg')
-  },
-  {
     id: "56",
     name: "Player_Michaelous",
     twitch: "https://www.twitch.tv/player_michaelous",
@@ -529,15 +493,6 @@ const streamers = [
     social: "https://www.twitter.com/themiabyte",
     bio: "I am a UK based full time content creator and partnered variety streamer on Twitch. I make videos about gaming, puzzles and food, and streaming narrative driven games for my wonderful community.",
     img:require('./img/streamers/miabyte.jpg')
-  },
-  {
-    id: "61",
-    name: "ripleyviolet",
-    twitch: "https://twitch.tv/ripleyviolet",
-    personal: "https://www.ripleyviolet.com",
-    social: "https://www.twitter.com/RipleyStorm",
-    bio: "I'm a fulltime Variety streamer and Intersex/Transgender Furry artist. I focus on Fundraising, community support, 8- & 16-bit retrogames, and am a voice actor.",
-    img:require('./img/streamers/ripleyviolet.jpg')
   },
   {
     id: "62",
@@ -592,15 +547,6 @@ const streamers = [
     social: "https://www.twitter.com/prasmusson",
     bio: "36-year-old Swedish gaymer. Love pizza, gym and kanelbullar. Work in quality assurance, software testing. Play most games but prefer a controller better than mouse and keyboard.",
     img:require('./img/streamers/MegaPetros.jpg')
-  },
-  {
-    id: "68",
-    name: "heyAnnieMok",
-    twitch: "http://twitch.tv/heyanniemok",
-    personal: "http://cargocollective.com/heyanniemok",
-    social: "http://twitter.com/heyanniemok",
-    bio: "Annie Mok is a writer-artist, musician, game dev, & streamer. She focuses on games with character.",
-    img:require('./img/streamers/heyAnnieMok.jpg')
   },
   {
     id: "70",

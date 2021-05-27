@@ -4,28 +4,23 @@
     <main role="main">
 
       <div class="jumbotron" data-aos="zoom-in">
-        <img class="d-none d-sm-block" src="./assets/img/SummerOfPride2020_Banner.jpg" alt="Summer of Pride" />
-        <img class="d-sm-none" src="./assets/img/SummerOfPride2020_Mobile.jpg" alt="Summer of Pride" />
+        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
+        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
       </div>
 
       <div id="main-content">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center" data-aos="slide-up">Get Ready for the Summer of Pride!</h1>
-              <p data-aos="slide-up">The Summer of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of June. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
+              <p data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
-              <p data-aos="slide-up">This year, we’re also supporting four wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a>, <a href="https://bailproject.org/" target="_blank">The Bail Project</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
+              <p data-aos="slide-up">This year, we’re also supporting four wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
               <div align="center" class="charities row">
                 <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-gaymerx" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-trevor-project" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-trans-lifeline" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://bailproject.org/" target="_target"><img class="" src="./assets/img/bailproject.png" alt="The Bail Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-solidarity-with-black-lives-matter" target="_target">DONATE</a></div></div> 
-              </div>
-              <hr>
-              <div class="sale">
-              <a href="https://www.nexus.gg/midboss" target="_target"><img class="sale" src="./assets/img/ChronoGG.png" alt="Summer of Pride 2020 Steam Sale" /></a>
               </div>
               <hr>
               <!-- Begin MailChimp Signup Form -->
@@ -75,74 +70,11 @@
               
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
-              <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
-
-              <div class="schedule" data-aos="slide-up">
-                  <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
-                    <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
-                      <span class="schedule-day">{{ block.day }}</span>
-                      <table class="schedule-table">
-                        <tbody>
-                          <tr :class="isTime(block.b1_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b1_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b1_name))"><img :src="profiles[getIdByName(block.b1_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b1_game1))" :src="games[getGameIdByName(block.b1_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b1_game1)].name }}</span>
-                            <span v-if="block.b1_game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="games[getGameIdByName(block.b1_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b1_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b1_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b2_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b2_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b2_name))"><img :src="profiles[getIdByName(block.b2_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b2_game1))" :src="games[getGameIdByName(block.b2_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b2_game1)].name }}</span>
-                            <span v-if="block.b2_game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="games[getGameIdByName(block.b2_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b2_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b2_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b3_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b3_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b3_name))"><img :src="profiles[getIdByName(block.b3_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b3_game1))" :src="games[getGameIdByName(block.b3_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b3_game1)].name }}</span>
-                            <span v-if="block.b3_game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="games[getGameIdByName(block.b3_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b3_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b3_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b4_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b4_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b4_name))"><img :src="profiles[getIdByName(block.b4_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b4_game1))" :src="games[getGameIdByName(block.b4_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b4_game1)].name }}</span>
-                            <span v-if="block.b4_game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="games[getGameIdByName(block.b4_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b4_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b4_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b5_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b5_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b5_name))"><img :src="profiles[getIdByName(block.b5_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b5_game1))" :src="games[getGameIdByName(block.b5_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b5_game1)].name }}</span>
-                            <span v-if="block.b5_game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="games[getGameIdByName(block.b5_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b5_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b5_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </swiper-slide>        
-                </swiper>
-                <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
-                <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
-                </div>
-
-                <div class="brands">
-              <h3>Supportive Organizations</h3>
+              <p data-aos="slide-up">Coming soon!</p>
+              
+              <hr>
+              <div class="brands">
+              <h1>Supportive Organizations</h1>
               <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> <a href="#" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> <a href="https://igda.org/" target="_target"><img class="" src="./assets/img/igda.png" alt="IGDA" /></a>
               </div>
 
