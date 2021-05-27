@@ -14,8 +14,3 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/sop2021/'
-    : '/'
-}
