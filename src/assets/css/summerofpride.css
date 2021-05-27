@@ -366,7 +366,7 @@ margin-right: 50px;
   border-color: #F37664 !important;
   border-width: 1px !important;
   border-style: solid !important;
-
+  
 }
 
 .sale img{
@@ -412,6 +412,13 @@ margin-right: 50px;
       right: auto;
       left: -8px;
   }
+
+  .donate {
+    padding-top: 3px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -472,6 +479,13 @@ margin-right: 50px;
     margin-bottom: 30px;
     padding: 0 5px 0 5px;
   }
+
+  .donate {
+    padding-top: 3px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -548,6 +562,12 @@ margin-right: 50px;
     max-width: 100%!important;
     margin-bottom: 30px;
     padding: 0 5px 0 5px;
+  }
+
+  .donate {
+    padding-top: 3px;
+    margin-top: -10px;
+    margin-bottom: 30px;
   }
 
 }
