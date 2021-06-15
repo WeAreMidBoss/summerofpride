@@ -278,10 +278,9 @@ footer .social-links a:last-child img {
   color:#ea276d;
 }
 
-.schedule-table th, td {
-  padding: 20px;
+.schedule-table th, .schedule-table td {
+  padding: 20px 0;
 }
-
 .schedule-hours{
   white-space: nowrap;
   font-weight: normal;
@@ -336,13 +335,13 @@ margin-right: 50px;
   margin-top:5px;
 }
 .schedule-game-name{
-  max-width: 83.5%!important;
+  max-width: 55.5%!important;
   margin: 0 auto;
   margin-top: 5px;
 }
 
 .schedule-streamer-name{
-  max-width: 81.5%!important;
+  max-width: 55.5%!important;
   position: relative;
   margin: 0 auto;
   margin-top: 5px;
@@ -545,6 +544,9 @@ margin-right: 50px;
   .schedule-table td {
     padding: 0;
     display:inline-block;
+  }
+  .schedule-table td:last-child {
+    padding-bottom: 40px;
   }
   .schedule-table tr > th:first-child {
     display:block;

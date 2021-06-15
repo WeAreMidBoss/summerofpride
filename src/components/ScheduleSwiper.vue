@@ -5,55 +5,50 @@
                 <span class="schedule-day">{{ block.day }}</span>
                 <table class="schedule-table">
                 <tbody>
-                    <tr>
-                    <th class="schedule-hours" scope="row">{{ block.b1_time }}</th>
-                    <td @click="showStreamerInfo(getIdByName(block.b1_name))"><img :src="getStreamerImage(profiles[getIdByName(block.b1_name)].img)" class="schedule-profile-img" />
-                    <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1_name)].name }}</span></td>
-                    <td><img @click="showGameInfo(getGameIdByName(block.b1_game1))" :src="getGameImage(games[getGameIdByName(block.b1_game1)].img)" class="schedule-game-img" />
-                    <span class="schedule-game-name">{{ games[getGameIdByName(block.b1_game1)].name }}</span>
-                    <span v-if="block.b1_game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="getGameImage(games[getGameIdByName(block.b1_game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
-                    <span v-if="block.b1_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1_game2)].name }}</span></td>
-                    <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b1_name)].twitch" target="_blank">Watch now!<br /></a></div></td>
+                    <tr :class="isTime(block.b1Start) ? 'active':''">
+                        <th class="schedule-hours" scope="row">{{ block.b1Time }}</th>
+                        <td @click="showStreamerInfo(getIdByName(block.b1Name))"><img :src="getStreamerImage(profiles[getIdByName(block.b1Name)].img)" class="schedule-profile-img" />
+                        <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1Name)].name }}</span></td>
+                        <td><img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="getGameImage(games[getGameIdByName(block.b1Game1)].img)" class="schedule-game-img" />
+                        <span class="schedule-game-name">{{ games[getGameIdByName(block.b1Game1)].name }}</span>
+                        <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="getGameImage(games[getGameIdByName(block.b1Game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
+                        <span v-if="block.b1Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1Game2)].name }}</span></td>
                     </tr>
-                    <tr>
-                    <th class="schedule-hours" scope="row">{{ block.b2_time }}</th>
-                    <td @click="showStreamerInfo(getIdByName(block.b2_name))"><img :src="getStreamerImage(profiles[getIdByName(block.b2_name)].img)" class="schedule-profile-img" />
-                    <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2_name)].name }}</span></td>
-                    <td><img @click="showGameInfo(getGameIdByName(block.b2_game1))" :src="getGameImage(games[getGameIdByName(block.b2_game1)].img)" class="schedule-game-img" />
-                    <span class="schedule-game-name">{{ games[getGameIdByName(block.b2_game1)].name }}</span>
-                    <span v-if="block.b2_game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="getGameImage(games[getGameIdByName(block.b2_game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
-                    <span v-if="block.b2_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2_game2)].name }}</span></td>
-                    <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b2_name)].twitch" target="_blank">Watch now!<br /></a></div></td>
+                    <tr :class="isTime(block.b2Start) ? 'active':''">
+                        <th class="schedule-hours" scope="row">{{ block.b2Time }}</th>
+                        <td @click="showStreamerInfo(getIdByName(block.b2Name))"><img :src="getStreamerImage(profiles[getIdByName(block.b2Name)].img)" class="schedule-profile-img" />
+                        <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2Name)].name }}</span></td>
+                        <td><img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="getGameImage(games[getGameIdByName(block.b2Game1)].img)" class="schedule-game-img" />
+                        <span class="schedule-game-name">{{ games[getGameIdByName(block.b2Game1)].name }}</span>
+                        <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2Game2))" :src="getGameImage(games[getGameIdByName(block.b2Game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
+                        <span v-if="block.b2Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2Game2)].name }}</span></td>
                     </tr>
-                    <tr>
-                    <th class="schedule-hours" scope="row">{{ block.b3_time }}</th>
-                    <td @click="showStreamerInfo(getIdByName(block.b3_name))"><img :src="getStreamerImage(profiles[getIdByName(block.b3_name)].img)" class="schedule-profile-img" />
-                    <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3_name)].name }}</span></td>
-                    <td><img @click="showGameInfo(getGameIdByName(block.b3_game1))" :src="getGameImage(games[getGameIdByName(block.b3_game1)].img)" class="schedule-game-img" />
-                    <span class="schedule-game-name">{{ games[getGameIdByName(block.b3_game1)].name }}</span>
-                    <span v-if="block.b3_game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="getGameImage(games[getGameIdByName(block.b3_game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
-                    <span v-if="block.b3_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3_game2)].name }}</span></td>
-                    <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b3_name)].twitch" target="_blank">Watch now!<br /></a></div></td>
+                    <tr :class="isTime(block.b3Start) ? 'active':''">
+                        <th class="schedule-hours" scope="row">{{ block.b3Time }}</th>
+                        <td @click="showStreamerInfo(getIdByName(block.b3Name))"><img :src="getStreamerImage(profiles[getIdByName(block.b3Name)].img)" class="schedule-profile-img" />
+                        <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3Name)].name }}</span></td>
+                        <td><img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="getGameImage(games[getGameIdByName(block.b3Game1)].img)" class="schedule-game-img" />
+                        <span class="schedule-game-name">{{ games[getGameIdByName(block.b3Game1)].name }}</span>
+                        <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="getGameImage(games[getGameIdByName(block.b3Game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
+                        <span v-if="block.b3Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3Game2)].name }}</span></td>
                     </tr>
-                    <tr>
-                    <th class="schedule-hours" scope="row">{{ block.b4_time }}</th>
-                    <td @click="showStreamerInfo(getIdByName(block.b4_name))"><img :src="getStreamerImage(profiles[getIdByName(block.b4_name)].img)" class="schedule-profile-img" />
-                    <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4_name)].name }}</span></td>
-                    <td><img @click="showGameInfo(getGameIdByName(block.b4_game1))" :src="getGameImage(games[getGameIdByName(block.b4_game1)].img)" class="schedule-game-img" />
-                    <span class="schedule-game-name">{{ games[getGameIdByName(block.b4_game1)].name }}</span>
-                    <span v-if="block.b4_game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="getGameImage(games[getGameIdByName(block.b4_game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
-                    <span v-if="block.b4_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4_game2)].name }}</span></td>
-                    <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b4_name)].twitch" target="_blank">Watch now!<br /></a></div></td>
+                    <tr :class="isTime(block.b4Start) ? 'active':''">
+                        <th class="schedule-hours" scope="row">{{ block.b4Time }}</th>
+                        <td @click="showStreamerInfo(getIdByName(block.b4Name))"><img :src="getStreamerImage(profiles[getIdByName(block.b4Name)].img)" class="schedule-profile-img" />
+                        <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4Name)].name }}</span></td>
+                        <td><img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="getGameImage(games[getGameIdByName(block.b4Game1)].img)" class="schedule-game-img" />
+                        <span class="schedule-game-name">{{ games[getGameIdByName(block.b4Game1)].name }}</span>
+                        <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="getGameImage(games[getGameIdByName(block.b4Game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
+                        <span v-if="block.b4Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4Game2)].name }}</span></td>
                     </tr>
-                    <tr>
-                    <th class="schedule-hours" scope="row">{{ block.b5_time }}</th>
-                    <td @click="showStreamerInfo(getIdByName(block.b5_name))"><img :src="getStreamerImage(profiles[getIdByName(block.b5_name)].img)" class="schedule-profile-img" />
-                    <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5_name)].name }}</span></td>
-                    <td><img @click="showGameInfo(getGameIdByName(block.b5_game1))" :src="getGameImage(games[getGameIdByName(block.b5_game1)].img)" class="schedule-game-img" />
-                    <span class="schedule-game-name">{{ games[getGameIdByName(block.b5_game1)].name }}</span>
-                    <span v-if="block.b5_game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="getGameImage(games[getGameIdByName(block.b5_game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
-                    <span v-if="block.b5_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5_game2)].name }}</span></td>
-                    <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b5_name)].twitch" target="_blank">Watch now!<br /></a></div></td>
+                    <tr :class="isTime(block.b5Start) ? 'active':''">
+                        <th class="schedule-hours" scope="row">{{ block.b5Time }}</th>
+                        <td @click="showStreamerInfo(getIdByName(block.b5Name))"><img :src="getStreamerImage(profiles[getIdByName(block.b5Name)].img)" class="schedule-profile-img" />
+                        <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5Name)].name }}</span></td>
+                        <td><img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="getGameImage(games[getGameIdByName(block.b5Game1)].img)" class="schedule-game-img" />
+                        <span class="schedule-game-name">{{ games[getGameIdByName(block.b5Game1)].name }}</span>
+                        <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5Game2))" :src="getGameImage(games[getGameIdByName(block.b5Game2)].img)" class="schedule-game-img schedule-game-two-img" /></span>
+                        <span v-if="block.b5Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5Game2)].name }}</span></td>
                     </tr>
                 </tbody>
                 </table>
@@ -100,7 +95,7 @@ import 'swiper/css/swiper.css'
 				this.$parent.showStreamerInfo(id);
 			},
 			showGameInfo(id) {
-				this.$parent.showStreamerInfo(id);
+				this.$parent.showGameInfo(id);
 			},
             getIdByName(n) {
             let obj = this.profiles.findIndex(obj => obj.name == n);
@@ -121,8 +116,16 @@ import 'swiper/css/swiper.css'
                 }
             },
 			isTime(date) {
-				this.$parent.isTime(date);
-			}
+                var date1 = new Date(date);
+                var date2 = new Date();
+                var diference = date2.getTime() - date1.getTime();
+                console.log(diference);
+                if (diference < 3) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 		}
 	}
 </script>
