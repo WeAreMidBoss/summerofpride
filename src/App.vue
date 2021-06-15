@@ -374,7 +374,7 @@ export default {
       }
     },
     getGameIdByName(n) {
-      let obj = this.games.findIndex(obj => obj.id == n);
+      let obj = this.games.findIndex(obj => obj.name == n);
       console.log("Game",obj);
       if (obj !== -1) {
         return obj;
