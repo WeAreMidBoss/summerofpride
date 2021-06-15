@@ -26,6 +26,7 @@
               </div>
               <div class="modal-description col-md-6 col-sm-12">
                 <span class="modal-name">{{ profile.name }}</span>
+                <span class="modal-pronouns">{{ profile.pronouns }}</span>
                 <span class="modal-description-text">{{ profile.bio }}</span>
                 <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
                 <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
