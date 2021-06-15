@@ -42,18 +42,19 @@
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
 
               <!--load streamer swiper-->
-              <streamers-swiper v-bind:profiles="profiles"></streamers-swiper>
+              <streamers-swiper :profiles="profiles"></streamers-swiper>
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
               <!--load games swiper-->
-              <games-swiper v-bind:games="games"></games-swiper>
+              <games-swiper :games="games"></games-swiper>
    
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
               <!--load schedule swiper-->
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
 
+              <schedule-swiper :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
               <!--<div class="schedule" data-aos="slide-up">
                   <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
                     <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
@@ -153,6 +154,7 @@ import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
 import GamesSwiper from './components/GamesSwiper.vue'
+import ScheduleSwiper from './components/ScheduleSwiper.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 
@@ -174,7 +176,8 @@ export default {
     Nav,
     Footer,
     StreamersSwiper,
-    GamesSwiper
+    GamesSwiper,
+    ScheduleSwiper
     /*Swiper,
     SwiperSlide*/
   },
@@ -290,6 +293,13 @@ export default {
     } catch (e) {
       this.errors.push(e)
     }
+    try {
+      //get schedule's info
+      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/schedule')
+      this.schedules = response.data.schedule
+    } catch (e) {
+      this.errors.push(e)
+    }
     /*,
     this.shuffle(this.profiles),
     this.shuffle(this.games)*/
@@ -327,10 +337,10 @@ export default {
     closeStreamerInfo() {
       this.showStreamerModal = false;
     },
-    showGameSliderInfo(id) {
+    /*showGameSliderInfo(id) {
       this.showGameModal = true;
       this.game = this.gamesNoB[id];
-    },
+    },*/
     showGameInfo(id) {
       this.showGameModal = true;
       this.game = this.games[id];
@@ -372,24 +382,6 @@ export default {
         return true;
       } else {
         return false;
-      }
-    },
-    getIdByName(n) {
-      let obj = this.profiles.findIndex(obj => obj.name == n);
-      console.log("Profile",obj);
-      if (obj !== -1) {
-        return obj;
-      } else {
-        return 0;
-      }
-    },
-    getGameIdByName(n) {
-      let obj = this.games.findIndex(obj => obj.name == n);
-      console.log("Game",obj);
-      if (obj !== -1) {
-        return obj;
-      } else {
-        return 0;
       }
     }
   }
