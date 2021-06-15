@@ -278,24 +278,24 @@ export default {
     })
     try {
       //get streamer's info
-      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/streamers')
-      this.profiles = response.data.streamers
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonStreamers')
+      this.profiles = response.data.jsonStreamers
       this.shuffle(this.profiles)
     } catch (e) {
       this.errors.push(e)
     }
     try {
       //get game's info
-      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/games')
-      this.games = response.data.games
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonGames')
+      this.games = response.data.jsonGames
       this.shuffle(this.games)
     } catch (e) {
       this.errors.push(e)
     }
     try {
       //get schedule's info
-      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/schedule')
-      this.schedules = response.data.schedule
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonSchedule')
+      this.schedules = response.data.jsonSchedule
     } catch (e) {
       this.errors.push(e)
     }
@@ -372,16 +372,6 @@ export default {
     },
     enableScrolling(){
       window.onscroll=function(){};
-    },
-    isTime(date1) {
-      var date2 = new Date();
-      var diference = date2.getTime() - date1.getTime();
-      console.log(diference);
-      if (diference < 3) {
-        return true;
-      } else {
-        return false;
-      }
     }
   }
 }
