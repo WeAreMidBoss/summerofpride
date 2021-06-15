@@ -61,9 +61,12 @@ import 'swiper/css/swiper.css'
 			}
 		},
 		methods: {
-			getImage:function(path) {
+			getImage(path) {
 				return require("@/assets/img/streamers/"+path)
 			},
+			showStreamerInfo(id) {
+				this.$parent.showStreamerInfo(id);
+			}
 		}
 	}
 </script>
