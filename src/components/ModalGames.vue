@@ -22,12 +22,12 @@
         <slot name="body">
           <div class="row">
             <div class="modal-img-container col-sm-12">
-              <img class="modal-img" :src="game.img" />
+              <img class="modal-img" :src="getImage(game.img)" />
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>
               <span class="modal-description-text">{{ game.desc }}</span>
-              <span class="modal-warning" v-if="game.warning">CONTENT DESCRIPTOR: <br /> {{ game.warning }}</span>
+              <div class="modal-warning" v-if="game.warning"><div class="modal-warning-wrapper"><span class="modal-warning-title">CONTENT DESCRIPTOR</span> <span class="modal-warning-descriptor"> {{ game.warning }}</span></div></div>
               <span class="modal-description-social text-center">
               <a :href="game.url" target="_blank" v-if="game.url"><img class="modal-social" src="../assets/img/Store.svg" /></a>
               <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Social.svg" /></a>
@@ -54,8 +54,6 @@
         isClosing: false
       }
     },
-    mounted() {
-    },
     methods: {
       close() {
         this.isClosing = true;
@@ -64,6 +62,9 @@
           this.isClosing = false;
         }, 450)
       },
+      getImage(path) {
+				return require("@/assets/img/games/"+path)
+			}
     },
   };
 </script>
@@ -131,7 +132,7 @@
     border: 1px solid #4AAE9B;
     border-radius: 2px;
   }
-   .modal-fade-enter,
+  .modal-fade-enter,
   .modal-fade-leave-active {
     opacity: 0;
   }
@@ -159,23 +160,40 @@
     font-size: 28px;
     text-align: center;
   }
-   .modal-warning {
+  .modal-warning, .modal-description-text {
+    padding: 0 40px;
+  }
+  .modal-warning {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
-    color:#ea276d;
-    background-color: #fff;
     font-weight: bold;
     margin-top:15px;
+  }
+  .modal-warning-wrapper {
+    background-color:#ffb090;
     padding: 10px;
+  }
+  .modal-warning-title {
+    display:block;
+    width:100%;
+    background-color:#e45c3a;
+    color:#fff;
+    padding:5px 0;
+  }
+  .modal-warning-descriptor {
+    display: block;
+    font-weight: normal;
+    margin-top:10px;
+    font-size: 13px;
+    color:#b32c0a;
+    padding: 0 40px;
   }
   .modal-description-text {
     display: block;
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
-    padding: 0 40px;
-    
   }
   .modal-description-social {
     display: block;
@@ -199,6 +217,10 @@
     }
     .modal-img {
       max-height: 250px;
+      padding: 15px 15px;
+    }
+    .modal-description {
+      font-size: 13px;
     }
     .modal-description-text {
       padding: 0 20px;

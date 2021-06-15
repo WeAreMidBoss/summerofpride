@@ -138,6 +138,9 @@
   .modal-fade-leave-active {
     transition: opacity .5s ease
   }
+  .modal-pronouns, .modal-description-text {
+    font-family: 'Open Sans', sans-serif;
+  }
   .modal-img {
     max-width:90%;
     height:auto;
@@ -158,6 +161,13 @@
     font-family: 'Knewave', cursive;
     font-size: 28px;
     text-align: center;
+  }
+  .modal-pronouns {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
   }
   .modal-description-text {
     display: block;
