@@ -159,7 +159,7 @@
   }
   .modal-description-text {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     padding-right:40px;
   }

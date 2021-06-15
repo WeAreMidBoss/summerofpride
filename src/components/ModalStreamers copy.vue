@@ -104,7 +104,7 @@ import $ from 'jquery'
 
 .modal-description-text-streamers {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size:16px;
   margin-top: 20px;
   padding-right:20px;

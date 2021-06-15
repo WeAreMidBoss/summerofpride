@@ -161,7 +161,7 @@
   }
    .modal-warning {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
     color:#ea276d;
@@ -172,7 +172,7 @@
   }
   .modal-description-text {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     padding: 0 40px;
     

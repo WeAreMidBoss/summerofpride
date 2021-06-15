@@ -92,7 +92,7 @@
 }
 .modal-description-text-games {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size:16px;
   margin-top: 20px;
   padding-left:40px;
