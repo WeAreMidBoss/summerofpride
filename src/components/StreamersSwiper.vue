@@ -1,5 +1,4 @@
 <template>
-
 	<div class="streamers" data-aos="slide-left">
 		<swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
 			<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >

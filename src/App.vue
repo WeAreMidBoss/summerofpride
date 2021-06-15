@@ -41,37 +41,17 @@
               <hr>
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
 
+              <!--load streamer swiper-->
               <streamers-swiper v-bind:profiles="profiles"></streamers-swiper>
-              
-              <!--<div class="streamers" data-aos="slide-left">
-                <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
-                    <swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
-                      <img :src="streamer.img" />
-                      <span class="streamer-name">{{ streamer.name }}</span>
-                    </swiper-slide>
-                    <div class="streamers-pagination swiper-pagination" slot="pagination"></div>
-                </swiper>
-                <div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
-                <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
-              </div>-->
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
-              <!--<div class="games" data-aos="slide-right">
-                  <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
-                    <swiper-slide v-for="(game, index) in gamesNoB" class="swiper-slide" @click.native="showGameSliderInfo(index)" :key="index" >
-                      <img :src="game.img" />
-                      <span class="game-name">{{ game.name }}</span>
-                    </swiper-slide>        
-                    <div class="games-pagination swiper-pagination" slot="pagination"></div>  
-                </swiper>
-                <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
-                <div class="games-button-next swiper-button-next" slot="button-next"></div>
-                </div>-->
-
-              
+              <!--load games swiper-->
+              <games-swiper v-bind:games="games"></games-swiper>
+   
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
+              <!--load schedule swiper-->
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
 
               <!--<div class="schedule" data-aos="slide-up">
@@ -155,7 +135,7 @@
           :profile="this.profile"
         />
       <ModalGames
-        v-if="isModalGameVisible"
+        v-if="showGameModal"
         @close="closeGameInfo"
         :game="this.game"
       />
@@ -171,6 +151,7 @@ import scheduleTable from './assets/schedule.js'
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
+import GamesSwiper from './components/GamesSwiper.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 
@@ -191,7 +172,8 @@ export default {
     ModalGames,
     Nav,
     Footer,
-    StreamersSwiper
+    StreamersSwiper,
+    GamesSwiper
     /*Swiper,
     SwiperSlide*/
   },
@@ -202,7 +184,7 @@ export default {
     return {
       animated: false,
       showStreamerModal: false,
-      isModalGameVisible: false,
+      showGameModal: false,
       schedule: [],
       schedules: scheduleTable,
       profile: [],
@@ -292,9 +274,18 @@ export default {
       disable: 'mobile'
     })
     try {
+      //get streamer's info
       const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/streamers')
       this.profiles = response.data.streamers
-      console.log(this.profiles)
+      this.shuffle(this.profiles)
+    } catch (e) {
+      this.errors.push(e)
+    }
+    try {
+      //get game's info
+      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/games')
+      this.games = response.data.games
+      this.shuffle(this.games)
     } catch (e) {
       this.errors.push(e)
     }
@@ -336,15 +327,15 @@ export default {
       this.showStreamerModal = false;
     },
     showGameSliderInfo(id) {
-      this.isModalGameVisible = true;
+      this.showGameModal = true;
       this.game = this.gamesNoB[id];
     },
     showGameInfo(id) {
-      this.isModalGameVisible = true;
+      this.showGameModal = true;
       this.game = this.games[id];
     },
     closeGameInfo() {
-      this.isModalGameVisible = false;
+      this.showGameModal = false;
     },
     shuffle(array) {
        var currentIndex = array.length, temporaryValue, randomIndex;
@@ -392,7 +383,7 @@ export default {
       }
     },
     getGameIdByName(n) {
-      let obj = this.games.findIndex(obj => obj.id == n);
+      let obj = this.games.findIndex(obj => obj.name == n);
       console.log("Game",obj);
       if (obj !== -1) {
         return obj;
