@@ -4,28 +4,23 @@
     <main role="main">
 
       <div class="jumbotron" data-aos="zoom-in">
-        <img class="d-none d-sm-block" src="./assets/img/SummerOfPride2020_Banner.jpg" alt="Summer of Pride" />
-        <img class="d-sm-none" src="./assets/img/SummerOfPride2020_Mobile.jpg" alt="Summer of Pride" />
+        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
+        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
       </div>
 
       <div id="main-content">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center" data-aos="slide-up">Get Ready for the Summer of Pride!</h1>
-              <p data-aos="slide-up">The Summer of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of June. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
+              <p data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
-              <p data-aos="slide-up">This year, we’re also supporting four wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a>, <a href="https://bailproject.org/" target="_blank">The Bail Project</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
+              <p data-aos="slide-up">This year, we’re also supporting four wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
               <div align="center" class="charities row">
                 <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-gaymerx" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-trevor-project" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-trans-lifeline" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://bailproject.org/" target="_target"><img class="" src="./assets/img/bailproject.png" alt="The Bail Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-solidarity-with-black-lives-matter" target="_target">DONATE</a></div></div> 
-              </div>
-              <hr>
-              <div class="sale">
-              <a href="https://www.nexus.gg/midboss" target="_target"><img class="sale" src="./assets/img/ChronoGG.png" alt="Summer of Pride 2020 Steam Sale" /></a>
               </div>
               <hr>
               <!-- Begin MailChimp Signup Form -->
@@ -140,9 +135,10 @@
                 <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
                 </div>
-
-                <div class="brands">
-              <h3>Supportive Organizations</h3>
+              
+              <hr>
+              <div class="brands">
+              <h1>Supportive</h1>
               <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> <a href="#" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> <a href="https://igda.org/" target="_target"><img class="" src="./assets/img/igda.png" alt="IGDA" /></a>
               </div>
 

@@ -1,660 +1,673 @@
 const streamers = [
   {
     id: "1",
-    name: "Matty_Qu",
-    twitch: "https://www.twitch.tv/matty_qu",
+    name: "AshtonRoses",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/ashtonroses",
     personal: "",
-    social: "https://twitter.com/home",
-    bio: "Hi! Name is Matty_qu, I'm a queer streamer here to scream a smile on everyone's faces.  I enjoy a variety of games, but I play mostly asymmetrical horror and sims.  Also, my favorite color is mint.",
-    img:require('./img/streamers/Matty_Qu.jpg')
+    social: "https://twitter.com/Ashton_Roses",
+    bio: "I've been streaming for 3 years. I've been slightly MIA recently due to personal reasons, but I'm planning to come back soon. I play a variety of games but normally go through phases of playing one game as of late. ",
+    img:require('./img/streamers/AshtonRoses.jpg')
   },
   {
     id: "2",
-    name: "quinnntastic",
-    twitch: "https://twitch.tv/quinnntastic",
-    personal: "https://tastic.me/",
-    social: "https://twitter.com/quinnntastic_",
-    bio: "I am a queer nonbinary disabled/chronically ill Latinx TTRPG creator, writer, and streamer! I advocate for stronger representation of marginalized groups across media, especially in gaming.",
-    img:require('./img/streamers/quinnntastic.jpg')
-  },
-  {
-    id: "3",
-    name: "Dagonmar",
-    twitch: "https://twitch.tv/dagonmar",
-    personal: "http://www.dagonmar.tv",
-    social: "https://twitter.com/dagonmartv",
-    bio: "Dagonmar is a lewd streamer with a focus on story-heavy games. From lewd and outrgeous comedy, to cute puppy dogs, Dagonmar and his community has something for everyone.",
-    img:require('./img/streamers/Dagonmar.jpg')
-  },
-  {
-    id: "4",
-    name: "Dubusaeyo",
-    twitch: "https://www.twitch.tv/dubusaeyo",
-    personal: "https://dubusaeyo.tv",
-    social: "https://www.twitter.com/dubusaeyo",
-    bio: "I am a chill Twitch streamer who identifies as asexual, aromantic and agender. I love to play a variety of games, especially story and LGBTQIA+ themed games.",
-    img:require('./img/streamers/Dubusaeyo.jpg')
-  },
-  {
-    id: "5",
-    name: "J0hnJ0hnn",
-    twitch: "https://www.twitch.tv/j0hnj0hnn",
-    personal: "",
-    social: "https://www.twitter.com/j0hn_j0hnn",
-    bio: "I'm a 29-year-old proud, body positive gay man. I'm the Co-Founder of Rainbow Arcade, an all LGBTQIA+ Stream Team on Twitch. I love to make people laugh with my quick wit and bubbly personality.",
-    img:require('./img/streamers/J0hnJ0hnn.jpg')
-  },
-  {
-    id: "6",
-    name: "JeffBrutlag",
-    twitch: "https://twitch.tv/jeffbrutlag",
-    personal: "https://jeffbrutlag.com",
-    social: "https://twitter.com/jeffbrutlag",
-    bio: "I'm a gay streamer focused on story-driven games, horror games, and some simulation games! I'm also a team leader for the Plant Army, a team centered around chat interaction, inclusivity, and positivity.",
-    img:require('./img/streamers/JeffBrutlag.jpg')
-  },
-  {
-    id: "7",
-    name: "veritasunae",
-    twitch: "https://www.twitch.tv/veritasunae",
-    personal: "",
-    social: "https://www.twitter.com/veritasunae",
-    bio: "I'm a pansexual, agender streamer from Australia, who loves both playing and working on visual novels in between my doctoral work at university. I also really enjoy platformers, puzzle games and Nintendo.",
-    img:require('./img/streamers/veritasunae.jpg')
-  },
-  {
-    id: "8",
-    name: "readyplayergabe",
-    twitch: "https://www.twitch.tv/readyplayergabe",
-    personal: "",
-    social: "https://twitter.com/readyplayergabe",
-    bio: "I am a 26 Latin gay boy living the Cali Dream. I'm a variety caster with a great attitude, laid-back and ready to make friendships and give you a safe space to chill.",
-    img:require('./img/streamers/Gabethegamer2011.jpg')
-  },
-  {
-    id: "9",
-    name: "Sierra Myst",
-    twitch: "https://www.twitch.tv/sierraxmyst",
-    personal: "",
-    social: "https://www.twitter.com/sierraxmyst",
-    bio: "Sierra Myst is a drag queen from space. She offers fun, creative content in her drag streams followed by a variety of fun games like Animal Crossing, Pokemon, and FF:XIV.",
-    img:require('./img/streamers/SierraMyst.jpg')
-  },
-  {
-    id: "10",
-    name: "SGAK",
-    twitch: "https://www.twitch.tv/sgak",
-    personal: "https://sgak19.wixsite.com/stellan",
-    social: "https://twitter.com/sgak",
-    bio: "I'm that weird-looking nerdy gay pinko commie gamer who is also cuddly and nice (Stellan from Sweden).",
-    img:require('./img/streamers/SGAK.jpg')
-  },
-  {
-    id: "11",
-    name: "DandyDamlo",
-    twitch: "https://www.twitch.tv/dandydamlo",
-    personal: "",
-    social: "https://twitter.com/SlamloDamlo",
-    bio: "Hello! I'm DandyDamlo. My pronouns are they/them! I'm Non-binary. The goal of my streams is to have be chill, create a welcoming environment where discussion is welcome, and to have some goofs!",
-    img:require('./img/streamers/DandyDamlo.jpg')
-  },
-  {
-    id: "12",
-    name: "awnr",
-    twitch: "https://twitch.tv/awnr",
-    personal: "https://awnr.tv",
-    social: "https://twitter.com/awnr",
-    bio: "When games started showcasing queer characters, Awnr began to see games in a new light. He hopes to spark that same sense of recognition on Twitch, constantly looking at things through a LGBTQIA+ lens.",
-    img:require('./img/streamers/awnr.jpg')
-  },
-  {
-    id: "13",
-    name: "NincompoopEXE",
-    twitch: "https://www.twitch.tv/nincompoopexe",
-    personal: "",
-    social: "https://twitter.com/NincompoopEXE",
-    bio: "I'm Simon, a 30-year-old Swedish gaymer who's dreamt about making gaming content for years. Now I do my best to create a safe community and a place where people can come, be happy and be themselves.",
-    img:require('./img/streamers/NincompoopEXE.jpg')
-  },
-  {
-    id: "14",
-    name: "Wii Gay",
-    twitch: "https://www.twitch.tv/wii_gay",
-    personal: "",
-    social: "https://www.instagram.com/mmdizzie",
-    bio: "I'm a 33-year-old queer/trans POC gamer from the south but now living my best gay life in NYC. Used to play guitar and sing in punk bands – now I'm playing queer video games.",
-    img:require('./img/streamers/WiiGay.jpg')
-  },
-  {
-    id: "15",
-    name: "FoxQueen",
-    twitch: "https://twitch.tv/foxqueen",
-    personal: "",
-    social: "https://twitter.com/rompingfox",
-    bio: "My name's Alice, aka FoxQueen. I'm a variety streamer that mainly focuses on story heavy games, primarily visual novels, JRPGs, and RPGs. I like focusing on having a very chill interactive stream.",
-    img:require('./img/streamers/FoxQueen.jpg')
-  },
-  {
-    id: "16",
-    name: "iambrandon",
-    twitch: "https://www.twitch.tv/iambrandon",
-    personal: "",
-    social: "https://twitter.com/iamBrandonTV",
-    bio: "I am a Twitch variety caster who is also a huge nerd who works in the gaming industry, loves D&D and am the ultimate horror fan. I am proud to positively represent being POC and a part of the LGBT community.",
-    img:require('./img/streamers/iambrandon.jpg')
-  },
-  {
-    id: "17",
-    name: "ArcadeAshelyn",
-    twitch: "https://www.twitch.tv/arcadeashelyn",
-    personal: "",
-    social: "",
-    bio: "I am a pansexual and transfeminine variety streamer that focuses on creating a welcoming community, especially for those of us who are part of the LGBTQIA+ spectrum or others who would like to learn more!",
-    img:require('./img/streamers/ArcadeAshelyn.jpg')
-  },
-  {
-    id: "18",
-    name: "SlicedRaven",
-    twitch: "https://twitch.tv/slicedraven",
-    personal: "",
-    social: "https://twitter.com/slicedraven",
-    bio: "She/Her Pronouns. A variety streamer with a love for horror and humor. I run first playthroughs, Early Access and love to showcase indie titles. Self proclaimed lesbian supreme, facing my fears in flannel.",
-    img:require('./img/streamers/SlicedRaven.jpg')
-  },
-  {
-    id: "19",
-    name: "dragtrashly",
-    twitch: "http://twitch.tv/dragtrashly",
-    personal: "https://dragtrashly.com/",
-    social: "https://twitter.com/dragtrashly",
-    bio: "I'm a drag queen gamer, streamer, performer, comedian, model, celebrity, or whichever of my many delusions you prefer. I include gaming inspirations in my looks and play a variety of games on stream.",
-    img:require('./img/streamers/dragtrashly.jpg')
-  },
-  {
-    id: "21",
-    name: "Coconut_Prince",
-    twitch: "https://www.twitch.tv/coconut_prince",
-    personal: "",
-    social: "https://twitter.com/Coconut__Prince",
-    bio: "I am a 26-year-old gay man living in California. I specialize in curating a mellow atmosphere to relax my viewers with a uniquely immersive auditory experience with my voice and with selected musical interludes.",
-    img:require('./img/streamers/Coconut_Prince.jpg')
-  },
-  {
-    id: "22",
-    name: "DEERE",
-    twitch: "https://www.twitch.tv/deere",
-    personal: "https://www.streamqueens.net",
-    social: "https://www.twitter.com/deardeere",
-    bio: "I am DEERE, let's play what you fear! Serving you spooks & lewks, you can find me every Wed & Friday at twitch.tv/DEERE!",
-    img:require('./img/streamers/DEERE.jpg')
-  },
-  {
-    id: "23",
-    name: "ProjectRuby",
-    twitch: "https://www.twitch.tv/projectruby",
-    personal: "",
-    social: "https://www.twitter.com/projectruby",
-    bio: "I'm a variety queer streamer from Portugal. I host a weekly talk show, play video games and sing. I strive to build an inclusive community where people can be themselves.",
-    img:require('./img/streamers/ProjectRuby.jpg')
-  },
-  {
-    id: "24",
-    name: "OpheliaUp",
-    twitch: "https://www.twitch.tv/opheliaup",
-    personal: "https://www.opheliaup.com",
-    social: "https://www.instagram.com/missopheliaup",
-    bio: "I'm a San Diego based Drag Queen streamer on Twitch who specializes in gothy glamor! I play a wide variety of RPGs and action games while providing a safe space for LGBTQ+ individuals and their allies.",
-    img:require('./img/streamers/OpheliaUp.jpg')
-  },
-  {
-    id: "25",
-    name: "QueenNickiMirage",
-    twitch: "https://www.twitch.tv/QueenNickiMirage",
-    personal: "",
-    social: "https://www.twitter.com/NickiMirageLIVE",
-    bio: "Nicki Mirage is a Florida-based drag queen, cosplayer, PhD student, and Twitch Affiliate! They're known in their local scene as \"The Five Dollar Fornicator of Drag\" and subscribers know why!",
-    img:require('./img/streamers/QueenNickiMirage.jpg')
-  },
-  {
-    id: "26",
-    name: "nemesisnetwork",
-    twitch: "https://www.twitch.tv/nemesisnetwork",
-    personal: "",
-    social: "https://www.twitter.com/nemesislacroix",
-    bio: "I am part of Team Stream Queens, an active drag content creator. I am Twitch's exclusive Bratz doll. I'm a retro gamer with lots of love to share my art on this platform.",
-    img:require('./img/streamers/nemesisnetwork.jpg')
-  },
-  {
-    id: "27",
-    name: "Evidious515",
-    twitch: "https://www.twitch.tv/Evidious515",
-    personal: "",
-    social: "https://www.twitter.com/Evidious515",
-    bio: "Evidious515 (E.V./Evi) is a bearded, busty, beer loving drag queen streaming for Team Stream Queens from the beautiful Midwest! They enjoy giving a good laugh (at their expense) to brighten anyone's mood.",
-    img:require('./img/streamers/Evidious515.jpg')
-  },
-  {
-    id: "28",
-    name: "LeaMorgana",
-    twitch: "http://twitch.tv/leamorgana",
-    personal: "",
-    social: "http://twitter.com/leamorganna",
-    bio: "I'm a Twitch streamer focused on chill friendly streams, part of the Team Stream Queens. My streams are both focused on creative/building kind of games and horror games.",
-    img:require('./img/streamers/leamorgana.jpg')
-  },
-  {
-    id: "29",
-    name: "Dona Tarte",
-    twitch: "https://www.twitch.tv/donatarte",
-    personal: "https://www.donatarte.com",
-    social: "https://www.instagram.com/Dona_Tarte",
-    bio: "Hii! My name is Dona! I am a drag queen, twitch streamer and baker. Every week I stream drag makeup, gaming and host my drag baking show, Dona Bakes.",
-    img:require('./img/streamers/DonaTarte.jpg')
-  },
-  {
-    id: "30",
-    name: "Joy Stique",
-    twitch: "https://www.twitch.tv/joy_stique",
-    personal: "",
-    social: "https://www.twitter.com/joystique",
-    bio: "I am Twitch's resident drag monarch because I am both a King and a Queen! I play a wide variety of games and love to have fun/chill!",
-    img:require('./img/streamers/JoyStique.jpg')
-  },
-  {
-    id: "31",
-    name: "Stephneee_Plz",
-    twitch: "https://www.twitch.tv/stephneee_plz",
-    personal: "https://linktr.ee/stephneee_plz",
-    social: "https://twitter.com/stephneee_plz",
-    bio: "A very silly pansexual/bisexual streamer focused on being positive, while seriously talking about the things that drive a lot of people to negativity. Best known for dying in games and laughing about it!",
-    img:require('./img/streamers/Stephneee_Plz.jpg')
-  },
-  {
-    id: "32",
-    name: "Granny",
-    twitch: "http://www.twitch.tv/Granny",
-    personal: "",
-    social: "https://twitter.com/DEARGRANNY",
-    bio: "I stream from a Hobbit Home using my typewriter and camcorder! I enjoy blessing the World Wide Web and making me Grandkids laugh.",
-    img:require('./img/streamers/Granny.jpg')
-  },
-  {
-    id: "33",
-    name: "Cash Monet",
-    twitch: "https://www.twitch.tv/cashmonetdrag",
-    personal: "https://www.instagram.com/cashmonetdrag",
-    social: "https://www.twitter.com/imcashmonet",
-    bio: "San Francisco Drag Performer. Had a nerd monthly show called Pastel Gore. Twitch Streamer and gamer!",
-    img:require('./img/streamers/CashMonet.jpg')
-  },
-  {
-    id: "34",
-    name: "Chelora",
-    twitch: "https://www.twitch.tv/chelora",
-    personal: "",
-    social: "https://twitter.com/Chel0ra",
-    bio: "Hi! I'm Chelora and I'm a variety drag queen streamer and a member of the Team Stream Queens. I create a wide variety of content focused on creating a positive environment and a safe space for everyone.",
-    img:require('./img/streamers/Chelora.jpg')
-  },
-  {
-    id: "35",
-    name: "ThatGayGinger",
-    twitch: "https://www.twitch.tv/thatgayginger",
-    personal: "",
-    social: "https://www.Twitter.com/that_gayginger",
-    bio: "I'm a very loud, queer, socially anxious caterpillar who plays a lot of story games. I'm from NYC, but live in CA now! I'm nonbinary!",
-    img:require('./img/streamers/ThatGayGinger.jpg')
-  },
-  {
-    id: "36",
-    name: "RinnSohma",
-    twitch: "https://www.twitch.tv/rinnsohma",
-    personal: "",
-    social: "https://www.twitter.com/rinnsohma",
-    bio: "I'm a variety Twitch streamer who identifies as pansexual. My main focus on Twitch is to continue building an inclusive community and safe space for everyone.",
-    img:require('./img/streamers/RinnSohma.jpg')
-  },
-  {
-    id: "37",
-    name: "honeybri_",
-    twitch: "https://www.twitch.tv/honeybri_",
-    personal: "",
-    social: "https://twitter.com/honeybri_live",
-    bio: "I am a pansexual woman who is passionate about creating an inclusive space for all. I have a special love for Nintendo and story driven games.",
-    img:require('./img/streamers/honeybri_.jpg')
-  },
-  {
-    id: "38",
-    name: "CurryKalel",
-    twitch: "https://www.twitch.tv/currykalel",
-    personal: "",
-    social: "https://twitter.com/CurryKalel",
-    bio: "I'm a variety streamer who enjoys any game I can get my hands on. I am known to play a lot of Overwatch and DBD and a bunch of social games with friends.",
-    img:require('./img/streamers/CurryKalel.jpg')
-  },
-  {
-    id: "39",
-    name: "justicekazzy",
-    twitch: "https://www.twitch.tv/justicekazzy",
-    personal: "",
-    social: "https://twitter.com/JusticeKazzy_",
-    bio: "I am a trans masc half-Japanese streamer currently located in Germany. I foster an LGBT+ inclusive community on Twitter and Twitch and talk about LGBT+ issues around the globe to spread awareness.",
-    img:require('./img/streamers/justicekazzy.jpg')
-  },
-  {
-    id: "40",
-    name: "GlennAngel",
-    twitch: "https://www.twitch.tv/glennangel",
-    personal: "https://helloglennangel.com/",
-    social: "https://twitter.com/HelloGlennAngel",
-    bio: "I am a gay Latino streamer who focuses on multiplayer games (especially FFXIV, ESO and GW2). I like to be high energy and very welcoming because I love chatting with others and making them smile.",
-    img:require('./img/streamers/GlennAngel.jpg')
-  },
-  {
-    id: "41",
-    name: "CrevLM",
-    twitch: "https://www.twitch.tv/crevlm",
-    personal: "https://www.streamersphere.com",
-    social: "https://www.twitter.com/crevlmtv",
-    bio: "Hi I’m Lisa/Crev. I’m a disabled retired USAF veteran and also a bisexual content creator on Twitch. I love building a space where people of all walks of life can feel comfortable.",
-    img:require('./img/streamers/CrevLM.jpg')
-  },
-  {
-    id: "42",
-    name: "urbanbohemian",
-    twitch: "https://www.twitch.tv/urbanbohemian",
-    personal: "https://urbanbohemian.com",
-    social: "https://www.twitter.com/urbanbohemian",
-    bio: "Brian is a black queer variety streamer, writer, and foodie with a “PhD in Brunch.” He mostly plays narrative/action RPGs and the occasional looter shooter.",
-    img:require('./img/streamers/urbanbohemian.jpg')
-  },
-  {
-    id: "43",
-    name: "skittzipoo",
-    twitch: "https://www.twitch.tv/skittzipoo",
-    personal: "",
-    social: "https://twitter.com/skittzipoo",
-    bio: "I am a variety streamer on Twitch who plays a lot of indie games, creates cosplay, and much more! My main focus is to foster a welcoming and positive community while having fun.",
-    img:require('./img/streamers/skittzipoo.jpg')
-  },
-  {
-    id: "44",
-    name: "Miss Cookie Doe",
-    twitch: "https://www.twitch.tv/misscookiedoe",
-    personal: "https://twitter.com/mscookiedoe",
-    social: "",
-    bio: "Hi I'm Miss Cookie Doe, a drag streamer on twitch. I do my drag queen transformations and then play games. My favorite games are The Sims 4, Animal Crossing and Final Fantasy.",
-    img:require('./img/streamers/MissCookieDoe.jpg')
-  },
-  {
-    id: "45",
     name: "kilcannon",
+    pronouns: "He / Him",
     twitch: "https://www.twitch.tv/kilcannon",
     personal: "https://www.kilcannon.com",
-    social: "https://www.instagram.com/thekilcannon",
-    bio: "Kilcannon is also referred to as Kil or Daddycannon by many in the Twitch community. He’s a huge goofball that enjoys a broad variety of games ranging from MMOs, digital card games, FPS's, to RPGs.",
+    social: "https://www.twitter.com/thekilcannon",
+    bio: "Kilcannon is a huge goofball that enjoys a broad variety of games ranging from MMOs, digital card games, FPS's, to RPGs. His streams are all about creating a safe space for affirmational, positive community development.",
     img:require('./img/streamers/kilcannon.jpg')
   },
   {
-    id: "46",
-    name: "gaymerglenn",
-    twitch: "https://www.twitch.tv/gaymerglenn",
-    personal: "https://www.instagram.com/abcdefglenn",
-    social: "https://www.twitter.com/gaymerglenn",
-    bio: "My name is Glenn and I am a dog dad, taco enthusiast and Overwatch streamer! I am well known amongst my friends and community for being recklessly optimistic and a chaotic good energy in this world.",
-    img:require('./img/streamers/gaymerglenn.jpg')
-  },
-  {
-    id: "47",
-    name: "Justin",
-    twitch: "https://www.twitch.tv/justin_nick",
-    personal: "https://www.instagram.com/justinickpgh",
-    social: "https://www.twitter.com/justin_moore",
-    bio: "Justin is a gay variety streamer on Twitch who is obsessed with story-driven games! His streams revolve around being a fun, inclusive space for all. Co-founder of the Rainbow Arcade.",
-    img:require('./img/streamers/Justin.jpg')
-  },
-  {
-    id: "48",
-    name: "Psyche",
-    twitch: "https://www.twitch.tv/Psyche",
-    personal: "https://www.psycheplays.com",
-    social: "https://www.twitter.com/PsychePlays",
-    bio: "I'm a bisexal, Partnered streamer from Northern Ireland. I make an inclusive, positive, and welcoming space. We love space, sandbox, and story games, and particularly value shared experiences.",
-    img:require('./img/streamers/Psyche.jpg')
-  },
-  {
-    id: "49",
-    name: "paijemonstre",
-    twitch: "https://www.twitch.tv/paijemonstre",
-    personal: "https://paijemonstre.wixsite.com/paijemonstre",
-    social: "https://www.twitter.com/paijemonstre",
-    bio: "I am a high-energy (super kawaii) streamer, illustrator, and bisexual. I pride myself in creating a kind community where people feel content being their authentic selves.",
-    img:require('./img/streamers/paijemonstre.jpg')
-  },
-  {
-    id: "50",
-    name: "HoboHaus",
-    twitch: "https://www.twitch.tv/hobohaus",
-    personal: "https://ectobabble.com",
-    social: "https://twitter.com/ectobabble",
-    bio: "Welcome to Hobo Haus, a ruptured planet in space filled with fantastical creatures, art, and travellers of all shapes and sizes. Have a seat as we explore your world and invite you to explore ours.",
-    img:require('./img/streamers/HoboHaus.jpg')
-  },
-  {
-    id: "51",
-    name: "Spofie",
-    twitch: "https://www.twitch.tv/spofie",
+    id: "3",
+    name: "RyokoSpacePirate",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/ryokospacepirate",
     personal: "",
-    social: "https://www.twitter.com/spofiee",
-    bio: "I’m a daily streamer of Final Fantasy and variety games. I identify as pansexual and focus on having a cozy community!",
-    img:require('./img/streamers/Spofie.jpg')
+    social: "",
+    bio: "I'm Ryoko! I'm Pansexual and Gender Fluid and I love video games! ",
+    img:require('./img/streamers/RyokoSpacePirate.jpg')
   },
   {
-    id: "52",
-    name: "ChiliFarmer",
-    twitch: "https://www.twitch.tv/chilifarmer",
+    id: "4",
+    name: "TinyTrees",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/tinytrees",
     personal: "",
-    social: "https://www.youtube.com/c/chilifarmer",
-    bio: "I am a blind reaction streamer with a focus on JRPGs and animation. I am passionate about fostering LGBTQIA+ community especially for young adults living in small towns and non-accepting communities.",
-    img:require('./img/streamers/ChiliFarmer.jpg')
+    social: "https://twitter.com/TinyTreesTV",
+    bio: "TinyTrees is a queer content creator focusing on story-based games, crafting & full-time regular charity work on her streams. She enjoys challenge game narratives, applying them to real work experiences & using games to connect with her community",
+    img:require('./img/streamers/TinyTrees.jpg')
   },
   {
-    id: "53",
-    name: "acorntreeinc",
-    twitch: "https://www.twitch.tv/acorntreeinc",
+    id: "5",
+    name: "Stephneee_Plz",
+    pronouns: "She / Her",
+    twitch: "https://www.twich.tv/stephneee_plz",
     personal: "",
-    social: "https://twitter.com/AcornTwee",
-    bio: "I love to encourage growth and spread love and positivity. I'm an illustrator that plays a variety of games, but lately a lot of builders like Cities: Skylines or The Sims. I also love adventures, puzzles, and FPS.",
-    img:require('./img/streamers/acorntreeinc.jpg')
+    social: "https://www.twitter.com/stephneee_plz",
+    bio: "Just a lil dork havin fun and play vidja games, with a special emphasis on kindness, care, and respect. Two degrees & work doing research. Happy pansexual bean",
+    img:require('./img/streamers/Stephneee_Plz.jpg')
   },
   {
-    id: "54",
-    name: "Meastoso",
-    twitch: "https://www.twitch.tv/meastoso/",
-    personal: "https://meastoso.com/",
-    social: "https://www.instagram.com/meastoso",
-    bio: "A FFXIV-focused broadcaster who also co-hosts a gaymer bear themed YouTube show. Meast is passionate about entrepreneurship, software development, foodies, traveling, and LGBTQIA+ equality.",
-    img:require('./img/streamers/Meastoso.jpg')
-  },
-  {
-    id: "55",
-    name: "Jude Valentin",
-    twitch: "https://www.twitch.tv/mermaidqueenjude",
-    personal: "https://www.mermaidqueenjude.com",
-    social: "https://www.twitter.com/merqueenjude",
-    bio: "I am a content creator and storyteller who prides herself in having a compassionate and empathetic community. I have dedicated my career to changing the landscape of who is allowed to be an entertainer.",
-    img:require('./img/streamers/JudeValentin.jpg')
-  },
-  {
-    id: "56",
+    id: "6",
     name: "Player_Michaelous",
+    pronouns: "He / Him",
     twitch: "https://www.twitch.tv/player_michaelous",
     personal: "",
-    social: "https://twitter.com/Play_Michaelous",
-    bio: "I stream part-time while working full time in logistics as an import agent. I found the experience to be quite lovely to be able to communicate with chat and meet people throughout this experience.",
+    social: "https://twitter.com/Play_Michaelous?s=09",
+    bio: "Gaymer lad with a big love for gaming. Been a massive fan growing up with a major fondness for the Resident Evil and Kingdom Hearts series in particular. ",
     img:require('./img/streamers/Player_Michaelous.jpg')
   },
   {
-    id: "57",
-    name: "Minnty",
-    twitch: "https://twitch.tv/minntycream",
+    id: "7",
+    name: "Faevyn",
+    pronouns: "he/they",
+    twitch: "https://www.twitch.tv/faevyn",
+    personal: "https://www.faevyn.com/",
+    social: "https://www.twitter.com/faevyn",
+    bio: "Faevyn (he/they) enjoys bringing the love and comfort of gaming to those around them. Upon joining Twitch, Faevyn has become an affiliated streamer, and strives to use gaming to connect with and do good for as many people as possible.",
+    img:require('./img/streamers/Faevyn.jpg')
+  },
+  {
+    id: "8",
+    name: "AcornTreeInc",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/acorntreeinc",
     personal: "",
-    social: "https://twitter.com/minntycream",
-    bio: "Hey, I'm a bisexual 24yo from Spain. I'm a very nice and calm person that enjoys meeting new people and make new friends. I love playing videogames and I'm a LGBT+ and feminism activist in my country.",
-    img:require('./img/streamers/Minnty.jpg')
+    social: "https://twitter.com/AcornTwee",
+    bio: "They/Them pronouns. I focus on just being myself, and letting people be themselves too. I believe that everyone is continually growing and learning, and we can all do that together! ",
+    img:require('./img/streamers/AcornTreeInc.jpg')
   },
   {
-    id: "58",
-    name: "TalesOfTiny",
-    twitch: "http://twitch.tv/talesoftiny",
+    id: "9",
+    name: "Veritas Unae",
+    pronouns: "Any pronouns (he/they preferred)",
+    twitch: "https://www.twitch.tv/veritasunae",
     personal: "",
-    social: "http://twitter.com/talesoftiny",
-    bio: "I am a variety LGBTQIA+ content Creator streaming multiple titles including indie, RPG and platformer as well as crafting. I'm the community engagement manager for an LGBTQIA+ stream team, the Rainbow Collective.",
-    img:require('./img/streamers/TalesOfTiny.jpg')
+    social: "https://www.twitter.com/veritasunae",
+    bio: "I'm a fan of all things puzzles, platforming and picturesque! I hope you can stop by and join my passion for rich storytelling and beautiful environments. As a pansexual agender streamer myself, I hope you find my community warm and inviting.",
+    img:require('./img/streamers/VeritasUnae.jpg')
   },
   {
-    id: "59",
-    name: "Ryoko82",
-    twitch: "https://www.twitch.tv/ryoko82",
-    personal: "",
-    social: "",
-    bio: "I'm Ryoko! I'm Gender Fluid and I love dressing up and cute outfits and wigs. I love all kinds of games!",
-    img:require('./img/streamers/Ryoko82.jpg')
+    id: "10",
+    name: "Cashmonetdrag",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/cashmonetdrag",
+    personal: "https://instagram.com/cashmonetdrag",
+    social: "https://www.twitter.com/imcashmonet",
+    bio: "Cash Monet is a performer, maker, and dry humor aficionado. Her style is kitschy, glitchy, and a little sticky inspiring from asian culture, video games, and nerd culture. She's cold, hard, Cash Monet",
+    img:require('./img/streamers/Cashmonetdrag.jpg')
   },
   {
-    id: "60",
-    name: "miabyte",
-    twitch: "https://www.twitch.tv/miabyte",
-    personal: "",
-    social: "https://www.twitter.com/themiabyte",
-    bio: "I am a UK based full time content creator and partnered variety streamer on Twitch. I make videos about gaming, puzzles and food, and streaming narrative driven games for my wonderful community.",
-    img:require('./img/streamers/miabyte.jpg')
+    id: "11",
+    name: "SGAK",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/sgak",
+    personal: "https://linktr.ee/stellankarlsson",
+    social: " https://www.twitter.com/SGAK",
+    bio: "A colorful genderqueer variety twitch gaymer with a passion for cuteness ♡ ",
+    img:require('./img/streamers/SGAK.jpg')
   },
   {
-    id: "61",
-    name: "ripleyviolet",
-    twitch: "https://twitch.tv/ripleyviolet",
-    personal: "https://www.ripleyviolet.com",
-    social: "https://www.twitter.com/RipleyStorm",
-    bio: "I'm a fulltime Variety streamer and Intersex/Transgender Furry artist. I focus on Fundraising, community support, 8- & 16-bit retrogames, and am a voice actor.",
-    img:require('./img/streamers/ripleyviolet.jpg')
-  },
-  {
-    id: "62",
-    name: "Andromenary",
-    twitch: "https://www.twitch.tv/andromenary",
-    personal: "",
-    social: "https://twitter.com/andromenary",
-    bio: "We are Jae, Five and Kenneth, and we are Andromenary, we are all part of the LGBTQ+ community. We enjoy a range of games from story-based games to FPS and everything in between.",
-    img:require('./img/streamers/Andromenary.jpg')
-  },
-  {
-    id: "63",
+    id: "12",
     name: "sealburn",
+    pronouns: "He / Him",
     twitch: "https://www.twitch.tv/sealburn",
     personal: "",
-    social: "https://twitter.com/sealburn",
-    bio: "I'm a 26-year-old working in media and living in Los Angeles. I love playing indie and story-driven games as well as horror games.",
+    social: "https://www.twitter.com/sealburn",
+    bio: "Hello! I’m sealburn, a gay variety streamer on Twitch who mainly plays horror-survival, story-driven, and co-op games. I love engaging and providing immersive gameplay while getting easily scared and screaming a little too loud. ",
     img:require('./img/streamers/sealburn.jpg')
   },
   {
-    id: "64",
-    name: "Maesoa",
-    twitch: "https://www.twitch.tv/maesoa",
+    id: "13",
+    name: "ReadyPlayerGabe",
+    pronouns: "He / Him",
+    twitch: " https://www.twitch.tv/ReadyPlayerGabe",
     personal: "",
-    social: "https://twitter.com/maesoa",
-    bio: "My game interests vary but I aim to be a welcoming individual with a focus on interacting. I keep things pretty chill in my streams and get to know the people in the stream.",
-    img:require('./img/streamers/Maesoa.jpg')
+    social: "https://www.instagram.com/ReadyPlayerGabe",
+    bio: "Hey I’m ReadyPlayerGabe   “RPG” for short and guess what?! I'm Back for Another Awesome Year of Pride, With some Chill Gameplay and Conversation's. It's Time to Take this Season of Pride by Storm and fly our Color’s High. Without regrets.    ",
+    img:require('./img/streamers/ReadyPlayerGabe.jpg')
   },
   {
-    id: "65",
-    name: "Elix9",
-    twitch: "https://www.twitch.tv/elix9",
+    id: "14",
+    name: "urbanbohemian",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/urbanbohemian",
+    personal: "https://urbanbohemian.com",
+    social: "https://twitter.com/urbanbohemian",
+    bio: "Brian is a Black queer variety streamer, writer, and foodie with a “PhD in Brunch”. He plays visual novels, action RPGs, cozy games and the occasional looter shooter. He loves to have a good time on stream and bring love & disco to every viewer.",
+    img:require('./img/streamers/urbanbohemian.jpg')
+  },
+  {
+    id: "15",
+    name: "mxhufflebuff",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/mxhufflebuff",
     personal: "",
-    social: "https://www.twitter.com/elix_9",
-    bio: "HR Professional by day, Drag Queen gamer by night, Elix9 (the 9 is silent) is a Latina queen who enjoys horror games and winning your local scream queen competition.",
-    img:require('./img/streamers/Elix9.jpg')
+    social: "https://www.twitter.com/mxhufflebuff",
+    bio: "HuffleBuff is a quirky & kind genderqueer variety streamer. They strive to create a safe space for all people to feel valid & accepted. Through joy, laughter & vulnerable conversation, they are making the world a better place, one stream at a time.",
+    img:require('./img/streamers/mxhufflebuff.jpg')
   },
   {
-    id: "66",
-    name: "Mischa",
-    twitch: "https://www.twitch.tv/mischacrossing",
+    id: "16",
+    name: "Hashtag Trashly",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/dragtrashly",
+    personal: "https://dragtrashly.com/",
+    social: "https://twitter.com/dragtrashly",
+    bio: "Drag queen gaymer, performer, comedian, twitch partner, dumpster model. Streams makeup, cosplay, and a variety of games.",
+    img:require('./img/streamers/HashtagTrashly.jpg')
+  },
+  {
+    id: "17",
+    name: "haaeli",
+    pronouns: "They / Them",
+    twitch: "https://www.google.com/url?q=https://www.twitch.tv/haaeli",
     personal: "",
-    social: "https://www.twitter.com/mischacrossing",
-    bio: "Mischa streams story-driven adventure and life sim games, with a focus on cultivating a friendly community with a warm, cozy atmosphere.",
-    img:require('./img/streamers/Mischa.jpg')
+    social: "https://www.instagram.com/haaeli_heals",
+    bio: "I'm primarily a WoW Classic streamer, but I also 🖤 streaming scary, strange, indie and co-op games! Blue is my natural hair color. I'll use any excuse to do cosplay. I like shiny rocks and telling you why I think you’re cool.",
+    img:require('./img/streamers/haaeli.jpg')
   },
   {
-    id: "67",
-    name: "MegaPetros",
-    twitch: "https://www.Twitch.tv/MegaPetros",
+    id: "18",
+    name: "LukeBoogie",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/lukeboogie",
     personal: "",
-    social: "https://www.twitter.com/prasmusson",
-    bio: "36-year-old Swedish gaymer. Love pizza, gym and kanelbullar. Work in quality assurance, software testing. Play most games but prefer a controller better than mouse and keyboard.",
-    img:require('./img/streamers/MegaPetros.jpg')
+    social: "https://twitter.com/LukeBoogieGames",
+    bio: "Giant Hairy dude, Videogame lover, nerd, geek, nonbinary spooky scary skeleton, DnD enthusiast and Rampant Demisexual who wants to create a safe space and make people laugh",
+    img:require('./img/streamers/LukeBoogie.jpg')
   },
   {
-    id: "68",
-    name: "heyAnnieMok",
-    twitch: "http://twitch.tv/heyanniemok",
-    personal: "http://cargocollective.com/heyanniemok",
-    social: "http://twitter.com/heyanniemok",
-    bio: "Annie Mok is a writer-artist, musician, game dev, & streamer. She focuses on games with character.",
-    img:require('./img/streamers/heyAnnieMok.jpg')
+    id: "19",
+    name: "Minntycream",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://twitch.tv/minntycream",
+    personal: "",
+    social: "https://twitter.com/minntycream",
+    bio: "Hey! My name is Minnty or Aisha and I'm a little bisexual and non-binary blob from Spain. I love animals, plants and very cute things. I play a very big variety of games that lets my creativity and my positivity flow! ",
+    img:require('./img/streamers/Minntycream.jpg')
   },
   {
-    id: "70",
-    name: "Captain Valken David",
-    twitch: "https://www.twitch.tv/capnvalkendavid",
-    personal: "https://streamlabs.com/capnvalkendavid",
-    social: "https://twitter.com/CapnValkenDavid",
-    bio: "Heyyo, I'm the Captain! I'm a queer trans drag artist who roleplays as a pirate 90% of the time! I create a safe space for other queer folk and weirdos. We do casual RPGs, Competitive FPS, and speedruns!",
-    img:require('./img/streamers/CaptainValken.jpg')
+    id: "20",
+    name: "MerylStrip",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/merylstrip",
+    personal: "",
+    social: "https://twitter.com/BrettDBurger",
+    bio: "Hello! My name is MerylStrip, I'm from the Midwest coast and I'm a queer variety streamer on Twitch. I love playing just about anything from story-driven to horror to FPS. I love to laugh and say \"Ope!\" a lot when surprised.",
+    img:require('./img/streamers/MerylStrip.jpg')
   },
   {
-    id: "71",
+    id: "21",
+    name: "Dubu",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/dubusaeyo",
+    personal: "",
+    social: "https://twitter.com/dubusaeyo",
+    bio: "Dubu is an Australian streamer who identifies as Asexual, Aromantic and Agender and loves story, LGBTQIA+, VR and RPG games. They're always super chill (and scuffed) and every stream is a cosy stream, even if the gameplay is intense!",
+    img:require('./img/streamers/Dubu.jpg')
+  },
+  {
+    id: "22",
+    name: "Miabyte",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/miabyte",
+    personal: "https://www.miabyte.co.uk",
+    social: "https://twitter.com/themiabyte",
+    bio: "I'm Miabyte. Twitch Partner & variety streamer, Gayming Mag Podcast host and advocate for trans representation in the gaming industry. I focus on creating inclusive spaces, taking viewers on an adventure and making everyone's day a little bit better.",
+    img:require('./img/streamers/Miabyte.jpg')
+  },
+  {
+    id: "23",
+    name: "ArchyVision",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/archyvision",
+    personal: "",
+    social: "https://twitter.com/callmearchy",
+    bio: "A career hobbyist and designer, Archy is an Atlanta-based variety streamer with a short attention span. He’s a UX / UI Designer by day, and typically playing a horror or story-based game in the evenings.",
+    img:require('./img/streamers/ArchyVision.jpg')
+  },
+  {
+    id: "24",
+    name: "Ace",
+    pronouns: "She / Her",
+    twitch: "http://twitch.tv/a_typicalqueer",
+    personal: "",
+    social: "http://twitter.com/a_typicalqueer",
+    bio: "Ace is a Black queer content creator who aims to stand in the gap for individuals who look like her. Ace mainly plays Devour, Phasmophobia and Rogue Company.",
+    img:require('./img/streamers/Ace.jpg')
+  },
+  {
+    id: "25",
+    name: "Rinn",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/rinnsohma",
+    personal: "",
+    social: "https://twitter.com/RinnSohma",
+    bio: "Hi, I'm Rinn, a pansexual part-time streamer with a love for story-driven/exploration focused games. Outside of streaming I'm an archaeology graduate, work at a university, and consume copious amounts of science fiction & fantasy.",
+    img:require('./img/streamers/Rinn.jpg')
+  },
+  {
+    id: "26",
+    name: "Ken2pt0",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/ken2pt0",
+    personal: "",
+    social: "https://twitter.com/ken2pt0 ",
+    bio: "Ken2pt0 focuses on Final Fantasy, Overwatch, & Pokémon. Viewers always get a healthy dose of KEN, stands for KINDNESS (uplifting fun!), EVOLUTION (new approaches, games,), & NANCY-BOI (LGBTQIA+ content). Ken is like an Eevee, limitless potential ",
+    img:require('./img/streamers/Ken2pt0.jpg')
+  },
+  {
+    id: "27",
+    name: "8BitDylan",
+    pronouns: "He / Him",
+    twitch: "http://www.twitch.tv/8bitdylan",
+    personal: "",
+    social: "http://twitter.com/8bitdylan",
+    bio: "My name is 8BitDylan and I'm a certified MESS! Doesn't matter what we are doing over here as long as you are entertained is what we care about. Twitch Partner of 6 years and climbing.",
+    img:require('./img/streamers/8BitDylan.jpg')
+  },
+  {
+    id: "28",
+    name: "Delphron",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/delphron",
+    personal: "",
+    social: "https://twitter.com/Delphron",
+    bio: "Originally from Ireland, Delphron, a gay, ace creator now living in America with his husband, creates content through a variety of games as a vtuber.  ",
+    img:require('./img/streamers/Delphron.jpg')
+  },
+  {
+    id: "29",
+    name: "stefanduck",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/stefanduck",
+    personal: "",
+    social: "https://twitter.com/stefanduck_tv",
+    bio: "Hi! My name is Jackson, but y'all can call me stefanduck! I'm a mechanical engineer during the day, but at night I'm an LGBTQIA+ variety streamer on Twitch, where I like to play all sorts of games from spooky to cozy! ",
+    img:require('./img/streamers/stefanduck.jpg')
+  },
+  {
+    id: "30",
+    name: "Andromenary",
+    pronouns: "They / Them, Kenneth (he/him), Five (she/her), Jae (they/them)",
+    twitch: "https://www.twitch.tv/andromenary",
+    personal: "",
+    social: "https://twitter.com/andromenary",
+    bio: "We are Kenneth, Five and Jae, and we make up Andromenary, a queer streamer gang tired of searching for our place, we decided to make our own! Our streams consist of gaming, funky narration and sudden bursts into song. We hope to see you all in orbit!",
+    img:require('./img/streamers/Andromenary.jpg')
+  },
+  {
+    id: "31",
+    name: "SlicedRaven",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/slicedraven",
+    personal: "",
+    social: "https://www.twitter.com/slicedraven",
+    bio: "They call me Raven! I am a nuerodiverse lesbian streamer and I live for good vibes, friends and coffee. The nest is a cozy corner of twitch to chat about life, support eachother and be as nerdy as you want to be. Tune in for Horror, Stories, and Art!",
+    img:require('./img/streamers/SlicedRaven.jpg')
+  },
+  {
+    id: "32",
+    name: "bootsyyyy",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/bootsyyyy",
+    personal: "https://www.lovejess.co",
+    social: "https://www.twitter.com/bootsyyyy3",
+    bio: "bootsyyyy is a pansexual creative whirlwind with a soft spot for all things cozy and cute. She is an illustrator, artist, and avid video game lover; Bad at games, but plays them anyway. She survives on immaculate vibes and Diet Dr. Pepper.",
+    img:require('./img/streamers/bootsyyyy.jpg')
+  },
+  {
+    id: "33",
+    name: "FoxQueen",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/foxqueen",
+    personal: "",
+    social: "",
+    bio: "Hiya! My names Alice aka FoxQueen! I'm a super gay (pansexual) variety streamer who focuses on JRPGs and anime-esc games! My current obsession's are FFXIV, Genshin Impact, and Hades! ",
+    img:require('./img/streamers/FoxQueen.jpg')
+  },
+  {
+    id: "34",
+    name: "SincerelyUnique",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/sincerelyunique",
+    personal: "",
+    social: "https://twitter.com/twouniquefouru",
+    bio: "Unique is a 22-year old streamer from Texas. When he's not working, he's streaming and loves to talk about games with everyone. He believes in the community-building capability of games and enjoys including everyone in on the fun.",
+    img:require('./img/streamers/SincerelyUnique.jpg')
+  },
+  {
+    id: "35",
+    name: "Joy_Stique",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/joy_stique",
+    personal: "",
+    social: "https://www.twitter.com/joy_stique",
+    bio: "Joy Stique is Twitch's resident Drag Monarch because they are both a king AND a queen! They play a wide variety of games, bringing their chaotic thembo energy to every game they play!",
+    img:require('./img/streamers/Joy_Stique.jpg')
+  },
+  {
+    id: "36",
+    name: "meleemira",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://twitch.tv/meleemira",
+    personal: "",
+    social: "https://www.twitter.com/meleemira",
+    bio: "Meleemira (she/they) is a black, queer variety streamer with a focus on story-based, indie, and simulation games. Their community values chat interaction, inclusivity, charity, and more all while promoting a safe space to exist for everyone.",
+    img:require('./img/streamers/meleemira.jpg')
+  },
+  {
+    id: "37",
+    name: "BeccaBeckery",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/BeccaBeckery",
+    personal: "",
+    social: "https://www.twitter.com/BeccaBeckery",
+    bio: "I am bi/pan, demisexual, Irish content creator, whose content is focused around charity events, and raising awareness for disabilities and the LGBTQIA+ community. I mainly play games like Stardew, Marbles, and more recently Biomutant and Apex :)",
+    img:require('./img/streamers/BeccaBeckery.jpg')
+  },
+  {
+    id: "38",
+    name: "JeffBrutlag",
+    pronouns: "They / Them, He / Him",
+    twitch: "https://twitch.tv/jeffbrutlag",
+    personal: "https://jeffbrutlag.com",
+    social: "https://twitter.com/jeffbrutlag",
+    bio: "JeffBrutlag is a variety streamer and writer, focusing on games with stories, horror games, Nintendo games, some simulation games, and community interaction. They also often talk about how to make your spaces safer, as well as various queer topics.",
+    img:require('./img/streamers/JeffBrutlag.jpg')
+  },
+  {
+    id: "39",
     name: "RedSonja",
-    twitch: "https://www.twitch.tv/RedSonja",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/redsonja",
     personal: "",
-    social: "https://twitter.com/redsonja575",
-    bio: "Hi! I’m RedSonja, lover of Metroidvania games, speedrunner and I’m a lesbian. I am incredibly proud of my supportive and loving community. We love everyone here",
+    social: "https://www.twitter.com/redsonja575",
+    bio: "Hi! I'm Redsonja, former speedrunner and still ranked top ten in the world in the cuphead leaderboards. I stream mostly WoW content nowadays. I am hella gay and probably better at games than you. ",
     img:require('./img/streamers/RedSonja.jpg')
   },
   {
-    id: "72",
-    name: "BiqtchPuddin",
-    twitch: "https://www.twitch.tv/BiqtchPuddin",
-    personal: "",
-    social: "https://twitter.com/BiqtchPuddin",
-    bio: "I’m Biqtch Puddin’ winner of Boulet Brothers Dragula Season 2 and producer of the DIGITAL DRAG SHØW, the first ever drag show on twitch. I used to play fighting games competitively, love being queer and super stoked to be apart of this!",
-    img:require('./img/streamers/BiqtchPuddin.jpg')
+    id: "40",
+    name: "Feynris7",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/feynris7",
+    personal: "https://www.feynris.com",
+    social: "https://www.twitter.com/feynris7",
+    bio: "Hey I'm Feyn or Dan (He/Him) On any given day I could be putting out fires in the kitchen while *attempting* to bake, screaming at jump scares, enjoying a mukbang, making a snow man, or even trying to power through a game. But its always a good time.",
+    img:require('./img/streamers/Feynris7.jpg')
   },
   {
-    id: "73",
-    name: "ken2pt0",
-    twitch: "http://twitch.tv/ken2pt0",
+    id: "41",
+    name: "ShadowTtar",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/shadowttar",
     personal: "",
-    social: "http://twitter.com/Ken2pt0",
-    bio: "Ken2pt0 focuses on Final Fantasy, Overwatch, & Pokémon. Viewers always get a healthy dose of KEN, stands for KINDNESS (uplifting fun!), EVOLUTION (new approaches, games,), & NANCY-BOI (lots of LGBTQIA+ content).  Ken is like an Eevee, limitless potential. Hope you’ll tune in.",
-    img:require('./img/streamers/ken2pt0.jpg')
+    social: "https://www.instagram.com/shadowttar/",
+    bio: "I'm a Scottish variety streamer who is a very passionate cosplayer. I immigrated to the US in 2019 after spending 5 summers working at a camp teaching Archery & outdoor activities like Climbing/Hiking. I stream 5 days a week & love meeting new people",
+    img:require('./img/streamers/ShadowTtar.jpg')
   },
   {
-    id: "74",
-    name: "Kynetiq",
-    twitch: "https://www.twitch.tv/Kynetiq",
-    personal: "",
-    social: "https://twitter.com/Kynetiq",
-    bio: "Hi! My name is Kyle and I am a gay RPG streamer on Twitch! I am passionate about creating loving, positive, and inclusive opportunities for all.",
-    img:require('./img/streamers/Kynetiq.jpg')
+    id: "42",
+    name: "LiquidRina",
+    pronouns: "They / Them, She / Her, He / Him, Ze / Zir, Xe / Xir",
+    twitch: "https://www.twitch.tv/liquidrina",
+    personal: "https://liquidrina.carrd.co/",
+    social: "https://twitter.com/LiquidRina",
+    bio: "Rina (ze/they/he/she) is a qtpoc streamer who wants to try a little bit of everything. Ze is also a VA who loves to stream indie games, play ttrpgs, and create cursed little objects to share with the world.",
+    img:require('./img/streamers/LiquidRina.jpg')
   },
   {
-    id: "75",
-    name: "PotatoKingGaming",
-    twitch: "https://www.twitch.tv/PotatoKingGaming",
+    id: "43",
+    name: "AllyRaeven",
+    pronouns: "She / Her, any",
+    twitch: "https://www.twitch.tv/allyraeven",
     personal: "",
-    social: "https://twitter.com/potatokinggamin",
-    bio: "Soft + gentle BuzzFeed Producer by day, salty + spry Twitch Partner by night. Join the Spud army.",
-    img:require('./img/streamers/PotatoKingGaming.jpg')
+    social: "https://www.twitter.com/allyraeven",
+    bio: "AllyRaeven (she/her/any) is a queer, bisexual, and chronically ill variety streamer on Twitch. Her Raeven's Nest community is inclusive, cozy, and wholesome, with just the right amount of chaos.",
+    img:require('./img/streamers/AllyRaeven.jpg')
+  },
+  {
+    id: "44",
+    name: "quinnntastic",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/quinnntastic",
+    personal: "https://tastic.me/",
+    social: "https://twitter.com/quinnntastic_",
+    bio: "Quinn (she/they) is a queer nonbinary polyam disabled/chronically ill Latine streamer and creative. They strive to celebrate queer joy and cultivate a space for relaxation and revelry!",
+    img:require('./img/streamers/quinnntastic.jpg')
+  },
+  {
+    id: "45",
+    name: "DEERE",
+    pronouns: "She / Her",
+    twitch: "https://twitch.tv/deere",
+    personal: "",
+    social: "https://twitter.com/deardeere",
+    bio: "My name is DEERE, let's play what you fear! Named Gayming Mag's LGBTQ Streamer of the Year & Founder of Team Stream Queens, her mission is to carve out a space where drag is fun and accessible through Twitch!",
+    img:require('./img/streamers/DEERE.jpg')
+  },
+  {
+    id: "46",
+    name: "LezBaeAnna",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/lezbaeanna",
+    personal: "",
+    social: "https://www.instagram.com/lezbaeanna/",
+    bio: "LEZ BE HONEST, I am LezBaeAnna! A Non-Binary Latinx Drag Artist who plays a variety of games such as Bioshock, DBD, and Pokemon. But I also play some scary games too! Proud member of Team Stream Queens. Here to create a safe space to vibe!",
+    img:require('./img/streamers/LezBaeAnna.jpg')
+  },
+  {
+    id: "47",
+    name: "Chelora",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/chelora",
+    personal: "",
+    social: "https://twitter.com/Chel0ra",
+    bio: "Chelora is a Trans/Nonbinary Canadian drag artist who loves color, bugs, spiders and puns!  She streams a wide variety of new and old games and works with Team Stream Queens on their social committee!",
+    img:require('./img/streamers/Chelora.jpg')
+  },
+  {
+    id: "48",
+    name: "Chara Couture",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://twitch.tv/characouture",
+    personal: "",
+    social: "https://www.twitter.com/chara_couture",
+    bio: "A genderfluid fashion illustrator, drag queen, variety streamer, and all-around nerd who combines art and makeup to celebrate iconic characters and character designs from the gaming pantheon.",
+    img:require('./img/streamers/CharaCouture.jpg')
+  },
+  {
+    id: "49",
+    name: "MARISOL",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/MARISOLLORDS",
+    personal: "https://www.marisollords.com",
+    social: "https://www.instagram.com/marisollords",
+    bio: "A Latinx, non-binary, drag queen based in Florida. Performing live and streaming makeup and video games on twitch are their passion. ",
+    img:require('./img/streamers/MARISOL.jpg')
+  },
+  {
+    id: "50",
+    name: "AnnieKrevice",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/anniekrevice",
+    personal: "",
+    social: "https://twitter.com/AnnieKrevice",
+    bio: "Annie Krevice is a trans drag queen and streamer from Melbourne, Australia. She's a little bit daggy, a little bit lewd, and loves to play online with friends and live her e-girl fantasy.",
+    img:require('./img/streamers/AnnieKrevice.jpg')
+  },
+  {
+    id: "51",
+    name: "Maesoa",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/maesoa",
+    personal: "",
+    social: "https://twitter.com/maesoa",
+    bio: "I'm Maesoa or Mae for short and I'm a very queer variety streamer whom loves puns, bad jokes and games. I aim to create safe spaces for all people while also trying to entertain. I aim to make people laugh and/or smile. ",
+    img:require('./img/streamers/Maesoa.jpg')
+  },
+  {
+    id: "52",
+    name: "NemesisNetwork ",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/nemesisnetwork",
+    personal: "",
+    social: "https://www.twitter.com/nemesislacroix",
+    bio: "My name is Nemesis and I’m Twitch’s exclusive nonbinary BRATZ doll.  I run the network on Twitch every Tuesday, Thursday, Saturday, & Sunday!  I’m a retro variety streamer that predominantly plays Wii, Gamecube, and N64 games! ",
+    img:require('./img/streamers/NemesisNetwork.jpg')
+  },
+  {
+    id: "53",
+    name: "Amanda Xpress",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/amandaxpress",
+    personal: "",
+    social: "https://www.instagram.com/amandaxpress",
+    bio: "Amanda Xpress is the laid-back (wink wink) So-Cal queen that enjoys good grub and a good balad. She's everyone's favorite Asian takeout.",
+    img:require('./img/streamers/AmandaXpress.jpg')
+  },
+  {
+    id: "54",
+    name: "Dona Tarte",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/donatarte",
+    personal: "https://www.donatarte.com/",
+    social: "https://twitter.com/dona_tarte",
+    bio: "Dona Tarte is a variety streamer, Irish icon and Queen of Baking on Twitch! Expect Drag, Horror, Baking and a tonne of charity events all held up by a fabulous community.",
+    img:require('./img/streamers/DonaTarte.jpg')
+  },
+  {
+    id: "55",
+    name: "Dagonmar",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/dagonmar",
+    personal: "https://dagonmar.tv",
+    social: "https://www.twitter.com/dagonmartv",
+    bio: "Dagonmar puts on funny and lewd content and has built amazing, welcoming, and close-knit community. Come see why he's been featured in multiple gaming news articles!",
+    img:require('./img/streamers/Dagonmar.jpg')
+  },
+  {
+    id: "56",
+    name: "Passion's Planet",
+    pronouns: "She / Her",
+    twitch: "https://www.twitch.tv/passionsplanet",
+    personal: "https://passionsplanet.carrd.co/",
+    social: "https://twitter.com/PassionsPlanet",
+    bio: "She's a streamer, editor, DJ and an all around big breasted trans bimbo who will live in your head rent free.  It's truly Passion's Planet, and you're just livin' in it.",
+    img:require('./img/streamers/PassionsPlanet.jpg')
+  },
+  {
+    id: "57",
+    name: "QueenNickiMirage",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/queennickimirage",
+    personal: "",
+    social: "https://twitter.com/NickiMirageLIVE",
+    bio: "Nicki Mirage is a Florida-based drag queen, cosplayer, and Twitch Partner with a PhD in Bio Engineering! They've been doing drag 8 years and variety streaming 2 years.  Catch them doing makeup, gaming, and performing on Twitch.tv/QueenNickiMirage!",
+    img:require('./img/streamers/QueenNickiMirage.jpg')
+  },
+  {
+    id: "58",
+    name: "Apple Aday",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/appleadayxo",
+    personal: "",
+    social: "https://www.tiktok.com/@appleadayxo?lang=en",
+    bio: "Apple Aday is funny, stupid and gorgeous. She loves to eat and terribly plays video games. Catch her with a brand new talk show guest and drag show every month! ",
+    img:require('./img/streamers/AppleAday.jpg')
+  },
+  {
+    id: "59",
+    name: "Polople",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/Polople",
+    personal: "",
+    social: "https://twitter.com/jamespolople",
+    bio: "Polople or James is a 23 year old queer stream from South Australia. They play and stream a range of games, but mainly focusing on RPG/Story Driven titles. ",
+    img:require('./img/streamers/Polople.jpg')
+  },
+  {
+    id: "60",
+    name: "Snow Heartlock",
+    pronouns: "They / Them",
+    twitch: "https://www.twitch.tv/snowheartlock",
+    personal: "",
+    social: "https://twitter.com/snoh_mlem",
+    bio: "Hey there! I'm Snow, a non-binary, coffee loving streamer who mainly plays JRPGs! Lately I've been really into the OG NieR, and I have plans in playing Automata and Replicant! I like to think that my stream is a really chill and cozy enviroment~!",
+    img:require('./img/streamers/SnowHeartlock.jpg')
+  },
+  {
+    id: "61",
+    name: "NincompoopEXE",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/nincompoopexe",
+    personal: "",
+    social: "https://twitter.com/NincompoopEXE",
+    bio: "My name is Simon, AKA NincompoopEXE! I'm a gay Swede who streams a variety of games over on Twitch. You'll usually find me playing RPGs, open world games & indie games, all while creating an open, safe & welcoming community for everyone who joins.",
+    img:require('./img/streamers/NincompoopEXE.jpg')
+  },
+  {
+    id: "62",
+    name: "ObbyTheBird",
+    pronouns: "They / Them, She / Her",
+    twitch: "https://www.twitch.tv/obbythebird",
+    personal: "",
+    social: "https://www.twitter.com/obbythebird",
+    bio: "Hi, I'm Obby! Obby the Bird! I am a nonbinary birdbrain cruising my way through life with laughter and fart jokes. Oh! And cartoons, I adore cartoons.",
+    img:require('./img/streamers/ObbyTheBird.jpg')
+  },
+  {
+    id: "63",
+    name: "Aphasia Speaks",
+    pronouns: "They / Them, She / Her, He / Him",
+    twitch: " https://www.twitch.tv/Aphasiaspeaks",
+    personal: "",
+    social: "https://twitter.com/AphasiaSpeaks",
+    bio: "I am Aphasia Speaks! A genderqueer black digital content creator, and drag artist. I  am loud and just a little shady. But i also have a heart of gold that loves to meet new people and share the love!",
+    img:require('./img/streamers/AphasiaSpeaks.jpg')
+  },
+  {
+    id: "64",
+    name: "cwitine",
+    pronouns: "She / Her",
+    twitch: "http://twitch.tv/cwitine",
+    personal: "",
+    social: "http://instagram.com/christine.mp3",
+    bio: "I am a lesbian streamer ready to kick butt in anything. I love music production and playing lots of games.",
+    img:require('./img/streamers/cwitine.jpg')
+  },
+  {
+    id: "65",
+    name: "Glitter",
+    pronouns: "He / Him",
+    twitch: "https://twitch.tv/fistfulofglittergaming",
+    personal: "",
+    social: "https://twitter.com/FoGlitterGaming",
+    bio: "Hi I'm Glitter! I'm a queer Latinx variety streamer who likes to laugh way too loud and can't read in-game maps like...at all.",
+    img:require('./img/streamers/Glitter.jpg')
+  },
+  {
+    id: "66",
+    name: "chasecubed",
+    pronouns: "They / Them, She / Her, He / Him",
+    twitch: "https://www.twitch.tv/chasecubed",
+    personal: "https://chasecubed.carrd.co/",
+    social: "https://chasecubed.carrd.co/",
+    bio: "Chase here! I'm a disabled gay streamer, artist, writer, gamer, game dev, and cosplayer. I'm developing games that I, and others within the LGBTQIA+ and disability community, can identify with--representation matters. ",
+    img:require('./img/streamers/chasecubed.jpg')
+  },
+  {
+    id: "67",
+    name: "the_juliancito",
+    pronouns: "He / Him",
+    twitch: "https://www.twitch.tv/the_juliancito",
+    personal: "",
+    social: "https://www.twitter.com/the_juliancito",
+    bio: "Julián, aka the_juliancito, is a queer, trans, Puerto Rican, Jewish, content creator who fosters a passionate community that thrives on activism for the LGBTQIA+ community and more.",
+    img:require('./img/streamers/the_juliancito.jpg')
   }
 ]
   export default streamers

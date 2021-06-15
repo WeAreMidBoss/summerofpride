@@ -80,7 +80,7 @@
   .modal-streamers {
     max-width: 700px;
     padding: 0 10px 20px;
-    background: #a72164;
+    background: #F37664;
     box-shadow: 2px 2px 20px 1px;
     /*overflow-x: auto;*/
     display: flex;

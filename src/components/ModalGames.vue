@@ -83,7 +83,7 @@
   .modal-games {
     max-width: 700px;
     padding: 0 10px 20px;
-    background: #EC5A5A;
+    background: #F37739;
     box-shadow: 2px 2px 20px 1px;
     /*overflow-x: auto;*/
     display: flex;
