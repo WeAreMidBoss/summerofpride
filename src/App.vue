@@ -40,8 +40,10 @@
               <!--End mc_embed_signup-->
               <hr>
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
+
+              <streamers-swiper v-bind:profiles="profiles"></streamers-swiper>
               
-              <div class="streamers" data-aos="slide-left">
+              <!--<div class="streamers" data-aos="slide-left">
                 <swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
                     <swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
                       <img :src="streamer.img" />
@@ -51,11 +53,11 @@
                 </swiper>
                 <div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="streamers-button-next swiper-button-next" slot="button-next"></div>
-              </div>
+              </div>-->
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
-              <div class="games" data-aos="slide-right">
+              <!--<div class="games" data-aos="slide-right">
                   <swiper class="swiper" ref="swiperGames" :options="swiperOptionsGames" data-toggle="modal" data-target="#modal-games">
                     <swiper-slide v-for="(game, index) in gamesNoB" class="swiper-slide" @click.native="showGameSliderInfo(index)" :key="index" >
                       <img :src="game.img" />
@@ -65,14 +67,14 @@
                 </swiper>
                 <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="games-button-next swiper-button-next" slot="button-next"></div>
-                </div>
+                </div>-->
 
               
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
 
-              <div class="schedule" data-aos="slide-up">
+              <!--<div class="schedule" data-aos="slide-up">
                   <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
                     <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
                       <span class="schedule-day">{{ block.day }}</span>
@@ -134,7 +136,7 @@
                 </swiper>
                 <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
                 <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
-                </div>
+                </div>-->
               
               <hr>
               <div class="brands">
@@ -169,11 +171,11 @@ import scheduleTable from './assets/schedule.js'
 
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
+import StreamersSwiper from './components/StreamersSwiper.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 
-import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+import axios from 'axios';
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -190,12 +192,13 @@ export default {
     ModalGames,
     Nav,
     Footer,
-    Swiper,
-    SwiperSlide
+    StreamersSwiper
+    /*Swiper,
+    SwiperSlide*/
   },
-  directives: {
+  /*directives: {
     swiper: directive
-  },
+  },*/
   data() {
     return {
       animated: false,
@@ -208,7 +211,8 @@ export default {
       game: [],
       games: gameList,
       gamesNoB: gameList.filter(g => g.id != 66),
-      swiperOptions: {
+      errors:[],
+      /*swiperOptions: {
         autoplay: {
           delay: 3000,
           speed: 2500
@@ -275,27 +279,42 @@ export default {
           nextEl: '.schedule-button-next',
           prevEl: '.schedule-button-prev'
         }
-      }
+      }*/
     }
   },
   computed: {
-    swiper() {
+    /*swiper() {
       return this.$refs.mySwiper.$swiper
-    }
+    }*/
   },
-  created() {
+  async created() {
     AOS.init({
       once: true,
       disable: 'mobile'
-    }),
+    })
+    try {
+      const response = await axios.get('https://api.sheety.co/55bef739240531784740ec188852f5bf/sheetyTesting/streamers')
+      this.profiles = response.data.streamers
+      console.log(this.profiles)
+    } catch (e) {
+      this.errors.push(e)
+    }
+    /*,
     this.shuffle(this.profiles),
-    this.shuffle(this.games)
+    this.shuffle(this.games)*/
   },
   mounted() {
-    console.log('Current Swiper instance object', this.swiper);
+    /*console.log('Current Swiper instance object', this.swiper);*/
     //AOS.refresh;
   },
   watch: {
+    /*$props: {
+      handler() {
+        this.parseData();
+      },
+      deep: true,
+      immediate: true,
+    },*/
     showStreamerModal: function() {
       if(this.showStreamerModal){
         this.disableScrolling,
