@@ -3,7 +3,7 @@
 	<div class="streamers" data-aos="slide-left">
 		<swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
 			<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
-				<img :src="streamer.img" />
+				<img :src="getImage(streamer.img)" />
 				<span class="streamer-name">{{ streamer.name }}</span>
 			</swiper-slide>
 			<div class="streamers-pagination swiper-pagination" slot="pagination"></div>
@@ -60,10 +60,10 @@ import 'swiper/css/swiper.css'
 				},
 			}
 		},
-		computed: {
-			img() {
-				return `./img/streamers/${encodeURIComponent(this.img)}`;
-			}
+		methods: {
+			getImage:function(path) {
+				return require("@/assets/img/streamers/"+path)
+			},
 		}
 	}
 </script>
