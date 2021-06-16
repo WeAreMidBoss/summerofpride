@@ -43,13 +43,13 @@
 
               <!--load streamer swiper-->
               <sync-loader :loading="streamersLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
-              <streamers-swiper :profiles="profiles" :loading="streamersLoading"></streamers-swiper>
+              <streamers-swiper :loading="streamersLoading" :profiles="profiles"></streamers-swiper>
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
               <!--load games swiper-->
               <sync-loader :loading="gamesLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
-              <games-swiper :games="games"></games-swiper>
+              <games-swiper :loading="gamesLoading" :games="games"></games-swiper>
    
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
@@ -57,7 +57,7 @@
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
 
               <sync-loader :loading="scheduleLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
-              <schedule-swiper :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
+              <schedule-swiper :loading="scheduleLoading" :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
               
               <hr>
               <div class="brands">
@@ -87,6 +87,9 @@
 
 <script>
 import streamers from './assets/streamers.js'
+import games from './assets/games.js'
+import schedule from './assets/schedule.js'
+
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
@@ -133,11 +136,11 @@ export default {
       showStreamerModal: false,
       showGameModal: false,
       schedule: [],
-      schedules: [],
+      schedules: schedule,
       profile: [],
       profiles: streamers,
       game: [],
-      games: [],
+      games: games,
       /*gamesNoB: gameList.filter(g => g.id != 66),*/
       errors:[],
     }

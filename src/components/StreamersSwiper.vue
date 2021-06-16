@@ -1,13 +1,13 @@
 <template>
 	<div class="streamers" data-aos="slide-left">
 		<transition name="fade">
-		<swiper v-if="!loading" class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
-			<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
-				<img :src="`${publicPath}/streamers/${streamer.img}`" />
-				<span class="streamer-name">{{ streamer.name }}</span>
-			</swiper-slide>
-			<div class="streamers-pagination swiper-pagination" slot="pagination"></div>
-		</swiper>
+			<swiper v-if="!loading" class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
+				<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
+					<img :src="`${publicPath}/streamers/${streamer.img}`" />
+					<span class="streamer-name">{{ streamer.name }}</span>
+				</swiper-slide>
+				<div class="streamers-pagination swiper-pagination" slot="pagination"></div>
+			</swiper>
 		</transition>
 		<div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
 		<div class="streamers-button-next swiper-button-next" slot="button-next"></div>
@@ -71,10 +71,10 @@ import 'swiper/css/swiper.css'
 </script>
  
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+	.fade-enter-active, .fade-leave-active {
+	transition: opacity .5s;
+	}
+	.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	opacity: 0;
+	}
 </style>
