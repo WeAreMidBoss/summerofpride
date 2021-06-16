@@ -8,9 +8,9 @@
 			</swiper-slide>
 			<div class="streamers-pagination swiper-pagination" slot="pagination"></div>
 		</swiper>
+		</transition>
 		<div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
 		<div class="streamers-button-next swiper-button-next" slot="button-next"></div>
-		</transition>
 	</div>
 </template>
  
