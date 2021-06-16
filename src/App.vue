@@ -42,11 +42,13 @@
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
 
               <!--load streamer swiper-->
+              <sync-loader :loading="streamersLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
               <streamers-swiper :profiles="profiles"></streamers-swiper>
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
               <!--load games swiper-->
+              <sync-loader :loading="gamesLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
               <games-swiper :games="games"></games-swiper>
    
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
@@ -54,70 +56,8 @@
               <!--load schedule swiper-->
               <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
 
+              <sync-loader :loading="scheduleLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
               <schedule-swiper :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
-              <!--<div class="schedule" data-aos="slide-up">
-                  <swiper class="swiper" ref="swiperSchedule" :options="swiperOptionsSchedule" >
-                    <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
-                      <span class="schedule-day">{{ block.day }}</span>
-                      <table class="schedule-table">
-                        <tbody>
-                          <tr :class="isTime(block.b1_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b1_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b1_name))"><img :src="profiles[getIdByName(block.b1_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b1_game1))" :src="games[getGameIdByName(block.b1_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b1_game1)].name }}</span>
-                            <span v-if="block.b1_game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="games[getGameIdByName(block.b1_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b1_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b1_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b2_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b2_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b2_name))"><img :src="profiles[getIdByName(block.b2_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b2_game1))" :src="games[getGameIdByName(block.b2_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b2_game1)].name }}</span>
-                            <span v-if="block.b2_game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="games[getGameIdByName(block.b2_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b2_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b2_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b3_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b3_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b3_name))"><img :src="profiles[getIdByName(block.b3_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b3_game1))" :src="games[getGameIdByName(block.b3_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b3_game1)].name }}</span>
-                            <span v-if="block.b3_game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="games[getGameIdByName(block.b3_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b3_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b3_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b4_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b4_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b4_name))"><img :src="profiles[getIdByName(block.b4_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b4_game1))" :src="games[getGameIdByName(block.b4_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b4_game1)].name }}</span>
-                            <span v-if="block.b4_game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="games[getGameIdByName(block.b4_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b4_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b4_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                          <tr :class="isTime(block.b5_start) ? 'active':''">
-                            <th class="schedule-hours" scope="row">{{ block.b5_time }}</th>
-                            <td @click="showStreamerInfo(getIdByName(block.b5_name))"><img :src="profiles[getIdByName(block.b5_name)].img" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5_name)].name }}</span></td>
-                            <td><img @click="showGameInfo(getGameIdByName(block.b5_game1))" :src="games[getGameIdByName(block.b5_game1)].img" class="schedule-game-img" />
-                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b5_game1)].name }}</span>
-                            <span v-if="block.b5_game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="games[getGameIdByName(block.b5_game2)].img" class="schedule-game-img schedule-game-two-img" /></span>
-                            <span v-if="block.b5_game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5_game2)].name }}</span></td>
-                            <td><div class="schedule-watch-now"><a :href="profiles[getIdByName(block.b5_name)].twitch" target="_blank">Watch now!<br /> <img class="schedule-twitch-logo" src="./assets/img/Twitch2.svg" /></a></div></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </swiper-slide>        
-                </swiper>
-                <div class="schedule-button-prev swiper-button-prev" slot="button-prev"></div>
-                <div class="schedule-button-next swiper-button-next" slot="button-next"></div>
-                </div>-->
               
               <hr>
               <div class="brands">
@@ -157,8 +97,8 @@ import ScheduleSwiper from './components/ScheduleSwiper.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 
-import axios from 'axios';
-
+import axios from 'axios'
+import SyncLoader from 'vue-spinner/src/SyncLoader.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -176,7 +116,8 @@ export default {
     Footer,
     StreamersSwiper,
     GamesSwiper,
-    ScheduleSwiper
+    ScheduleSwiper,
+    SyncLoader
     /*Swiper,
     SwiperSlide*/
   },
@@ -186,6 +127,11 @@ export default {
   data() {
     return {
       animated: false,
+      streamersLoading: true,
+      gamesLoading: true,
+      scheludeLoading: true,
+      loaderColor: '#51c6d6',
+      loaderSize: '20px',
       showStreamerModal: false,
       showGameModal: false,
       schedule: [],
@@ -196,74 +142,6 @@ export default {
       games: gameList,
       gamesNoB: gameList.filter(g => g.id != 66),
       errors:[],
-      /*swiperOptions: {
-        autoplay: {
-          delay: 3000,
-          speed: 2500
-        },
-        loop: true,
-        navigation: {
-          nextEl: '.streamers-button-next',
-          prevEl: '.streamers-button-prev'
-        },
-        pagination: {
-          el: '.streamers-pagination',
-          dynamicBullets: true,
-          clickable: true
-        },
-        breakpoints: {
-          1: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          }
-        }
-      },
-      swiperOptionsGames: {
-        autoplay: {
-          delay: 3000,
-          speed: 2500
-        },
-        loop: true,
-        navigation: {
-          nextEl: '.games-button-next',
-          prevEl: '.games-button-prev'
-        },
-        pagination: {
-          el: '.games-pagination',
-          dynamicBullets: true,
-          clickable: true
-        },
-        breakpoints: {
-          575: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      },
-      swiperOptionsSchedule: {
-        initialSlide: scheduledate,
-        loop: true,
-        navigation: {
-          nextEl: '.schedule-button-next',
-          prevEl: '.schedule-button-prev'
-        }
-      }*/
     }
   },
   computed: {
@@ -281,6 +159,7 @@ export default {
       const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonStreamers')
       this.profiles = response.data.jsonStreamers
       this.shuffle(this.profiles)
+      this.streamersLoading = false
     } catch (e) {
       this.errors.push(e)
     }
@@ -289,6 +168,7 @@ export default {
       const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonGames')
       this.games = response.data.jsonGames
       this.shuffle(this.games)
+      this.gamesLoading = false
     } catch (e) {
       this.errors.push(e)
     }
@@ -296,25 +176,15 @@ export default {
       //get schedule's info
       const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonSchedule')
       this.schedules = response.data.jsonSchedule
+      this.scheduleLoading = false
     } catch (e) {
       this.errors.push(e)
     }
-    /*,
-    this.shuffle(this.profiles),
-    this.shuffle(this.games)*/
   },
   mounted() {
-    /*console.log('Current Swiper instance object', this.swiper);*/
     //AOS.refresh;
   },
   watch: {
-    /*$props: {
-      handler() {
-        this.parseData();
-      },
-      deep: true,
-      immediate: true,
-    },*/
     showStreamerModal: function() {
       if(this.showStreamerModal){
         this.disableScrolling,
@@ -330,16 +200,11 @@ export default {
   methods: {
     showStreamerInfo(id) {
       this.showStreamerModal = true;
-      /*let index = this.profiles.findIndex( filterProfile=> filterProfile['id'] === id);*/
       this.profile = this.profiles[id];
     },
     closeStreamerInfo() {
       this.showStreamerModal = false;
     },
-    /*showGameSliderInfo(id) {
-      this.showGameModal = true;
-      this.game = this.gamesNoB[id];
-    },*/
     showGameInfo(id) {
       this.showGameModal = true;
       this.game = this.games[id];

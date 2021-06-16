@@ -19,7 +19,8 @@
     "swiper": "^5.3.7",
     "v-scroll-lock": "^1.1.1",
     "vue": "^2.6.11",
-    "vue-awesome-swiper": "^4.1.0"
+    "vue-awesome-swiper": "^4.1.0",
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
