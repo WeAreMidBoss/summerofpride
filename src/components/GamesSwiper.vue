@@ -1,12 +1,14 @@
 <template>
 	<div class="games" data-aos="slide-right">
-        <swiper class="swiper" ref="swiperGames" :options="swiperOptions" data-toggle="modal" data-target="#modal-games">
-            <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
-                <img :src="`${publicPath}/games/${game.img}`" />
-                <span class="game-name">{{ game.name }}</span>
-            </swiper-slide>        
-            <div class="games-pagination swiper-pagination" slot="pagination"></div>  
-        </swiper>
+        <transition name="fade">
+            <swiper v-if="!loading" class="swiper" ref="swiperGames" :options="swiperOptions" data-toggle="modal" data-target="#modal-games">
+                <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
+                    <img :src="`${publicPath}/games/${game.img}`" />
+                    <span class="game-name">{{ game.name }}</span>
+                </swiper-slide>        
+                <div class="games-pagination swiper-pagination" slot="pagination"></div>  
+            </swiper>
+        </transition>
         <div class="games-button-prev swiper-button-prev" slot="button-prev"></div>
         <div class="games-button-next swiper-button-next" slot="button-next"></div>
     </div>
@@ -17,7 +19,7 @@ import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 	export default {
 		name: 'GamesSwiper',
-		props: ['games'],
+		props: ['games', 'loading'],
 		components: {
 			Swiper,
 			SwiperSlide
@@ -69,4 +71,10 @@ import 'swiper/css/swiper.css'
 </script>
  
 <style scoped>
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
 </style>
