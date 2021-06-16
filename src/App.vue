@@ -54,7 +54,7 @@
               <h2 class="text-center heading-games" data-aos="slide-up">SCHEDULE</h2>
 
               <!--load schedule swiper-->
-              <p data-aos="slide-up">All times are Pacific Time (UTC-7)</p>
+              <p data-aos="slide-up">Local time: {{ timezone }}</p>
 
               <sync-loader :loading="scheduleLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
               <schedule-swiper :loading="scheduleLoading" :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
@@ -105,9 +105,6 @@ import 'aos/dist/aos.css'
 
 import './assets/css/summerofpride.css'
 
-const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
-console.log("scheduledate:" + scheduledate);
-
 export default {
   name: 'App',
   components: {
@@ -143,6 +140,7 @@ export default {
       games: games,
       /*gamesNoB: gameList.filter(g => g.id != 66),*/
       errors:[],
+      timezone: ''
     }
   },
   computed: {
@@ -155,6 +153,7 @@ export default {
       once: true,
       disable: 'mobile'
     })
+    this.timezone = this.getTimezone()
     try {
       //get streamer's info
       const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonStreamers')
@@ -230,6 +229,9 @@ export default {
       }
 
       return array;
+    },
+    getTimezone(){
+      return Intl.DateTimeFormat().resolvedOptions().timeZone;
     },
     disableScrolling(){
       var x=window.scrollX;
