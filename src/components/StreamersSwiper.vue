@@ -2,7 +2,7 @@
 	<div class="streamers" data-aos="slide-left">
 		<swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
 			<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
-				<img :src="getImage(streamer.img)" />
+				<img :src="`${publicPath}/streamers/${streamer.img}`" />
 				<span class="streamer-name">{{ streamer.name }}</span>
 			</swiper-slide>
 			<div class="streamers-pagination swiper-pagination" slot="pagination"></div>
@@ -27,6 +27,7 @@ import 'swiper/css/swiper.css'
 		},
 		data (){
 			return {
+				publicPath: process.env.BASE_URL,
 				swiperOptions: {
 					autoplay: {
 					delay: 3000,
@@ -60,9 +61,6 @@ import 'swiper/css/swiper.css'
 			}
 		},
 		methods: {
-			getImage(path) {
-				return require("@/assets/img/streamers/"+path)
-			},
 			showStreamerInfo(id) {
 				this.$parent.showStreamerInfo(id);
 			}

@@ -22,7 +22,7 @@
         <slot name="body">
             <div class="row">
               <div class="modal-img-container col-md-6 col-sm-12">
-                <img class="modal-img" :src="getImage(profile.img)" />
+                <img class="modal-img" :src="`${publicPath}/streamers/${profile.img}`" />
               </div>
               <div class="modal-description col-md-6 col-sm-12">
                 <span class="modal-name">{{ profile.name }}</span>
@@ -49,6 +49,7 @@
     },
     data() {
       return {
+        publicPath: process.env.BASE_URL,
         isClosing: false
       }
     },
@@ -59,10 +60,7 @@
           this.$emit('close');
           this.isClosing = false;
         }, 450)
-      },
-      getImage(path) {
-				return require("@/assets/img/streamers/"+path)
-			}
+      }
     },
   };
 </script>
