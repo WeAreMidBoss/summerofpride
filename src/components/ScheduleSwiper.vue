@@ -3,7 +3,7 @@
         <transition name="fade">
             <swiper v-if="!loading" class="swiper" ref="swiperSchedule" :options="swiperOptions" >
                 <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
-                    <span class="schedule-day">{{ block.day }}</span>
+                    <span class="schedule-day">{{ getDay(block.b1Start) }}</span>
                     <table class="schedule-table">
                     <tbody>
                         <tr :class="isTime(block.b1Start) ? 'active':''">
@@ -124,6 +124,20 @@ console.log("scheduledate:" + scheduledate);
                 //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
                 console.log("localDate 2:" + localDate);
+                return localDate;
+            },
+            getDay(dateString) {
+                var utcDate = dateString;  // ISO-8601 formatted date returned from server
+                var localDate = new Date(utcDate);
+                if(localDate == 'Invalid Date'){
+                    utcDate = Date.parse(utcDate.replace("T"," "));
+                    localDate = new Date(utcDate);
+                }
+                console.log("localDate:" + localDate);
+                //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
+                localDate = localDate.toLocaleString('en-US', { day: 'numeric', weekday: 'long', month: 'long' });
+                console.log("localDate 2:" + localDate);
+               
                 return localDate;
             },
             getIdByName(n) {
