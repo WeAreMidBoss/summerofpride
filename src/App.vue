@@ -43,7 +43,7 @@
 
               <!--load streamer swiper-->
               <sync-loader :loading="streamersLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
-              <streamers-swiper :profiles="profiles"></streamers-swiper>
+              <streamers-swiper :profiles="profiles" :loading="streamersLoading"></streamers-swiper>
               
               <h2 class="text-center heading-games" data-aos="slide-up">GAMES</h2>
 
@@ -85,7 +85,7 @@
 </template>
 
 <script>
-
+import streamers from './assets/streamers.js'
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
@@ -134,7 +134,7 @@ export default {
       schedule: [],
       schedules: [],
       profile: [],
-      profiles: [],
+      profiles: streamers,
       game: [],
       games: [],
       /*gamesNoB: gameList.filter(g => g.id != 66),*/

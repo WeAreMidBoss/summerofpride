@@ -1,6 +1,7 @@
 <template>
 	<div class="streamers" data-aos="slide-left">
-		<swiper class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
+		<transition name="fade">
+		<swiper v-if="!loading" class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
 			<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
 				<img :src="`${publicPath}/streamers/${streamer.img}`" />
 				<span class="streamer-name">{{ streamer.name }}</span>
@@ -9,6 +10,7 @@
 		</swiper>
 		<div class="streamers-button-prev swiper-button-prev" slot="button-prev"></div>
 		<div class="streamers-button-next swiper-button-next" slot="button-next"></div>
+		</transition>
 	</div>
 </template>
  
@@ -17,7 +19,7 @@ import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 	export default {
 		name: 'StreamersSwiper',
-		props: ['profiles'],
+		props: ['profiles', 'loading'],
 		components: {
 			Swiper,
 			SwiperSlide
@@ -69,4 +71,10 @@ import 'swiper/css/swiper.css'
 </script>
  
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>
