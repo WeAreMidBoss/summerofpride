@@ -2,7 +2,7 @@
 	<div class="games" data-aos="slide-right">
         <swiper class="swiper" ref="swiperGames" :options="swiperOptions" data-toggle="modal" data-target="#modal-games">
             <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
-                <img :src="getImage(game.img)" />
+                <img :src="`${publicPath}/games/${game.img}`" />
                 <span class="game-name">{{ game.name }}</span>
             </swiper-slide>        
             <div class="games-pagination swiper-pagination" slot="pagination"></div>  
@@ -27,6 +27,7 @@ import 'swiper/css/swiper.css'
 		},
 		data (){
 			return {
+                publicPath: process.env.BASE_URL,
 				swiperOptions: {
                     autoplay: {
                     delay: 3000,
@@ -60,9 +61,6 @@ import 'swiper/css/swiper.css'
 			}
 		},
 		methods: {
-			getImage(path) {
-				return require("@/assets/img/games/"+path)
-			},
 			showGameInfo(id) {
 				this.$parent.showGameInfo(id);
 			}

@@ -85,9 +85,6 @@
 </template>
 
 <script>
-import streamers from './assets/streamers.js'
-import gameList from './assets/games.js'
-import scheduleTable from './assets/schedule.js'
 
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
@@ -129,18 +126,18 @@ export default {
       animated: false,
       streamersLoading: true,
       gamesLoading: true,
-      scheludeLoading: true,
+      scheduleLoading: true,
       loaderColor: '#51c6d6',
       loaderSize: '20px',
       showStreamerModal: false,
       showGameModal: false,
       schedule: [],
-      schedules: scheduleTable,
+      schedules: [],
       profile: [],
-      profiles: streamers,
+      profiles: [],
       game: [],
-      games: gameList,
-      gamesNoB: gameList.filter(g => g.id != 66),
+      games: [],
+      /*gamesNoB: gameList.filter(g => g.id != 66),*/
       errors:[],
     }
   },

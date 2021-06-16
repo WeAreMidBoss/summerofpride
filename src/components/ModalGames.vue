@@ -22,7 +22,7 @@
         <slot name="body">
           <div class="row">
             <div class="modal-img-container col-sm-12">
-              <img class="modal-img" :src="getImage(game.img)" />
+              <img class="modal-img" :src="`${publicPath}/games/${game.img}`" />
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>
@@ -51,6 +51,7 @@
     },
     data() {
       return {
+        publicPath: process.env.BASE_URL,
         isClosing: false
       }
     },
@@ -61,10 +62,7 @@
           this.$emit('close');
           this.isClosing = false;
         }, 450)
-      },
-      getImage(path) {
-				return require("@/assets/img/games/"+path)
-			}
+      }
     },
   };
 </script>
