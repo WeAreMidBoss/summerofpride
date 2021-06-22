@@ -22,7 +22,7 @@
         <slot name="body">
           <div class="row">
             <div class="modal-img-container col-sm-12">
-              <img class="modal-img" :src="`${publicPath}/games/${game.img}`" />
+              <img class="modal-img" :src="`${publicPath}games/${game.img}`" />
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>

@@ -199,15 +199,15 @@ export default {
   },
   methods: {
     showStreamerInfo(id) {
-      this.showStreamerModal = true;
       this.profile = this.profiles[id];
+      this.showStreamerModal = true;
     },
     closeStreamerInfo() {
       this.showStreamerModal = false;
     },
     showGameInfo(id) {
-      this.showGameModal = true;
       this.game = this.games[id];
+      this.showGameModal = true;
     },
     closeGameInfo() {
       this.showGameModal = false;

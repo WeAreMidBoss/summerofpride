@@ -3,7 +3,7 @@
 		<transition name="fade">
 			<swiper v-if="!loading" class="swiper" ref="mySwiper" :options="swiperOptions" data-toggle="modal" data-target="#modal-streamers">
 				<swiper-slide v-for="(streamer, index) in profiles" class="swiper-slide" @click.native="showStreamerInfo(index)" :key="index" >
-					<img :src="`${publicPath}/streamers/${streamer.img}`" />
+					<img :src="`${publicPath}streamers/${streamer.img}`" />
 					<span class="streamer-name">{{ streamer.name }}</span>
 				</swiper-slide>
 				<div class="streamers-pagination swiper-pagination" slot="pagination"></div>

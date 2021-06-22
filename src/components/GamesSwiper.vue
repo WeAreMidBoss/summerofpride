@@ -3,7 +3,7 @@
         <transition name="fade">
             <swiper v-if="!loading" class="swiper" ref="swiperGames" :options="swiperOptions" data-toggle="modal" data-target="#modal-games">
                 <swiper-slide v-for="(game, index) in games" class="swiper-slide" @click.native="showGameInfo(index)" :key="index" >
-                    <img :src="`${publicPath}/games/${game.img}`" />
+                    <img :src="`${publicPath}games/${game.img}`" />
                     <span class="game-name">{{ game.name }}</span>
                 </swiper-slide>        
                 <div class="games-pagination swiper-pagination" slot="pagination"></div>  
