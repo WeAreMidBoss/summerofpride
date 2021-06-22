@@ -163,6 +163,8 @@
   }
   .modal-warning {
     display: block;
+    width: 100%;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;

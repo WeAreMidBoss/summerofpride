@@ -137,7 +137,7 @@
     transition: opacity .5s ease
   }
   .modal-pronouns, .modal-description-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   .modal-img {
     max-width:90%;

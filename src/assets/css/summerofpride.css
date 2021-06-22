@@ -45,15 +45,6 @@
 ul li {
  list-style: none;
 }
-.profile {
-
-}
-.profile-img {
-  
-}
-.profile-name {
-  
-}
 h1,
 h2, .navbar li {
     font-family: 'Bebas Neue', cursive;
@@ -458,9 +449,6 @@ margin-right: 50px;
     width: 90px!important;
     height: auto!important;
   }
-  .schedule-table td {
-    /*padding: 0;*/
-  }
   .schedule-table tr > th:first-child {
     display:block;
     display: table-cell;
@@ -555,7 +543,6 @@ margin-right: 50px;
     display: block;
     height: 100px;
     display: table-cell;
-    vertical-align: middle;
   }
   .schedule .swiper-button-prev, .schedule  .swiper-button-next {
     top: 1.7%;
@@ -713,9 +700,6 @@ a.showSingle {
     #horario .name{
         display:block;
         font-weight:bold;
-    }
-    #horario .instructor{
-
     }
         .clases h2{
             text-transform: uppercase;
