@@ -22,10 +22,11 @@
         <slot name="body">
             <div class="row">
               <div class="modal-img-container col-md-6 col-sm-12">
-                <img class="modal-img" :src="profile.img" />
+                <img class="modal-img" :src="`${publicPath}/streamers/${profile.img}`" />
               </div>
               <div class="modal-description col-md-6 col-sm-12">
                 <span class="modal-name">{{ profile.name }}</span>
+                <span class="modal-pronouns">{{ profile.pronouns }}</span>
                 <span class="modal-description-text">{{ profile.bio }}</span>
                 <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
                 <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
@@ -48,10 +49,9 @@
     },
     data() {
       return {
+        publicPath: process.env.BASE_URL,
         isClosing: false
       }
-    },
-    mounted() {
     },
     methods: {
       close() {
@@ -60,7 +60,7 @@
           this.$emit('close');
           this.isClosing = false;
         }, 450)
-      },
+      }
     },
   };
 </script>
@@ -136,6 +136,9 @@
   .modal-fade-leave-active {
     transition: opacity .5s ease
   }
+  .modal-pronouns, .modal-description-text {
+    font-family: 'Montserrat', sans-serif;
+  }
   .modal-img {
     max-width:90%;
     height:auto;
@@ -156,6 +159,13 @@
     font-family: 'Knewave', cursive;
     font-size: 28px;
     text-align: center;
+  }
+  .modal-pronouns {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
   }
   .modal-description-text {
     display: block;
