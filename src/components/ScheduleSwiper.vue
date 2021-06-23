@@ -140,7 +140,7 @@ import 'swiper/css/swiper.css'
                     localDate = new Date(utcDate);
                 }
                 localDate.setHours(localDate.getHours() + 3);
-                localDate = localDate.toLocaleString('en-US', { hour: '1-digit', hour12: true });
+                localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
                 return localDate;
             },
             getDay(dateString) {
@@ -190,13 +190,10 @@ import 'swiper/css/swiper.css'
                 if(date1 == 'Invalid Date'){
                     date = Date.parse(date.replace("T"," "));
                     date1 = new Date(date);
-                    console.log('date: '+date1);
                 }
                 var date2 = new Date();
                 var difference = date2.getTime() - date1.getTime();
-                console.log('difference in milli: ' + difference);
                 difference = Math.floor((difference / (1000 * 60 * 60)) % 24);
-                console.log('difference hh: '+difference);
                 if (this.getDay(date1) == this.getDay(date2) && difference >= 0 && difference < 3) {
                     return true;
                 } else {
