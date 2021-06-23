@@ -105,10 +105,13 @@ import 'swiper/css/swiper.css'
                 // move to slide according to current date
                 if (this.initialSlideSet == false) {
                     this.initialSlide = this.getInitialSlide(this.startingDate);
-                    setTimeout(() => { 
+                    this.swiper.slideTo(this.initialSlide); 
+                    console.log ('initialSlide:' + this.initialSlide); 
+                    /*setTimeout(() => { 
                         this.swiper.slideTo(this.initialSlide); 
                         console.log ('initialSlide:' + this.initialSlide); 
                         }, 2000)
+                        */
                     
                 }
                 
@@ -177,17 +180,24 @@ import 'swiper/css/swiper.css'
                 //console.log('initialSlide:'+difference);
                 this.initialSlideSet = true;
                 if (difference >= 0 && difference <= 32) {
-                    return difference;
+                    return difference+1;
                 } else {
                     return 1;
                 }
             },
-			isTime(date) {
+			isTime(date) { // ISO-8601 formatted date returned from server
                 var date1 = new Date(date);
+                if(date1 == 'Invalid Date'){
+                    date = Date.parse(date.replace("T"," "));
+                    date1 = new Date(date);
+                    console.log('date: '+date1);
+                }
                 var date2 = new Date();
                 var difference = date2.getTime() - date1.getTime();
-                difference = Math.round(difference / (1000 * 3600 * 24));
-                if (difference < 3) {
+                console.log('difference in milli: ' + difference);
+                difference = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                console.log('difference hh: '+difference);
+                if (this.getDay(date1) == this.getDay(date2) && difference >= 0 && difference < 3) {
                     return true;
                 } else {
                     return false;
@@ -203,5 +213,8 @@ import 'swiper/css/swiper.css'
     }
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
+    }
+    .active {
+        /*background-color:blue!important;*/
     }
 </style>

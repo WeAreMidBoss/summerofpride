@@ -88,7 +88,8 @@
 <script>
 import streamers from './assets/streamers.js'
 import games from './assets/games.js'
-import schedule from './assets/schedule.js'
+//import schedule from './assets/schedule.js'
+import schedule from './assets/schedule-demo.js'
 
 import ModalStreamers from './components/ModalStreamers.vue'
 import ModalGames from './components/ModalGames.vue'
@@ -174,8 +175,8 @@ export default {
     }
     try {
       //get schedule's info
-      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonSchedule')
-      this.schedules = response.data.jsonSchedule
+      /*const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonSchedule')
+      this.schedules = response.data.jsonSchedule*/
       this.scheduleLoading = false
     } catch (e) {
       this.errors.push(e)
