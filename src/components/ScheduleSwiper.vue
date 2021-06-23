@@ -1,6 +1,6 @@
 <template>
 	<div class="schedule" data-aos="slide-up">
-        <transition name="fade">
+        <transition name="fade" v-on:enter="enter">
             <swiper v-if="!loading" class="swiper" ref="swiperSchedule" :options="swiperOptions" >
                 <swiper-slide v-for="(block, index) in schedules" class="swiper-slide" :key="index" >
                     <span class="schedule-day">{{ getDay(block.b1Start) }}</span>
@@ -63,8 +63,6 @@
 </template>
  
 <script>
-/*const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
-console.log("scheduledate:" + scheduledate);*/
 
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
@@ -83,13 +81,10 @@ import 'swiper/css/swiper.css'
 			return {
                 publicPath: process.env.BASE_URL,
 				swiperOptions: {
-                    initialSlide: 0,
                     loop: true,
                     navigation: {
                     nextEl: '.schedule-button-next',
-                    prevEl: '.schedule-button-prev'/*,
-                    preventClicks: false,
-                    preventClicksPropagation: false*/
+                    prevEl: '.schedule-button-prev'
                     }
                 }
 			}
@@ -99,10 +94,17 @@ import 'swiper/css/swiper.css'
                 return this.$refs.swiperSchedule.$swiper
             }
         },
-        updated: function() {
-            this.swiper.attachEvents()
+        mounted: function() {
+            //const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
+            //console.log("scheduledate:" + scheduledate);
+            //this.swiper.attachEvents()
+            
         },
 		methods: {
+            enter() {
+                // move to slide according to current date
+                this.swiper.slideTo(0);
+            },
 			showStreamerInfo(id) {
 				this.$parent.showStreamerInfo(id);
 			},
@@ -119,7 +121,7 @@ import 'swiper/css/swiper.css'
                 console.log("localDate:" + localDate);
                 //var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
-                console.log("localDate 2:" + localDate);
+                //console.log("localDate 2:" + localDate);
                 return localDate;
             },
             calculateEndTime(dateString) {
@@ -129,11 +131,11 @@ import 'swiper/css/swiper.css'
                     utcDate = Date.parse(utcDate.replace("T"," "));
                     localDate = new Date(utcDate);
                 }
-                console.log("localDate:" + localDate);
+                //console.log("localDate:" + localDate);
                 localDate.setHours(localDate.getHours() + 3);
                 //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
-                console.log("localDate 2:" + localDate);
+                //console.log("localDate 2:" + localDate);
                 return localDate;
             },
             getDay(dateString) {
@@ -143,10 +145,10 @@ import 'swiper/css/swiper.css'
                     utcDate = Date.parse(utcDate.replace("T"," "));
                     localDate = new Date(utcDate);
                 }
-                console.log("localDate:" + localDate);
+                //console.log("localDate:" + localDate);
                 //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { day: 'numeric', weekday: 'long', month: 'long' });
-                console.log("localDate 2:" + localDate);
+                //console.log("localDate 2:" + localDate);
                
                 return localDate;
             },
@@ -172,7 +174,7 @@ import 'swiper/css/swiper.css'
                 var date1 = new Date(date);
                 var date2 = new Date();
                 var diference = date2.getTime() - date1.getTime();
-                console.log(diference);
+                //console.log(diference);
                 if (diference < 3) {
                     return true;
                 } else {
