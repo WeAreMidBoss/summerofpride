@@ -140,7 +140,7 @@ import 'swiper/css/swiper.css'
                     localDate = new Date(utcDate);
                 }
                 localDate.setHours(localDate.getHours() + 3);
-                localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
+                localDate = localDate.toLocaleString('en-US', { hour: '1-digit', hour12: true });
                 return localDate;
             },
             getDay(dateString) {

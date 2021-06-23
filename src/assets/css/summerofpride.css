@@ -47,7 +47,7 @@ ul li {
 }
 h1,
 h2, .navbar li {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     font-size: 2rem;
 }
@@ -71,7 +71,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
     font-size: 2.5rem!important;
     color:#51c6d6;
@@ -258,14 +258,14 @@ footer .social-links a:last-child img {
 
 .schedule-table {
   width: 100%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   font-size:30px;
   color:#ea276d;
 }
 
 .schedule-day {
   font-size:45px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   color:#ea276d;
 }
 
@@ -349,7 +349,7 @@ margin-right: 50px;
   padding-top: 3px;
   width: 100px;
   height: 50px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: normal;
   font-size: 1.7rem!important;
   color:#fff;
@@ -565,10 +565,10 @@ margin-right: 50px;
 /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 #mc_embed_signup input.email { width: 200px; border: 1px solid #cccccc; border-radius: 3px 0 0 3px; padding:10px;}
-#mc_embed_signup .button {font-family: 'Bebas Neue', cursive; font-size: 22px; border: 1px solid transparent; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+#mc_embed_signup .button {font-family: 'Bebas Neue', sans-serif; font-size: 22px; border: 1px solid transparent; -webkit-border-radius: 3px; -moz-border-radius: 3px;
   border-radius: 0 3px 3px 0; letter-spacing: .03em; color: #fff; background-color: #51c6d6; box-sizing:border-box;
   height:50px; line-height:50px; padding:0 8px; display: inline-block; transition: all 0.23s ease-in-out 0s; }
-#mc_embed_signup label {display:block; font-family: 'Bebas Neue', cursive; padding-bottom:0; }
+#mc_embed_signup label {display:block; font-family: 'Bebas Neue', sans-serif; padding-bottom:0; }
 #mc_embed_signup .button:hover, #mc_embed_signup .button:active {
   color: #fff;
   background-color: #a72164;
@@ -662,7 +662,7 @@ a.showSingle {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
 }
 
