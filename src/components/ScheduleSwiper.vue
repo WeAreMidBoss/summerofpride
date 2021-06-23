@@ -80,6 +80,9 @@ import 'swiper/css/swiper.css'
 		data (){
 			return {
                 publicPath: process.env.BASE_URL,
+                initialSlideSet: false,
+                initialSlide: 0,
+                startingDate: '2021-07-01 9:00:00-07:00', // first day of the event
 				swiperOptions: {
                     loop: true,
                     navigation: {
@@ -95,15 +98,20 @@ import 'swiper/css/swiper.css'
             }
         },
         mounted: function() {
-            //const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
-            //console.log("scheduledate:" + scheduledate);
-            //this.swiper.attachEvents()
             
         },
 		methods: {
             enter() {
                 // move to slide according to current date
-                this.swiper.slideTo(0);
+                if (this.initialSlideSet == false) {
+                    this.initialSlide = this.getInitialSlide(this.startingDate);
+                    setTimeout(() => { 
+                        this.swiper.slideTo(this.initialSlide); 
+                        console.log ('initialSlide:' + this.initialSlide); 
+                        }, 2000)
+                    
+                }
+                
             },
 			showStreamerInfo(id) {
 				this.$parent.showStreamerInfo(id);
@@ -118,10 +126,7 @@ import 'swiper/css/swiper.css'
                     utcDate = Date.parse(utcDate.replace("T"," "));
                     localDate = new Date(utcDate);
                 }
-                console.log("localDate:" + localDate);
-                //var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
-                //console.log("localDate 2:" + localDate);
                 return localDate;
             },
             calculateEndTime(dateString) {
@@ -131,11 +136,8 @@ import 'swiper/css/swiper.css'
                     utcDate = Date.parse(utcDate.replace("T"," "));
                     localDate = new Date(utcDate);
                 }
-                //console.log("localDate:" + localDate);
                 localDate.setHours(localDate.getHours() + 3);
-                //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
-                //console.log("localDate 2:" + localDate);
                 return localDate;
             },
             getDay(dateString) {
@@ -145,10 +147,7 @@ import 'swiper/css/swiper.css'
                     utcDate = Date.parse(utcDate.replace("T"," "));
                     localDate = new Date(utcDate);
                 }
-                //console.log("localDate:" + localDate);
-                //7var ampm = localDate.getHours() >= 12 ? 'pm' : 'am';
                 localDate = localDate.toLocaleString('en-US', { day: 'numeric', weekday: 'long', month: 'long' });
-                //console.log("localDate 2:" + localDate);
                
                 return localDate;
             },
@@ -170,12 +169,25 @@ import 'swiper/css/swiper.css'
                     return 0;
                 }
             },
+			getInitialSlide(date) {
+                var date1 = new Date(date);
+                var date2 = new Date();
+                var difference = date2.getTime() - date1.getTime();
+                difference = Math.round(difference / (1000 * 3600 * 24));
+                //console.log('initialSlide:'+difference);
+                this.initialSlideSet = true;
+                if (difference >= 0 && difference <= 31) {
+                    return difference;
+                } else {
+                    return 0;
+                }
+            },
 			isTime(date) {
                 var date1 = new Date(date);
                 var date2 = new Date();
-                var diference = date2.getTime() - date1.getTime();
-                //console.log(diference);
-                if (diference < 3) {
+                var difference = date2.getTime() - date1.getTime();
+                difference = Math.round(difference / (1000 * 3600 * 24));
+                if (difference < 3) {
                     return true;
                 } else {
                     return false;
