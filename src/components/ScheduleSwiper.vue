@@ -63,8 +63,8 @@
 </template>
  
 <script>
-const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
-console.log("scheduledate:" + scheduledate);
+/*const scheduledate = Math.floor((new Date() - new Date('2020-06-01T00:00:00.000-07:00'))/(1000*60*60*24));
+console.log("scheduledate:" + scheduledate);*/
 
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
@@ -83,13 +83,13 @@ import 'swiper/css/swiper.css'
 			return {
                 publicPath: process.env.BASE_URL,
 				swiperOptions: {
-                    initialSlide: scheduledate,
+                    initialSlide: 0,
                     loop: true,
                     navigation: {
                     nextEl: '.schedule-button-next',
-                    prevEl: '.schedule-button-prev',
+                    prevEl: '.schedule-button-prev'/*,
                     preventClicks: false,
-                    preventClicksPropagation: false
+                    preventClicksPropagation: false*/
                     }
                 }
 			}
