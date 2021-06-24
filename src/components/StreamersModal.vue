@@ -1,10 +1,10 @@
 <template>
-  <div class="modal-backdrop animated faster" :class="isClosing ? 'fadeOut' : 'fadeIn'" @click.self="close">
-    <div class="modal-streamers animated faster"
+  <div class="modal-backdrop animate__animated animate__faster" :class="isClosing ? 'animate__fadeOut' : 'animate__fadeIn'" @click.self="close">
+    <div class="modal-streamers animate__animated animate__faster"
       role="dialog"
       aria-labelledby="modalTitle"
       aria-describedby="modalDescription"
-      :class="isClosing ? 'zoomOutDown' : 'zoomInUp'" 
+      :class="isClosing ? 'animate__zoomOutDown' : 'animate__zoomInUp'" 
     >
       <header class="modal-streamers-header">
         <slot name="header">
@@ -25,8 +25,10 @@
                 <img class="modal-img" :src="`${publicPath}streamers/${profile.img}`" />
               </div>
               <div class="modal-description col-md-6 col-sm-12">
-                <span class="modal-name">{{ profile.name }}</span>
-                <span class="modal-pronouns">{{ profile.pronouns }}</span>
+                <div class="modal-streamer-title">
+                  <span class="modal-name">{{ profile.name }}</span>
+                  <span class="modal-pronouns">{{ profile.pronouns }}</span>
+                </div>
                 <span class="modal-description-text">{{ profile.bio }}</span>
                 <span class="modal-description-social text-center"><a :href="profile.twitch" target="_blank" v-if="profile.twitch"><img class="modal-social" src="../assets/img/Twitch.svg" /></a> 
                 <a :href="profile.social" target="_blank" v-if="profile.social"><img class="modal-social" src="../assets/img/Twitter.svg" /></a> 
@@ -59,7 +61,7 @@
         setTimeout(() => {   
           this.$emit('close');
           this.isClosing = false;
-        }, 450)
+        }, 250)
       }
     },
   };
@@ -192,13 +194,57 @@
   }
   @media only screen and (max-width: 600px) {
     .modal-streamers {
-      max-width: 80%;
+      max-width: 90%;
     }
     .modal-img {
       max-height: 250px;
+      padding:20px 20px;
     }
     .modal-description-text {
-      padding: 0 20px;
+      padding: 0 10px;
+      font-size: 0.9em;
+    }
+  }
+  @media screen and (max-width: 800px) and (orientation:landscape) {
+    .modal-streamers {
+      height: auto;
+      max-height: 95%;
+      max-width: 90%;
+      padding: 5px 5px 25px;
+    }
+    .modal-streamers-body {
+      padding: 10px;
+    }
+    .modal-img-container.col-sm-12 {
+      max-width: 30%;
+    }
+    .modal-description.col-sm-12 {
+      max-width: 68%;
+    }
+    .modal-description {
+      padding: 0 15px 0;
+    }
+    .modal-img {
+      max-height: 250px;
+      padding:15px 15px;
+    }
+    .modal-description-text {
+      margin-top: 15px;
+      padding: 0;
+      font-size: 0.9em;
+      text-overflow: ellipsis;
+    }
+    .modal-streamer-title {
+      text-align: center;
+    }
+    .modal-name {
+      display: inline-block;
+      margin: 0;
+    }
+    .modal-pronouns {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 1em;
     }
   }
 </style>

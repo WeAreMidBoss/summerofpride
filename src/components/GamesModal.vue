@@ -1,10 +1,10 @@
 <template>
-  <div class="modal-backdrop animated faster" :class="isClosing ? 'fadeOut' : 'fadeIn'" @click.self="close">
-    <div class="modal-games animated faster"
+  <div class="modal-backdrop animate__animated animate__faster" :class="isClosing ? 'animate__fadeOut' : 'animate__fadeIn'" @click.self="close">
+    <div class="modal-games animate__animated animate__faster"
       role="dialog"
       aria-labelledby="modalTitle"
       aria-describedby="modalDescription"
-      :class="isClosing ? 'zoomOutDown' : 'zoomInUp'"
+      :class="isClosing ? 'animate__zoomOutDown' : 'animate__zoomInUp'"
     >
       <header class="modal-games-header">
         <slot name="header">
@@ -23,6 +23,11 @@
           <div class="row">
             <div class="modal-img-container col-sm-12">
               <img class="modal-img" :src="`${publicPath}games/${game.img}`" />
+              <span class="modal-description-social-mobile text-center">
+                <a :href="game.url" target="_blank" v-if="game.url"><img class="modal-social" src="../assets/img/Store.svg" /></a>
+                <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Social.svg" /></a>
+                <a :href="game.url3" target="_blank" v-if="game.url3"><img class="modal-social" src="../assets/img/Website.svg" /></a>
+              </span>
             </div>
             <div class="modal-description col-sm-12">
               <span class="modal-name">{{ game.name }}</span>
@@ -33,6 +38,11 @@
               <a :href="game.url2" target="_blank" v-if="game.url2"><img class="modal-social" src="../assets/img/Social.svg" /></a>
               <a :href="game.url3" target="_blank" v-if="game.url3"><img class="modal-social" src="../assets/img/Website.svg" /></a>
               </span>
+            </div>
+          </div>
+          <div class="modal-warning-mobile row">
+            <div class="modal-warning-mobile-container col-sm-12">
+              <div class="modal-warning-mobile-body" v-if="game.warning"><div class="modal-warning-wrapper"><span class="modal-warning-title">CONTENT DESCRIPTOR</span> <span class="modal-warning-descriptor"> {{ game.warning }}</span></div></div>
             </div>
           </div>
         </slot>
@@ -61,7 +71,7 @@
         setTimeout(() => {   
           this.$emit('close');
           this.isClosing = false;
-        }, 450)
+        }, 250)
       }
     },
   };
@@ -206,6 +216,10 @@
      width: 45px;
     height: 45px;
   }
+  .modal-description-social-mobile,.modal-warning-mobile {
+    display: none;
+  }
+  
     @media only screen and (max-width: 800px) {
     .modal-games {
       max-width: 85%;
@@ -213,7 +227,7 @@
   }
   @media only screen and (max-width: 600px) {
     .modal-games {
-      max-width: 80%;
+      max-width: 90%;
     }
     .modal-img {
       max-height: 250px;
@@ -225,6 +239,63 @@
     .modal-description-text {
       padding: 0 20px;
     }
-
+    .modal-warning {
+      padding: 0 15px;
+    }
   }
+    @media screen and (max-width: 800px) and (orientation:landscape) {
+    .modal-games {
+      height: auto;
+      max-height: 95%;
+      max-width: 90%;
+      padding: 5px 5px 25px;
+    }
+    .modal-games-body {
+      padding: 10px;
+    }
+    .modal-img-container.col-sm-12 {
+      max-width: 30%;
+    }
+    .modal-description.col-sm-12 {
+      max-width: 68%;
+    }
+    .modal-description {
+      padding: 0 15px 0;
+    }
+    .modal-img {
+      max-height: 250px;
+      padding:15px 15px;
+    }
+    .modal-description-text {
+      margin-top: 15px;
+      padding: 0;
+      font-size: 0.8em;
+      text-overflow: ellipsis;
+    }
+    .modal-name {
+      font-size: 1.3em;
+      text-align: center;
+    }
+    .modal-warning {
+      display:none;
+    }
+    .modal-description-social {
+      display:none;
+    }
+     .modal-description-social-mobile {
+      display: block;
+      margin-top: 10px;
+    }
+    .modal-warning-mobile {
+      display: block;
+      margin-top: 10px;
+    }
+    .modal-warning-mobile-body {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .modal-warning-mobile-body .modal-warning-title {
+      font-size: 0.8em;
+    }
+}
 </style>
