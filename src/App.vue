@@ -62,11 +62,12 @@
               <hr>
               <div class="brands">
               <h1>Supporting Organizations</h1>
-              <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> 
+              <a href="https://store.steampowered.com/" target="_target"><img class="" src="./assets/img/steam.png" alt="Steam" /></a> 
               <a href="#" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> 
               <a href="https://igda.org/" target="_target"><img class="" src="./assets/img/igda.png" alt="IGDA" /></a> 
               <a href="https://www.cartoonnetwork.com/" target="_target"><img class="" src="./assets/img/CN_GAMES.png" alt="Cartoon Network Games" /></a> <br> 
-
+              
+              <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> 
               <a href="https://www.greenmangaming.com/" target="_target"><img class="" src="./assets/img/greenmangaming.png" alt="Green Man Gaming" /></a> 
               <a href="https://www.devolverdigital.com/" target="_target"><img class="" src="./assets/img/Devolver.png" alt="Devolver Digital" /></a>  
               <a href="https://grumpyfacestudios.com/" target="_target"><img class="" src="./assets/img/Grumpyface.png" alt="Grumpyface" /></a>
