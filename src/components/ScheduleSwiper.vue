@@ -182,10 +182,6 @@ import 'swiper/css/swiper.css'
             },
 			isTime(date) { // ISO-8601 formatted date returned from server
                 var date1 = new Date(date);
-                if(date1 == 'Invalid Date'){
-                    date = Date.parse(date.toString().replace("T"," "));
-                    date1 = new Date(date);
-                }
                 var date2 = new Date();
                 var difference = date2.getTime() - date1.getTime();
                 difference = Math.floor((difference / (1000 * 60 * 60)) % 24);
