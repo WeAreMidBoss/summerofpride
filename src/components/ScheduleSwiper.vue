@@ -123,33 +123,28 @@ import 'swiper/css/swiper.css'
 				this.$parent.showGameInfo(id);
 			},
             convertDateToLocal(dateString) {
+                /*var date = this.parseDate(dateString.toString());
+                var utcDate = new Date(date);
+                utcDate = utcDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
+                console.log('localdate: '+utcDate); 
+                return utcDate;*/
                 var utcDate = dateString;  // ISO-8601 formatted date returned from server
                 var localDate = new Date(utcDate);
-                if(localDate == 'Invalid Date'){
-                    utcDate = Date.parse(utcDate.replace("T"," "));
-                    localDate = new Date(utcDate);
-                }
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
+
                 return localDate;
             },
             calculateEndTime(dateString) {
                 var utcDate = dateString;  // ISO-8601 formatted date returned from server
                 var localDate = new Date(utcDate);
-                if(localDate == 'Invalid Date'){
-                    utcDate = Date.parse(utcDate.replace("T"," "));
-                    localDate = new Date(utcDate);
-                }
                 localDate.setHours(localDate.getHours() + 3);
                 localDate = localDate.toLocaleString('en-US', { hour: '2-digit', hour12: true });
+
                 return localDate;
             },
             getDay(dateString) {
                 var utcDate = dateString;  // ISO-8601 formatted date returned from server
                 var localDate = new Date(utcDate);
-                if(localDate == 'Invalid Date'){
-                    utcDate = Date.parse(utcDate.replace("T"," "));
-                    localDate = new Date(utcDate);
-                }
                 localDate = localDate.toLocaleString('en-US', { day: 'numeric', weekday: 'long', month: 'long' });
                
                 return localDate;
@@ -188,7 +183,7 @@ import 'swiper/css/swiper.css'
 			isTime(date) { // ISO-8601 formatted date returned from server
                 var date1 = new Date(date);
                 if(date1 == 'Invalid Date'){
-                    date = Date.parse(date.replace("T"," "));
+                    date = Date.parse(date.toString().replace("T"," "));
                     date1 = new Date(date);
                 }
                 var date2 = new Date();
