@@ -18,9 +18,9 @@
               <p data-aos="slide-up">This year, we’re also supporting three wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
               <div align="center" class="charities row">
-                <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-gaymerx" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-2020-trevor-project" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://tiltify.com/+summer-of-pride-2020/summer-of-pride-trans-lifeline" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/gaymerx-2021" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/trevor-project-2021" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/trans-lifeline-2021" target="_target">DONATE</a></div></div> 
               </div>
               <hr>
               <!-- Begin MailChimp Signup Form -->
