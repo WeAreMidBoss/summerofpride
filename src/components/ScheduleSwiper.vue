@@ -27,7 +27,7 @@
                             </th>
                             <td @click="showStreamerInfo(getIdByName(block.b1Name))">
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
                                             <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b1Name)].img}`" class="schedule-profile-img" /></div>
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b1Name)].name }}</span>
                                     </div>
@@ -35,7 +35,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
                                         <div>
                                             <img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game1)].img}`" class="schedule-game-img" />
                                         </div>
@@ -73,7 +73,7 @@
                             </th>
                             <td @click="showStreamerInfo(getIdByName(block.b2Name))">
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
                                             <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b2Name)].img}`" class="schedule-profile-img" /></div>
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b2Name)].name }}</span>
                                     </div>
@@ -81,7 +81,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
                                         <div>
                                             <img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game1)].img}`" class="schedule-game-img" />
                                         </div>
@@ -98,7 +98,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-sm-row flex-md-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">
+                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">
                             <th class="schedule-hours my-auto" scope="row">
                                  <div class="d-flex justify-content-center h-100">
                                     <div class="my-auto">
@@ -119,7 +119,7 @@
                             </th>
                             <td @click="showStreamerInfo(getIdByName(block.b3Name))">
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
                                             <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b3Name)].img}`" class="schedule-profile-img" /></div>
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b3Name)].name }}</span>
                                     </div>
@@ -127,7 +127,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
                                         <div>
                                             <img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game1)].img}`" class="schedule-game-img" />
                                         </div>
@@ -144,7 +144,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-sm-row flex-md-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">
+                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">
                             <th class="schedule-hours my-auto" scope="row">
                                  <div class="d-flex justify-content-center h-100">
                                     <div class="my-auto">
@@ -165,7 +165,7 @@
                             </th>
                             <td @click="showStreamerInfo(getIdByName(block.b4Name))">
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
                                             <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b4Name)].img}`" class="schedule-profile-img" /></div>
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b4Name)].name }}</span>
                                     </div>
@@ -173,7 +173,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
                                         <div>
                                             <img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game1)].img}`" class="schedule-game-img" />
                                         </div>
@@ -190,7 +190,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-sm-row flex-md-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">
+                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">
                             <th class="schedule-hours my-auto" scope="row">
                                  <div class="d-flex justify-content-center h-100">
                                     <div class="my-auto">
@@ -211,7 +211,7 @@
                             </th>
                             <td @click="showStreamerInfo(getIdByName(block.b5Name))">
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
                                             <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b5Name)].img}`" class="schedule-profile-img" /></div>
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b5Name)].name }}</span>
                                     </div>
@@ -219,7 +219,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column my-auto">
+                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
                                         <div>
                                             <img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game1)].img}`" class="schedule-game-img" />
                                         </div>
@@ -537,6 +537,16 @@ import 'swiper/css/swiper.css'
     }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+     .live-time  {
+        font-size: 1.2em;
+    }
+    .live-time:after {
+        margin: -10px auto 10px;
+
+        border-style: solid;
+        border-width: 5px 50px 0 50px;
+        border-color: #f5e462 transparent transparent transparent;
+    }
     .schedule-table tr:nth-child(3) .schedule-hours, .schedule-table tr:nth-child(4) .schedule-hours {
         margin-left: 23px;
         
@@ -569,8 +579,15 @@ import 'swiper/css/swiper.css'
         margin-left: 0;
         
     }
-    .start-time, .active > .schedule-hours > .start-time, .end-time, .active > .schedule-hours > .end-time  {
+    .start-time, .active > .schedule-hours > .start-time, .end-time, .active > .schedule-hours > .end-time, .live-time  {
         font-size: 1.2em;
+    }
+    .live-time:after {
+        margin: -10px auto 10px;
+
+        border-style: solid;
+        border-width: 6px 60px 0 60px;
+        border-color: #f5e462 transparent transparent transparent;
     }
     .schedule-table {
         width: 100%;
@@ -580,14 +597,15 @@ import 'swiper/css/swiper.css'
         padding: 20px 0;
     }
     .schedule-hours{
+        margin-top: -5px;
         text-align: center;
         padding-right: 0!important;
     }
-    .start-time,.end-time {
-        min-width: auto;
+    .start-time,.end-time, .bullet {
     }
     .schedule-game-img{
-        height: 90px;
+        height: 110px;
+        margin: 5px 0;
     }
     .schedule .swiper-button-prev, .schedule  .swiper-button-next {
         top: 1.7%;
