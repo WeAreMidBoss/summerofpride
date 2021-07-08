@@ -9,7 +9,7 @@
                         <tr :class="isTime(block.b1Start) ? 'active':''">
                             <th class="schedule-hours" scope="row"><span class="live-time" :class="isTime(block.b1Start) ? 'active':''">LIVE NOW!</span><span class="start-time">{{ convertDateToLocal(block.b1Start) }} </span><span class="end-time"> {{ calculateEndTime(block.b1Start) }}</span></th>
                             <td @click="showStreamerInfo(getIdByName(block.b1Name))"><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b1Name)].img}`" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b1Name)].name }}</span></td>
+                            <span class="schedule-streamer-name" :class="isLongName(profiles[getIdByName(block.b1Name)].name) ? 'large-width': ''">{{ profiles[getIdByName(block.b1Name)].name }}</span></td>
                             <td><img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game1)].img}`" class="schedule-game-img" />
                             <span class="schedule-game-name">{{ games[getGameIdByName(block.b1Game1)].name }}</span>
                             <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
@@ -18,7 +18,7 @@
                         <tr :class="isTime(block.b2Start) ? 'active':''">
                             <th class="schedule-hours" scope="row"><span class="live-time" :class="isTime(block.b2Start) ? 'active':''">LIVE NOW!</span><span class="start-time">{{ convertDateToLocal(block.b2Start) }} </span><span class="end-time"> {{ calculateEndTime(block.b2Start) }}</span></th>
                             <td @click="showStreamerInfo(getIdByName(block.b2Name))"><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b2Name)].img}`" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b2Name)].name }}</span></td>
+                            <span class="schedule-streamer-name" :class="isLongName(profiles[getIdByName(block.b2Name)].name) ? 'large-width': ''">{{ profiles[getIdByName(block.b2Name)].name }}</span></td>
                             <td><img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game1)].img}`" class="schedule-game-img" />
                             <span class="schedule-game-name">{{ games[getGameIdByName(block.b2Game1)].name }}</span>
                             <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2Game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
@@ -27,7 +27,7 @@
                         <tr :class="isTime(block.b3Start) ? 'active':''">
                             <th class="schedule-hours" scope="row"><span class="live-time" :class="isTime(block.b3Start) ? 'active':''">LIVE NOW!</span><span class="start-time">{{ convertDateToLocal(block.b3Start) }} </span><span class="end-time"> {{ calculateEndTime(block.b3Start) }}</span></th>
                             <td @click="showStreamerInfo(getIdByName(block.b3Name))"><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b3Name)].img}`" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b3Name)].name }}</span></td>
+                            <span class="schedule-streamer-name" :class="isLongName(profiles[getIdByName(block.b3Name)].name) ? 'large-width': ''">{{ profiles[getIdByName(block.b3Name)].name }}</span></td>
                             <td><img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game1)].img}`" class="schedule-game-img" />
                             <span class="schedule-game-name">{{ games[getGameIdByName(block.b3Game1)].name }}</span>
                             <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
@@ -36,7 +36,7 @@
                         <tr :class="isTime(block.b4Start) ? 'active':''">
                             <th class="schedule-hours" scope="row"><span class="live-time" :class="isTime(block.b4Start) ? 'active':''">LIVE NOW!</span><span class="start-time">{{ convertDateToLocal(block.b4Start) }} </span><span class="end-time"> {{ calculateEndTime(block.b4Start) }}</span></th>
                             <td @click="showStreamerInfo(getIdByName(block.b4Name))"><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b4Name)].img}`" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b4Name)].name }}</span></td>
+                            <span class="schedule-streamer-name" :class="isLongName(profiles[getIdByName(block.b4Name)].name) ? 'large-width': ''">{{ profiles[getIdByName(block.b4Name)].name }}</span></td>
                             <td><img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game1)].img}`" class="schedule-game-img" />
                             <span class="schedule-game-name">{{ games[getGameIdByName(block.b4Game1)].name }}</span>
                             <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
@@ -45,7 +45,7 @@
                         <tr :class="isTime(block.b5Start) ? 'active':''">
                             <th class="schedule-hours" scope="row"><span class="live-time" :class="isTime(block.b5Start) ? 'active':''">LIVE NOW!</span><span class="start-time">{{ convertDateToLocal(block.b5Start) }} </span><span class="end-time"> {{ calculateEndTime(block.b5Start) }}</span></th>
                             <td @click="showStreamerInfo(getIdByName(block.b5Name))"><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b5Name)].img}`" class="schedule-profile-img" />
-                            <span class="schedule-streamer-name">{{ profiles[getIdByName(block.b5Name)].name }}</span></td>
+                            <span class="schedule-streamer-name" :class="isLongName(profiles[getIdByName(block.b5Name)].name) ? 'large-width': ''">{{ profiles[getIdByName(block.b5Name)].name }}</span></td>
                             <td><img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game1)].img}`" class="schedule-game-img" />
                             <span class="schedule-game-name">{{ games[getGameIdByName(block.b5Game1)].name }}</span>
                             <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5Game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
@@ -189,6 +189,13 @@ import 'swiper/css/swiper.css'
                 } else {
                     return false;
                 }
+            },
+			isLongName(name) { // ISO-8601 formatted date returned from server
+                if (name.length > 14) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
 		}
 	}
@@ -239,16 +246,13 @@ import 'swiper/css/swiper.css'
         width: 0;
         height: 0;
         margin-top: -15px;
-        margin-left: 80px;
+        margin-left: 90px;
         border-style: solid;
         border-width: 10px 80px 0 80px;
         border-color: #f5e462 transparent transparent transparent;
     }
 
     /*** Regular schedule styling***/
-    .schedule-button-prev {
-
-    }
     .schedule-table {
         width: 80%;
         margin: 0 auto;
@@ -350,6 +354,10 @@ import 'swiper/css/swiper.css'
         margin-top: 5px;
     }
 
+    .large-width {
+        max-width: 92%!important;
+    }
+
     .schedule-table tr:first-child {border-color: #f5cd49;}
     .schedule-table tr:nth-child(2) {border-color: #f8874c;}
     .schedule-table tr:nth-child(3) {border-color: #f77166;}
@@ -437,6 +445,9 @@ import 'swiper/css/swiper.css'
     .schedule-hours{
         text-align: center;
         padding-right: 0!important;
+    }
+    .live-time {
+        margin-bottom: -20px;
     }
     .live-time::after {
         margin-left: 85px;
