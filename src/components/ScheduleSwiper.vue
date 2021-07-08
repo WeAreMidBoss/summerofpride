@@ -171,10 +171,10 @@ import 'swiper/css/swiper.css'
                 var date2 = new Date();
                 var difference = date2.getTime() - date1.getTime();
                 difference = Math.round(difference / (1000 * 3600 * 24));
-                //console.log('initialSlide:'+difference);
+                //onsole.log('difference:'+difference);
                 this.initialSlideSet = true;
                 if (difference >= 0 && difference <= 32) {
-                    return difference+1;
+                    return difference;
                 } else {
                     return 1;
                 }
