@@ -358,10 +358,10 @@ import 'swiper/css/swiper.css'
         max-width: 92%!important;
     }
 
-    .schedule-table tr:first-child {border-color: #f5cd49;}
+   /* .schedule-table tr:first-child {border-color: #f5cd49;}
     .schedule-table tr:nth-child(2) {border-color: #f8874c;}
     .schedule-table tr:nth-child(3) {border-color: #f77166;}
-    .schedule-table tr:nth-child(even) {background-color: #fff;}
+    .schedule-table tr:nth-child(even) {background-color: #fff;}*/
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .live-time::after {
