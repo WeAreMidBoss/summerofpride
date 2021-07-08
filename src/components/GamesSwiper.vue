@@ -27,7 +27,7 @@ import 'swiper/css/swiper.css'
 		directives: {
 			swiper: directive
 		},
-		data (){
+		data(){
 			return {
                 publicPath: process.env.BASE_URL,
 				swiperOptions: {

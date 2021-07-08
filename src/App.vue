@@ -2,18 +2,54 @@
   <div id="app">
     <Nav />
     <main role="main">
-
-      <div class="jumbotron" data-aos="zoom-in">
-        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
-        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
+    <!-- DESKTOP JUMBOTRON -->
+    <div v-if="mobile == 0">
+      <div class="jumbotron d-none d-xl-block" :style="{ backgroundImage: 'url(' + require('@/assets/img/SeasonOfPride2021_Banner.jpg') + ')' }" data-aos="zoom-in">
+        <!--<img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
+        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />-->
+        <div class="container h-100">
+          <div class="d-flex justify-content-center h-100 flex-row-reverse">
+            <div class="my-auto">
+              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
+              <div class="d-flex justify-content-center h-100 flex-row-reverse">
+                <div class="p-2 twitch-embed" style="min-width: 640px; min-height:360px;">
+                  <!--<clip-loader :loading="scheduleLoading" :color="clipLoaderColor" :size="clipLoaderSize" class="twitch-embed-loader"></clip-loader>-->
+                    <twitch-embed :channel="channel"></twitch-embed>
+                  </div>
+                <div class="p-2 my-auto">
+                  <p class="align-middle" data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. 
+                    These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. 
+                    Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
+    </div>
+    <div v-else>
+      <!-- MOBILE JUMBOTRON -->
+      <div class="jumbotron d-xl-none" data-aos="zoom-in">
+        <!--<img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />-->
+        <img src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />  
+      </div>
+
+       <div class="d-xl-none">
+          <h1 class="mobile-h1 text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
+          <div v-if="mobile == 1">
+            <twitch-embed-ipad class="twitch-embed-mobile" :channel="channel"></twitch-embed-ipad>
+          </div>
+          <div v-else>
+            <twitch-embed-mobile class="twitch-embed-mobile" :channel="channel"></twitch-embed-mobile>
+          </div>
+          <p data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+        </div>
+    </div>
 
       <div id="main-content">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
-              <p data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
 
               <p data-aos="slide-up">This year, we’re also supporting three wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
@@ -57,7 +93,7 @@
               <p data-aos="slide-up">Local time: {{ timezone }}</p>
 
               <sync-loader :loading="scheduleLoading" :color="loaderColor" :size="loaderSize"></sync-loader>
-              <schedule-swiper :loading="scheduleLoading" :schedules="schedules" :profiles="profiles" :games="games"></schedule-swiper>
+              <schedule-swiper :loading="scheduleLoading" :schedules="schedules" :profiles="profiles" :games="games" @newChannel="updateChannel"></schedule-swiper>
               
               <hr>
               <div class="brands">
@@ -98,16 +134,20 @@ import games from './assets/games.js'
 import schedule from './assets/schedule.js'
 //import schedule from './assets/schedule-demo.js'
 
-import ModalStreamers from './components/StreamersModal.vue'
-import ModalGames from './components/GamesModal.vue'
+import Nav from './components/Nav.vue'
+import TwitchEmbed from './components/TwitchEmbed.vue'
+import TwitchEmbedMobile from './components/TwitchEmbedMobile.vue'
+import TwitchEmbedIpad from './components/TwitchEmbedIpad.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
 import GamesSwiper from './components/GamesSwiper.vue'
 import ScheduleSwiper from './components/ScheduleSwiper.vue'
-import Nav from './components/Nav.vue'
+import ModalStreamers from './components/StreamersModal.vue'
+import ModalGames from './components/GamesModal.vue'
 import Footer from './components/Footer.vue'
 
 import axios from 'axios'
 import SyncLoader from 'vue-spinner/src/SyncLoader.vue'
+//import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -116,28 +156,30 @@ import './assets/css/summerofpride.css'
 export default {
   name: 'App',
   components: {
-    ModalStreamers,
-    ModalGames,
     Nav,
+    TwitchEmbed,
+    TwitchEmbedIpad,
+    TwitchEmbedMobile,
     Footer,
     StreamersSwiper,
     GamesSwiper,
     ScheduleSwiper,
-    SyncLoader
-    /*Swiper,
-    SwiperSlide*/
+    ModalStreamers,
+    ModalGames,
+    SyncLoader,
+    //ClipLoader
   },
-  /*directives: {
-    swiper: directive
-  },*/
   data() {
     return {
       animated: false,
+      mobile: 0,
       streamersLoading: true,
       gamesLoading: true,
       scheduleLoading: true,
       loaderColor: '#51c6d6',
       loaderSize: '20px',
+      clipLoaderColor: '#333',
+      clipLoaderSize: '60px',
       showStreamerModal: false,
       showGameModal: false,
       schedule: [],
@@ -146,21 +188,18 @@ export default {
       profiles: streamers,
       game: [],
       games: games,
+      channel: 'wearemidboss',
       /*gamesNoB: gameList.filter(g => g.id != 66),*/
       errors:[],
       timezone: ''
     }
-  },
-  computed: {
-    /*swiper() {
-      return this.$refs.mySwiper.$swiper
-    }*/
   },
   async created() {
     AOS.init({
       once: true,
       disable: 'mobile'
     })
+    this.mobile = this.isMobile()
     this.timezone = this.getTimezone()
     try {
       //get streamer's info
@@ -241,6 +280,9 @@ export default {
     getTimezone(){
       return Intl.DateTimeFormat().resolvedOptions().timeZone;
     },
+    updateChannel(channel) {
+        this.channel = channel
+    },
     disableScrolling(){
       var x=window.scrollX;
       var y=window.scrollY;
@@ -248,7 +290,17 @@ export default {
     },
     enableScrolling(){
       window.onscroll=function(){};
-    }
+    },
+    isMobile() {
+      console.log('width: ' + window.innerWidth)
+      if (window.innerWidth >= 768 && window.innerWidth <= 1200) {
+        return 1
+      } else if (window.innerWidth < 768) {
+        return 2
+      } else {
+        return 0
+      }
+    },    
   }
 }
 </script>

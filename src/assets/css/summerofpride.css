@@ -116,15 +116,26 @@ hr {
     margin:35px 0 35px 0;
 }
 .jumbotron {
-  background: #fff;
+  /*background: #fff;*/
   padding: 0!important;
   margin-bottom: 0;
-  margin-top: -7  0px;
+  margin-top: 0;
   border-bottom: solid 2px #fff;
+  height: 80vh;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
 }
 .jumbotron img {
   width:100%;
   height: auto;
+}
+.twitch-embed {
+  /*position: absolute;
+  display:block;
+  top:30%;
+  right:20%;*/
 }
 #main-content {
   background: #fff; /* Old browsers */
@@ -289,11 +300,11 @@ footer .social-links a:last-child img {
   color: #159CBF;
   font-size: 3em!important;
 }
+.twitch-embed-mobile {
+  padding: 0 0 2rem 0;
+}
 
 @media (min-width: 576px) {
-  .jumbotron {
-    margin-top: -70px;
-  }
   .navbar {
     position: relative;
     top: 0;
@@ -327,8 +338,15 @@ footer .social-links a:last-child img {
   }
 
 }
-
+@media screen and (max-width: 1200px) and (orientation:landscape) {
+  .jumbotron{
+    height: auto;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
+  .jumbotron{
+    height: auto;
+  }
   .navbar {
     padding:0;
   }
@@ -363,8 +381,22 @@ footer .social-links a:last-child img {
   #main-content {
     padding-top: 0;
   }
+  p {
+    font-size: 0.9rem;
+  }
+  .mobile-h1 {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem!important;
+    line-height: 1;
+  }
+ 
+
   .jumbotron{
-    margin-top: -70px;
+    margin-top: 0;
+    height: auto;
+    background-size: contain;
+    -moz-background-size: contain;
   }
   /*.jumbotron img {
     width: auto;
