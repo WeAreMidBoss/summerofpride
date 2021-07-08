@@ -338,7 +338,7 @@ import 'swiper/css/swiper.css'
     }
 
     .schedule-game-name{
-        max-width: 83%!important;
+        max-width: 85%!important;
         margin: 0 auto;
         margin-top: 5px;
     }
