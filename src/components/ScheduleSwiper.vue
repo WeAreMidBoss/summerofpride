@@ -368,9 +368,14 @@ import 'swiper/css/swiper.css'
         font-size:1.05em;
     }
     .active-twitch-logo {
-        width: 60%;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 20px;
     }
     /*** Regular schedule styling***/
+    .swiper {
+        width: 75%;
+    }
     .schedule-table {
         width: 100%;
         margin: 0 auto;
@@ -494,7 +499,6 @@ import 'swiper/css/swiper.css'
     }
 }
 @media (max-width: 768px) {
-
     .live-time  {
         font-size: 1.2em;
     }
