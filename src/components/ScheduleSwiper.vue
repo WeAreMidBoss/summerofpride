@@ -197,8 +197,7 @@ import 'swiper/css/swiper.css'
                 return this.$refs.swiperSchedule.$swiper
             }
         },
-        mounted: function() {
-            
+        created: function() {
         },
 		methods: {
             enter() {
@@ -214,7 +213,6 @@ import 'swiper/css/swiper.css'
                         */
                     
                 }
-                
             },
 			showStreamerInfo(id) {
 				this.$parent.showStreamerInfo(id);

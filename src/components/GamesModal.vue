@@ -125,6 +125,7 @@
     right:-25px;
     width: 32px;
     height: 32px;
+    padding: 0;
     border: none;
     font-size: 20px;
     line-height: 32px;

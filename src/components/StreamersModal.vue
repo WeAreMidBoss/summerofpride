@@ -116,6 +116,7 @@
     width: 32px;
     height: 32px;
     border: none;
+    padding: 0;
     font-size: 20px;
     line-height: 32px;
     cursor: pointer;
