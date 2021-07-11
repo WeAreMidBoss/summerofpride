@@ -3,54 +3,19 @@
     <Nav />
     <main role="main">
     <!-- DESKTOP JUMBOTRON -->
-    <div v-if="mobile == 0">
       <div class="jumbotron d-none d-xl-block" :style="{ backgroundImage: 'url(' + require('@/assets/img/SeasonOfPride2021_Banner.jpg') + ')' }" data-aos="zoom-in">
-        <!--<img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
-        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />-->
-        <div class="container h-100">
-          <div class="d-flex justify-content-center h-100 flex-row-reverse">
-            <div class="my-auto">
-              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
-              <div class="d-flex justify-content-center h-100 flex-row-reverse">
-                <div class="p-2 twitch-embed" style="min-width: 640px; min-height:360px;">
-                  <!--<clip-loader :loading="scheduleLoading" :color="clipLoaderColor" :size="clipLoaderSize" class="twitch-embed-loader"></clip-loader>-->
-                    <twitch-embed :channel="channel"></twitch-embed>
-                  </div>
-                <div class="p-2 my-auto">
-                  <p class="align-middle" data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. 
-                    These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. 
-                    Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>  
+        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
+        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
       </div>
-    </div>
-    <div v-else>
-      <!-- MOBILE JUMBOTRON -->
-      <div class="jumbotron d-xl-none" data-aos="zoom-in">
-        <!--<img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />-->
-        <img src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />  
-      </div>
-
-       <div class="d-xl-none">
-          <h1 class="mobile-h1 text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
-          <div v-if="mobile == 1">
-            <twitch-embed-ipad class="twitch-embed-mobile" :channel="channel"></twitch-embed-ipad>
-          </div>
-          <div v-else>
-            <twitch-embed-mobile class="twitch-embed-mobile" :channel="channel"></twitch-embed-mobile>
-          </div>
-          <p data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
-        </div>
-    </div>
 
       <div id="main-content">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-
+              <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
+              <p class="align-middle" data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. 
+                    These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. 
+                    Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
               <p data-aos="slide-up">This year, we’re also supporting three wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> and <a href="https://gaymerx.org/" target="_blank">GaymerX</a>. Tune into any stream and share your support if you can.</p>
               
               <div align="center" class="charities row">
@@ -135,9 +100,6 @@ import schedule from './assets/schedule.js'
 //import schedule from './assets/schedule-demo.js'
 
 import Nav from './components/Nav.vue'
-import TwitchEmbed from './components/TwitchEmbed.vue'
-import TwitchEmbedMobile from './components/TwitchEmbedMobile.vue'
-import TwitchEmbedIpad from './components/TwitchEmbedIpad.vue'
 import StreamersSwiper from './components/StreamersSwiper.vue'
 import GamesSwiper from './components/GamesSwiper.vue'
 import ScheduleSwiper from './components/ScheduleSwiper.vue'
@@ -157,9 +119,6 @@ export default {
   name: 'App',
   components: {
     Nav,
-    TwitchEmbed,
-    TwitchEmbedIpad,
-    TwitchEmbedMobile,
     Footer,
     StreamersSwiper,
     GamesSwiper,
