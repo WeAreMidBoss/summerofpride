@@ -444,13 +444,18 @@ import 'swiper/css/swiper.css'
         box-sizing: border-box;
         padding: 0 5px;
     }
-    .schedule-table tr {
-        border-bottom: 5px solid transparent;
+    .schedule-table tr td>div:first-child {
+        border-left: 5px solid #f4496a;
+        margin-bottom: 10px;
     }
-    .schedule-table tr:first-child {border-color: #f5cd49;}
+    .schedule-table td {
+        /*border-bottom: 5px solid transparent;*/
+        
+    }
+    /*.schedule-table tr:first-child {border-color: #f5cd49;}
     .schedule-table tr:nth-child(2) {border-color: #f8874c;}
     .schedule-table tr:nth-child(3) {border-color: #f77166;}
-    .schedule-table tr:nth-child(4) {border-color: #f4496a;}
+    .schedule-table tr:nth-child(4) {border-color: #f4496a;}*/
 
     .open-twitch {
         margin: 0;
