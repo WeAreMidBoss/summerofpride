@@ -6,231 +6,146 @@
                     <span class="schedule-day">{{ getDay(block.b1Start) }}</span>
                     <table class="schedule-table">
                     <tbody>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">
-                            <th class="schedule-hours my-auto" scope="row">
-                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="my-auto">
-                                        <div>
-                                             <span class="live-time text-center" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">LIVE NOW!</span>
+                        <tr :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">
+                            <td class="schedule-hours">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active d-flex':'d-none'">
+                                        <div class="live-time d-flex flex-column justify-content-center" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">
+                                            <div>STREAM LIVE</div>
+                                            <div>TUNE IN NOW!</div>
                                         </div>
-                                        <div class="d-flex flex-row flex-xl-column flex-lg-column flex-md-column flex-sm-column h-100">
-                                            <div>
-                                                <span class="start-time">{{ convertDateToLocal(block.b1Start) }} </span>
-                                            </div>
-                                            <div class="d-sm-none bullet">•</div>
-                                            <div>
-                                                <span class="end-time"> {{ calculateEndTime(block.b1Start) }}</span>
-                                            </div>
-                                        </div>
+                                        <a class="active-twitch-logo" :href="profiles[getIdByName(block.b1Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                </div>
-                            </th>
-                            <td @click="showStreamerInfo(getIdByName(block.b1Name))">
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
-                                            <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b1Name)].img}`" class="schedule-profile-img" /></div>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="start-time">{{ convertDateToLocal(block.b1Start) }} </span>
+                                            <span class="end-time"> {{ calculateEndTime(block.b1Start) }}</span>
+                                        </div>
+                                        <div class="d-flex p-2 flex-column align-items-center" @click="showStreamerInfo(getIdByName(block.b1Name))">
+                                            <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b1Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b1Name)].name }}</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
-                                        <div>
-                                            <img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game1)].img}`" class="schedule-game-img" />
                                         </div>
-                                        <div>
-                                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b1Game1)].name }}</span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b1Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1Game2)].name }}</span>
+                                        <div class="d-flex flex-column align-items-center">
+                                                <img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game1)].img}`" class="schedule-game-img img-fluid" />
+                                                <span class="schedule-game-name">{{ games[getGameIdByName(block.b1Game1)].name }}</span>
+                                                <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game2)].img}`" class="schedule-game-img img-fluid" /></span>
+                                                <span v-if="block.b1Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1Game2)].name }}</span>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b2Start, getIdByName(block.b2Name)) ? 'active':''">
-                            <th class="schedule-hours my-auto" scope="row">
-                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="my-auto">
-                                        <div>
-                                             <span class="live-time text-center" :class="isTime(block.b2Start, getIdByName(block.b2Name)) ? 'active':''">LIVE NOW!</span>
+                        <tr :class="isTime(block.b2Start, getIdByName(block.b2Name)) ? 'active':''">
+                            <td class="schedule-hours">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b2Start, getIdByName(block.b2Name)) ? 'active d-flex':'d-none'">
+                                        <div class="p-2 live-time d-flex flex-column justify-content-center" :class="isTime(block.b2Start, getIdByName(block.b2Name)) ? 'active':''">
+                                            <div>STREAM LIVE</div>
+                                            <div>TUNE IN NOW!</div>
                                         </div>
-                                        <div class="d-flex flex-row flex-xl-column flex-lg-column flex-md-column flex-sm-column h-100">
-                                            <div>
-                                                <span class="start-time">{{ convertDateToLocal(block.b2Start) }} </span>
-                                            </div>
-                                            <div class="d-sm-none bullet">•</div>
-                                            <div>
-                                                <span class="end-time"> {{ calculateEndTime(block.b2Start) }}</span>
-                                            </div>
-                                        </div>
+                                        <a class="active-twitch-logo" :href="profiles[getIdByName(block.b2Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                </div>
-                            </th>
-                            <td @click="showStreamerInfo(getIdByName(block.b2Name))">
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
-                                            <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b2Name)].img}`" class="schedule-profile-img" /></div>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="start-time">{{ convertDateToLocal(block.b2Start) }} </span>
+                                            <span class="end-time"> {{ calculateEndTime(block.b2Start) }}</span>
+                                        </div>
+                                        <div class="d-flex p-2 flex-column align-items-center" @click="showStreamerInfo(getIdByName(block.b2Name))">
+                                            <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b2Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b2Name)].name }}</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
-                                        <div>
-                                            <img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game1)].img}`" class="schedule-game-img" />
                                         </div>
-                                        <div>
-                                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b2Game1)].name }}</span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b2Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2Game2)].name }}</span>
+                                        <div class="d-flex flex-column align-items-center">
+                                                <img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game1)].img}`" class="schedule-game-img img-fluid" />
+                                                <span class="schedule-game-name">{{ games[getGameIdByName(block.b2Game1)].name }}</span>
+                                                <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game2)].img}`" class="schedule-game-img img-fluid" /></span>
+                                                <span v-if="block.b2Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2Game2)].name }}</span>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">
-                            <th class="schedule-hours my-auto" scope="row">
-                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="my-auto">
-                                        <div>
-                                             <span class="live-time text-center" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">LIVE NOW!</span>
+                        <tr :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">
+                            <td class="schedule-hours">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active d-flex':'d-none'">
+                                        <div class="p-2 live-time d-flex flex-column justify-content-center" :class="isTime(block.b3Start, getIdByName(block.b3Name)) ? 'active':''">
+                                            <div>STREAM LIVE</div>
+                                            <div>TUNE IN NOW!</div>
                                         </div>
-                                        <div class="d-flex flex-row flex-xl-column flex-lg-column flex-md-column flex-sm-column h-100">
-                                            <div>
-                                                <span class="start-time">{{ convertDateToLocal(block.b3Start) }} </span>
-                                            </div>
-                                            <div class="d-sm-none bullet">•</div>
-                                            <div>
-                                                <span class="end-time"> {{ calculateEndTime(block.b3Start) }}</span>
-                                            </div>
-                                        </div>
+                                        <a class="active-twitch-logo" :href="profiles[getIdByName(block.b3Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                </div>
-                            </th>
-                            <td @click="showStreamerInfo(getIdByName(block.b3Name))">
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
-                                            <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b3Name)].img}`" class="schedule-profile-img" /></div>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="start-time">{{ convertDateToLocal(block.b3Start) }} </span>
+                                            <span class="end-time"> {{ calculateEndTime(block.b3Start) }}</span>
+                                        </div>
+                                        <div class="d-flex p-2 flex-column align-items-center" @click="showStreamerInfo(getIdByName(block.b3Name))">
+                                            <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b3Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b3Name)].name }}</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
-                                        <div>
-                                            <img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game1)].img}`" class="schedule-game-img" />
                                         </div>
-                                        <div>
-                                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b3Game1)].name }}</span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b3Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3Game2)].name }}</span>
+                                        <div class="d-flex flex-column align-items-center">
+                                                <img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game1)].img}`" class="schedule-game-img img-fluid" />
+                                                <span class="schedule-game-name">{{ games[getGameIdByName(block.b3Game1)].name }}</span>
+                                                <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game2)].img}`" class="schedule-game-img img-fluid" /></span>
+                                                <span v-if="block.b3Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3Game2)].name }}</span>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">
-                            <th class="schedule-hours my-auto" scope="row">
-                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="my-auto">
-                                        <div>
-                                             <span class="live-time text-center" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">LIVE NOW!</span>
+                        <tr :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">
+                            <td class="schedule-hours">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active d-flex':'d-none'">
+                                        <div class="p-2 live-time d-flex flex-column justify-content-center" :class="isTime(block.b4Start, getIdByName(block.b4Name)) ? 'active':''">
+                                            <div>STREAM LIVE</div>
+                                            <div>TUNE IN NOW!</div>
                                         </div>
-                                        <div class="d-flex flex-row flex-xl-column flex-lg-column flex-md-column flex-sm-column h-100">
-                                            <div>
-                                                <span class="start-time">{{ convertDateToLocal(block.b4Start) }} </span>
-                                            </div>
-                                            <div class="d-sm-none bullet">•</div>
-                                            <div>
-                                                <span class="end-time"> {{ calculateEndTime(block.b4Start) }}</span>
-                                            </div>
-                                        </div>
+                                        <a class="active-twitch-logo" :href="profiles[getIdByName(block.b4Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                </div>
-                            </th>
-                            <td @click="showStreamerInfo(getIdByName(block.b4Name))">
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
-                                            <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b4Name)].img}`" class="schedule-profile-img" /></div>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="start-time">{{ convertDateToLocal(block.b4Start) }} </span>
+                                            <span class="end-time"> {{ calculateEndTime(block.b4Start) }}</span>
+                                        </div>
+                                        <div class="d-flex p-2 flex-column align-items-center" @click="showStreamerInfo(getIdByName(block.b4Name))">
+                                            <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b4Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b4Name)].name }}</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
-                                        <div>
-                                            <img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game1)].img}`" class="schedule-game-img" />
                                         </div>
-                                        <div>
-                                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b4Game1)].name }}</span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b4Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4Game2)].name }}</span>
+                                        <div class="d-flex flex-column align-items-center">
+                                                <img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game1)].img}`" class="schedule-game-img img-fluid" />
+                                                <span class="schedule-game-name">{{ games[getGameIdByName(block.b4Game1)].name }}</span>
+                                                <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game2)].img}`" class="schedule-game-img img-fluid" /></span>
+                                                <span v-if="block.b4Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4Game2)].name }}</span>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="d-flex flex-column flex-xl-row flex-lg-row flex-md-row flex-sm-row justify-content-around justify-content-md-center justify-content-lg-center justify-content-xl-center h-100" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">
-                            <th class="schedule-hours my-auto" scope="row">
-                                 <div class="d-flex justify-content-center h-100">
-                                    <div class="my-auto">
-                                        <div>
-                                             <span class="live-time text-center" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">LIVE NOW!</span>
+                        <tr :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">
+                            <td class="schedule-hours">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active d-flex':'d-none'">
+                                        <div class="p-2 live-time d-flex flex-column justify-content-center" :class="isTime(block.b5Start, getIdByName(block.b5Name)) ? 'active':''">
+                                            <div>STREAM LIVE</div>
+                                            <div>TUNE IN NOW!</div>
                                         </div>
-                                        <div class="d-flex flex-row flex-xl-column flex-lg-column flex-md-column flex-sm-column h-100">
-                                            <div>
-                                                <span class="start-time">{{ convertDateToLocal(block.b5Start) }} </span>
-                                            </div>
-                                            <div class="d-sm-none bullet">•</div>
-                                            <div>
-                                                <span class="end-time"> {{ calculateEndTime(block.b5Start) }}</span>
-                                            </div>
-                                        </div>
+                                        <a class="active-twitch-logo" :href="profiles[getIdByName(block.b5Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                </div>
-                            </th>
-                            <td @click="showStreamerInfo(getIdByName(block.b5Name))">
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto">
-                                            <div><img :src="`${publicPath}streamers/${profiles[getIdByName(block.b5Name)].img}`" class="schedule-profile-img" /></div>
+                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="start-time">{{ convertDateToLocal(block.b5Start) }} </span>
+                                            <span class="end-time"> {{ calculateEndTime(block.b5Start) }}</span>
+                                        </div>
+                                        <div class="d-flex p-2 flex-column align-items-center" @click="showStreamerInfo(getIdByName(block.b5Name))">
+                                            <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b5Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b5Name)].name }}</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-content-center h-100">
-                                    <div class="d-flex flex-column-reverse flex-sm-column flex-md-column flex-lg-column flex-xl-column my-auto my-auto">
-                                        <div>
-                                            <img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game1)].img}`" class="schedule-game-img" />
                                         </div>
-                                        <div>
-                                            <span class="schedule-game-name">{{ games[getGameIdByName(block.b5Game1)].name }}</span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game2)].img}`" class="schedule-game-img schedule-game-two-img" /></span>
-                                        </div>
-                                        <div>
-                                            <span v-if="block.b5Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5Game2)].name }}</span>
+                                        <div class="d-flex flex-column align-items-center">
+                                                <img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game1)].img}`" class="schedule-game-img img-fluid" />
+                                                <span class="schedule-game-name">{{ games[getGameIdByName(block.b5Game1)].name }}</span>
+                                                <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game2)].img}`" class="schedule-game-img img-fluid" /></span>
+                                                <span v-if="block.b5Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5Game2)].name }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -265,9 +180,10 @@ import 'swiper/css/swiper.css'
 			return {
                 publicPath: process.env.BASE_URL,
                 initialSlideSet: false,
-                initialSlide: 0,
-                startingDate: '2021-07-01 9:00:00-07:00', // first day of the event
+                initialSlide: 1,
+                startingDate: '2021-07-01', // first day of the event
 				swiperOptions: {
+                    initialSlide: 0,
                     loop: true,
                     navigation: {
                     nextEl: '.schedule-button-next',
@@ -347,11 +263,20 @@ import 'swiper/css/swiper.css'
 			getInitialSlide(date) {
                 var date1 = new Date(date);
                 var date2 = new Date();
-                if (date1.getMonth() === date2.getMonth()) {
+                var difference = date2.getTime() - date1.getTime();
+                difference = difference / ((1000 * 60 * 60) * 24);
+                difference = Math.round(difference);
+                console.log(difference);
+                if (difference >= 0 && difference <= 31) {
+                    return difference;
+                } else {
+                    return 10;
+                }
+                /*if (date1.getMonth() === date2.getMonth()) {
                     return date2.getDate();
                 } else {
                     return 1;
-                }
+                }*/
             },
 			isTime(date, streamerId) { // ISO-8601 formatted date returned from server
                 var date1 = new Date(date);
@@ -412,29 +337,42 @@ import 'swiper/css/swiper.css'
     .active .bullet {
         color: #fff;
     }
+    .live-time-container {
+
+    }
+     .live-time-container.active {
+ 
+    }
     .live-time {
-        display: none;
+        margin-right: 20px;
         color: #f5e362;
         font-size: 1.6em;
+        line-height: 0.9;
+        position:relative;
     }
     .live-time.active {
-        display: block;
     }
     .live-time::after {
         display: block;
         content: '';
         width: 0;
         height: 0;
-        margin: -15px auto 15px;
-
+        position:absolute;
+        right:-20px;
+        top:15%;
         border-style: solid;
-        border-width: 10px 80px 0 80px;
-        border-color: #f5e462 transparent transparent transparent;
+        border-width: 35px 0 35px 20px;
+        border-color: transparent transparent transparent #f5e462;
     }
-
+    .live-time div:first-child {
+        font-size:1.05em;
+    }
+    .active-twitch-logo {
+        width: 60%;
+    }
     /*** Regular schedule styling***/
     .schedule-table {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         font-family: 'Bebas Neue', sans-serif;
         font-size:30px;
@@ -453,7 +391,6 @@ import 'swiper/css/swiper.css'
         white-space: nowrap;
         font-weight: normal;
         text-align: right;
-        padding-right: 40px!important;
     }
 
     .start-time {
@@ -471,7 +408,6 @@ import 'swiper/css/swiper.css'
     .start-time, .end-time {
         font-size: 3.5em;
         line-height: 0.8;
-        min-width: 141px;
     }
     .schedule-game-img{
         width: auto;
@@ -484,14 +420,11 @@ import 'swiper/css/swiper.css'
     }
 
     .schedule-profile-img{
-        width: 120px;
-        height: auto;
+        width: auto;
+        height: 180px;
     }
     .schedule-twitch-logo {
-        width: 75px!important;
-        height: auto!important;
-        margin-bottom: 20px;
-
+        flex-basis: 50%;
     }
     .schedule-watch-now{
         margin-right: 50px;
@@ -506,6 +439,7 @@ import 'swiper/css/swiper.css'
         margin:5px 0;
     }
     .schedule-game-name, .schedule-streamer-name {
+        width: 100%;
         display:block;
         box-sizing: border-box;
         padding: 0 5px;
@@ -513,43 +447,58 @@ import 'swiper/css/swiper.css'
     .schedule-table tr {
         border-bottom: 5px solid transparent;
     }
-    .schedule-table tr:nth-child(3) .schedule-hours, .schedule-table tr:nth-child(4) .schedule-hours {
-        margin-left: 45px;
-        
-    }
     .schedule-table tr:first-child {border-color: #f5cd49;}
     .schedule-table tr:nth-child(2) {border-color: #f8874c;}
     .schedule-table tr:nth-child(3) {border-color: #f77166;}
     .schedule-table tr:nth-child(4) {border-color: #f4496a;}
+
+    .open-twitch {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
     
     /*.schedule-table tr:nth-child(even) {background-color: #fff;}*/
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .schedule-table tr:nth-child(3) .schedule-hours, .schedule-table tr:nth-child(4) .schedule-hours {
-        margin-left: 23px;
-        
-    }
-    .schedule-hours{
-        padding-right: 0!important;
-    }
+@media (max-width: 1200px) {
     .start-time, .end-time {
         font-size: 2em;
     }
 }
-@media (min-width: 576px) and (max-width: 768px) {
-     .live-time  {
+@media (max-width: 1024px) {
+    .live-time  {
+        font-size: 1em;
+        margin-right:15px;
+    }
+    .live-time:after {
+        right:-15px;
+        top:12%;
+        border-style: solid;
+        border-width: 25px 0 25px 15px;
+        border-color: transparent transparent transparent #f5e462;
+    }
+    .schedule-profile-img {
+        height: 110px;
+    }
+    .schedule-game-img {
+        height: 110px;
+    }
+    .schedule-streamer-name, .schedule-game-name {
+        display:block;
+        font-size: 0.4em;
+    }
+}
+@media (max-width: 768px) {
+
+    .live-time  {
         font-size: 1.2em;
     }
     .live-time:after {
-        margin: -10px auto 10px;
-
+        right:-20px;
+        top:5%;
         border-style: solid;
-        border-width: 5px 50px 0 50px;
-        border-color: #f5e462 transparent transparent transparent;
-    }
-    .schedule-table tr:nth-child(3) .schedule-hours, .schedule-table tr:nth-child(4) .schedule-hours {
-        margin-left: 23px;
-        
+        border-width: 35px 0 35px 20px;
+        border-color: transparent transparent transparent #f5e462;
     }
     .schedule-table {
         width: 100%;
@@ -558,16 +507,18 @@ import 'swiper/css/swiper.css'
         width:100%;
         padding: 10px 0;
     }
+    .schedule-day {
+        font-size: 2em;
+    }
     .schedule-hours {
         text-align: right;
-        margin-right: 10px;
     }
     .schedule-profile-img {
         width: auto;
-        height: 150px;
+        height: 120px;
     }
     .schedule-game-img {
-        height: 150px;
+        height: 120px;
     }
     .schedule .swiper-button-prev, .schedule  .swiper-button-next {
         top: 3.8%;
@@ -580,32 +531,45 @@ import 'swiper/css/swiper.css'
         
     }
     .start-time, .active > .schedule-hours > .start-time, .end-time, .active > .schedule-hours > .end-time, .live-time  {
-        font-size: 1.2em;
+        font-size: 0.8em;
+    }
+    .live-time  {
+        margin-right:10px;
+        font-size: 0.5em;
     }
     .live-time:after {
-        margin: -10px auto 10px;
-
+        right:-5px;
+        top:15%;
         border-style: solid;
-        border-width: 6px 60px 0 60px;
-        border-color: #f5e462 transparent transparent transparent;
+        border-width: 15px 0 15px 10px;
+        border-color: transparent transparent transparent #f5e462;
+    }
+    .swiper {
+        width: 90%;
     }
     .schedule-table {
         width: 100%;
     }
     .schedule-table tr {
         width:100%;
-        padding: 20px 0;
+        padding:0;
     }
     .schedule-hours{
         margin-top: -5px;
-        text-align: center;
-        padding-right: 0!important;
     }
     .start-time,.end-time, .bullet {
     }
-    .schedule-game-img{
-        height: 110px;
-        margin: 5px 0;
+    .schedule-profile-img {
+        width: auto;
+        height: 60px;
+    }
+    .schedule-game-img {
+        height: 60px;
+    }
+    .schedule-game-name, .schedule-streamer-name {
+        font-size: 0.25em;
+        padding: 0 1px;
+        white-space: initial;
     }
     .schedule .swiper-button-prev, .schedule  .swiper-button-next {
         top: 1.7%;
