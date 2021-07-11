@@ -3,7 +3,7 @@
     <Nav />
     <main role="main">
     <!-- DESKTOP JUMBOTRON -->
-      <div class="jumbotron d-none d-xl-block" :style="{ backgroundImage: 'url(' + require('@/assets/img/SeasonOfPride2021_Banner.jpg') + ')' }" data-aos="zoom-in">
+      <div class="jumbotron" data-aos="zoom-in">
         <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
         <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
       </div>
