@@ -442,6 +442,9 @@ import 'swiper/css/swiper.css'
         white-space: initial;
         text-overflow: ellipsis;
     }
+    .schedule-game-name:nth-child(even) {
+        margin-bottom: 5px;
+    }
     .schedule-table tr td>div:first-child {
         border-left: 5px solid #f4496a;
         margin-bottom: 15px;
