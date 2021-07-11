@@ -25,10 +25,10 @@
                                             <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b1Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b1Name)].name }}</span>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center align-self-start">
+                                        <div class="d-flex flex-column align-items-center align-self-start game-list">
                                                 <img @click="showGameInfo(getGameIdByName(block.b1Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game1)].img}`" class="schedule-game-img" />
                                                 <span class="schedule-game-name">{{ games[getGameIdByName(block.b1Game1)].name }}</span>
-                                                <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game2)].img}`" class="schedule-game-img" /></span>
+                                                <span v-if="block.b1Game2"><img @click="showGameInfo(getGameIdByName(block.b1_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b1Game2)].img}`" class="schedule-game-img  schedule-game-img-2" /></span>
                                                 <span v-if="block.b1Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b1Game2)].name }}</span>
                                         </div>
                                     </div>
@@ -54,10 +54,10 @@
                                             <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b2Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b2Name)].name }}</span>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center align-self-start">
+                                        <div class="d-flex flex-column align-items-center align-self-start game-list">
                                                 <img @click="showGameInfo(getGameIdByName(block.b2Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game1)].img}`" class="schedule-game-img" />
                                                 <span class="schedule-game-name">{{ games[getGameIdByName(block.b2Game1)].name }}</span>
-                                                <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game2)].img}`" class="schedule-game-img" /></span>
+                                                <span v-if="block.b2Game2"><img @click="showGameInfo(getGameIdByName(block.b2_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b2Game2)].img}`" class="schedule-game-img schedule-game-img-2" /></span>
                                                 <span v-if="block.b2Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b2Game2)].name }}</span>
                                         </div>
                                     </div>
@@ -83,10 +83,10 @@
                                             <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b3Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b3Name)].name }}</span>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center align-self-start">
+                                        <div class="d-flex flex-column align-items-center align-self-start game-list">
                                                 <img @click="showGameInfo(getGameIdByName(block.b3Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game1)].img}`" class="schedule-game-img" />
                                                 <span class="schedule-game-name">{{ games[getGameIdByName(block.b3Game1)].name }}</span>
-                                                <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game2)].img}`" class="schedule-game-img" /></span>
+                                                <span v-if="block.b3Game2"><img @click="showGameInfo(getGameIdByName(block.b3_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b3Game2)].img}`" class="schedule-game-img schedule-game-img-2" /></span>
                                                 <span v-if="block.b3Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b3Game2)].name }}</span>
                                         </div>
                                     </div>
@@ -112,10 +112,10 @@
                                             <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b4Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b4Name)].name }}</span>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center align-self-start">
+                                        <div class="d-flex flex-column align-items-center align-self-start game-list">
                                                 <img @click="showGameInfo(getGameIdByName(block.b4Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game1)].img}`" class="schedule-game-img" />
                                                 <span class="schedule-game-name">{{ games[getGameIdByName(block.b4Game1)].name }}</span>
-                                                <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game2)].img}`" class="schedule-game-img" /></span>
+                                                <span v-if="block.b4Game2"><img @click="showGameInfo(getGameIdByName(block.b4_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b4Game2)].img}`" class="schedule-game-img schedule-game-img-2" /></span>
                                                 <span v-if="block.b4Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b4Game2)].name }}</span>
                                         </div>
                                     </div>
@@ -141,10 +141,10 @@
                                             <img class="schedule-profile-img" :src="`${publicPath}streamers/${profiles[getIdByName(block.b5Name)].img}`" />
                                             <span class="schedule-streamer-name" >{{ profiles[getIdByName(block.b5Name)].name }}</span>
                                         </div>
-                                        <div class="d-flex flex-column align-items-center align-self-start">
+                                        <div class="d-flex flex-column align-items-center align-self-start game-list">
                                                 <img @click="showGameInfo(getGameIdByName(block.b5Game1))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game1)].img}`" class="schedule-game-img" />
                                                 <span class="schedule-game-name">{{ games[getGameIdByName(block.b5Game1)].name }}</span>
-                                                <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game2)].img}`" class="schedule-game-img" /></span>
+                                                <span v-if="block.b5Game2"><img @click="showGameInfo(getGameIdByName(block.b5_game2))" :src="`${publicPath}games/${games[getGameIdByName(block.b5Game2)].img}`" class="schedule-game-img schedule-game-img-2" /></span>
                                                 <span v-if="block.b5Game2" class="schedule-game-name">{{ games[getGameIdByName(block.b5Game2)].name }}</span>
                                         </div>
                                     </div>
@@ -442,8 +442,8 @@ import 'swiper/css/swiper.css'
         white-space: initial;
         text-overflow: ellipsis;
     }
-    .schedule-game-name:nth-child(even) {
-        margin-bottom: 5px;
+    .schedule-game-img-2 {
+        margin-top: 5px;
     }
     .schedule-table tr td>div:first-child {
         border-left: 5px solid #f4496a;
@@ -476,7 +476,7 @@ import 'swiper/css/swiper.css'
 }
 @media (max-width: 1024px) {
     .swiper {
-        width: 65%;
+        width: 85%;
     }
     .live-time  {
         font-size: 1em;
@@ -503,13 +503,13 @@ import 'swiper/css/swiper.css'
         font-size: 0.4em;
     }
     .schedule-streamer-name {
-        max-width: 100px;
+        width: 100px;
     }
      .schedule-game-name {
-        max-width: 320px;
+        width: 320px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 812px) {
     .swiper {
         width: 75%;
     }
@@ -547,16 +547,19 @@ import 'swiper/css/swiper.css'
         height: 130px;
     }
     .schedule-streamer-name {
-        max-width: 86px;
+        width: 86px;
     }
      .schedule-game-name {
-        max-width: 278px;
+        width: 278px;
     }
     .schedule .swiper-button-prev, .schedule  .swiper-button-next {
         top: 3.8%;
     }
 }
 @media (max-width: 720px) {
+    .swiper { 
+        width: 85%;
+    }
     .start-time, .end-time {
         font-size: 1.6em;
     }
@@ -568,10 +571,10 @@ import 'swiper/css/swiper.css'
         height: 100px;
     }
     .schedule-streamer-name {
-        max-width: 66px;
+        width: 66px;
     }
      .schedule-game-name {
-        max-width: 200px;
+        width: 213px;
     }
 
 }
@@ -622,10 +625,10 @@ import 'swiper/css/swiper.css'
         white-space: initial;
     }
     .schedule-game-name {
-        max-width: 171px;
+        width: 171px;
     }
     .schedule-streamer-name {
-        max-width: 53px;
+        width: 53px;
     }
     .schedule .swiper-button-prev, .schedule  .swiper-button-next {
         top: 1.7%;
