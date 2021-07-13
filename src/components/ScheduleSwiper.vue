@@ -8,7 +8,7 @@
                     <tbody>
                         <tr :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">
                             <td class="schedule-hours">
-                                <div class="d-flex flex-column justify-content-between h-100">
+                                <div class="d-flex flex-column justify-content-end h-100">
                                     <div class="flex-row justify-content-center align-items-center" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active d-flex':'d-none'">
                                         <div class="live-time d-flex flex-column justify-content-center" :class="isTime(block.b1Start, getIdByName(block.b1Name)) ? 'active':''">
                                             <div>STREAM LIVE</div>
@@ -16,7 +16,7 @@
                                         </div>
                                         <a class="active-twitch-logo" :href="profiles[getIdByName(block.b1Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <div class="d-flex flex-row align-items-center justify-content-end">
                                         <div class="d-flex flex-column">
                                             <span class="start-time">{{ convertDateToLocal(block.b1Start) }} </span>
                                             <span class="end-time"> {{ calculateEndTime(block.b1Start) }}</span>
@@ -45,7 +45,7 @@
                                         </div>
                                         <a class="active-twitch-logo" :href="profiles[getIdByName(block.b2Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <div class="d-flex flex-row align-items-center justify-content-end">
                                         <div class="d-flex flex-column">
                                             <span class="start-time">{{ convertDateToLocal(block.b2Start) }} </span>
                                             <span class="end-time"> {{ calculateEndTime(block.b2Start) }}</span>
@@ -74,7 +74,7 @@
                                         </div>
                                         <a class="active-twitch-logo" :href="profiles[getIdByName(block.b3Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <div class="d-flex flex-row align-items-center justify-content-end">
                                         <div class="d-flex flex-column">
                                             <span class="start-time">{{ convertDateToLocal(block.b3Start) }} </span>
                                             <span class="end-time"> {{ calculateEndTime(block.b3Start) }}</span>
@@ -103,7 +103,7 @@
                                         </div>
                                         <a class="active-twitch-logo" :href="profiles[getIdByName(block.b4Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <div class="d-flex flex-row align-items-center justify-content-end">
                                         <div class="d-flex flex-column">
                                             <span class="start-time">{{ convertDateToLocal(block.b4Start) }} </span>
                                             <span class="end-time"> {{ calculateEndTime(block.b4Start) }}</span>
@@ -132,7 +132,7 @@
                                         </div>
                                         <a class="active-twitch-logo" :href="profiles[getIdByName(block.b5Name)].twitch" target="_blank"><img src="../assets/img/Twitch-logo.svg" alt="Twitch Logo" /></a>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <div class="d-flex flex-row align-items-center justify-content-end">
                                         <div class="d-flex flex-column">
                                             <span class="start-time">{{ convertDateToLocal(block.b5Start) }} </span>
                                             <span class="end-time"> {{ calculateEndTime(block.b5Start) }}</span>
