@@ -1,0 +1,922 @@
+  {
+    "jsonGames": [
+      {
+        "id": 2,
+        "name": "2064: Read Only Memories",
+        "desc": "2064: Read Only Memories is a cyberpunk thriller that explores the social challenges of tomorrow through classic adventure gaming. A journalist-turned-detective teams up with Turing, the world’s first sapient machine, to unmask a conspiracy that will shake the foundations of Neo-San Francisco.",
+        "warning": "Age 17+: Violence, Blood, Suggestive Themes, Strong Language",
+        "url": "https://store.steampowered.com/app/330820/2064_Read_Only_Memories/",
+        "youtube": "https://www.youtube.com/watch?v=worK_x-ffQk",
+        "img": "2064.jpg"
+      },
+      {
+        "id": 3,
+        "name": "A Mortician's Tale",
+        "desc": "A Mortician's Tale is a short, story-driven game about a mortician tasked with running a funeral home.",
+        "warning": "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
+        "url": "https://store.steampowered.com/app/578720/A_Morticians_Tale/",
+        "youtube": "https://www.youtube.com/watch?v=yB3RpF7p2jQ",
+        "img": "MorticiansTale.jpg"
+      },
+      {
+        "id": 4,
+        "name": "A Normal Lost Phone",
+        "desc": "A Normal Lost Phone is a game about exploring the intimacy of an unknown person whose phone was found by the player.",
+        "warning": "Age 17+: Suggestive Themes, Strong Language",
+        "url": "https://store.steampowered.com/app/523210/A_Normal_Lost_Phone/",
+        "youtube": "https://www.youtube.com/watch?v=Fx98oCmyxMc",
+        "img": "ANormalLostPhone.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Ace in Space",
+        "desc": "Your name is Adrian Clarke and you've been given the opportunity to live the rest of your life on a distant planet under the watchful eyes of benevolent robots. Help shape society on T-3R4, build relationships with the other settlers, and keep Earth updated through your blog!",
+        "warning": "​Depictions of Mental Illness, Cancer, Death, Suicidal Thoughts, Alcohol, Sex/Sexual Content, Undead/Zombie/Ghoul",
+        "url": "https://store.steampowered.com/app/1220710/Ace_In_Space/",
+        "youtube": "https://www.youtube.com/watch?v=3BczNQOE5lk",
+        "img": "AceInSpace.jpg"
+      },
+      {
+        "id": 6,
+        "name": "All Walls Must Fall",
+        "desc": "All Walls Must Fall is a Tech-Noir Tactics game set in Berlin 2089, where the Cold War never ended.",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/628290/All_Walls_Must_Fall__A_TechNoir_Tactics_Game/",
+        "youtube": "https://youtu.be/2Zc77HwYflI",
+        "img": "AllWallsMustFall.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Always Sometimes Monsters",
+        "desc": "Set out on a cross-country journey to win back the love of your life and endure the hardship of making story-defining choices that affect your life and the lives of those around you.",
+        "warning": "Depending on player choices, may experience: Nudity, Mature Sexual Themes, Alcohol & Tobacco References, Drug Use, Mature Language, Crude Humor, Gambling, Verbal Abuse, Minor Abuse, Mental Health Issues, Blood, Violence, and/or Suicide",
+        "url": "https://store.steampowered.com/app/274310/Always_Sometimes_Monsters/",
+        "youtube": "https://www.youtube.com/watch?v=7KgT13asGmU",
+        "img": "AlwaysSometimesMonsters.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Anodyne",
+        "desc": "In this unique Zelda-lite game, explore and fight your way through surreal and creepy, nature, urban and abstract themed areas in the human Young's subconscious, evoked by a 16-bit-era visual style and a moody, dream-like soundtrack.",
+        "warning": "Age 17+: Strong Language and Violence",
+        "url": "https://store.steampowered.com/app/234900/Anodyne/",
+        "youtube": "https://www.youtube.com/watch?v=OjWRU5toicQ",
+        "img": "Anodyne.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Anodyne 2: Return to Dust",
+        "desc": "Run, jump, and drive across vast, dreamy 3D landscapes. Shrink into surreal, 2D dungeons inside of characters' bodies. Travel the world, meet strange people, and save the world from the dangerous Nano Dust. Don't miss the follow-up to the classic game 'Anodyne'!",
+        "warning": "Age 17+: Strong Language and Violence",
+        "url": "https://store.steampowered.com/app/877810/Anodyne_2_Return_to_Dust/",
+        "youtube": "https://www.youtube.com/watch?v=yT6yQm3JM3E",
+        "img": "Anodyne2.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Another Lost Phone: Laura's Story",
+        "desc": "Explore the social life of Laura in this spiritual sequel to A Normal Lost Phone.",
+        "warning": "Age 17+: Strong Language and Suggestive Themes",
+        "url": "https://store.steampowered.com/app/689910/Another_Lost_Phone_Lauras_Story/",
+        "youtube": "https://www.youtube.com/watch?v=9BKJwH9Dwt4",
+        "img": "AnotherLostPhone.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Arcade Spirits",
+        "desc": "Arcade Spirits is a romantic visual novel that follows an alternative timeline where the 1983 video game crash never occurred. It's 20XX and you've just started a new job at the Funplex game arcade. Who will you meet along the way? Will you find the romance you're seeking?",
+        "warning": "Age 13+: Drug Reference, Mild Language, Mild Violence, Suggestive Themes, Use of Alcohol",
+        "url": "https://store.steampowered.com/app/910630/Arcade_Spirits/",
+        "youtube": "https://www.youtube.com/watch?v=x9SSjem_HVQ",
+        "img": "ArcadeSpirits.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Blood and Lust",
+        "desc": "A short free bara visual novel with Roman gladiators and a murder mystery!",
+        "warning": "Optional sexual content between consenting adult male partners. You can opt out of it in the game's settings.",
+        "url": "https://store.steampowered.com/app/1064140/Blood_and_Lust/",
+        "youtube": "https://www.youtube.com/watch?v=xlSjkvHGptE",
+        "img": "BloodAndLust.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Butterfly Soup",
+        "desc": "A visual novel about gay asian girls playing baseball and falling in love. ",
+        "warning": "Trigger Warnings: Brief written depictions of parental emotional and physical abuse (no visuals), Ableist slurs",
+        "url": "https://brianna-lei.itch.io/butterfly-soup",
+        "youtube": "https://www.youtube.com/watch?v=fr-MlrqyjKQ",
+        "img": "ButterflySoup.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Diaries of a Spaceport Janitor",
+        "desc": "Diaries of a Spaceport Janitor is an anti-adventure game about picking up trash in an alien bazaar. Play as the Janitor, an Alaensee girlbeast with a municipally-subsidized trash incineration job and dreams of leaving the planet of Xabran's Rock far behind her.",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/436500/Diaries_of_a_Spaceport_Janitor/",
+        "youtube": "https://www.youtube.com/watch?v=jOJxAzpdWS8",
+        "img": "Diaries.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Dominique Pamplemousse",
+        "desc": "Dominique Pamplemousse in “It’s All Over Once The Fat Lady Sings!” is a unique and offbeat stop motion animated detective adventure game about gender and the economy. Also, all the characters frequently burst into song.",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/270310/Dominique_Pamplemousse/",
+        "youtube": "https://www.youtube.com/watch?v=XelSGwkWNoY",
+        "img": "Dominique1.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Dominique Pamplemousse 2",
+        "desc": "Our favourite genderqueer private detective is back and discovers that, they have been cloned! Join the two Dominiques as they traverse surreal locations and interrogate increasingly bizarre characters in order to answer a very important question: which one of them is canon?",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://squinky.itch.io/dompam2",
+        "youtube": "https://www.youtube.com/watch?v=XelSGwkWNoY",
+        "img": "Dominique2.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Dragon Age II",
+        "desc": "You are one of the few who escaped the destruction of your home. Now, forced to fight for survival in an ever-changing world, you must gather the deadliest of allies, amass fame and fortune, and seal your place in history. Your Rise to Power begins now.",
+        "warning": "Age 17+: Blood and Gore, Language, Sexual Content, Violence",
+        "url": "https://www.ea.com/games/dragon-age/dragon-age-2",
+        "youtube": "https://www.youtube.com/watch?v=K8mn1rVakZg",
+        "img": "DragonAge2.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Dragon Age: Inquisition",
+        "desc": "You are the Inquisitor, tasked with saving the world from itself, but the road ahead is paved with difficult decisions. Thedas is a land of strife. Factions constantly war with each other even as a larger demonic invasion has begun. You and your champions are the only ones who can hold it together.",
+        "warning": "Age 17+: Blood, Intense Violence, Nudity, Sexual Content, Strong Language",
+        "url": "https://www.origin.com/usa/en-us/store/dragon-age/dragon-age-inquisition",
+        "youtube": "https://www.youtube.com/watch?v=jJqxfkgSUog",
+        "img": "DragonAgeInquisition.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Dream Daddy: A Dad Dating Simulator",
+        "desc": "Dream Daddy: A Dad Dating Simulator is a game where you play as a Dad and your goal is to meet and romance other hot Dads. Are you ready? Hi ready, I'm Dad.",
+        "warning": "Age 13+: Sexual Themes, Language, Use of Alcohol and Tobacco",
+        "url": "https://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/",
+        "youtube": "https://www.youtube.com/watch?v=7jlQbAKsLJc",
+        "img": "DreamDaddy.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Drowning Cross",
+        "desc": "Find your boyfriend before the night takes him away forever. It's all your fault, after all! Just like always.",
+        "warning": "Depictions of alcohol consumption, references to sex and mental health problems.",
+        "url": "https://store.steampowered.com/app/1091960/Drowning_Cross/",
+        "youtube": "https://www.youtube.com/watch?v=hFfsM70Lozk",
+        "img": "DrowningCross.jpg"
+      },
+      {
+        "id": 21,
+        "name": "Even the Ocean",
+        "desc": "Even the Ocean is a narrative action platformer about balancing the Light and Dark energies that hold the world together.",
+        "warning": "Age 10+: Fantasy Violence, Mild Blood",
+        "url": "https://store.steampowered.com/app/265470/Even_the_Ocean/",
+        "youtube": "https://www.youtube.com/watch?v=iuDSzgeisrI",
+        "img": "EvenTheOcean.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Fragments of Him",
+        "desc": "An emotional and immersive game about a man named Will and the people close to him. Experience his life through a story about love, memories and hope.",
+        "warning": "Age 17+: Partial Nudity, Strong Language",
+        "url": "https://store.steampowered.com/app/428540/Fragments_of_Him/",
+        "youtube": "https://www.youtube.com/watch?v=CV5hOsuPYzo",
+        "img": "FragmentsOfHim.jpg"
+      },
+      {
+        "id": 23,
+        "name": "Gone Home",
+        "desc": "June 7th, 1995. 1:15 AM. You arrive home after a year abroad. You expect your family to greet you, but the house is empty. Something's not right. Where is everyone? And what's happened here? Unravel the mystery for yourself in Gone Home, a story exploration game from The Fullbright Company.",
+        "warning": "Age 17: Sexual Themes, Drug Reference, Strong Language",
+        "url": "https://store.steampowered.com/app/232430/Gone_Home/",
+        "youtube": "https://www.youtube.com/watch?v=x5KJzLsyfBI",
+        "img": "GoneHome.jpg"
+      },
+      {
+        "id": 24,
+        "name": "Heaven Will Be Mine",
+        "desc": "HEAVEN WILL BE MINE is a visual novel about making terrible life decisions in the midst of a hot-blooded battle between giant robots. Select one of three terribly behaved girls to fight and/or make out with each other in their struggle for the fate of space.",
+        "warning": "Features fantasy violence, body horror and discussion of sexuality, abuse and trauma.",
+        "url": "https://store.steampowered.com/app/836450/Heaven_Will_Be_Mine/",
+        "youtube": "https://www.youtube.com/watch?v=9EGxmmzXYtc",
+        "img": "HeavenWillBeMine.jpg"
+      },
+      {
+        "id": 25,
+        "name": "Heirs and Graces",
+        "desc": "Play as Marcel and determine whether or not he has the skills to become Lord Sandor's heir and whether or not he forms a romantic attachment to one of four potential love interests: an ex-gladiator turned gardener, a perfectionist butler, the local doctor, or a mischievous elven Lord.",
+        "warning": "Partial Nudity and Sexual Innuendo.",
+        "url": "https://store.steampowered.com/app/482990/Heirs_And_Graces/",
+        "youtube": "https://www.youtube.com/watch?v=unt12CMtKD8",
+        "img": "HeirsAndGraces.jpg"
+      },
+      {
+        "id": 26,
+        "name": "Herald: An Interactive Period Drama",
+        "desc": "Herald is a choice-driven adventure set on colonial tides. Board the HLV Herald and uncover its dark secrets in an intriguing tale about tyranny and servitude.",
+        "warning": "Emotional and physical violence, Suggestive Themes and Infrequent use of Strong Language. Suitable for ages 12 and up.",
+        "url": "https://store.steampowered.com/app/380810/Herald_An_Interactive_Period_Drama__Book_I__II/",
+        "youtube": "https://www.youtube.com/watch?v=-LRR2KXRs3w",
+        "img": "Herald.jpg"
+      },
+      {
+        "id": 27,
+        "name": "Hustle Cat",
+        "desc": "You are Avery Grey, the newest employee at a popular cat cafe called A Cat's Paw. The coffee's good and the staff is friendly (and kinda cute!) but mysterious. One day, you find a strange book in the basement, with letters you can't quite read...",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/453340/Hustle_Cat/",
+        "youtube": "https://youtu.be/ZF-kyXZhkQQ",
+        "img": "HustleCat.jpg"
+      },
+      {
+        "id": 28,
+        "name": "Kitty Powers' Love Life",
+        "desc": "From the creators of ‘Kitty Powers’ Matchmaker’, ‘Kitty Powers' Love Life’ is a brand new take on the community/relationship sim genre, with a very British twist. Build and run your very own village for newly matched couples, under the watchful eye of your boss, outrageous drag queen Kitty Powers!",
+        "warning": "Suitable for all ages.",
+        "url": "https://store.steampowered.com/app/416870/Kitty_Powers_Love_Life/",
+        "youtube": "https://www.youtube.com/watch?v=wneEkwKEN5Q",
+        "img": "LoveLife.jpg"
+      },
+      {
+        "id": 29,
+        "name": "Kitty Powers' Matchmaker",
+        "desc": "Kitty Powers’ Matchmaker is a hilarious dating simulator with a difference. Manage your own matchmaking agency with the guidance of your fabulous boss, drag queen diva Kitty Powers!",
+        "warning": "Suitable for all ages.",
+        "url": "https://store.steampowered.com/app/285740/Kitty_Powers_Matchmaker/",
+        "youtube": "https://www.youtube.com/watch?v=N6bz5YSOsks",
+        "img": "Matchmaker.jpg"
+      },
+      {
+        "id": 30,
+        "name": "Last of Us: Left Behind",
+        "desc": "The Last of Us: Left Behind combines themes of survival, loyalty, and love with tense, survival-action gameplay in this critically acclaimed chapter to the best-selling game, The Last of Us. ",
+        "warning": "Age 17+: Intense Violence, Blood and Gore, Suggestive Themes, Strong Language, Use of Alcohol",
+        "url": "https://www.playstation.com/en-us/games/the-last-of-us-left-behind-stand-alone-ps4/",
+        "youtube": "https://www.youtube.com/watch?v=FjkM414zZRU",
+        "img": "TheLastOfUsLeftBehind.jpg"
+      },
+      {
+        "id": 31,
+        "name": "Later Daters",
+        "desc": "Welcome to Ye OLDE! Your new retirement paradise. Date as an octogenarian and find somebody to love, or just get your kicks in while the getting is good. Remember, if the chairs are rockin', don’t come a-knockin. Part One out now!",
+        "warning": "Age 13+: Suggestive Themes",
+        "url": "https://store.steampowered.com/app/1040390/Later_Daters/",
+        "youtube": "https://www.youtube.com/watch?v=5Khzy2EDoH8",
+        "img": "Later Daters.jpg"
+      },
+      {
+        "id": 32,
+        "name": "Life is Strange",
+        "desc": "Life is Strange is an award-winning and critically acclaimed episodic adventure game that allows the player to rewind time and affect the past, present and future.",
+        "warning": "Age 17+: Blood, Intense Violence, Sexual Themes, Strong Language, Use of Drugs and Alcohol",
+        "url": "https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/",
+        "youtube": "https://www.youtube.com/watch?v=mpRhaXfvG_0",
+        "img": "LifeIsStrange.jpg"
+      },
+      {
+        "id": 33,
+        "name": "LongStory",
+        "desc": "Be and date who you choose. Play as the gender of your choice and date the cutie you like best! LongStory is fiction, but it’s based on real stories – things that have happened, if not to us, to people we know and love. We hope it is funny, sad, perplexing and wonderful… Just like life.",
+        "warning": "Age 13+: Mild Profanity",
+        "url": "https://store.steampowered.com/app/704010/LongStory/",
+        "youtube": "https://www.youtube.com/watch?v=hBzbK2z_52k",
+        "img": "LongStory.jpg"
+      },
+      {
+        "id": 34,
+        "name": "Masquerada: Songs and Shadows",
+        "desc": "Masquerada is a single-player tactical RPG set in a Renaissance-inspired city of magic, where real-time combat can be paused to set up elemental combos powered by Venetian-styled masks. Come for gorgeous hand-drawn art; stay for the rich lore & a thoughtful, fully-voiced tale of intrigue & tragedy.",
+        "warning": "Age 13+: Violence, Blood, Mild Language, Use of Tobacco",
+        "url": "https://store.steampowered.com/app/459090/Masquerada_Songs_and_Shadows/",
+        "youtube": "https://www.youtube.com/watch?v=GMYou5ltv4M",
+        "img": "Masquerada.jpg"
+      },
+      {
+        "id": 35,
+        "name": "Mass Effect 2",
+        "desc": "Recruit. Explore. Control.Two years after Commander Shepard repelled invading Reapers bent on the destruction of organic life, a mysterious new enemy has emerged. On the fringes of known space, something is silently abducting entire human colonies.",
+        "warning": "Age 17+: Blood, Drug Reference, Sexual Content, Strong Language, Violence",
+        "url": "https://store.steampowered.com/app/24980/Mass_Effect_2/",
+        "youtube": "https://www.youtube.com/watch?v=lx9sPQpjgjU",
+        "img": "MassEffect2.jpg"
+      },
+      {
+        "id": 36,
+        "name": "Mass Effect 3",
+        "desc": "Earth is burning. Reapers have taken over and other civilizations are falling like dominoes. Lead the final fight to save humanity and take back Earth from these terrifying machines, Commander Shepard.",
+        "warning": "Age 17+: Blood, Partial Nudity, Sexual Content, Strong Language, Violence",
+        "url": "https://www.origin.com/usa/en-us/store/mass-effect/mass-effect-3",
+        "youtube": "https://www.youtube.com/watch?v=AluTOOCVXVQ",
+        "img": "MassEffect3.jpg"
+      },
+      {
+        "id": 37,
+        "name": "missed messages.",
+        "desc": "‘goth gf’s iPhone’ airdrops you - accept or decline? A love/horror story about life, death, & memes.",
+        "warning": "Contains mentions of suicide and self-harm.",
+        "url": "https://store.steampowered.com/app/812810/missed_messages/",
+        "youtube": "https://www.youtube.com/watch?v=-ZrBSZKWZf0",
+        "img": "missedmessages.jpg"
+      },
+      {
+        "id": 38,
+        "name": "Monster Prom",
+        "desc": "You have 3 weeks to get a date for Monster Prom! Go through absurd and funny situations, raise your stats and seduce one of your classmates. Beautiful art, bold, unapologetic dialogue and hard choices make up this Multiplayer (1-4 players) Dating Sim. Be your worst self.",
+        "warning": "Age 17+: Sexual Themes, Drug Reference, Strong Language",
+        "url": "https://store.steampowered.com/app/743450/Monster_Prom/",
+        "youtube": "https://www.youtube.com/watch?v=1z-cl_lCrTQ",
+        "img": "MonProm.jpg"
+      },
+      {
+        "id": 39,
+        "name": "My Ex-Boyfriend the Space Tyrant",
+        "desc": "My Ex-Boyfriend the Space Tyrant is a traditional point-and-click adventure which stands out for its gay cast and eye-catching visuals.",
+        "warning": "Age 13+: Suggestive Themes, Mild Language, Crude Humor",
+        "url": "https://store.steampowered.com/app/312970/My_ExBoyfriend_the_Space_Tyrant/",
+        "youtube": "https://www.youtube.com/watch?v=pDSgU7bjf2w",
+        "img": "My Ex-bf is a space.jpg"
+      },
+      {
+        "id": 40,
+        "name": "Newfound Courage",
+        "desc": "You're a young man named Alex who arrives in the cliffside town of Silverpine. Explore the town's many mysteries and meet its colourful townsfolk, while you grow closer to a kind-hearted local named Jake. Can the two of you save the town from the impending doom brewing inside the mysterious Vault?",
+        "warning": "Suitable for ages 13+",
+        "url": "https://store.steampowered.com/app/893790/Newfound_Courage/",
+        "youtube": "https://www.youtube.com/watch?v=UnLC7EDWIRs",
+        "img": "NewfoundCourage.jpg"
+      },
+      {
+        "id": 41,
+        "name": "Night in the Woods",
+        "desc": "NIGHT IN THE WOODS is an adventure game focused on exploration, story, and character, featuring dozens of characters to meet and lots to do across a lush, vibrant world.",
+        "warning": "Age 13+: Fantasy Violence, Mild Blood, Sexual Themes, Drug Reference, Language, Crude Humor, Use of Alcohol and Tobacco",
+        "url": "https://store.steampowered.com/app/481510/Night_in_the_Woods/",
+        "youtube": "https://www.youtube.com/watch?v=Aj_rrFIWpnI",
+        "img": "NightInTheWoods.jpg"
+      },
+      {
+        "id": 42,
+        "name": "one night, hot springs",
+        "desc": "Haru is invited by her old friend Manami to spend a night at the hot springs. All Haru wants to do is enjoy the hot springs like everyone else, but she doesn't want to cause any trouble...",
+        "warning": "Discusses issues that a transgender woman in Japan might face, which is a topic that can be sensitive and personal.",
+        "url": "https://store.steampowered.com/app/917680/one_night_hot_springs/",
+        "youtube": "https://www.youtube.com/watch?v=wxeNgIcfylQ",
+        "img": "onenight.jpg"
+      },
+      {
+        "id": 43,
+        "name": "Pride Run",
+        "desc": "Pride Run is a celebration of Pride events around the world and all things LGBTQ+. Dance your way through the streets of the most iconic cities around the globe in this uniquely awesome RTS - Rhythm Action game. The better you dance, the more people you attract to your parade.",
+        "warning": "Age 13+: Suggestive Themes, Brief Nudity",
+        "url": "https://store.steampowered.com/app/848330/Pride_Run/",
+        "youtube": "https://www.youtube.com/watch?v=NKD5Cq--o2c",
+        "img": "PrideRun.jpg"
+      },
+      {
+        "id": 44,
+        "name": "Princess Remedy 2: In A Heap of Trouble",
+        "desc": "An enormous Boss Tower has sprung from the ground, lifting entire towns up with it. Now, the people living on the tower are starting to contract all sorts of mysterious illnesses. Princess Remedy, still in Saturnian healing school, must use her powers to heal everyone and defeat the Boss Tower!",
+        "warning": "Suitable for ages 13+",
+        "url": "https://store.steampowered.com/app/522040/Princess_Remedy_2_In_A_Heap_of_Trouble/",
+        "youtube": "https://www.youtube.com/watch?v=ol5SuTlI9dg",
+        "img": "PrincessRemedy2.jpg"
+      },
+      {
+        "id": 45,
+        "name": "Sayonara Wild Hearts",
+        "desc": "Sayonara Wild Hearts is a dreamy arcade game about riding motorcycles, skateboarding, dance battling, shooting lasers, wielding swords, and breaking hearts at 200 mph.",
+        "warning": "Age 10+: Fantasy Violence",
+        "url": "https://store.steampowered.com/app/1122720/Sayonara_Wild_Hearts/",
+        "youtube": "https://www.youtube.com/watch?v=F-RyxYcxSQ4",
+        "img": "Sayonara.jpg"
+      },
+      {
+        "id": 46,
+        "name": "Secret Little Haven",
+        "desc": "An adventure game about old computers, community, creativity, fandom, gender, and the internet. Alex Cole is a teenage trans girl in 1999 who has yet to figure herself out. She spends much of her free time online, browsing a fan forum for her favorite magical girl show, and chatting with friends.",
+        "warning": "Parental Conflict, Gaslighting, Flashing Visuals",
+        "url": "https://store.steampowered.com/app/827290/Secret_Little_Haven/",
+        "youtube": "https://www.youtube.com/watch?v=lftJDbcF-j0",
+        "img": "SecretLittleHaven.jpg"
+      },
+      {
+        "id": 47,
+        "name": "SNOWBOUND BLOOD: A Vast Error Story",
+        "desc": "You're the chief regulator for the REPITON CORPORATION, and threats to the order of things have been meeting the tip of your sword and the smoke of your pistol for sweeps. A new case has been put on your desk. Codename? SNOWBOUND BLOOD. Remember, agent: The past always catches up to you eventually.",
+        "warning": "Suitable for ages 17+",
+        "url": "https://vasterror.itch.io/snowbound-blood",
+        "youtube": "https://www.youtube.com/watch?v=jDQPQGjrsMs",
+        "img": "SnowboundBlood.jpg"
+      },
+      {
+        "id": 48,
+        "name": "Sometimes Always Monsters",
+        "desc": "Join a cross-country bus tour as a newlywed author, and combat vicious rumors that you're a plagiarist. Truth isn't important, when you control the narrative.",
+        "warning": "Pending player choices, may include: Nudity, Mature Sexual Themes, Alcohol & Tobacco References, Drug Use, Mature Language, Crude Humor, Gambling, Verbal Abuse, Minor Abuse, Mental Health Issues, Blood, Violence, and/or Suicide.",
+        "url": "https://store.steampowered.com/app/441440/Sometimes_Always_Monsters/",
+        "youtube": "https://www.youtube.com/watch?v=1mrSelnqaLM",
+        "img": "SometimesAlwaysMonsters.jpg"
+      },
+      {
+        "id": 49,
+        "name": "Steven Universe: Save the Light",
+        "desc": "Join the Crystal Gems on the ultimate quest! A mysterious new Gem has stolen a powerful weapon. Only Steven and his friends have what it takes to stop her. “Save the Light” is a unique RPG hybrid that combines real-time and turn-based combat.",
+        "warning": "Age 10+",
+        "url": "https://store.steampowered.com/app/821890/Steven_Universe_Save_the_Light/",
+        "youtube": "https://www.youtube.com/watch?v=KyLILFLNbKI",
+        "img": "Stephen Universe.jpg"
+      },
+      {
+        "id": 50,
+        "name": "Tacoma",
+        "desc": "Tacoma is a sci-fi narrative adventure from the creators of Gone Home. Set aboard a high-tech space station in the year 2088, explore every detail of how the station’s crew lived and worked, finding the clues that add up to a gripping story of trust, fear, and resolve in the face of disaster.",
+        "warning": "Age 17+: Sexual Themes, Strong Language",
+        "url": "https://store.steampowered.com/app/343860/Tacoma/",
+        "youtube": "https://www.youtube.com/watch?v=7QrjsQaKG3c",
+        "img": "Tacoma.jpg"
+      },
+      {
+        "id": 51,
+        "name": "The Outer Worlds",
+        "desc": "The Outer Worlds is a new single-player sci-fi RPG from Obsidian Entertainment and Private Division. As you explore a space colony, the character you decide to become will determine how this player-driven story unfolds. In the corporate equation for the colony, you are the unplanned variable.",
+        "warning": "Age 17+: Blood and Gore, Intense Violence, Strong Language",
+        "url": "https://store.steampowered.com/app/578650/The_Outer_Worlds/",
+        "youtube": "https://www.youtube.com/watch?v=zNmjNA6dtEA",
+        "img": "OuterWorlds.jpg"
+      },
+      {
+        "id": 52,
+        "name": "The Pirate's Fate",
+        "desc": "Embark on a swashbuckling adventure in The Pirate's Fate, a visual novel experience with a unique twist: the story, the crew, and who you are transform based on your choices. Seek treasure, find love, and choose your fate.",
+        "warning": "Age 17+: Nudity or Sexual Content, Frequent Violence or Gore, General Mature Content",
+        "url": "https://store.steampowered.com/app/553480/The_Pirates_Fate/",
+        "youtube": "https://www.youtube.com/watch?v=_RcL7KkKzKg",
+        "img": "ThePiratesFate.jpg"
+      },
+      {
+        "id": 53,
+        "name": "The Red Strings Club",
+        "desc": "The Red Strings Club is a cyberpunk narrative experience about fate and happiness featuring the extensive use of pottery, bartending and impersonating people on the phone to take down a corporate conspiracy.",
+        "warning": "Age 17+: Blood, Drug Rerence, Nudity, Strong Language, Suggestive Themes, Use of Alcohol and Tobacco, Violence",
+        "url": "https://store.steampowered.com/app/589780/The_Red_Strings_Club/",
+        "youtube": "https://www.youtube.com/watch?v=IKwKVukDsXQ",
+        "img": "RedStringsClub.jpg"
+      },
+      {
+        "id": 54,
+        "name": "The World Next Door",
+        "desc": "An addictive mix of lightning-fast puzzle battles, powerful storytelling and immersive visual novel elements, The World Next Door follows Jun, a rebellious teen girl trapped in a parallel realm inhabited by magical creatures, who must find her way home before time runs out.",
+        "warning": "Age 13+: Fantasy Violence, Language",
+        "url": "https://store.steampowered.com/app/755470/The_World_Next_Door/",
+        "youtube": "https://www.youtube.com/watch?v=Yg0QfH4OD9Q",
+        "img": "WorldNextDoor.jpg"
+      },
+      {
+        "id": 55,
+        "name": "Void and Meddler",
+        "desc": "Fragments and details, rainy nights and blurry lights are all VOID&MEDDLER focuses on. A non-linear cyberpunk adventure where genders and species melt into each other.",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/377970/Void_And_Meddler/",
+        "youtube": "https://www.youtube.com/watch?v=GNHXJ1uc4CU",
+        "img": "VoidMeddler.jpg"
+      },
+      {
+        "id": 56,
+        "name": "We Know the Devil",
+        "desc": "WE KNOW THE DEVIL is a visual novel about teens reluctantly fighting the devil at summer camp. Follow meangirl Neptune, tomboy Jupiter, and shy shy Venus as they get to know each other--but one always gets left out.",
+        "warning": "Themes of isolation and alienation of queer youth in a religious rural setting. Abstract, psychological horror, and possibly alarming music.",
+        "url": "https://store.steampowered.com/app/435300/We_Know_the_Devil/",
+        "youtube": "https://www.youtube.com/watch?v=WbH_wl2UQWg",
+        "img": "WeKnowTheDevil.jpg"
+      },
+      {
+        "id": 57,
+        "name": "Who We Are Now",
+        "desc": "Who We Are Now is a queer, post-apocalyptic visual novel set ten years after a nuclear war scoured the earth. It follows Wes, a young man who, drowning in the memories of everyone he's lost, returns to a settlement called Home in search of something to ease his pain.",
+        "warning": "Contains optional explicit sexual scenes between men.",
+        "url": "https://store.steampowered.com/app/1056520/Who_We_Are_Now/",
+        "youtube": "https://www.youtube.com/watch?v=5dbJ7m_QETU",
+        "img": "WhoWeAreNow.jpg"
+      },
+      {
+        "id": 58,
+        "name": "Winds of Change",
+        "desc": "Lead The Rebellion, build your army, and shape the world with your choices. A story-heavy adventure game with various endings, romance options, and non-linear storytelling. A vast dark fantasy world waiting to be explored. Inspired by Dragon Age, and Mass Effect. Fully voice acted by a stellar cast!",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/594130/Winds_of_Change/",
+        "youtube": "https://www.youtube.com/watch?v=bhC3T1GizuQ",
+        "img": "WindsOfChange.jpg"
+      },
+      {
+        "id": 59,
+        "name": "Your Royal Gayness",
+        "desc": "The library is on fire, cats have overrun the city and a wolf is munching on grandmothers in the forest. On top of that, princesses are knocking on your door, hungry for marriage! Survive royal life as a gay prince in this ultimate fairytale parody game!",
+        "warning": "Suitable for Teen and Older",
+        "url": "https://store.steampowered.com/app/765210/Your_Royal_Gayness/",
+        "youtube": "https://www.youtube.com/watch?v=_UHslWTm0S0",
+        "img": "YourRoyalGayness.jpg"
+      },
+      {
+        "id": 60,
+        "name": "The Sims 4",
+        "desc": "The Sims 4 is the life simulation game that gives you the power to create and control people. Experience the creativity, humor, escape, and the freedom to play with life in The Sims 4. Try the Create A Sim demo to create your own Sim!",
+        "warning": "Age 13+: Crude Humor\nSexual Themes\nViolence",
+        "url": "https://www.ea.com/games/the-sims/the-sims-4",
+        "youtube": "https://www.youtube.com/watch?v=z00mK3Pxc8w",
+        "img": "Sims4.jpg"
+      },
+      {
+        "id": 61,
+        "name": "Shovel Knight",
+        "desc": "Shovel Knight is a 2D side-scrolling platform game developed and published by Yacht Club Games.",
+        "warning": "Mild Fantasy Violence",
+        "url": "https://store.steampowered.com/app/250760/Shovel_Knight_Treasure_Trove/",
+        "youtube": "https://www.youtube.com/watch?v=SgnD4WRzgjI",
+        "img": "ShovelKnight.jpg"
+      },
+      {
+        "id": 62,
+        "name": "Outer Wilds",
+        "desc": "Named Game of the Year 2019 by Giant Bomb, Polygon, Eurogamer, and The Guardian, Outer Wilds is a critically-acclaimed and award-winning open world mystery about a solar system trapped in an endless time loop.",
+        "warning": "Ages 10+: Fantasy Violence, Alcohol Reference",
+        "url": "https://store.steampowered.com/app/753640/Outer_Wilds/",
+        "youtube": "https://www.youtube.com/watch?v=d6LGnVCL1_A",
+        "img": "OuterWilds.png"
+      },
+      {
+        "id": 63,
+        "name": "Afterparty",
+        "desc": "In Afterparty, you are Milo and Lola, recently deceased best buds who suddenly find themselves staring down an eternity in Hell. But there's a loophole: outdrink Satan and he'll grant you re-entry to Earth.",
+        "warning": "Age 17+: Blood, Crude Humor, Drug Reference, Sexual Content, Strong Language, Use of Alcohol, Violence",
+        "url": "https://store.steampowered.com/app/762220/Afterparty/",
+        "youtube": "https://www.youtube.com/watch?v=1ciecvTDGlQ",
+        "img": "Afterparty.png"
+      },
+      {
+        "id": 64,
+        "name": "Max Gentlemen Sexy Business!",
+        "desc": "The premiere Victorian Business Tycoon & Dating Simulator. Your family business has been stolen from you! Forge sexy partnerships in the sheets while crushing rival companies in the streets to become England’s largest monopoly and reclaim your family honor.",
+        "warning": "Ages 18+: Optional Nudity and Sexual Content",
+        "url": "https://store.steampowered.com/app/817840/Max_Gentlemen_Sexy_Business/",
+        "youtube": "https://www.youtube.com/watch?v=4nVXifZOVVU",
+        "img": "SexyBusiness.png"
+      },
+      {
+        "id": 65,
+        "name": "Lovingly Evil",
+        "desc": "Unleash your inner villain and head over to the Villain Conference, the one and only interdimensional business event for evildoers! Who knows, maybe you'll even find a partner - whether it's in crime or love…",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/1247020/Lovingly_Evil/",
+        "youtube": "https://www.youtube.com/watch?v=clM17Jm3M_Y",
+        "img": "LovinglyEvil.jpg"
+      },
+      {
+        "id": 66,
+        "name": "Life Is Strange 2",
+        "desc": "After a tragic incident, brothers Sean and Daniel Diaz run away from home. Fearing the police, and dealing with Daniel's new telekinetic power, the boys head to Mexico. Each stop on their journey brings new friends and new challenges.",
+        "warning": "Rated M for Mature. Age 17+: BLOOD, \nPARTIAL NUDITY,\nVIOLENCE, \nSEXUAL CONTENT,\nUSE OF DRUGS & ALCOHOL,\nSTRONG LANGUAGE,\nUSE OF TOBACCO",
+        "url": "https://store.steampowered.com/app/532210/Life_is_Strange_2/",
+        "youtube": "https://www.youtube.com/watch?v=7ZNEQCTqBxU",
+        "img": "LifeIsStrange2.jpg"
+      },
+      {
+        "id": 67,
+        "name": "Across the Grooves",
+        "desc": "Your choices affect the destiny of Alice, drastically changing her reality and allowing her to explore alternative destinies by modifying her past. Travel across European cities, meet colourful characters and solve the mystery.",
+        "warning": "Rated M for Mature. Age 17+: Blood, Strong Language, Suggestive Themes, Violence",
+        "url": "https://store.steampowered.com/app/957820/Across_the_Grooves/",
+        "youtube": "https://www.youtube.com/watch?v=mcuI9eDNIRM",
+        "img": "AcrossTheGrooves.jpg"
+      },
+      {
+        "id": 68,
+        "name": "Verdant Skies",
+        "desc": "Verdant Skies is a life simulation game born from a love for games like Harvest Moon and a desire to create something unique with modern gameplay and deep storytelling. Ensure the success of the colony as you make friends and pursue romance with a diverse cast of characters.",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/730050/Verdant_Skies/",
+        "youtube": "https://youtu.be/QtueJoWOc-c",
+        "img": "VerdantSkies.jpg"
+      },
+      {
+        "id": 69,
+        "name": "A Summer with the Shiba Inu",
+        "desc": "Syd the Shiba Inu quits her job in Canine-da, and goes to fight other dogs on an Island. What could go wrong? Your choices matter - there are multiple drastic ways to change the fate of Shiba Island, with 10+ variants depending on how you treat the dogs you meet along the way.",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/916030/A_Summer_with_the_Shiba_Inu/",
+        "youtube": "https://youtu.be/Yv0qNyL5VuQ",
+        "img": "ASummerWithTheShibaInu.jpg"
+      },
+      {
+        "id": 70,
+        "name": "Assassin's Creed: Origins",
+        "desc": "ASSASSIN’S CREED® ORIGINS IS A NEW BEGINNING *The Discovery Tour by Assassin’s Creed®: Ancient Egypt is available now as a free update!* Ancient Egypt, a land of majesty and intrigue, is disappearing in a ruthless fight for power.",
+        "warning": "Rated M for Mature. Ages 17+: BLOOD & GORE, DRUG REFERENCE, INTENSE VIOLENCE, NUDITY, SEXUAL CONTENT, STRONG LANGUAGE, ALCOHOL USAGE",
+        "url": "https://store.steampowered.com/app/582160/Assassins_Creed_Origins/",
+        "youtube": "https://www.youtube.com/watch?v=cUuKIpCM2o0",
+        "img": "AssassinsCreedOrigins.jpg"
+      },
+      {
+        "id": 71,
+        "name": "Monster Prom 2: Monster Camp",
+        "desc": "\"Monster Prom 2: Monster Camp\" brings you more of the world's best (and maybe only?) multiplayer dating sim; but in a way you've never expected!",
+        "warning": "Rated M for Mature. Ages 17+: Drug Reference, Sexual Themes, Strong Language.",
+        "url": "https://store.steampowered.com/app/1140270/Monster_Prom_2_Monster_Camp/",
+        "youtube": "https://www.youtube.com/watch?v=WU4wfPV_jWw",
+        "img": "MonsterProm2.jpg"
+      },
+      {
+        "id": 72,
+        "name": "Sword of the Necromancer",
+        "desc": "Help Tama to save Koko using the powers of the forbidden Sword of the Necromancer. Turn your foes into allies and reach the depths of the Necromancer's dungeon. Defeat the guardians to gain enough soul power to bring Koko back from the dead, no matter the cost.",
+        "warning": "Rated M for Mature. Ages 17+: Blood, Strong Language, Suggestive Themes, Violence",
+        "url": "https://store.steampowered.com/app/1243890/Sword_of_the_Necromancer/",
+        "youtube": "https://www.youtube.com/watch?v=aWaVB797OAk",
+        "img": "SwordOfTheNecromancer.jpg"
+      },
+      {
+        "id": 73,
+        "name": "Read Only Memories: NEURODIVER",
+        "desc": "Play a psychic detective known as ES88 and chase down a rogue esper who’s hidden themselves in the memories of others. With the help of your psychic abilities and a genetically engineered creature known as a NEURODIVER, you choose the way to take them out, but hurry, these memories are fading fast!",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/1293910/Read_Only_Memories_NEURODIVER/",
+        "youtube": "https://www.youtube.com/watch?v=Jpz0V33jJOg",
+        "img": "Neurodiver.jpg"
+      },
+      {
+        "id": 74,
+        "name": "The MISSING: J.J. Macfield and the Island of Memories",
+        "desc": "J.J. scours Memoria Island to find her best friend, who has gone missing during a camping trip. In order to save her best friend, she puts her own body and life on the line, reviving infinitely, as she presses forward. Why did she go missing? What is going on in this world?",
+        "warning": "Rated M for Mature. Ages 17+:  Violence, Blood and Gore, Strong Language",
+        "url": "https://store.steampowered.com/app/842910/The_MISSING_JJ_Macfield_and_the_Island_of_Memories/",
+        "youtube": "https://www.youtube.com/watch?v=-wo3TmI1VwE",
+        "img": "TheMissing.jpg"
+      },
+      {
+        "id": 75,
+        "name": "Animal Crossing: New Horizons",
+        "desc": "Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts. ",
+        "warning": "Rated E for Everyone: Comic Mischief",
+        "url": "https://www.animal-crossing.com/new-horizons/buy/",
+        "youtube": "https://www.youtube.com/watch?v=_3YNL0OWio0",
+        "img": "AnimalCrossingNewHorizons.jpg"
+      },
+      {
+        "id": 76,
+        "name": "Timespinner",
+        "desc": "Travel back in time to change fate itself, in this beautifully crafted story-driven adventure, inspired by classic 90s action-platformers. Join timekeeper Lunais on her quest for revenge against the empire that killed her family, using time-bending powers to explore a vast, connected world.",
+        "warning": "Rated T for Teen: FANTASY VIOLENCE, SEXUAL THEMES, MILD LANGUAGE",
+        "url": "https://store.steampowered.com/app/368620/Timespinner/",
+        "youtube": "https://www.youtube.com/watch?v=C38V0npJW9E",
+        "img": "Timespinner.jpg"
+      },
+      {
+        "id": 77,
+        "name": "Pendula Swing",
+        "desc": "Explore a memorable 1920s fantasy world where you interact with, befriend and romance hundreds of characters with unique quests, as an already rich and famous heroine.",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/1230200/Pendula_Swing__The_Complete_Journey/",
+        "youtube": "https://youtu.be/ok2_Cdtkgt8",
+        "img": "PendulaSwings.jpg"
+      },
+      {
+        "id": 78,
+        "name": "VA-11 HALL-A",
+        "desc": "VA-11 HALL-A: Cyberpunk Bartender Action is a booze em' up about waifus, technology, and post-dystopia life.",
+        "warning": "Rated M for Mature. Ages 17+: Sexual Themes, Strong Language, Use of Alcohol and Tobacco",
+        "url": "https://store.steampowered.com/app/447530/VA11_HallA_Cyberpunk_Bartender_Action/",
+        "youtube": "https://www.youtube.com/watch?v=EZimx2-lmQg",
+        "img": "Va11Hall-A.jpg"
+      },
+      {
+        "id": 79,
+        "name": "Ladykiller In A Bind",
+        "desc": "An erotic romantic comedy about social manipulation, crossdressing, and girls tying up other girls. Will the hapless lesbian ladykiller Beast succeed at pretending to be her ruthless twin? By the creators of Analogue: A Hate Story, featuring choice-driven mechanics... and lots of sex.",
+        "warning": "Rated M for Mature. Ages 17+: Sexual Themes, Strong Language, Violence",
+        "url": "https://store.steampowered.com/app/560000/Ladykiller_in_a_Bind/",
+        "youtube": "https://www.youtube.com/watch?v=YkJI_4yrlWo",
+        "img": "Ladykiller.jpg"
+      },
+      {
+        "id": 80,
+        "name": "Wicked Willow",
+        "desc": "If they call me wicked for following my heart, then so be it. Awaken your inner witch, pursue forbidden love, and unlock your destiny in this visual novel adventure, with 8 unique plot paths.",
+        "warning": "This game contains mature language, mature topics, and discussions of sexuality. It does not contain nudity or sexual content.",
+        "url": "https://store.steampowered.com/app/1187600/Wicked_Willow/",
+        "youtube": "https://www.youtube.com/watch?v=f_fuZnql57c",
+        "img": "WickedWillow.jpg"
+      },
+      {
+        "id": 81,
+        "name": "Lurkers",
+        "desc": "Chasing Jack the Ripper! A BL/ Yaoi Visual Novel",
+        "warning": "Rated Ages 15+",
+        "url": "https://store.steampowered.com/app/1376840/Lurkers/",
+        "youtube": "https://www.youtube.com/watch?v=iTtYieprMrU",
+        "img": "Lurkers.jpg"
+      },
+      {
+        "id": 82,
+        "name": "Chess of Blades",
+        "desc": "At a huge celebration in a secluded fantasy castle, the young nobleman Rivian is faced with murder, mystery, and romance in a whirlwind tale of dangerous intrigue.",
+        "warning": "PG-13 and R-18 versions. The PG-13 version has no NSFW content.",
+        "url": "https://store.steampowered.com/app/618550/Chess_of_Blades/",
+        "youtube": "https://www.youtube.com/watch?v=mhRQkTcEn6Y",
+        "img": "ChessOfBlades.jpg"
+      },
+      {
+        "id": 83,
+        "name": "Requiescence",
+        "desc": "Dive into the story of Kymil, a young ice mage on a quest to unravel the mystery behind his uncle's death. As the world you know shatters around you, will you find a place for romance while the stakes climb higher?",
+        "warning": "PG-13 and R-18 versions. The PG-13 version has no NSFW content.",
+        "url": "https://store.steampowered.com/app/530360/Requiescence/",
+        "youtube": "https://www.youtube.com/watch?v=ysco4fIU-m4",
+        "img": "Requiescence.jpg"
+      },
+      {
+        "id": 84,
+        "name": "Red Embrace",
+        "desc": "A normal graveyard shift at a dingy diner in San Francisco... until a mysterious customer arrives, bringing with him a war between vampires.",
+        "warning": "PG-13 (language, violence, sexual themes)",
+        "url": "https://store.steampowered.com/app/796940/Red_Embrace/",
+        "youtube": "https://www.youtube.com/watch?v=KA0SuXpIEUM",
+        "img": "RedEmbrace.jpg"
+      },
+      {
+        "id": 85,
+        "name": "Red Embrace: Hollywood",
+        "desc": "1996—Los Angeles, CA. A young newcomer is turned into a vampire and thrust into the dark underworld of society, forced to sink or swim. You are that newcomer.",
+        "warning": "R-17 (language, violence, sexual themes)",
+        "url": "https://store.steampowered.com/app/904520/Red_Embrace_Hollywood/",
+        "youtube": "https://www.youtube.com/watch?v=7Av3Yi4kbw4",
+        "img": "RedEmbraceHollywood.jpg"
+      },
+      {
+        "id": 86,
+        "name": "Planet Stronghold 2",
+        "desc": "Planet Stronghold 2 is the sequel to the first sci-fi VN/RPG made by Winter Wolves. Isometric map exploration, crafting, combat, a branching plot and of course romances awaits you in this new adventure!",
+        "warning": "R-17 (language, violence, sexual themes)",
+        "url": "https://store.steampowered.com/app/857200/Planet_Stronghold_2/",
+        "youtube": "https://www.youtube.com/watch?v=BoNF7yk7XX4",
+        "img": "PlanetStronghold2.jpg"
+      },
+      {
+        "id": 87,
+        "name": "Loren The Amazon Princess",
+        "desc": "Loren The Amazon Princess is a fantasy epic combining intricate turn-based battles with a heroic tale of overcoming evil - with a twist! In this tale, you play as a loyal servant of the hero rather than the hero herself.",
+        "warning": "Content rating: optional nudity and sexual innuendo, cartoon violence, alcohol reference/use.",
+        "url": "https://store.steampowered.com/app/257970/Loren_The_Amazon_Princess/",
+        "youtube": "https://www.youtube.com/watch?v=GX5ULFGkvrg",
+        "img": "Loren.jpg"
+      },
+      {
+        "id": 88,
+        "name": "Speed Dating for Ghosts",
+        "desc": "Branching dialogue! Hard choices! A cemetery's worth of phantoms, wraiths, and poltergeists lookin' for love in all the blight places.",
+        "warning": "Rated T for Teen: Drug Reference, Fantasy Violence, Suggestive Themes, Use of Alcohol and Tobacco",
+        "url": "https://store.steampowered.com/app/746400/Speed_Dating_for_Ghosts/",
+        "youtube": "https://www.youtube.com/watch?v=__rOWJxde8Y",
+        "img": "SpeedDatingForGhosts.jpg"
+      },
+      {
+        "id": 89,
+        "name": "Scarlet Hollow",
+        "desc": "Scarlet Hollow is a horror-mystery game with sharp writing, dark humor, and hand-drawn art from award-winning graphic novelist Abby Howard.",
+        "warning": "Ages 17+: Realistic Gore; death; dead, dying and injured animals; children in peril; child death; claustrophobia; emetophobia/vomiting; disturbing imagery and situations",
+        "url": "https://store.steampowered.com/app/1609230/Scarlet_Hollow/",
+        "youtube": "https://www.youtube.com/watch?v=YThVRmSf7cI",
+        "img": "ScatletHollow.jpg"
+      },
+      {
+        "id": 90,
+        "name": "Synthetic Lover",
+        "desc": "In the future a biot working as a companion and without free will, encounters a device that makes him feel human. Self-discovery, hardships, and romance may follow. A BL/Yaoi visual novel.",
+        "warning": "Focused on character development and relationships between men (with PG-13 version available)",
+        "url": "https://store.steampowered.com/app/1151530/Synthetic_Lover/",
+        "youtube": "https://www.youtube.com/watch?v=OBuJlOR52p4",
+        "img": "SyntheticLover.jpg"
+      },
+      {
+        "id": 91,
+        "name": "Errant Kingdom",
+        "desc": "An episodic visual novel releasing bi-monthly throughout 2020. The Kingdom of Novus has been thrown into disarray and It's up to you to decide if you’ll help to bring peace, or if you’ll stoke the fires of chaos. Pick a side, and meet your match.",
+        "warning": "Rated M for Mature, Ages 17+: MILD VIOLENCE, SEXUAL THEMES\nSTRONG LANGUAGE, USE OF ALCOHOL, MATURE HUMOR",
+        "url": "https://store.steampowered.com/app/1148730/Errant_Kingdom_Chapters_05/",
+        "youtube": "https://www.youtube.com/watch?v=P_0hkxay2PQ",
+        "img": "ErrantKingdom.jpg"
+      },
+      {
+        "id": 92,
+        "name": "Steven Universe: Unleash the Light",
+        "desc": "The Crystal Gems are back for the third game in the Light Trilogy! When two powerful Gem rulers threaten the newfound peace of Era 3, Steven and his friends must embark on a new RPG quest to stop them! It’s time to Unleash the Light!",
+        "warning": "Rated E for Everyone, Age 10+: Fantasy Violence",
+        "url": "https://store.steampowered.com/app/1379560/Steven_Universe_Unleash_the_Light/",
+        "youtube": "https://www.youtube.com/watch?v=oM7Ll5SUv6w",
+        "img": "StephenUniverse-UnleashtheLight.jpg"
+      },
+      {
+        "id": 93,
+        "name": "Dead By Daylight",
+        "desc": "Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught and killed.",
+        "warning": "Rated M for Mature. Ages 17+: BLOOD AND GORE, INTENSE VIOLENCE, STRONG LANGUAGE",
+        "url": "https://store.steampowered.com/app/381210/Dead_by_Daylight/",
+        "youtube": "https://www.youtube.com/watch?v=JGhIXLO3ul8",
+        "img": "deadbydaylight.jpg"
+      },
+      {
+        "id": 94,
+        "name": "Celeste",
+        "desc": "Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight platformer from the creators of TowerFall. Brave hundreds of hand-crafted challenges, uncover devious secrets, and piece together the mystery of the mountain.",
+        "warning": "Rated E for Everyone, Age 10+: Alcohol Reference, Fantasy Violence, Mild Language",
+        "url": "https://store.steampowered.com/app/504230/Celeste/",
+        "youtube": "https://www.youtube.com/watch?v=FqBj2IGg6Uw",
+        "img": "Celeste.jpg"
+      },
+      {
+        "id": 95,
+        "name": "Iconoclasts",
+        "desc": "Join renegade mechanic Robin and uncover the secrets of a dying planet. Explore a big world filled with intricate puzzles, interesting characters and menacing bosses in a beautiful platform adventure that tells a personal story about faith, purpose and the challenge of helping people.",
+        "warning": "Rated T for Teen: Blood, Language, Suggestive Themes, Use of Tobacco, Violence",
+        "url": "https://store.steampowered.com/app/393520/Iconoclasts/",
+        "youtube": "https://youtu.be/he62atNmQJQ",
+        "img": "Iconoclasts.jpg"
+      },
+      {
+        "id": 96,
+        "name": "Retrace",
+        "desc": "THIS WORLD DESIRES YOUR DEATH. A ghost tour gone wrong leads Freya to a parallel dimension, almost designed for her. Can you beat death, and escape? A game of mystery, adventure and queer love stories for PC.",
+        "warning": "https://youtu.be/pQOb7RzQOfI",
+        "url": "https://store.steampowered.com/app/1052640/Retrace/",
+        "youtube": "",
+        "img": "retrace.jpg"
+      },
+      {
+        "id": 97,
+        "name": "Song of Farca",
+        "desc": "Hack into crime scenes, look for evidence, analyze data, interrogate criminals, track suspects and deal with the consequences of your decisions. This is a dark and brutal detective story with a Black Mirror-esque atmosphere of digital dominance and the narrative structure of a US crime procedural.",
+        "warning": "The game may contain strong language, nudity, and violence and is not recommended for all ages.",
+        "url": "https://store.steampowered.com/app/1435670/Song_of_Farca/",
+        "youtube": "https://youtu.be/JzNw_mf0xYM",
+        "img": "SongofFarca.jpg"
+      },
+      {
+        "id": 98,
+        "name": "Asterism",
+        "desc": "Kotachi can see monsters other people can't. During the day, he goes to high school – but at night, he fights off specters, monsters that lurk in shadows and can harm people.",
+        "warning": "Action scenes are in the vein of classic action visual novels. Choices determines the end of the story, including an optional male love interest.",
+        "url": "https://store.steampowered.com/app/1093830/Asterism/",
+        "youtube": "",
+        "img": "Asterism.jpg"
+      },
+      {
+        "id": 99,
+        "name": "Lost Ember",
+        "desc": "Explore the remains of a fallen world from fascinating perspectives! Slip into the role of different animals to uncover the fate of an ancient world. Dive into deep waters, fly at lofty heights, dig underground as a mole or even climb steep cliffs with a mountain goat, there are lots of ways of getting around.",
+        "warning": "Rated Ages 10+: Fantasy Violence",
+        "url": "https://store.steampowered.com/app/563840/LOST_EMBER/",
+        "youtube": "https://www.youtube.com/watch?v=vo7CPfVu7MY",
+        "img": "LostEmber.jpg"
+      },
+      {
+        "id": 100,
+        "name": "APEX Legends",
+        "desc": "Apex Legends is an online multiplayer battle royale game featuring squads of three players using characters with distinctive abilities, called \"Legends\", similar to those of hero shooters. Alternate modes have been introduced allowing for single and for two-player squads since the game's release.",
+        "warning": "Rated Ages 13+: Blood and Violence",
+        "url": "https://www.origin.com/usa/en-us/store/apex/apex",
+        "youtube": "https://www.youtube.com/watch?v=oshvcDjEKZc",
+        "img": "ApexLegends.jpg"
+      },
+      {
+        "id": 101,
+        "name": "Fortnite - Rainbow Royale",
+        "desc": "Everyone is welcome on the Battle Bus, and this week we’re celebrating the amazing Fortnite LGBTQIA+ community! Check out everything happening in the game and beyond this week with the debut of Rainbow Royale.",
+        "warning": "Ages 13+: Violence",
+        "url": "https://www.epicgames.com/store/en-US/p/fortnite",
+        "youtube": "",
+        "img": "Fortnite-Pride.jpg"
+      },
+      {
+        "id": 102,
+        "name": "If Found...",
+        "desc": "If Found... is a game about going home, coming out and erasing everything.",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/1041920/If_Found/",
+        "youtube": "https://www.youtube.com/watch?v=q_Qs6CjGeQc",
+        "img": "IfFound.jpg"
+      },
+      {
+        "id": 103,
+        "name": "The Hayseed Knight",
+        "desc": "A ragtag band of misfits tell the unlikely tale of a one-eyed farmboy's accidental rise to fame in this fully voice-acted animated visual novel.",
+        "warning": "",
+        "url": "https://store.steampowered.com/app/1332990/The_Hayseed_Knight/",
+        "youtube": "https://www.youtube.com/watch?v=OKjwFaj3G6c",
+        "img": "HayseedKnight.jpg"
+      }
+    ]
+  }

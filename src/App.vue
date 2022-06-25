@@ -34,22 +34,7 @@
                 <div class="charity col"><div><a href="https://www.getwigi.com/" target="_target"><img class="" src="./assets/img/wigi.png" alt="Womein In Games International" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/women-in-games-international-2021" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://girlswhocode.com/" target="_target"><img class="" src="./assets/img/girlswhocode.png" alt="Girls Who Code" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/girls-who-code-2021" target="_target">DONATE</a></div></div> 
               </div>
-              <hr>
-              <!-- Begin MailChimp Signup Form -->
-              <div class="col-sm-12 mail-list-container" data-aos="zoom-out">
-                <div id="mc_embed_signup">
-                <form action="https://midboss.us5.list-manage.com/subscribe/post?u=56b65e1f2b3ba5e696ffa9e29&amp;id=748c34fc41" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                  <label for="mce-EMAIL"><h3>Stay Up-to-Date On the Event!</h3></label>
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_56b65e1f2b3ba5e696ffa9e29_748c34fc41" tabindex="-1" value=""></div>
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    </div>
-                </form>
-                </div>
-              </div>
-              <!--End mc_embed_signup-->
+              
               <hr>
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
 
@@ -105,9 +90,9 @@
 </template>
 
 <script>
-import streamers from './assets/streamers.js'
-import games from './assets/games.js'
-import schedule from './assets/schedule.js'
+import streamers from './assets/streamers.json'
+import games from './assets/gamesFinal.json'
+import schedule from './assets/scheduleFinal.json'
 //import schedule from './assets/schedule-demo.js'
 
 import Nav from './components/Nav.vue'
@@ -118,7 +103,7 @@ import ModalStreamers from './components/StreamersModal.vue'
 import ModalGames from './components/GamesModal.vue'
 import Footer from './components/Footer.vue'
 
-import axios from 'axios'
+//import axios from 'axios'
 import SyncLoader from 'vue-spinner/src/SyncLoader.vue'
 //import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 import AOS from 'aos'
@@ -173,29 +158,32 @@ export default {
     this.timezone = this.getTimezone()
     try {
       //get streamer's info
-      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonStreamers')
-      this.profiles = response.data.jsonStreamers
+      const response =  require('./assets/streamersFinal.json')
+      this.profiles = response.jsonStreamers
       this.shuffle(this.profiles)
       this.streamersLoading = false
     } catch (e) {
       this.errors.push(e)
+      console.error(e)
     }
     try {
       //get game's info
-      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonGames')
-      this.games = response.data.jsonGames
+      const response = require('./assets/gamesFinal.json')
+      this.games = response.jsonGames
       this.shuffle(this.games)
       this.gamesLoading = false
     } catch (e) {
       this.errors.push(e)
+      console.error(e)
     }
     try {
       //get schedule's info
-      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2021ProcessedData/jsonSchedule')
-      this.schedules = response.data.jsonSchedule
+      const response = require('./assets/scheduleFinal.json')
+      this.schedules = response.jsonSchedule
       this.scheduleLoading = false
     } catch (e) {
       this.errors.push(e)
+      console.error(e)
     }
   },
   mounted() {
