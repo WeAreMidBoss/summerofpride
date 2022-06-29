@@ -164,7 +164,7 @@
  
 <script>
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css/swiper.css'
 
 	export default {
 		name: 'ScheduleSwiper',
@@ -315,7 +315,7 @@ import 'swiper/swiper-bundle.css'
     /*** Active stream styling***/
 
     .active {
-        background-color:#f4496a!important;
+        background-color:#8F51F2!important;
         border-color: transparent!important;
     }
     .active .start-time {
@@ -326,18 +326,18 @@ import 'swiper/swiper-bundle.css'
     }
     .active .schedule-game-name {
         background-color:#fff!important;
-        color: #f4496a!important;
+        color: #C3ABFF!important;
     }
     .active .schedule-streamer-name {
         background-color:#fff!important;
-        color: #f4496a!important;
+        color: #C3ABFF!important;
     }
     .active .bullet {
         color: #fff;
     }
     .live-time {
         margin-right: 20px;
-        color: #f5e362;
+        color: #8F51F2;
         font-size: 1.6em;
         line-height: 0.9;
         position:relative;
@@ -352,7 +352,7 @@ import 'swiper/swiper-bundle.css'
         top:15%;
         border-style: solid;
         border-width: 35px 0 35px 20px;
-        border-color: transparent transparent transparent #f5e462;
+        border-color: transparent transparent transparent #9D7DEF;
     }
     .live-time div:first-child {
         font-size:1.05em;
@@ -364,20 +364,20 @@ import 'swiper/swiper-bundle.css'
     }
     /*** Regular schedule styling***/
     .swiper {
-        width: 70%;
+        width: 75%;
     }
     .schedule-table {
         width: 100%;
         margin: 0 auto;
         font-family: 'Bebas Neue', sans-serif;
         font-size:30px;
-        color:#ea276d;
+        color:#B4E7EF;
     }
 
     .schedule-day {
         font-size:45px;
         font-family: 'Bebas Neue', sans-serif;
-        color:#ea276d;
+        color:#B4E7EF;
     }
     .schedule-table tr {
         padding: 10px 0;
@@ -389,14 +389,14 @@ import 'swiper/swiper-bundle.css'
     }
 
     .start-time {
-        color: #f77166;
+        color: #B4E7EF;
     }
     .end-time {
-        color: #f4496a;
+        color: #5ab0c3;
         
     }
     .bullet {
-        color: #f77166;
+        color: #fff;
         font-family: Arial, Helvetica, sans-serif;
         margin: -5px 3px 0;
     }
@@ -426,6 +426,8 @@ import 'swiper/swiper-bundle.css'
         margin-right: 50px;
     }
     .schedule-game-name, .schedule-streamer-name {
+        font-weight: 600;
+        font-style: italic;
         width: 100%;
         display:block;
         box-sizing: border-box;
@@ -433,7 +435,7 @@ import 'swiper/swiper-bundle.css'
         margin: 5px 0 0;
         text-align: center;
         color:#fff;
-        background-color: #F37664;
+        background-color: #fff0;
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         overflow: hidden;
@@ -444,7 +446,7 @@ import 'swiper/swiper-bundle.css'
         margin-top: 5px;
     }
     .schedule-table tr td>div:first-child {
-        border-left: 5px solid #f4496a;
+        border-left: 5px solid #85E8F9;
         margin-bottom: 15px;
     }
     .schedule-table td {
@@ -469,7 +471,7 @@ import 'swiper/swiper-bundle.css'
         font-size: 2em;
     }
     .swiper {
-        width: 70%;
+        width: 75%;
     }
 }
 @media (max-width: 1024px) {
@@ -485,7 +487,7 @@ import 'swiper/swiper-bundle.css'
         top:12%;
         border-style: solid;
         border-width: 25px 0 25px 15px;
-        border-color: transparent transparent transparent #f5e462;
+        border-color: transparent transparent transparent #9D7DEF;
     }
     .start-time, .end-time {
         font-size: 2em;
@@ -519,7 +521,7 @@ import 'swiper/swiper-bundle.css'
         top:5%;
         border-style: solid;
         border-width: 35px 0 35px 20px;
-        border-color: transparent transparent transparent #f5e462;
+        border-color: transparent transparent transparent #9D7DEF;
     }
     .start-time, .end-time {
         font-size: 1.6em;
@@ -593,7 +595,7 @@ import 'swiper/swiper-bundle.css'
         top:15%;
         border-style: solid;
         border-width: 15px 0 15px 10px;
-        border-color: transparent transparent transparent #f5e462;
+        border-color: transparent transparent transparent #9D7DEF;
     }
     .swiper {
         width: 95%;

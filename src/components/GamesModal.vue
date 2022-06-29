@@ -90,10 +90,13 @@
     align-items: center;
   }
   .modal-games {
-    max-width: 700px;
-    padding: 0 10px 20px;
-    background: #F37739;
-    box-shadow: 2px 2px 20px 1px;
+    max-width: 600px;
+    padding: 0 10px 10px;
+    background: #521E58; /* Old browsers */
+    background: -moz-linear-gradient(top, #8F51F2 0%, #521E58 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #8F51F2 0%,#521E58 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #8F51F2 0%,#260B3E 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 2px 2px 30px 5px #260B3E;
     /*overflow-x: auto;*/
     display: flex;
     flex-direction: column;
@@ -151,12 +154,12 @@
   }
   .modal-img {
     max-width:90%;
-    padding:25px 20px;
+    height:auto;
+    border-color: #D5C7FF !important;
+    border-width: 1px !important;
+    border-style: solid !important;
     margin-bottom: 10px;
     background: #f2f8fc;
-     -webkit-box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
-    -moz-box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
-    box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
   }
   .modal-description {
     color:#fff;
@@ -164,9 +167,12 @@
     text-align: left;
   }
   .modal-name {
+    margin-top: 5px;
     display: block;
-    font-family: 'Knewave', cursive;
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 34px;
     text-align: center;
   }
   .modal-warning, .modal-description-text {
@@ -180,16 +186,16 @@
     font-size: 14px;
     text-align: center;
     font-weight: bold;
-    margin-top:15px;
+    margin-top:25px;
   }
   .modal-warning-wrapper {
-    background-color:#ffb090;
+    background-color:#C3ABFF;
     padding: 10px;
   }
   .modal-warning-title {
     display:block;
     width:100%;
-    background-color:#e45c3a;
+    background-color:#6B3191;
     color:#fff;
     padding:5px 0;
   }
@@ -198,7 +204,7 @@
     font-weight: normal;
     margin-top:10px;
     font-size: 13px;
-    color:#b32c0a;
+    color:#521E58;
     padding: 0 40px;
   }
   .modal-description-text {
@@ -208,7 +214,7 @@
   }
   .modal-description-social {
     display: block;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .modal-description-social a:not(:first-child) {
     margin-left: 10px;
@@ -232,7 +238,6 @@
     }
     .modal-img {
       max-height: 250px;
-      padding: 15px 15px;
     }
     .modal-description {
       font-size: 13px;
@@ -265,7 +270,6 @@
     }
     .modal-img {
       max-height: 250px;
-      padding:15px 15px;
     }
     .modal-description-text {
       margin-top: 15px;

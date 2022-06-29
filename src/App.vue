@@ -5,7 +5,7 @@
     <!-- DESKTOP JUMBOTRON -->
       <div class="jumbotron" data-aos="zoom-in">
         <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2022_Banner.jpg" alt="Season of Pride" />
-        <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
+        <img class="d-sm-none" src="./assets/img/SeasonOfPride2022_Mobile.jpg" alt="Season of Pride" />
       </div>
 
       <div id="main-content">
@@ -25,21 +25,21 @@
               <p data-aos="slide-up">Tune into any stream and share your support if you can.</p>
               
               <div align="center" class="charities row">
-                <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/gaymerx-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/trevor-project-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/trans-lifeline-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://mermaidsuk.org.uk/" target="_target"><img class="" src="./assets/img/mermaids.png" alt="Mermaids" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/mermaids-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.minus18.org.au/" target="_target"><img class="" src="./assets/img/minus18.png" alt="Minus 18" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/minus18-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.blackgirlscode.com/" target="_target"><img class="" src="./assets/img/blackgirlscode.png" alt="Black Girls Code" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/black-girls-code-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://www.getwigi.com/" target="_target"><img class="" src="./assets/img/wigi.png" alt="Womein In Games International" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/women-in-games-international-2021" target="_target">DONATE</a></div></div> 
-                <div class="charity col"><div><a href="https://girlswhocode.com/" target="_target"><img class="" src="./assets/img/girlswhocode.png" alt="Girls Who Code" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/girls-who-code-2021" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://gaymerx.org/" target="_target"><img class="" src="./assets/img/gaymerx.png" alt="GaymerX" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-gaymerx" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.thetrevorproject.org/" target="_target"><img class="" src="./assets/img/trevorproject.png" alt="The Trevor Project" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-trevor-project" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.translifeline.org/" target="_target"><img class="" src="./assets/img/translifeline.png" alt="Trans Lifeline" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-trans-lifeline" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://mermaidsuk.org.uk/" target="_target"><img class="" src="./assets/img/mermaids.png" alt="Mermaids" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-mermaids" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.minus18.org.au/" target="_target"><img class="" src="./assets/img/minus18.png" alt="Minus 18" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-minus-18" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.blackgirlscode.com/" target="_target"><img class="" src="./assets/img/blackgirlscode.png" alt="Black Girls Code" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-2022-black-girls-code" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://www.getwigi.com/" target="_target"><img class="" src="./assets/img/wigi.png" alt="Womein In Games International" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-wigi" target="_target">DONATE</a></div></div> 
+                <div class="charity col"><div><a href="https://girlswhocode.com/" target="_target"><img class="" src="./assets/img/girlswhocode.png" alt="Girls Who Code" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2022/season-of-pride-girls-who-code" target="_target">DONATE</a></div></div> 
               </div>
               <hr>
 
               <!-- Begin Signup Form -->
               <div id="signup">
                 <form action="https://sendy.midboss.com/subscribe" method="POST" accept-charset="utf-8">
-                <label for="EMAIL"><h2>Stay Up-to-Date On the Event!</h2></label>
+                <label for="EMAIL"><h3>Stay Up-to-Date On the Event!</h3></label>
                 <input type="email" placeholder="Email address" name="email" class="email" id="email" required/>
                 <div style="display:none;">
                 <label for="hp">HP</label><br/>
@@ -77,11 +77,11 @@
               <div class="brands">
               <h1>Supporting Organizations</h1>
               <a href="https://store.steampowered.com/" target="_target"><img class="" src="./assets/img/steam.png" alt="Steam" /></a> 
-              <a href="#" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> 
+              <a href="https://annapurnainteractive.com/" target="_target"><img class="" src="./assets/img/annapurna.png" alt="Anna Purna" /></a> 
               <a href="https://igda.org/" target="_target"><img class="" src="./assets/img/igda.png" alt="IGDA" /></a> 
               <a href="https://www.cartoonnetwork.com/" target="_target"><img class="" src="./assets/img/CN_GAMES.png" alt="Cartoon Network Games" /></a> <br> 
               
-              <a href="#" target="_target"><img class="" src="./assets/img/sims4.png" alt="The Sims 4" /></a> 
+              <a href="https://www.humblebundle.com/" target="_target"><img class="" src="./assets/img/humble.png" alt="Humble Bundle" /></a> 
               <a href="https://www.greenmangaming.com/" target="_target"><img class="" src="./assets/img/greenmangaming.png" alt="Green Man Gaming" /></a> 
               <a href="https://www.devolverdigital.com/" target="_target"><img class="" src="./assets/img/Devolver.png" alt="Devolver Digital" /></a>  
               <a href="https://grumpyfacestudios.com/" target="_target"><img class="" src="./assets/img/Grumpyface.png" alt="Grumpyface" /></a>

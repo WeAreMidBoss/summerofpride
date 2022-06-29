@@ -379,6 +379,16 @@
       "social": "https://www.twitter.com/JirPlays",
       "bio": "You know that crazy aunt, well thats me. Except... I don't drink, I go by they/them, am Gay and happily married.",
       "img": "JirPlays.jpg"
+    },
+    {
+      "id": 40,
+      "name": "TheKikiNasty",
+      "pronouns": "They / Them",
+      "twitch": "twitch.tv/thekikinasty",
+      "personal": "https://youtube.com/c/KikiNasty",
+      "social": "https://www.twitter.com/thekikinasty",
+      "bio": "TheKikiNasty is a non-binary streamer who enjoys speedrunning, indie, and horror games! They love sharing joy and eccentricity through gaming and fitness vlogs on YouTube as well as a few monthly community streams featuring Minecraft, DBD, + more!",
+      "img": "TheKikiNasty.jpg"
     }
   ]
 }

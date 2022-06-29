@@ -21,10 +21,10 @@
       <section class="modal-streamers-body" v-scroll-lock="!isClosing">
         <slot name="body">
             <div class="row">
-              <div class="modal-img-container col-md-6 col-sm-12">
+              <div class="modal-img-container col-md-12 col-sm-12">
                 <img class="modal-img" :src="`${publicPath}streamers/${profile.img}`" />
               </div>
-              <div class="modal-description col-md-6 col-sm-12">
+              <div class="modal-description col-md-12 col-sm-12">
                 <div class="modal-streamer-title">
                   <span class="modal-name">{{ profile.name }}</span>
                   <span class="modal-pronouns">{{ profile.pronouns }}</span>
@@ -80,14 +80,18 @@
     align-items: center;
   }
   .modal-streamers {
-    max-width: 700px;
-    padding: 0 10px 20px;
-    background: #F37664;
-    box-shadow: 2px 2px 20px 1px;
+    max-width: 600px;
+    padding: 0 10px 10px;
+    background: #1F517F; /* Old browsers */
+    background: -moz-linear-gradient(top, #5AB0C3 0%, #1F517F 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5AB0C3 0%,#1F517F 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5AB0C3 0%,#1F517F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 2px 2px 30px 5px #1F517F;
     /*overflow-x: auto;*/
     display: flex;
     flex-direction: column;
   }
+
   .modal-streamers-header,
   .modal-streamers-footer {
     /*padding: 5px;*/
@@ -145,12 +149,12 @@
   .modal-img {
     max-width:90%;
     height:auto;
-    padding:25px 20px;
+    border-color: #B4E7EF !important;
+    border-width: 1px !important;
+    border-style: solid !important;
     margin-bottom: 10px;
     background: #f2f8fc;
-     -webkit-box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
-    -moz-box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
-    box-shadow: 8px 6px 14px -7px rgba(0,0,0,0.98);
+
   }
   .modal-description {
     color:#fff;
@@ -158,23 +162,29 @@
     text-align: left;
   }
   .modal-name {
+    margin-top: 5px;
     display: block;
-    font-family: 'Knewave', cursive;
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 34px;
     text-align: center;
   }
   .modal-pronouns {
+    color:#B4E7EF;
     display: block;
-    font-size: 18px;
+    font-style: italic;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .modal-description-text {
     display: block;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
-    padding-right:40px;
+    margin-top: 10px;
+    padding-left: 70px;
+    padding-right:70px;
   }
 
   .modal-description-social {
@@ -199,7 +209,6 @@
     }
     .modal-img {
       max-height: 250px;
-      padding:20px 20px;
     }
     .modal-description-text {
       padding: 0 10px;
@@ -227,7 +236,6 @@
     }
     .modal-img {
       max-height: 250px;
-      padding:15px 15px;
     }
     .modal-description-text {
       margin-top: 15px;
