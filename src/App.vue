@@ -4,7 +4,7 @@
     <main role="main">
     <!-- DESKTOP JUMBOTRON -->
       <div class="jumbotron" data-aos="zoom-in">
-        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2021_Banner.jpg" alt="Season of Pride" />
+        <img class="d-none d-sm-block" src="./assets/img/SeasonOfPride2022_Banner.jpg" alt="Season of Pride" />
         <img class="d-sm-none" src="./assets/img/SeasonOfPride2021_Mobile.jpg" alt="Season of Pride" />
       </div>
 
@@ -15,7 +15,7 @@
               <h1 class="text-center" data-aos="slide-up">Get Ready for the Season of Pride!</h1>
               <p class="align-middle" data-aos="slide-up">The Season of Pride is a month-long event of LGBTQIA+ (queer) streamers playing queer games, throughout the month of July. 
                     These fun “gaymers” will be playing some of the best and most unique games that showcase positive representation of queer characters and stories. 
-                    Tune in and discover some really great games, and follow some really fun streamer personalities.</p>
+                    Tune in and discover some really great games, and follow some really fun streamer personalities.  Scheduled streams are listed below in the calendar, but our stream team will be fundraising throughout the month, every day. </p>
               <p data-aos="slide-up">This year, we’re also supporting eight wonderful charities—<a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a>, 
               <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a>, <a href="https://gaymerx.org/" target="_blank">GaymerX</a>, 
               <a href="https://mermaidsuk.org.uk/" target="_target">Mermaids</a>, <a href="https://www.minus18.org.au/" target="_target">Minus18</a>, 
@@ -34,7 +34,24 @@
                 <div class="charity col"><div><a href="https://www.getwigi.com/" target="_target"><img class="" src="./assets/img/wigi.png" alt="Womein In Games International" /></a></div> <div class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/women-in-games-international-2021" target="_target">DONATE</a></div></div> 
                 <div class="charity col"><div><a href="https://girlswhocode.com/" target="_target"><img class="" src="./assets/img/girlswhocode.png" alt="Girls Who Code" /></a></div> <div align="center" class="donate"><a href="https://donate.tiltify.com/+season-of-pride-2021/girls-who-code-2021" target="_target">DONATE</a></div></div> 
               </div>
-              
+              <hr>
+
+              <!-- Begin Signup Form -->
+              <div id="signup">
+                <form action="https://sendy.midboss.com/subscribe" method="POST" accept-charset="utf-8">
+                <label for="EMAIL"><h2>Stay Up-to-Date On the Event!</h2></label>
+                <input type="email" placeholder="Email address" name="email" class="email" id="email" required/>
+                <div style="display:none;">
+                <label for="hp">HP</label><br/>
+                <input type="text" name="hp" id="hp"/>
+                </div>
+                <input type="hidden" name="list" value="E9sjIVmjwtjVvvEpuPkZrg"/>
+                <input type="hidden" name="subform" value="yes"/>
+                <input type="submit" name="submit" id="submit" value="Subscribe" class="button"/>
+                </form>
+              </div>
+              <!--End Signup Form-->
+
               <hr>
               <h2 class="text-center heading-streamers" data-aos="slide-up">STREAMERS</h2>
 
