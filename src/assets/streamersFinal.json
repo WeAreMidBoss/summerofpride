@@ -1,744 +1,384 @@
-  {
-    "jsonStreamers": [
-      {
-        "id": 2,
-        "name": "AshtonRoses",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/ashtonroses",
-        "personal": "",
-        "social": "https://twitter.com/Ashton_Roses",
-        "bio": "I've been streaming for 3 years. I've been slightly MIA recently due to personal reasons, but I'm planning to come back soon. I play a variety of games but normally go through phases of playing one game as of late. ",
-        "img": "AshtonRoses.jpg"
-      },
-      {
-        "id": 3,
-        "name": "RyokoSpacePirate",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/ryokospacepirate",
-        "personal": "",
-        "social": "",
-        "bio": "I'm Ryoko! I'm Pansexual and Gender Fluid and I love video games! ",
-        "img": "RyokoSpacePirate.jpg"
-      },
-      {
-        "id": 4,
-        "name": "TinyTrees",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/tinytrees",
-        "personal": "",
-        "social": "https://twitter.com/TinyTreesTV",
-        "bio": "TinyTrees is a queer content creator focusing on story-based games, crafting & full-time regular charity work on her streams. She enjoys challenge game narratives, applying them to real work experiences & using games to connect with her community",
-        "img": "TinyTrees.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Stephneee_Plz",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/stephneee_plz",
-        "personal": "",
-        "social": "https://www.twitter.com/stephneee_plz",
-        "bio": "Just a lil dork havin fun and play vidja games, with a special emphasis on kindness, care, and respect. Two degrees & work doing research. Happy pansexual bean",
-        "img": "Stephneee_Plz.jpg"
-      },
-      {
-        "id": 6,
-        "name": "Player_Michaelous",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/player_michaelous",
-        "personal": "",
-        "social": "https://twitter.com/Play_Michaelous?s=09",
-        "bio": "Gaymer lad with a big love for gaming. Been a massive fan growing up with a major fondness for the Resident Evil and Kingdom Hearts series in particular. ",
-        "img": "Player_Michaelous.jpg"
-      },
-      {
-        "id": 7,
-        "name": "Faevyn",
-        "pronouns": "he/they",
-        "twitch": "https://www.twitch.tv/faevyn",
-        "personal": "https://www.faevyn.com/",
-        "social": "https://www.twitter.com/faevyn",
-        "bio": "Faevyn (he/they) enjoys bringing the love and comfort of gaming to those around them. Upon joining Twitch, Faevyn has become an affiliated streamer, and strives to use gaming to connect with and do good for as many people as possible.",
-        "img": "Faevyn.jpg"
-      },
-      {
-        "id": 8,
-        "name": "AcornTreeInc",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/acorntreeinc",
-        "personal": "",
-        "social": "https://twitter.com/AcornTwee",
-        "bio": "They/Them pronouns. I focus on just being myself, and letting people be themselves too. I believe that everyone is continually growing and learning, and we can all do that together! ",
-        "img": "AcornTreeInc.jpg"
-      },
-      {
-        "id": 9,
-        "name": "Veritas Unae",
-        "pronouns": "Any pronouns (he/they preferred)",
-        "twitch": "https://www.twitch.tv/veritasunae",
-        "personal": "",
-        "social": "https://www.twitter.com/veritasunae",
-        "bio": "I'm a fan of all things puzzles, platforming and picturesque! I hope you can stop by and join my passion for rich storytelling and beautiful environments. As a pansexual agender streamer myself, I hope you find my community warm and inviting.",
-        "img": "VeritasUnae.jpg"
-      },
-      {
-        "id": 10,
-        "name": "Cashmonetdrag",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/cashmonetdrag",
-        "personal": "https://instagram.com/cashmonetdrag",
-        "social": "https://www.twitter.com/imcashmonet",
-        "bio": "Cash Monet is a performer, maker, and dry humor aficionado. Her style is kitschy, glitchy, and a little sticky inspiring from asian culture, video games, and nerd culture. She's cold, hard, Cash Monet",
-        "img": "Cashmonetdrag.jpg"
-      },
-      {
-        "id": 11,
-        "name": "SGAK",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/sgak",
-        "personal": "https://linktr.ee/stellankarlsson",
-        "social": " https://www.twitter.com/SGAK",
-        "bio": "A colorful genderqueer variety twitch gaymer with a passion for cuteness ♡ ",
-        "img": "SGAK.jpg"
-      },
-      {
-        "id": 12,
-        "name": "sealburn",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/sealburn",
-        "personal": "",
-        "social": "https://www.twitter.com/sealburn",
-        "bio": "Hello! I’m sealburn, a gay variety streamer on Twitch who mainly plays horror-survival, story-driven, and co-op games. I love engaging and providing immersive gameplay while getting easily scared and screaming a little too loud. ",
-        "img": "sealburn.jpg"
-      },
-      {
-        "id": 13,
-        "name": "ReadyPlayerGabe",
-        "pronouns": "He / Him",
-        "twitch": " https://www.twitch.tv/ReadyPlayerGabe",
-        "personal": "",
-        "social": "https://www.instagram.com/ReadyPlayerGabe",
-        "bio": "Hey I’m ReadyPlayerGabe \n\n“RPG” for short and guess what?! I'm Back for Another Awesome Year of Pride, With some Chill Gameplay and Conversation's. It's Time to Take this Season of Pride by Storm and fly our Color’s High. Without regrets.  \n ",
-        "img": "ReadyPlayerGabe.jpg"
-      },
-      {
-        "id": 14,
-        "name": "urbanbohemian",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/urbanbohemian",
-        "personal": "https://urbanbohemian.com",
-        "social": "https://twitter.com/urbanbohemian",
-        "bio": "Brian is a Black queer variety streamer, writer, and foodie with a “PhD in Brunch”. He plays visual novels, action RPGs, cozy games and the occasional looter shooter. He loves to have a good time on stream and bring love & disco to every viewer.",
-        "img": "urbanbohemian.jpg"
-      },
-      {
-        "id": 15,
-        "name": "mxhufflebuff",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/mxhufflebuff",
-        "personal": "",
-        "social": "https://www.twitter.com/mxhufflebuff",
-        "bio": "HuffleBuff is a quirky & kind genderqueer variety streamer. They strive to create a safe space for all people to feel valid & accepted. Through joy, laughter & vulnerable conversation, they are making the world a better place, one stream at a time.",
-        "img": "mxhufflebuff.jpg"
-      },
-      {
-        "id": 16,
-        "name": "Hashtag Trashly",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/dragtrashly",
-        "personal": "https://dragtrashly.com/",
-        "social": "https://twitter.com/dragtrashly",
-        "bio": "Drag queen gaymer, performer, comedian, twitch partner, dumpster model. Streams makeup, cosplay, and a variety of games.",
-        "img": "HashtagTrashly.jpg"
-      },
-      {
-        "id": 17,
-        "name": "haaeli",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/haaeli",
-        "personal": "",
-        "social": "https://www.instagram.com/haaeli_heals",
-        "bio": "I'm primarily a WoW Classic streamer, but I also 🖤 streaming scary, strange, indie and co-op games! Blue is my natural hair color. I'll use any excuse to do cosplay. I like shiny rocks and telling you why I think you’re cool.",
-        "img": "haaeli.jpg"
-      },
-      {
-        "id": 18,
-        "name": "LukeBoogie",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/lukeboogie",
-        "personal": "",
-        "social": "https://twitter.com/LukeBoogieGames",
-        "bio": "Giant Hairy dude, Videogame lover, nerd, geek, nonbinary spooky scary skeleton, DnD enthusiast and Rampant Demisexual who wants to create a safe space and make people laugh",
-        "img": "LukeBoogie.jpg"
-      },
-      {
-        "id": 19,
-        "name": "Minntycream",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://twitch.tv/minntycream",
-        "personal": "",
-        "social": "https://twitter.com/minntycream",
-        "bio": "Hey! My name is Minnty or Aisha and I'm a little bisexual and non-binary blob from Spain. I love animals, plants and very cute things. I play a very big variety of games that lets my creativity and my positivity flow! ",
-        "img": "Minntycream.jpg"
-      },
-      {
-        "id": 20,
-        "name": "MerylStrip",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/merylstrip",
-        "personal": "",
-        "social": "https://twitter.com/BrettDBurger",
-        "bio": "Hello! My name is MerylStrip, I'm from the Midwest coast and I'm a queer variety streamer on Twitch. I love playing just about anything from story-driven to horror to FPS. I love to laugh and say \"Ope!\" a lot when surprised.",
-        "img": "MerylStrip.jpg"
-      },
-      {
-        "id": 21,
-        "name": "Dubu",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/dubusaeyo",
-        "personal": "",
-        "social": "https://twitter.com/dubusaeyo",
-        "bio": "Dubu is an Australian streamer who identifies as Asexual, Aromantic and Agender and loves story, LGBTQIA+, VR and RPG games. They're always super chill (and scuffed) and every stream is a cosy stream, even if the gameplay is intense!",
-        "img": "Dubu.jpg"
-      },
-      {
-        "id": 22,
-        "name": "Miabyte",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/miabyte",
-        "personal": "https://www.miabyte.co.uk",
-        "social": "https://twitter.com/themiabyte",
-        "bio": "I'm Miabyte. Twitch Partner & variety streamer, Gayming Mag Podcast host and advocate for trans representation in the gaming industry. I focus on creating inclusive spaces, taking viewers on an adventure and making everyone's day a little bit better.",
-        "img": "Miabyte.jpg"
-      },
-      {
-        "id": 23,
-        "name": "ArchyVision",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/archyvision",
-        "personal": "",
-        "social": "https://twitter.com/callmearchy",
-        "bio": "A career hobbyist and designer, Archy is an Atlanta-based variety streamer with a short attention span. He’s a UX / UI Designer by day, and typically playing a horror or story-based game in the evenings.",
-        "img": "ArchyVision.jpg"
-      },
-      {
-        "id": 24,
-        "name": "Ace",
-        "pronouns": "She / Her",
-        "twitch": "http://twitch.tv/a_typicalqueer",
-        "personal": "",
-        "social": "http://twitter.com/a_typicalqueer",
-        "bio": "Ace is a Black queer content creator who aims to stand in the gap for individuals who look like her. Ace mainly plays Devour, Phasmophobia and Rogue Company.",
-        "img": "Ace.jpg"
-      },
-      {
-        "id": 25,
-        "name": "Rinn",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/rinnsohma",
-        "personal": "",
-        "social": "https://twitter.com/RinnSohma",
-        "bio": "Hi, I'm Rinn, a pansexual part-time streamer with a love for story-driven/exploration focused games. Outside of streaming I'm an archaeology graduate, work at a university, and consume copious amounts of science fiction & fantasy.",
-        "img": "Rinn.jpg"
-      },
-      {
-        "id": 26,
-        "name": "Ken2pt0",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/ken2pt0",
-        "personal": "",
-        "social": "https://twitter.com/ken2pt0 ",
-        "bio": "Ken2pt0 focuses on Final Fantasy, Overwatch, & Pokémon. Viewers always get a healthy dose of KEN, stands for KINDNESS (uplifting fun!), EVOLUTION (new approaches, games,), & NANCY-BOI (LGBTQIA+ content). Ken is like an Eevee, limitless potential ",
-        "img": "Ken2pt0.jpg"
-      },
-      {
-        "id": 27,
-        "name": "8BitDylan",
-        "pronouns": "He / Him",
-        "twitch": "http://www.twitch.tv/8bitdylan",
-        "personal": "",
-        "social": "http://twitter.com/8bitdylan",
-        "bio": "My name is 8BitDylan and I'm a certified MESS! Doesn't matter what we are doing over here as long as you are entertained is what we care about. Twitch Partner of 6 years and climbing.",
-        "img": "8BitDylan.jpg"
-      },
-      {
-        "id": 28,
-        "name": "Delphron",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/delphron",
-        "personal": "",
-        "social": "https://twitter.com/Delphron",
-        "bio": "Originally from Ireland, Delphron, a gay, ace creator now living in America with his husband, creates content through a variety of games as a vtuber. \n",
-        "img": "Delphron.jpg"
-      },
-      {
-        "id": 29,
-        "name": "stefanduck",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/stefanduck",
-        "personal": "",
-        "social": "https://twitter.com/stefanduck_tv",
-        "bio": "Hi! My name is Jackson, but y'all can call me stefanduck! I'm a mechanical engineer during the day, but at night I'm an LGBTQIA+ variety streamer on Twitch, where I like to play all sorts of games from spooky to cozy! ",
-        "img": "stefanduck.jpg"
-      },
-      {
-        "id": 30,
-        "name": "Andromenary",
-        "pronouns": "They / Them, Kenneth (he/him), Five (she/her), Jae (they/them)",
-        "twitch": "https://www.twitch.tv/andromenary",
-        "personal": "",
-        "social": "https://twitter.com/andromenary",
-        "bio": "We are Kenneth, Five and Jae, and we make up Andromenary, a queer streamer gang tired of searching for our place, we decided to make our own! Our streams consist of gaming, funky narration and sudden bursts into song. We hope to see you all in orbit!",
-        "img": "Andromenary.jpg"
-      },
-      {
-        "id": 31,
-        "name": "SlicedRaven",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/slicedraven",
-        "personal": "",
-        "social": "https://www.twitter.com/slicedraven",
-        "bio": "They call me Raven! I am a nuerodiverse lesbian streamer and I live for good vibes, friends and coffee. The nest is a cozy corner of twitch to chat about life, support eachother and be as nerdy as you want to be. Tune in for Horror, Stories, and Art!",
-        "img": "SlicedRaven.jpg"
-      },
-      {
-        "id": 32,
-        "name": "bootsyyyy",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/bootsyyyy",
-        "personal": "https://www.lovejess.co",
-        "social": "https://www.twitter.com/bootsyyyy3",
-        "bio": "bootsyyyy is a pansexual creative whirlwind with a soft spot for all things cozy and cute. She is an illustrator, artist, and avid video game lover; Bad at games, but plays them anyway. She survives on immaculate vibes and Diet Dr. Pepper.",
-        "img": "bootsyyyy.jpg"
-      },
-      {
-        "id": 33,
-        "name": "FoxQueen",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/foxqueen",
-        "personal": "",
-        "social": "",
-        "bio": "Hiya! My names Alice aka FoxQueen! I'm a super gay (pansexual) variety streamer who focuses on JRPGs and anime-esc games! My current obsession's are FFXIV, Genshin Impact, and Hades! ",
-        "img": "FoxQueen.jpg"
-      },
-      {
-        "id": 34,
-        "name": "SincerelyUnique",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/sincerelyunique",
-        "personal": "",
-        "social": "https://twitter.com/twouniquefouru",
-        "bio": "Unique is a 22-year old streamer from Texas. When he's not working, he's streaming and loves to talk about games with everyone. He believes in the community-building capability of games and enjoys including everyone in on the fun.",
-        "img": "SincerelyUnique.jpg"
-      },
-      {
-        "id": 35,
-        "name": "Joy_Stique",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/joy_stique",
-        "personal": "",
-        "social": "https://www.twitter.com/joy_stique",
-        "bio": "Joy Stique is Twitch's resident Drag Monarch because they are both a king AND a queen! They play a wide variety of games, bringing their chaotic thembo energy to every game they play!",
-        "img": "Joy_Stique.jpg"
-      },
-      {
-        "id": 36,
-        "name": "meleemira",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://twitch.tv/meleemira",
-        "personal": "",
-        "social": "https://www.twitter.com/meleemira",
-        "bio": "Meleemira (she/they) is a black, queer variety streamer with a focus on story-based, indie, and simulation games. Their community values chat interaction, inclusivity, charity, and more all while promoting a safe space to exist for everyone.",
-        "img": "meleemira.jpg"
-      },
-      {
-        "id": 37,
-        "name": "BeccaBeckery",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/BeccaBeckery",
-        "personal": "",
-        "social": "https://www.twitter.com/BeccaBeckery",
-        "bio": "I am bi/pan, demisexual, Irish content creator, whose content is focused around charity events, and raising awareness for disabilities and the LGBTQIA+ community.\nI mainly play games like Stardew, Marbles, and more recently Biomutant and Apex :)",
-        "img": "BeccaBeckery.jpg"
-      },
-      {
-        "id": 38,
-        "name": "JeffBrutlag",
-        "pronouns": "They / Them, He / Him",
-        "twitch": "https://twitch.tv/jeffbrutlag",
-        "personal": "https://jeffbrutlag.com",
-        "social": "https://twitter.com/jeffbrutlag",
-        "bio": "JeffBrutlag is a variety streamer and writer, focusing on games with stories, horror games, Nintendo games, some simulation games, and community interaction. They also often talk about how to make your spaces safer, as well as various queer topics.",
-        "img": "JeffBrutlag.jpg"
-      },
-      {
-        "id": 39,
-        "name": "RedSonja",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/redsonja",
-        "personal": "",
-        "social": "https://www.twitter.com/redsonja575",
-        "bio": "Hi! I'm Redsonja, former speedrunner and still ranked top ten in the world in the cuphead leaderboards. I stream mostly WoW content nowadays. I am hella gay and probably better at games than you. ",
-        "img": "RedSonja.jpg"
-      },
-      {
-        "id": 40,
-        "name": "Feynris7",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/feynris7",
-        "personal": "https://www.feynris.com",
-        "social": "https://www.twitter.com/feynris7",
-        "bio": "Hey I'm Feyn or Dan (He/Him) On any given day I could be putting out fires in the kitchen while *attempting* to bake, screaming at jump scares, enjoying a mukbang, making a snow man, or even trying to power through a game. But its always a good time.",
-        "img": "Feynris7.jpg"
-      },
-      {
-        "id": 41,
-        "name": "ShadowTtar",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/shadowttar",
-        "personal": "",
-        "social": "https://www.instagram.com/shadowttar/",
-        "bio": "I'm a Scottish variety streamer who is a very passionate cosplayer. I immigrated to the US in 2019 after spending 5 summers working at a camp teaching Archery & outdoor activities like Climbing/Hiking. I stream 5 days a week & love meeting new people",
-        "img": "ShadowTtar.jpg"
-      },
-      {
-        "id": 42,
-        "name": "LiquidRina",
-        "pronouns": "They / Them, She / Her, He / Him, Ze / Zir, Xe / Xir",
-        "twitch": "https://www.twitch.tv/liquidrina",
-        "personal": "https://liquidrina.carrd.co/",
-        "social": "https://twitter.com/LiquidRina",
-        "bio": "Rina (ze/they/he/she) is a qtpoc streamer who wants to try a little bit of everything. Ze is also a VA who loves to stream indie games, play ttrpgs, and create cursed little objects to share with the world.",
-        "img": "LiquidRina.jpg"
-      },
-      {
-        "id": 43,
-        "name": "AllyRaeven",
-        "pronouns": "She / Her, any",
-        "twitch": "https://www.twitch.tv/allyraeven",
-        "personal": "",
-        "social": "https://www.twitter.com/allyraeven",
-        "bio": "AllyRaeven (she/her/any) is a queer, bisexual, and chronically ill variety streamer on Twitch. Her Raeven's Nest community is inclusive, cozy, and wholesome, with just the right amount of chaos.",
-        "img": "AllyRaeven.jpg"
-      },
-      {
-        "id": 44,
-        "name": "DEERE",
-        "pronouns": "She / Her",
-        "twitch": "https://twitch.tv/deere",
-        "personal": "",
-        "social": "https://twitter.com/deardeere",
-        "bio": "My name is DEERE, let's play what you fear! Named Gayming Mag's LGBTQ Streamer of the Year & Founder of Team Stream Queens, her mission is to carve out a space where drag is fun and accessible through Twitch!",
-        "img": "DEERE.jpg"
-      },
-      {
-        "id": 45,
-        "name": "LezBaeAnna",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/lezbaeanna",
-        "personal": "",
-        "social": "https://www.instagram.com/lezbaeanna/",
-        "bio": "LEZ BE HONEST, I am LezBaeAnna! A Non-Binary Latinx Drag Artist who plays a variety of games such as Bioshock, DBD, and Pokemon. But I also play some scary games too! Proud member of Team Stream Queens. Here to create a safe space to vibe!",
-        "img": "LezBaeAnna.jpg"
-      },
-      {
-        "id": 46,
-        "name": "Chelora",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/chelora",
-        "personal": "",
-        "social": "https://twitter.com/Chel0ra",
-        "bio": "Chelora is a Trans/Nonbinary Canadian drag artist who loves color, bugs, spiders and puns!  She streams a wide variety of new and old games and works with Team Stream Queens on their social committee!",
-        "img": "Chelora.jpg"
-      },
-      {
-        "id": 47,
-        "name": "Chara Couture",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://twitch.tv/characouture",
-        "personal": "",
-        "social": "https://www.twitter.com/chara_couture",
-        "bio": "A genderfluid fashion illustrator, drag queen, variety streamer, and all-around nerd who combines art and makeup to celebrate iconic characters and character designs from the gaming pantheon.",
-        "img": "CharaCouture.jpg"
-      },
-      {
-        "id": 48,
-        "name": "MARISOL",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/MARISOLLORDS",
-        "personal": "https://www.marisollords.com",
-        "social": "https://www.instagram.com/marisollords",
-        "bio": "A Latinx, non-binary, drag queen based in Florida. Performing live and streaming makeup and video games on twitch are their passion. ",
-        "img": "MARISOL.jpg"
-      },
-      {
-        "id": 49,
-        "name": "AnnieKrevice",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/anniekrevice",
-        "personal": "",
-        "social": "https://twitter.com/AnnieKrevice",
-        "bio": "Annie Krevice is a trans drag queen and streamer from Melbourne, Australia. She's a little bit daggy, a little bit lewd, and loves to play online with friends and live her e-girl fantasy.",
-        "img": "AnnieKrevice.jpg"
-      },
-      {
-        "id": 50,
-        "name": "Maesoa",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/maesoa",
-        "personal": "",
-        "social": "https://twitter.com/maesoa",
-        "bio": "I'm Maesoa or Mae for short and I'm a very queer variety streamer whom loves puns, bad jokes and games. I aim to create safe spaces for all people while also trying to entertain. I aim to make people laugh and/or smile. ",
-        "img": "Maesoa.jpg"
-      },
-      {
-        "id": 51,
-        "name": "NemesisNetwork ",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/nemesisnetwork",
-        "personal": "",
-        "social": "https://www.twitter.com/nemesislacroix",
-        "bio": "My name is Nemesis and I’m Twitch’s exclusive nonbinary BRATZ doll.  I run the network on Twitch every Tuesday, Thursday, Saturday, & Sunday!  I’m a retro variety streamer that predominantly plays Wii, Gamecube, and N64 games! ",
-        "img": "NemesisNetwork.jpg"
-      },
-      {
-        "id": 52,
-        "name": "Amanda Xpress",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/amandaxpress",
-        "personal": "",
-        "social": "https://www.instagram.com/amandaxpress",
-        "bio": "Amanda Xpress is the laid-back (wink wink) So-Cal queen that enjoys good grub and a good balad. She's everyone's favorite Asian takeout.",
-        "img": "AmandaXpress.jpg"
-      },
-      {
-        "id": 53,
-        "name": "Dona Tarte",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/donatarte",
-        "personal": "https://www.donatarte.com/",
-        "social": "https://twitter.com/dona_tarte",
-        "bio": "Dona Tarte is a variety streamer, Irish icon and Queen of Baking on Twitch! Expect Drag, Horror, Baking and a tonne of charity events all held up by a fabulous community.",
-        "img": "DonaTarte.jpg"
-      },
-      {
-        "id": 54,
-        "name": "Dagonmar",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/dagonmar",
-        "personal": "https://dagonmar.tv",
-        "social": "https://www.twitter.com/dagonmartv",
-        "bio": "Dagonmar puts on funny and lewd content and has built amazing, welcoming, and close-knit community. Come see why he's been featured in multiple gaming news articles!",
-        "img": "Dagonmar.jpg"
-      },
-      {
-        "id": 55,
-        "name": "QueenNickiMirage",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/queennickimirage",
-        "personal": "",
-        "social": "https://twitter.com/NickiMirageLIVE",
-        "bio": "Nicki Mirage is a Florida-based drag queen, cosplayer, and Twitch Partner with a PhD in Bio Engineering! They've been doing drag 8 years and variety streaming 2 years. Catch them doing makeup, gaming, and performing on Twitch!",
-        "img": "QueenNickiMirage.jpg"
-      },
-      {
-        "id": 56,
-        "name": "Apple Aday",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/appleadayxo",
-        "personal": "",
-        "social": "https://www.tiktok.com/@appleadayxo?lang=en",
-        "bio": "Apple Aday is funny, stupid and gorgeous. She loves to eat and terribly plays video games. Catch her with a brand new talk show guest and drag show every month! ",
-        "img": "AppleAday.jpg"
-      },
-      {
-        "id": 57,
-        "name": "Polople",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/Polople",
-        "personal": "",
-        "social": "https://twitter.com/jamespolople",
-        "bio": "Polople or James is a 23 year old queer stream from South Australia. They play and stream a range of games, but mainly focusing on RPG/Story Driven titles. ",
-        "img": "Polople.jpg"
-      },
-      {
-        "id": 58,
-        "name": "Snow Heartlock",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/snowheartlock",
-        "personal": "",
-        "social": "https://twitter.com/snoh_mlem",
-        "bio": "Hey there! I'm Snow, a non-binary, coffee loving streamer who mainly plays JRPGs! Lately I've been really into the OG NieR, and I have plans in playing Automata and Replicant! I like to think that my stream is a really chill and cozy enviroment~!",
-        "img": "SnowHeartlock.jpg"
-      },
-      {
-        "id": 59,
-        "name": "NincompoopEXE",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/nincompoopexe",
-        "personal": "",
-        "social": "https://twitter.com/NincompoopEXE",
-        "bio": "My name is Simon, AKA NincompoopEXE! I'm a gay Swede who streams a variety of games over on Twitch. You'll usually find me playing RPGs, open world games & indie games, all while creating an open, safe & welcoming community for everyone who joins.",
-        "img": "NincompoopEXE.jpg"
-      },
-      {
-        "id": 60,
-        "name": "ObbyTheBird",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/obbythebird",
-        "personal": "",
-        "social": "https://www.twitter.com/obbythebird",
-        "bio": "Hi, I'm Obby! Obby the Bird! I am a nonbinary birdbrain cruising my way through life with laughter and fart jokes. Oh! And cartoons, I adore cartoons.",
-        "img": "ObbyTheBird.jpg"
-      },
-      {
-        "id": 61,
-        "name": "Aphasia Speaks",
-        "pronouns": "They / Them, She / Her, He / Him",
-        "twitch": " https://www.twitch.tv/Aphasiaspeaks",
-        "personal": "",
-        "social": "https://twitter.com/AphasiaSpeaks",
-        "bio": "I am Aphasia Speaks! A genderqueer black digital content creator, and drag artist. I  am loud and just a little shady. But i also have a heart of gold that loves to meet new people and share the love!",
-        "img": "AphasiaSpeaks.jpg"
-      },
-      {
-        "id": 62,
-        "name": "Glitter",
-        "pronouns": "He / Him",
-        "twitch": "https://twitch.tv/fistfulofglittergaming",
-        "personal": "",
-        "social": "https://twitter.com/FoGlitterGaming",
-        "bio": "Hi I'm Glitter! I'm a queer Latinx variety streamer who likes to laugh way too loud and can't read in-game maps like...at all.",
-        "img": "Glitter.jpg"
-      },
-      {
-        "id": 63,
-        "name": "chasecubed",
-        "pronouns": "They / Them, She / Her, He / Him",
-        "twitch": "https://www.twitch.tv/chasecubed",
-        "personal": "https://chasecubed.carrd.co/",
-        "social": "https://chasecubed.carrd.co/",
-        "bio": "Chase here! I'm a disabled gay streamer, artist, writer, gamer, game dev, and cosplayer. I'm developing games that I, and others within the LGBTQIA+ and disability community, can identify with--representation matters. ",
-        "img": "chasecubed.jpg"
-      },
-      {
-        "id": 64,
-        "name": "the_juliancito",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/the_juliancito",
-        "personal": "",
-        "social": "https://www.twitter.com/the_juliancito",
-        "bio": "Julián, aka the_juliancito, is a queer, trans, Puerto Rican, Jewish, content creator who fosters a passionate community that thrives on activism for the LGBTQIA+ community and more.",
-        "img": "the_juliancito.jpg"
-      },
-      {
-        "id": 65,
-        "name": "Eve Elle Queen",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/eveellequeen",
-        "personal": "https://eveellequeen.com",
-        "social": "https://www.twitter.com/eveellequeen",
-        "bio": "Eve Elle Queen is the prettiest alien outer space being that you've ever seen bring you great drag and questionable gameplay to you every monday, wednesday, friday and sunday starting at 6:30PM EST.",
-        "img": "EveElleQueen.jpg"
-      },
-      {
-        "id": 66,
-        "name": "TwilightKing94",
-        "pronouns": "She / Her, He / Him",
-        "twitch": "https://www.twitch.tv/twilightking94",
-        "personal": "",
-        "social": "https://twitter.com/TwilightKing94",
-        "bio": "I'm your lovable bearded drag queen on Twitch but you can just call me Twi.",
-        "img": "TwilightKing94.jpg"
-      },
-      {
-        "id": 67,
-        "name": "TheKikiNasty",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/thekikinasty",
-        "personal": "",
-        "social": "https://twitter.com/thekikinasty",
-        "bio": "Kiki Nasty is a non-binary drag artist, spreading neon light and queer joy across the galaxy. They're a variety streamer and usually play games such as Dead by Daylight, Resident Evil Series, Overwatch, Fortnite, and more!!!",
-        "img": "TheKikiNasty.jpg"
-      },
-      {
-        "id": 68,
-        "name": "MintyMinun",
-        "pronouns": "She / Her",
-        "twitch": "https://twitch.tv/MintyMinun",
-        "personal": "",
-        "social": "https://twitter.com/MintyMinun",
-        "bio": "I'm a variety streamer who does everything from talk shows, JRPGs, Italian lessons, to horror, and more! I'm very loud and I can get very chaotic, but most of my streams are just me chilling and talking about life.",
-        "img": "MintyMinun.jpg"
-      },
-      {
-        "id": 69,
-        "name": "Biqtch Puddin",
-        "pronouns": "They / Them, She / Her",
-        "twitch": "https://www.twitch.tv/Biqtchpuddin",
-        "personal": "",
-        "social": "https://twitter.com/BiqtchPuddin",
-        "bio": "Gaymer | Nerd | Actress 🎮 | @twitch Partner 👾 | Emmy Nominated ✨ | Winner of DRAGULA Season 2 🦇 | #DIGITALDRAGSHOW ØN TWITCH ",
-        "img": "BiqtchPuddin.jpg"
-      },
-      {
-        "id": 70,
-        "name": "Eevolicious",
-        "pronouns": "They / Them, She / Her, He / Him",
-        "twitch": "https://www.twitch.tv/eevolicious",
-        "personal": "",
-        "social": "https://twitter.com/Eevolicious",
-        "bio": "Magical transformations, chaotic vibes and a little bit of murder never hurt nobody! Your magical girl from Portugal, Eevolicious is always ready to have a good time! ",
-        "img": "Eevolicious.jpg"
-      },
-      {
-        "id": 71,
-        "name": "Hale",
-        "pronouns": "He / Him",
-        "twitch": "https://www.twitch.tv/hale",
-        "personal": "",
-        "social": "https://www.instagram.com/haleleon/",
-        "bio": "Hale is a Fog Whisperer for Dead by Daylight and known to be one of the best Nurse players out there. He also has a massive passion for board games, is a proud Vegan, and just recently got engaged!",
-        "img": "Hale.jpg"
-      },
-      {
-        "id": 72,
-        "name": "Carrie the One",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/carrietheone",
-        "personal": "https://www.carrietheone.com",
-        "social": "https://www.twitter.com/carrie_theone",
-        "bio": "Carrie the One is a non-binary, genderfluid drag queen based in beautiful Maine, USA! She is a proud member of Team Stream Queens and loves to play all things horror, community, and QUEER!",
-        "img": "CarrietheOne.jpg"
-      },
-      {
-        "id": 73,
-        "name": "Meg Turney",
-        "pronouns": "She / Her",
-        "twitch": "https://www.twitch.tv/megturney",
-        "personal": "",
-        "social": "https://twitter.com/megturney",
-        "bio": "Meg Turney is a Twitch partner, cosplayer, YouTuber, and model. She mostly streams Dead by Daylight on Twitch and is a member of the Fog Whisperers.",
-        "img": "MegTurney.jpg"
-      },
-      {
-        "id": 74,
-        "name": "Evidious515",
-        "pronouns": "They / Them, She / Her, He / Him",
-        "twitch": "https://www.twitch.tv/evidious515",
-        "personal": "",
-        "social": "https://twitter.com/Evidious515",
-        "bio": "Bearded, Busty, Beer Loving Babe of Twitch ",
-        "img": "Evidious515.jpg"
-      },
-      {
-        "id": 75,
-        "name": "Londyn Bradshaw",
-        "pronouns": "They / Them",
-        "twitch": "https://www.twitch.tv/londynbradshaw",
-        "personal": "",
-        "social": "https://www.instagram.com/londy.bradshaw/",
-        "bio": "Black content creator and taco loving drag queen.",
-        "img": "LondynBradshaw.jpg"
-      }
-    ]
-  }
+{
+  "jsonStreamers": [
+    {
+      "id": 2,
+      "name": "Ace",
+      "pronouns": "They / Them",
+      "twitch": "twitch.tv/a_typicalqueer",
+      "personal": "https://atypicalqueer.carrd.co/",
+      "social": "twitter.com/a_typicalqueer",
+      "bio": "Ace (they/them) is a Black queer activist and a content creator. Ace aims to be a voice for various marginalized folx while, sometimes, playing games on twitch! ",
+      "img": "Ace.jpg"
+    },
+    {
+      "id": 3,
+      "name": "ShadowTtar",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/shadowttar/",
+      "personal": "",
+      "social": "https://twitter.com/Shadowttar",
+      "bio": "Scottish pansexual content creator who takes the time to get to know everyone who visit his chat. Usually playing an FPS such as Destiny/Apex, trying out an RPG or trying to create a new masterpiece under the Art tag ranging from cosplay to an emote.",
+      "img": "ShadowTtar.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ryoko",
+      "pronouns": "They / Them",
+      "twitch": "twitch.tv/ryokospacepirate",
+      "personal": "",
+      "social": "none.com",
+      "bio": "Genderfluid variety streamer who is happy to be back for the third year in a row!\n",
+      "img": "Ryoko.jpg"
+    },
+    {
+      "id": 5,
+      "name": "MintyMiamice",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/mintymiamice",
+      "personal": "",
+      "social": "https://twitter.com/MintyMiamice",
+      "bio": "I am a loud, passionate, and easily impressed owner of 5 darling cats! Bad at video games and proud of it, so you better believe I play games for a long time and finish almost none of them.",
+      "img": "MintyMiamice.jpg"
+    },
+    {
+      "id": 6,
+      "name": "PassionsPlanet",
+      "pronouns": "She / Her",
+      "twitch": "https://www.twitch.tv/passionsplanet",
+      "personal": "http://www.passionsplanet.com",
+      "social": "https://twitter.com/PassionsPlanet",
+      "bio": "Passion's Planet is a British trans Twitch streamer + DJ. On Twitch she's a Y2K variety streamer. Catch her playing games from the 2000's, with a feminine touch, every Tuesday, Thursday & Saturday.\n\nIt's Passion's Planet and you're just livin' in it.",
+      "img": "PassionsPlanet.jpg"
+    },
+    {
+      "id": 7,
+      "name": "TheLeonaUwU",
+      "pronouns": "She/Them",
+      "twitch": "https://www.twitch.tv/theleonauwu",
+      "personal": "",
+      "social": "https://twitter.com/theleonauwu",
+      "bio": "Genderfluid U.S. Army Veteran Gaymer who strives at building a positive and inclusive space filled with love and acceptance. Only thing not tolerated within my community is intolerance. All are free to be who they are as long as they are about love",
+      "img": "TheLeonaUwU.jpg"
+    },
+    {
+      "id": 8,
+      "name": "VeritasUnae",
+      "pronouns": "he/they",
+      "twitch": "https://www.twitch.tv/veritasunae",
+      "personal": "",
+      "social": "https://twitter.com/VeritasUnae",
+      "bio": "It's seasons all year round at Veri's, with platformers, puzzle games and plenty of fun! As an agender pansexual, they hope to provide a comfy space for diverse communities to chat and have a good time.",
+      "img": "VeritasUnae.jpg"
+    },
+    {
+      "id": 9,
+      "name": "ReadyPlayerGabe",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/ReadyPlayerGabe",
+      "personal": "",
+      "social": "https://www.tiktok.com/@readyplayergabe",
+      "bio": "Hey I’m ReadyPlayerGabe\n\n Proud Member Of the LGBTQIA+ Love playing RPG’s Chill and Laid back.So Im Back For Another Year for The Summer Of Pride Lets Get This Party Started.",
+      "img": "ReadyPlayerGabe.jpg"
+    },
+    {
+      "id": 10,
+      "name": "SincerelyUnique",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/sincerelyunique",
+      "personal": "",
+      "social": "https://twitter.com/twouniquefouru",
+      "bio": "SincerelyUnique is a variety streamer who focuses on story-rich games like JRPG's, Visual Novels, or Adventure games. He believes in the community-building capability of games and enjoys including everyone in on the fun and discussion.",
+      "img": "SincerelyUnique.jpg"
+    },
+    {
+      "id": 11,
+      "name": "FistfulOfGlitterGaming",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/fistfulofglittergaming",
+      "personal": "",
+      "social": "https://twitter.com/FoGlitterGaming",
+      "bio": "Hi I'm Glitter and I am a Queer Latinx variety streamer on Twitch! I love to make people laugh and try to create a brave space for my viewers to share their experiences safely, but also have fun and feel accepted while doing so.",
+      "img": "FistfulOfGlitterGaming.jpg"
+    },
+    {
+      "id": 12,
+      "name": "astralfaerie",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/astralfaerie",
+      "personal": "",
+      "social": "",
+      "bio": "The name astralfaerie was created as a pseudonym for a drag persona, but now I use it as my online gaming name and persona. Most people call me astral for short. I identify as genderless, meaning I do not see myself as having or needing a gender. ",
+      "img": "astralfaerie.jpg"
+    },
+    {
+      "id": 13,
+      "name": "SGAK",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/SGAK",
+      "personal": "https://linktr.ee/stellankarlsson",
+      "social": "https://twitter.com/SGAK",
+      "bio": "I'm Stellan, a colorful genderqueer variety gaymer with a passion for cuteness ♡",
+      "img": "SGAK.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Aphasia Speaks",
+      "pronouns": "They / Them",
+      "twitch": " https://www.twitch.tv/aphasiaspeaks",
+      "personal": "",
+      "social": "https://www.twitter.com/aphasiaspeaks",
+      "bio": "Hi! I'm Aphasia Speaks! I run the speakeasy on twitch. Im a genderqueer(he/she/they) Black drag artist and verity streamer. I love a good story game that makes me feel things. But i also love to jump in a lobby with friends and let the chaos happen! ",
+      "img": "AphasiaSpeaks.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Antipodean_Squid",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/antipodean_squid",
+      "personal": "",
+      "social": "https://www.twitter.com/AntipodeanSquid",
+      "bio": "An Australian non-binary V-tuber that likes to play comfy games and get creative. I mostly play cozy games and indie titles and particularly like to play games with queer themes and representation. I also like to do crafts, writing, and TTRPGs! ",
+      "img": "Antipodean_Squid.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Chelora",
+      "pronouns": "She / Her",
+      "twitch": "https://www.twitch.tv/chelora",
+      "personal": "",
+      "social": "https://twitter.com/Chel0ra & https://www.youtube.com/channel/UCxpW6reJN6cQc-8oxPRIo8Q",
+      "bio": "Chelora is a trans drag queen from Canada, and member of Team Stream Queens.  She streams new, bold and old console on Twitch.  Chelora hopes to fill the world with smiles and laughter, even if it means using puns; the lowest form of comedy.",
+      "img": "Chelora.jpg"
+    },
+    {
+      "id": 17,
+      "name": "inkmo_",
+      "pronouns": "She / Her",
+      "twitch": "https://www.twitch.tv/inkmo_",
+      "personal": "http://inkmo.art/",
+      "social": "https://www.instagram.com/inkmo__/",
+      "bio": "I enjoy both digital art and physical mediums. I sculpt, smith, sew, bake, paint, draw and wildly bash things together until they make a thing. Welcome to a world where I am bringing the relentless imaginings of my mind to life.",
+      "img": "inkmo_.jpg"
+    },
+    {
+      "id": 18,
+      "name": "urbanbohemian",
+      "pronouns": "He / They",
+      "twitch": "https://www.twitch.tv/urbanbohemian",
+      "personal": "https://urbanbohemian.com",
+      "social": "https://www.twitter.com/urbanbohemian",
+      "bio": "Brian AKA urbanbohemian is a Black Queer content creator, writer, and foodie with a “PhD in Brunch”. Playing visual novels, action RPGs, cozy games and the occasional looter shooter, he loves to have a good time and maintain a safe space on stream.",
+      "img": "urbanbohemian.jpg"
+    },
+    {
+      "id": 19,
+      "name": "WirelessRiot",
+      "pronouns": "she/they",
+      "twitch": "https://twitch.tv/wirelessriot",
+      "personal": "",
+      "social": "https://twitter.com/wirelessriot",
+      "bio": "I'm Mande, and I'm a demi-ace content creator here on Twitch. I focus on narrative, simulation, management and point and click adventure games! I also host a once a month cooking show focusing on Cooking with Chronic Pain.",
+      "img": "WirelessRiot.jpg"
+    },
+    {
+      "id": 20,
+      "name": "the_juliancito",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/the_juliancito",
+      "personal": "",
+      "social": "https://www.twitter.com/the_juliancito",
+      "bio": "Juliancito is a queer, trans, Jewish, Boricua creating an intentional and inclusive space on Twitch. He primarily plays indie games, sim/farming games, and crafting/survival games. He has a dog named Izzy and a cat named Pikachu.",
+      "img": "the_juliancito.jpg"
+    },
+    {
+      "id": 21,
+      "name": "SickEmErik",
+      "pronouns": "He/They",
+      "twitch": "https://www.twitch.tv/sickemerik",
+      "personal": "https://sickemerik.com/",
+      "social": "https://twitter.com/SickEmErik",
+      "bio": "Erik is a queer streamer based in Hawaii that spreads positivity by uplifting others. Erik fosters a space that encourages others to succeed and feel validated. Erik hopes to be a role model to encourage younger gaymers to be their authentic selves.",
+      "img": "SickEmErik.jpg"
+    },
+    {
+      "id": 22,
+      "name": "spacevalkyries",
+      "pronouns": "she/they",
+      "twitch": "https://www.twitch.tv/spacevalkyries",
+      "personal": "https://linktr.ee/spacevalkyries",
+      "social": "https://twitter.com/spacevalkyries",
+      "bio": "Val or spacevalkyries (she/they) is a queer biracial variety streamer with ADHD, social anxiety, and chronic pain/fatigue. They’re also a sci-fi/fantasy writer! You can find her on Twitter @spacevalkyries.",
+      "img": "spacevalkyries.jpg"
+    },
+    {
+      "id": 23,
+      "name": "miabyte",
+      "pronouns": "She / Her",
+      "twitch": "https://www.twitch.tv/miabyte",
+      "personal": "https://miabyte.co.uk",
+      "social": "https://twitter.com/themiabyte",
+      "bio": "Mia is a Twitch Ambassador, trans woman, variety streamer, and Vtuber. They're of course an LGBTQIA+ advocate, and the Live Content Producer for Gayming Magazine, where she manages and hosts a range of shows on their Twitch channel. ",
+      "img": "miabyte.jpg"
+    },
+    {
+      "id": 24,
+      "name": "queerapollo",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/queerapollo",
+      "personal": "",
+      "social": "https://twitter.com/QueerApollo",
+      "bio": "Queerapollo is a queer AAPI variety streamer that enjoys comfort and chaos. He plays Dead by Daylight, Final Fantasy, several MMOs, and loves anime! He's an actor/director and enjoys puns and dad jokes!",
+      "img": "queerapollo.jpg"
+    },
+    {
+      "id": 25,
+      "name": "itsleidylei",
+      "pronouns": "She/They in drag, He/They out of drag",
+      "twitch": "https://www.twitch.tv/itsleidylei",
+      "personal": "",
+      "social": "https://www.twitter.com/itsleidylei",
+      "bio": "Leidy Lei is a drag queen who loves all things horror, and she's a proud member of Team Stream Queens!\n\nShe's worked all over Aotearoa (New Zealand) as an actor and as a drag artist.\n\nShe also placed as second runner up on TVNZ's House of Drag!",
+      "img": "itsleidylei.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Dubu",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/dubusaeyo",
+      "personal": "",
+      "social": "https://www.twitter.com/dubusaeyo",
+      "bio": "Dubu is a chill variety streamer from Australia. They're Asexual, Aromantic and Agender and love playing story rich, LGBTQIA+ and MMO games.",
+      "img": "Dubu.jpg"
+    },
+    {
+      "id": 27,
+      "name": "chasestorm52",
+      "pronouns": "He/They",
+      "twitch": "https://www.twitch.tv/chasestorm52",
+      "personal": "",
+      "social": "https://twitter.com/chasestorm52",
+      "bio": "My name is Chase. I'm a Trans/Non-binary, Asexual, Polyamorous and Disabled streamer. Aside from games I also create art, watch horror films and practice witchcraft.",
+      "img": "chasestorm52.jpg"
+    },
+    {
+      "id": 28,
+      "name": "rat_emoji",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/rat_emoji",
+      "personal": "",
+      "social": "https://twitter.com/rat_emojiTV",
+      "bio": "Rat is a queer, non-binary streaming from Down Under. They stream a variety of content, with a focus on horror and survival games. Rat is also the co-founder of Aussie Pride, Australia's only LGBTQIA+ stream team with over 80 creators. ",
+      "img": "rat_emoji.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Appleadayxo",
+      "pronouns": "any pronouns",
+      "twitch": "https://www.twitch.tv/appleadayxo",
+      "personal": "https://appleadayxo.carrd.co/",
+      "social": "https://www.tiktok.com/@appleadayxo",
+      "bio": "The silly, funny gorgeous Drag Queen Content Creator of Twitch! Apple Aday marries her love of campy drag into everything she does. Catch her gaming, doing mukbangs, and performing on twitch!",
+      "img": "Appleadayxo.jpg"
+    },
+    {
+      "id": 30,
+      "name": "HaiBobby",
+      "pronouns": "he/they",
+      "twitch": "https://twitch.tv/haibobby",
+      "personal": "",
+      "social": "https://twitter.com/haibobby_   https://instagram.com/haibobby_",
+      "bio": "Bobby is a latine queer streamer who champions for diversity & inclusion in their content & spaces. As the Founder of Team Overture, Bobby seeks & creates opportunities for their community to participate in, that supports marginalized communities. ",
+      "img": "HaiBobby.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Polople",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/polople",
+      "personal": "",
+      "social": "https://www.twitter.com/jamespolople",
+      "bio": "Polople is a 24 year old queer content creator from South Australia. They play and stream a range of games, but mainly focusing on RPG/Story Driven titles.",
+      "img": "Polople.jpg"
+    },
+    {
+      "id": 32,
+      "name": "cptn_sumi",
+      "pronouns": "She / Her",
+      "twitch": "https://www.twitch.tv/cptn_sumi/",
+      "personal": "https://captainsumi.de/",
+      "social": "https://twitter.com/Cptn_Sumi",
+      "bio": "My name is Sumi (she/her), I'm a 30-something bubbly, Bisexual from Germany. I like playing games and watching movies as well as creating contents of all kinds. I can swear like a sailor! AHOI! ",
+      "img": "cptn_sumi.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Pinot_No1r",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/pinot_no1r",
+      "personal": "",
+      "social": "https://twitter.com/pinot_no1r",
+      "bio": "I am a queer variety and Teamfight Tactics (TFT) streamer. I am very community based and focus on making my stream fun while also touching on serious topics. Weekly I do a talk show called Teamfight Chatics where I interview a guest while playing TFT",
+      "img": "Pinot_No1r.jpg"
+    },
+    {
+      "id": 34,
+      "name": "itsTealyxo",
+      "pronouns": "He out of drag She in drag but any are fine. ",
+      "twitch": "https://www.twitch.tv/itsTealyxo",
+      "personal": "",
+      "social": "https://www.twitter.com/itsTealyxo",
+      "bio": "itsTealyxo is your Favourite Aussie Bimbo! Playing DBD and Fortnite with a variety of other games on Twitch. Buckle your seat belts for a journey of chaotic gameplay with dumb luck esports moments, stunning looks and lip sync performances! ",
+      "img": "itsTealyxo.jpg"
+    },
+    {
+      "id": 35,
+      "name": "KiyoshiYoRHa",
+      "pronouns": "They/Them/Any",
+      "twitch": "https://www.twitch.tv/kiyoshiyorha",
+      "personal": "https://kiyoshiyorha.com/",
+      "social": "https://twitter.com/kiyoshiyorha",
+      "bio": "I am a drag puzzle streamer. I'm a logical gamer so I really enjoy solving puzzles and other games even if they're not considered puzzles! I really enjoy impactful video game music as well!",
+      "img": "KiyoshiYoRHa.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Siforias_",
+      "pronouns": "He / Him",
+      "twitch": "https://www.twitch.tv/siforias_",
+      "personal": "",
+      "social": "https://linktr.ee/Siforias",
+      "bio": "My name is Siforias. I'm a gay latino variety twitch streamer, game developer, and freelance writer. I love working in the video game industry whether its playing, making, or sharing with people all the adventures!",
+      "img": "Siforias_.jpg"
+    },
+    {
+      "id": 37,
+      "name": "AbbersM2",
+      "pronouns": "She/They",
+      "twitch": "https://www.twitch.tv/abbersm2",
+      "personal": "",
+      "social": "https://www.twitter.com/abbersm2 https://instagram.com/abbersm2 tiktok.com/@abbersm2",
+      "bio": "Hi! I'm Abi. I am a fat/pansexual/genderfluid/neurodivergent variety streamer who uses she/they pronouns. I usually play games with no camera, but also play music, make art, and do cosplay sometimes. On Sundays, we go down Wikipedia rabbit holes.",
+      "img": "AbbersM2.jpg"
+    },
+    {
+      "id": 38,
+      "name": "PlayItJason",
+      "pronouns": "He / Him",
+      "twitch": "https://twitch.tv/playitjason",
+      "personal": "",
+      "social": "https://twitter.com/playitjason",
+      "bio": "Hi, I'm Jason! I'm a variety streamer, musician, and team lead for Team Overture. I live in the beautiful state Maine with my husband and two adorable dogs, Henry and Oliver. ",
+      "img": "PlayItJason.jpg"
+    },
+    {
+      "id": 39,
+      "name": "JirPlays",
+      "pronouns": "They / Them",
+      "twitch": "https://www.twitch.tv/JirPlays",
+      "personal": "",
+      "social": "https://www.twitter.com/JirPlays",
+      "bio": "You know that crazy aunt, well thats me. Except... I don't drink, I go by they/them, am Gay and happily married.",
+      "img": "JirPlays.jpg"
+    }
+  ]
+}
