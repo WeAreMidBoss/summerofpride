@@ -179,9 +179,9 @@ import 'swiper/css/swiper.css'
 		data (){
 			return {
                 publicPath: process.env.BASE_URL,
-                initialSlideSet: false,
+                initialSlideSet: true,
                 initialSlide: 1,
-                startingDate: '2021-07-01', // first day of the event
+                startingDate: '2022-07-01', // first day of the event
 				swiperOptions: {
                     initialSlide: 0,
                     loop: true,
@@ -264,11 +264,11 @@ import 'swiper/css/swiper.css'
                 var difference = date2.getTime() - date1.getTime();
                 difference = difference / ((1000 * 60 * 60) * 24);
                 difference = Math.round(difference);
-                console.log(difference);
                 if (difference >= 0 && difference <= 31) {
+                    console.log ('difference:' + difference); 
                     return difference;
                 } else {
-                    return 10;
+                    return 0;
                 }
                 /*if (date1.getMonth() === date2.getMonth()) {
                     return date2.getDate();
