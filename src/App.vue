@@ -120,7 +120,7 @@ import ModalStreamers from './components/StreamersModal.vue'
 import ModalGames from './components/GamesModal.vue'
 import Footer from './components/Footer.vue'
 
-//import axios from 'axios'
+import axios from 'axios'
 import SyncLoader from 'vue-spinner/src/SyncLoader.vue'
 //import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 import AOS from 'aos'
@@ -175,8 +175,12 @@ export default {
     this.timezone = this.getTimezone()
     try {
       //get streamer's info
-      const response =  require('./assets/streamersFinal.json')
-      this.profiles = response.jsonStreamers
+      //LOCAL JSON
+      //const response =  require('./assets/streamersFinal.json')
+      //this.profiles = response.jsonStreamers
+      //SHEETY JSON
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2022ProcessedData/jsonStreamers')
+      this.profiles = response.data.jsonStreamers
       this.shuffle(this.profiles)
       this.streamersLoading = false
     } catch (e) {
@@ -185,8 +189,12 @@ export default {
     }
     try {
       //get game's info
-      const response = require('./assets/gamesFinal.json')
-      this.games = response.jsonGames
+      //const response = require('./assets/gamesFinal.json')
+      //this.games = response.jsonGames
+      //LOCAL JSON
+      //SHEETY JSON
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2022ProcessedData/jsonGames')
+      this.games = response.data.jsonGames
       this.shuffle(this.games)
       this.gamesLoading = false
     } catch (e) {
@@ -195,8 +203,12 @@ export default {
     }
     try {
       //get schedule's info
-      const response = require('./assets/scheduleFinal.json')
-      this.schedules = response.jsonSchedule
+      //const response = require('./assets/scheduleFinal.json')
+      //this.schedules = response.jsonSchedule
+      //LOCAL JSON
+      //SHEETY JSON
+      const response = await axios.get('https://api.sheety.co/6bbc237c1ab91b28fd038c18cce46217/soP2022ProcessedData/jsonSchedule')
+      this.schedules = response.data.jsonSchedule
       this.scheduleLoading = false
     } catch (e) {
       this.errors.push(e)
