@@ -179,7 +179,7 @@ import 'swiper/css/swiper.css'
 		data (){
 			return {
                 publicPath: process.env.BASE_URL,
-                initialSlideSet: true,
+                initialSlideSet: false,
                 initialSlide: 1,
                 startingDate: '2022-07-01', // first day of the event
 				swiperOptions: {
@@ -315,29 +315,32 @@ import 'swiper/css/swiper.css'
     /*** Active stream styling***/
 
     .active {
-        background-color:#8F51F2!important;
+        /*background-color:#072737!important;*/
+        background: #0c182f; /* Old browsers */
+        background: -moz-linear-gradient(left, #04212fff 0%, #04212f00 80%)!important;/* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #04212fff 0%,#04212f00 80%)!important; /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #04212fff 0%,#04212f00 80%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04212fff', endColorstr='#04212f00',GradientType=0 ); /* IE6-9 */
         border-color: transparent!important;
     }
     .active .start-time {
-        color: #fff;
+        color: #B4E7EF;
     }
     .active .end-time {
-        color: #fff;
+        color: #5ab0c3;
     }
     .active .schedule-game-name {
-        background-color:#fff!important;
-        color: #C3ABFF!important;
+        color: #fff!important;
     }
     .active .schedule-streamer-name {
-        background-color:#fff!important;
-        color: #C3ABFF!important;
+        color: #fff!important;
     }
     .active .bullet {
-        color: #fff;
+        color: #B4E7EF;
     }
     .live-time {
         margin-right: 20px;
-        color: #8F51F2;
+        color: #fff;
         font-size: 1.6em;
         line-height: 0.9;
         position:relative;
@@ -348,11 +351,11 @@ import 'swiper/css/swiper.css'
         width: 0;
         height: 0;
         position:absolute;
-        right:-20px;
+        right:-25px;
         top:15%;
         border-style: solid;
         border-width: 35px 0 35px 20px;
-        border-color: transparent transparent transparent #9D7DEF;
+        border-color: transparent transparent transparent #5ab0c3;
     }
     .live-time div:first-child {
         font-size:1.05em;
@@ -446,9 +449,10 @@ import 'swiper/css/swiper.css'
         margin-top: 5px;
     }
     .schedule-table tr td>div:first-child {
-        border-left: 5px solid #85E8F9;
+        border-left: 6px solid #04212fff;
         margin-bottom: 15px;
     }
+
     .schedule-table td {
         /*border-bottom: 5px solid transparent;*/
         
@@ -487,7 +491,7 @@ import 'swiper/css/swiper.css'
         top:12%;
         border-style: solid;
         border-width: 25px 0 25px 15px;
-        border-color: transparent transparent transparent #9D7DEF;
+        border-color: transparent transparent transparent #5ab0c3;
     }
     .start-time, .end-time {
         font-size: 2em;
@@ -521,7 +525,7 @@ import 'swiper/css/swiper.css'
         top:5%;
         border-style: solid;
         border-width: 35px 0 35px 20px;
-        border-color: transparent transparent transparent #9D7DEF;
+        border-color: transparent transparent transparent #5ab0c3;
     }
     .start-time, .end-time {
         font-size: 1.6em;
@@ -595,7 +599,7 @@ import 'swiper/css/swiper.css'
         top:15%;
         border-style: solid;
         border-width: 15px 0 15px 10px;
-        border-color: transparent transparent transparent #9D7DEF;
+        border-color: transparent transparent transparent #5ab0c3;
     }
     .swiper {
         width: 95%;
