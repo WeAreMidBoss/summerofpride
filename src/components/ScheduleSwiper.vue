@@ -264,11 +264,24 @@ import 'swiper/css/swiper.css'
                 var difference = date2.getTime() - date1.getTime();
                 difference = difference / ((1000 * 60 * 60) * 24);
                 difference = Math.round(difference);
-                if (difference >= 0 && difference <= 31) {
-                    console.log ('difference:' + difference); 
-                    return difference;
+                console.log ('difference:' + difference); 
+                //2022 WEEKENDS ONLY FIX
+                if (difference >= 1 && difference <= 31) {
+                    if (difference >= 1 && difference <= 3) {return difference;}
+                    if (difference >= 4 && difference <= 8) {return 4;}
+                    if (difference == 9) {return 5;}
+                    if (difference == 10) {return 6;}
+                    if (difference >= 11 && difference <= 15) {return 7;}
+                    if (difference == 16) {return 8;}
+                    if (difference == 17) {return 9;}
+                    if (difference >= 18 && difference <= 22) {return 10;}
+                    if (difference == 23) {return 11;}
+                    if (difference == 24) {return 12;}
+                    if (difference >= 25 && difference <= 29) {return 13;}
+                    if (difference == 30) {return 14;}
+                    if (difference == 31) {return 15;}
                 } else {
-                    return 0;
+                    return 1;
                 }
                 /*if (date1.getMonth() === date2.getMonth()) {
                     return date2.getDate();
